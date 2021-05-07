@@ -1,0 +1,46 @@
+squid,id,present,doc_url,new_doc_url,short_description,granularity_level,atd_dimension
+squid:S00104,java:S104,OUT OF QUALITY PROFILE,https://jira.sonarsource.com/browse/RSPEC-104,,Files should not have too many lines,files,complexity
+squid:S00107,java:S107,,https://jira.sonarsource.com/browse/RSPEC-107,,Methods should not have too many parameters,functions,interface
+squid:S00112,java:S112,,https://jira.sonarsource.com/browse/RSPEC-112,,Generic exceptions should never be thrown,ncloc_java,exception
+squid:MethodCyclomaticComplexity,java:S133,OUT OF QUALITY PROFILE,https://jira.sonarsource.com/browse/RSPEC-133,https://jira.sonarsource.com/browse/RSPEC-1541,Methods should not be too complex,functions,complexity
+squid:ClassVariableVisibilityCheck,java:S1104,,https://jira.sonarsource.com/browse/RSPEC-1104,,Class variable fields should not have public accessibility,classes,interface	 member
+squid:ObjectFinalizeOverridenCheck,java:S1113,,https://jira.sonarsource.com/browse/RSPEC-1113,,The Object.finalize() method should not be overriden,classes,inheritance
+squid:S1118,java:S1118,,https://jira.sonarsource.com/browse/RSPEC-1118,,Utility classes should not have public constructors,classes,interface
+squid:RedundantThrowsDeclarationCheck,java:S1130,,https://jira.sonarsource.com/browse/RSPEC-1130,,Throws declarations should not be superfluous,ncloc_java,exception
+squid:S1133,java:S1133,,https://jira.sonarsource.com/browse/RSPEC-1133,,Deprecated code should be removed eventually,functions,interface	 complexity
+squid:S1160,java:S1160,OUT OF QUALITY PROFILE,https://jira.sonarsource.com/browse/RSPEC-1160,,Public methods should throw at most one checked exception,functions,exception	 interface
+squid:S1161,java:S1161,,https://jira.sonarsource.com/browse/RSPEC-1161,,@Override annotation should be used on any method overriding (since Java 5) or implementing (since Java 6) another one,functions,inheritance
+squid:S1165,java:S1165,,https://jira.sonarsource.com/browse/RSPEC-1165,,Exception classes should be immutable,classes,exception
+squid:S1166,java:S1166,OUT OF QUALITY PROFILE,https://jira.sonarsource.com/browse/RSPEC-1166,,Exception handlers should preserve the original exceptions,ncloc_java,exception
+squid:S1182,java:S1182,,https://jira.sonarsource.com/browse/RSPEC-1182,,"Classes that override ""clone"" should be ""Cloneable"" and call ""super.clone()""",classes,inheritance
+squid:S1185,java:S1185,,https://jira.sonarsource.com/browse/RSPEC-1185,,Overriding methods should do more than simply call the same method in the super class,functions,inheritance
+squid:S1188,java:S1188,OUT OF QUALITY PROFILE,https://jira.sonarsource.com/browse/RSPEC-1188,,Lambdas and anonymous classes should not have too many lines,classes,complexity
+squid:S1194,java:S1194,OUT OF QUALITY PROFILE,https://jira.sonarsource.com/browse/RSPEC-1194,,"""java.lang.Error"" should not be extended",classes,exception	 vmsmell
+squid:S1199,java:S1199,,https://jira.sonarsource.com/browse/RSPEC-1199,,Nested code blocks should not be used,ncloc_java,complexity
+squid:S1210,java:S1210,,https://jira.sonarsource.com/browse/RSPEC-1210,,"""equals(Object obj)"" should be overridden along with the ""compareTo(T obj)"" method",functions,inheritance	 vmsmell
+squid:S1217,java:S1217,,https://jira.sonarsource.com/browse/RSPEC-1217,,Thread.run() and Runnable.run() should not be called directly,ncloc_java,vmsmell
+squid:S1220,java:S1220,OUT OF QUALITY PROFILE,https://jira.sonarsource.com/browse/RSPEC-1220,,The default unnamed package should not be used,classes,naming
+squid:S1221,java:S1221,OUT OF QUALITY PROFILE,https://jira.sonarsource.com/browse/RSPEC-1221,,"Methods should not be named ""hashcode"" or ""equal""",functions,naming
+squid:ClassCyclomaticComplexity,java:1311,OUT OF QUALITY PROFILE,https://jira.sonarsource.com/browse/RSPEC-1311,,Classes should not be too complex,classes,complexity
+squid:S1444,java:S1444,OUT OF QUALITY PROFILE,https://jira.sonarsource.com/browse/RSPEC-1444,,"""public static"" fields should be constant",classes,constants
+squid:S1598,java:S1598,OUT OF QUALITY PROFILE,https://jira.sonarsource.com/browse/RSPEC-1598,,Package declaration should match source file directory,classes,naming
+squid:S1609,java:S1609,OUT OF QUALITY PROFILE,https://jira.sonarsource.com/browse/RSPEC-1609,,@FunctionalInterface annotation should be used to flag Single Abstract Method interfaces,functions,interface
+squid:S1610,java:S1610,,https://jira.sonarsource.com/browse/RSPEC-1610,,Abstract classes without fields should be converted to interfaces,classes,interface
+squid:S2059,java:S2059,OUT OF QUALITY PROFILE,https://jira.sonarsource.com/browse/RSPEC-2059,,"Serializable inner classes of ""Serializable"" classes should be static",classes,vmsmell
+squid:S2062,java:S2062,,https://jira.sonarsource.com/browse/RSPEC-2062,,readResolve methods should be inheritable,classes,inheritance
+squid:S2134,java:S2134,ABSENT,https://jira.sonarsource.com/browse/RSPEC-2134,,"Classes extending java.lang.Thread should override the ""run"" method",classes,threading
+squid:S2157,java:S2157,,https://jira.sonarsource.com/browse/RSPEC-2157,,"""Cloneables"" should implement ""clone""",classes,inheritance	 vmsmell
+squid:S2166,java:S2166,,https://jira.sonarsource.com/browse/RSPEC-2166,,"Classes named like ""Exception"" should extend ""Exception"" or a subclass",classes,exception
+squid:S2221,java:S2221,OUT OF QUALITY PROFILE,https://jira.sonarsource.com/browse/RSPEC-2221,,"""Exception"" should not be caught when not required by called methods",ncloc_java,exception
+squid:S2222,java:S2222,,https://jira.sonarsource.com/browse/RSPEC-2222,,Locks should be released,ncloc_java,threading
+squid:S2236,java:S2236,,https://jira.sonarsource.com/browse/RSPEC-2236,,"Methods ""wait(...)""	 ""notify()"" and ""notifyAll()"" should never be called on Thread instances",ncloc_java,threading
+squid:S2273,java:S2273,,https://jira.sonarsource.com/browse/RSPEC-2273,,"""wait(...)""	 ""notify()"" and ""notifyAll()"" methods should only be called when a lock is obviously held on an object",ncloc_java,threading
+squid:S2276,java:S2276,,https://jira.sonarsource.com/browse/RSPEC-2276,,"""wait(...)"" should be used instead of ""Thread.sleep(...)"" when a lock is held",ncloc_java,threading
+squid:S2386,java:S2386,OUT OF QUALITY PROFILE,https://jira.sonarsource.com/browse/RSPEC-2386,,"Mutable fields should not be ""public static""",classes,member
+squid:S2638,java:S2638,,https://jira.sonarsource.com/browse/RSPEC-2638,,Method overrides should not change contracts,functions,inheritance	 vmsmell
+squid:S2693,java:S2693,OUT OF QUALITY PROFILE,https://jira.sonarsource.com/browse/RSPEC-2693,,Threads should not be started in constructors,classes,threading
+squid:S2696,java:S2696,OUT OF QUALITY PROFILE,https://jira.sonarsource.com/browse/RSPEC-2696,,"Instance methods should not write to ""static"" fields",ncloc_java,variables
+squid:S2885,java:S2885,,https://jira.sonarsource.com/browse/RSPEC-2885,,"""Calendars"" and ""DateFormats"" should not be static",classes,threading
+squid:S2975,java:S2975,,https://jira.sonarsource.com/browse/RSPEC-2975,,clone should not be overridden,classes,inheritance	 vmsmell
+squid:S3398,java:S3389,OUT OF QUALITY PROFILE,https://jira.sonarsource.com/browse/RSPEC-3398,,private methods called only by inner classes should be moved to those classes,functions,member
+squid:S3422,java:S3422,OUT OF QUALITY PROFILE,https://jira.sonarsource.com/browse/RSPEC-3422,,"Dependencies should not have ""system"" scope",ncloc_java,lockin
