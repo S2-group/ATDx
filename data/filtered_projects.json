@@ -1,0 +1,2433 @@
+[
+    {
+        "organization": "onap",
+        "key": "onap_vfc-nfvo-wfengine-wfenginemgrservice",
+        "name": "vfc-nfvo-wfengine-wfenginemgrservice",
+        "tags": [],
+        "visibility": "public",
+        "isNew": false
+    },
+    {
+        "organization": "onap",
+        "key": "onap_dcaegen2-services-bbs-event-processor",
+        "name": "dcaegen2-services-bbs-event-processor",
+        "tags": [],
+        "visibility": "public",
+        "isNew": false
+    },
+    {
+        "organization": "apache",
+        "key": "apache_sling-org-apache-sling-scripting-bundle-tracker",
+        "name": "Apache Sling Scripting Bundle Tracker",
+        "tags": [
+            "sling"
+        ],
+        "visibility": "public",
+        "isNew": false,
+        "repo_url": "https://github.com/apache/sling-org-apache-sling-scripting-bundle-tracker"
+    },
+    {
+        "organization": "apache",
+        "key": "apache_sling-org-apache-sling-scripting-core",
+        "name": "Apache Sling Scripting Core",
+        "tags": [
+            "sling"
+        ],
+        "visibility": "public",
+        "isNew": false,
+        "repo_url": "https://github.com/apache/sling-org-apache-sling-scripting-core"
+    },
+    {
+        "organization": "apache",
+        "key": "apache_sling-org-apache-sling-scripting-esx",
+        "name": "Apache Sling Scripting ESX",
+        "tags": [
+            "sling"
+        ],
+        "visibility": "public",
+        "isNew": false,
+        "repo_url": "https://github.com/apache/sling-org-apache-sling-scripting-esx"
+    },
+    {
+        "organization": "apache",
+        "key": "apache_sling-org-apache-sling-scripting-sightly-compiler",
+        "name": "Apache Sling Scripting HTL Compiler",
+        "tags": [
+            "sling"
+        ],
+        "visibility": "public",
+        "isNew": false,
+        "repo_url": "https://github.com/apache/sling-org-apache-sling-scripting-sightly-compiler"
+    },
+    {
+        "organization": "apache",
+        "key": "apache_sling-org-apache-sling-scripting-sightly",
+        "name": "Apache Sling Scripting HTL Engine",
+        "tags": [
+            "sling"
+        ],
+        "visibility": "public",
+        "isNew": false,
+        "repo_url": "https://github.com/apache/sling-org-apache-sling-scripting-sightly"
+    },
+    {
+        "organization": "apache",
+        "key": "apache_sling-org-apache-sling-scripting-sightly-compiler-java",
+        "name": "Apache Sling Scripting HTL Java Compiler",
+        "tags": [
+            "sling"
+        ],
+        "visibility": "public",
+        "isNew": false,
+        "repo_url": "https://github.com/apache/sling-org-apache-sling-scripting-sightly-compiler-java"
+    },
+    {
+        "organization": "apache",
+        "key": "apache_sling-org-apache-sling-scripting-sightly-js-provider",
+        "name": "Apache Sling Scripting HTL JS Use Provider",
+        "tags": [
+            "sling"
+        ],
+        "visibility": "public",
+        "isNew": false,
+        "repo_url": "https://github.com/apache/sling-org-apache-sling-scripting-sightly-js-provider"
+    },
+    {
+        "organization": "apache",
+        "key": "apache_sling-org-apache-sling-scripting-java",
+        "name": "Apache Sling Scripting Java Support",
+        "tags": [
+            "sling"
+        ],
+        "visibility": "public",
+        "isNew": false,
+        "repo_url": "https://github.com/apache/sling-org-apache-sling-scripting-java"
+    },
+    {
+        "organization": "apache",
+        "key": "apache_sling-org-apache-sling-scripting-javascript",
+        "name": "Apache Sling Scripting JavaScript",
+        "tags": [
+            "sling"
+        ],
+        "visibility": "public",
+        "isNew": false,
+        "repo_url": "https://github.com/apache/sling-org-apache-sling-scripting-javascript"
+    },
+    {
+        "organization": "apache",
+        "key": "apache_sling-org-apache-sling-scripting-jsp",
+        "name": "Apache Sling Scripting JSP",
+        "tags": [
+            "sling"
+        ],
+        "visibility": "public",
+        "isNew": false,
+        "repo_url": "https://github.com/apache/sling-org-apache-sling-scripting-jsp"
+    },
+    {
+        "organization": "onap",
+        "key": "onap_policy-engine",
+        "name": "policy-engine",
+        "tags": [],
+        "visibility": "public",
+        "isNew": false
+    },
+    {
+        "organization": "apache",
+        "key": "apache_incubator-daffodil",
+        "name": "incubator-daffodil",
+        "tags": [],
+        "visibility": "public",
+        "isNew": false,
+        "repo_url": "https://github.com/apache/incubator-daffodil"
+    },
+    {
+        "organization": "apache",
+        "key": "apache_sling-org-apache-sling-commons-html",
+        "name": "Apache Sling Commons HTML Utilities",
+        "tags": [
+            "sling"
+        ],
+        "visibility": "public",
+        "isNew": false,
+        "repo_url": "https://github.com/apache/sling-org-apache-sling-commons-html"
+    },
+    {
+        "organization": "onap",
+        "key": "onap_optf-fgps",
+        "name": "fgps",
+        "tags": [],
+        "visibility": "public",
+        "isNew": false
+    },
+    {
+        "organization": "apache",
+        "key": "apache_sling-org-apache-sling-hapi",
+        "name": "Apache Sling Hypermedia API tools",
+        "tags": [
+            "sling"
+        ],
+        "visibility": "public",
+        "isNew": false,
+        "repo_url": "https://github.com/apache/sling-org-apache-sling-hapi"
+    },
+    {
+        "organization": "apache",
+        "key": "apache_sling-org-apache-sling-i18n",
+        "name": "Apache Sling I18N Support",
+        "tags": [
+            "sling"
+        ],
+        "visibility": "public",
+        "isNew": false,
+        "repo_url": "https://github.com/apache/sling-org-apache-sling-i18n"
+    },
+    {
+        "organization": "apache",
+        "key": "apache_sling-org-apache-sling-jcr-contentloader",
+        "name": "Apache Sling Initial Content Loader",
+        "tags": [
+            "sling"
+        ],
+        "visibility": "public",
+        "isNew": false,
+        "repo_url": "https://github.com/apache/sling-org-apache-sling-jcr-contentloader"
+    },
+    {
+        "organization": "apache",
+        "key": "apache_sling-org-apache-sling-installer-core",
+        "name": "Apache Sling Installer Core",
+        "tags": [
+            "sling"
+        ],
+        "visibility": "public",
+        "isNew": false,
+        "repo_url": "https://github.com/apache/sling-org-apache-sling-installer-core"
+    },
+    {
+        "organization": "apache",
+        "key": "apache_sling-org-apache-sling-jcr-jackrabbit-accessmanager",
+        "name": "Apache Sling Jackrabbit JSR-283 Access Control Manager Support",
+        "tags": [
+            "sling"
+        ],
+        "visibility": "public",
+        "isNew": false,
+        "repo_url": "https://github.com/apache/sling-org-apache-sling-jcr-jackrabbit-accessmanager"
+    },
+    {
+        "organization": "apache",
+        "key": "apache_sling-org-apache-sling-jcr-jackrabbit-usermanager",
+        "name": "Apache Sling Jackrabbit UserManager Support",
+        "tags": [
+            "sling"
+        ],
+        "visibility": "public",
+        "isNew": false,
+        "repo_url": "https://github.com/apache/sling-org-apache-sling-jcr-jackrabbit-usermanager"
+    },
+    {
+        "organization": "apache",
+        "key": "apache_sling-org-apache-sling-jcr-base",
+        "name": "Apache Sling JCR Base Bundle",
+        "tags": [
+            "sling"
+        ],
+        "visibility": "public",
+        "isNew": false,
+        "repo_url": "https://github.com/apache/sling-org-apache-sling-jcr-base"
+    },
+    {
+        "organization": "apache",
+        "key": "apache_sling-org-apache-sling-jcr-classloader",
+        "name": "Apache Sling JCR ClassLoader",
+        "tags": [
+            "sling"
+        ],
+        "visibility": "public",
+        "isNew": false,
+        "repo_url": "https://github.com/apache/sling-org-apache-sling-jcr-classloader"
+    },
+    {
+        "organization": "apache",
+        "key": "apache_sling-org-apache-sling-installer-provider-jcr",
+        "name": "Apache Sling JCR Installer",
+        "tags": [
+            "sling"
+        ],
+        "visibility": "public",
+        "isNew": false,
+        "repo_url": "https://github.com/apache/sling-org-apache-sling-installer-provider-jcr"
+    },
+    {
+        "organization": "apache",
+        "key": "apache_sling-org-apache-sling-jcr-resource",
+        "name": "Apache Sling JCR Resource Resolver",
+        "tags": [
+            "sling"
+        ],
+        "visibility": "public",
+        "isNew": false,
+        "repo_url": "https://github.com/apache/sling-org-apache-sling-jcr-resource"
+    },
+    {
+        "organization": "apache",
+        "key": "servicecomb-pack",
+        "name": "Apache ServiceComb Pack",
+        "tags": [
+            "servicecomb"
+        ],
+        "visibility": "public",
+        "isNew": false
+    },
+    {
+        "organization": "apache",
+        "key": "commons-numbers",
+        "name": "Apache Commons Numbers",
+        "tags": [],
+        "visibility": "public",
+        "isNew": false
+    },
+    {
+        "organization": "apache",
+        "key": "commons-rng",
+        "name": "Apache Commons RNG",
+        "tags": [],
+        "visibility": "public",
+        "isNew": false,
+        "repo_url": "https://github.com/apache/commons-rng"
+    },
+    {
+        "organization": "apache",
+        "key": "commons-statistics",
+        "name": "Apache Commons Statistics",
+        "tags": [],
+        "visibility": "public",
+        "isNew": false
+    },
+    {
+        "organization": "apache",
+        "key": "cxf",
+        "name": "Apache CXF",
+        "tags": [],
+        "visibility": "public",
+        "isNew": false
+    },
+    {
+        "organization": "onap",
+        "key": "onap_usecase-ui-server",
+        "name": "usecase-ui-server-parent",
+        "tags": [],
+        "visibility": "public",
+        "isNew": false
+    },
+    {
+        "organization": "apache",
+        "key": "apache_sling-parent",
+        "name": "Apache Sling Parent Reactor",
+        "tags": [
+            "sling"
+        ],
+        "visibility": "public",
+        "isNew": false,
+        "repo_url": "https://github.com/apache/sling-parent"
+    },
+    {
+        "organization": "apache",
+        "key": "apache_sling-org-apache-sling-pipes",
+        "name": "Apache Sling Pipes",
+        "tags": [
+            "sling"
+        ],
+        "visibility": "public",
+        "isNew": false,
+        "repo_url": "https://github.com/apache/sling-org-apache-sling-pipes"
+    },
+    {
+        "organization": "apache",
+        "key": "apache_sling-org-apache-sling-provisioning-model",
+        "name": "Apache Sling Provisioning Model",
+        "tags": [
+            "sling"
+        ],
+        "visibility": "public",
+        "isNew": false,
+        "repo_url": "https://github.com/apache/sling-org-apache-sling-provisioning-model"
+    },
+    {
+        "organization": "apache",
+        "key": "apache_sling-org-apache-sling-query",
+        "name": "Apache Sling Query",
+        "tags": [
+            "sling"
+        ],
+        "visibility": "public",
+        "isNew": false,
+        "repo_url": "https://github.com/apache/sling-org-apache-sling-query"
+    },
+    {
+        "organization": "apache",
+        "key": "apache_sling-org-apache-sling-resource-filter",
+        "name": "Apache Sling Resource Filter",
+        "tags": [
+            "sling"
+        ],
+        "visibility": "public",
+        "isNew": false,
+        "repo_url": "https://github.com/apache/sling-org-apache-sling-resource-filter"
+    },
+    {
+        "organization": "apache",
+        "key": "apache_sling-org-apache-sling-resourcemerger",
+        "name": "Apache Sling Resource Merger",
+        "tags": [
+            "sling"
+        ],
+        "visibility": "public",
+        "isNew": false,
+        "repo_url": "https://github.com/apache/sling-org-apache-sling-resourcemerger"
+    },
+    {
+        "organization": "apache",
+        "key": "apache_sling-org-apache-sling-resourceresolver",
+        "name": "Apache Sling Resource Resolver",
+        "tags": [
+            "sling"
+        ],
+        "visibility": "public",
+        "isNew": false,
+        "repo_url": "https://github.com/apache/sling-org-apache-sling-resourceresolver"
+    },
+    {
+        "organization": "apache",
+        "key": "apache_sling-org-apache-sling-discovery-impl",
+        "name": "Apache Sling Resource-Based Discovery Service",
+        "tags": [
+            "sling"
+        ],
+        "visibility": "public",
+        "isNew": false,
+        "repo_url": "https://github.com/apache/sling-org-apache-sling-discovery-impl"
+    },
+    {
+        "organization": "apache",
+        "key": "apache_sling-org-apache-sling-rewriter",
+        "name": "Apache Sling Rewriter",
+        "tags": [
+            "sling"
+        ],
+        "visibility": "public",
+        "isNew": false,
+        "repo_url": "https://github.com/apache/sling-org-apache-sling-rewriter"
+    },
+    {
+        "organization": "onap",
+        "key": "onap_policy-distribution",
+        "name": "policy-distribution",
+        "tags": [],
+        "visibility": "public",
+        "isNew": false
+    },
+    {
+        "organization": "onap",
+        "key": "onap_policy-pap",
+        "name": "policy-pap",
+        "tags": [],
+        "visibility": "public",
+        "isNew": false
+    },
+    {
+        "organization": "apache",
+        "key": "apache_groovy",
+        "name": "Apache Groovy",
+        "tags": [],
+        "visibility": "public",
+        "eligibilityStatus": "COMPLETED",
+        "eligible": false,
+        "isNew": false,
+        "repo_url": "https://github.com/apache/groovy"
+    },
+    {
+        "organization": "apache",
+        "key": "hadoop-ozone",
+        "name": "Apache Hadoop Ozone Main",
+        "tags": [],
+        "visibility": "public",
+        "isNew": false
+    },
+    {
+        "organization": "apache",
+        "key": "apache_incubator-iotdb",
+        "name": "Apache IoTDB (incubating) Project Parent POM",
+        "tags": [],
+        "visibility": "public",
+        "isNew": false,
+        "repo_url": "https://github.com/apache/incubator-iotdb"
+    },
+    {
+        "organization": "apache",
+        "key": "apache_isis",
+        "name": "Apache Isis (Aggregator)",
+        "tags": [],
+        "visibility": "public",
+        "isNew": false,
+        "repo_url": "https://github.com/apache/isis"
+    },
+    {
+        "organization": "onap",
+        "key": "onap_dcaegen2-analytics-tca",
+        "name": "dcaegen2-analytics-tca",
+        "tags": [],
+        "visibility": "public",
+        "isNew": false
+    },
+    {
+        "organization": "onap",
+        "key": "onap_dcaegen2-analytics-tca-gen2",
+        "name": "dcaegen2-analytics-tca-gen2",
+        "tags": [],
+        "visibility": "public",
+        "isNew": false
+    },
+    {
+        "organization": "onap",
+        "key": "onap_dcaegen2-collectors-restconf",
+        "name": "dcaegen2-collectors-restconf",
+        "tags": [],
+        "visibility": "public",
+        "isNew": false
+    },
+    {
+        "organization": "onap",
+        "key": "onap_dcaegen2-collectors-snmptrap",
+        "name": "dcaegen2-collectors-snmptrap",
+        "tags": [],
+        "visibility": "public",
+        "isNew": false
+    },
+    {
+        "organization": "onap",
+        "key": "onap_dcaegen2-collectors-ves",
+        "name": "dcaegen2-collectors-ves",
+        "tags": [],
+        "visibility": "public",
+        "isNew": false
+    },
+    {
+        "organization": "onap",
+        "key": "onap_dcaegen2-collectors-hv-ves",
+        "name": "dcaegen2-collectors-veshv",
+        "tags": [],
+        "visibility": "public",
+        "isNew": false
+    },
+    {
+        "organization": "onap",
+        "key": "onap_portal-sdk",
+        "name": "portal-sdk",
+        "tags": [],
+        "visibility": "public",
+        "isNew": false
+    },
+    {
+        "organization": "apache",
+        "key": "apache_incubator-tamaya",
+        "name": "Apache Tamaya Base",
+        "tags": [
+            "tamaya"
+        ],
+        "visibility": "public",
+        "isNew": false,
+        "repo_url": "https://github.com/apache/incubator-tamaya"
+    },
+    {
+        "organization": "apache",
+        "key": "apache_incubator-tamaya-extensions",
+        "name": "Apache Tamaya Extensions",
+        "tags": [
+            "tamaya"
+        ],
+        "visibility": "public",
+        "isNew": false,
+        "repo_url": "https://github.com/apache/incubator-tamaya-extensions"
+    },
+    {
+        "organization": "onap",
+        "key": "onap_policy-api",
+        "name": "policy-api",
+        "tags": [],
+        "visibility": "public",
+        "isNew": false
+    },
+    {
+        "organization": "onap",
+        "key": "onap_aaf-authz",
+        "name": "aaf-authz",
+        "tags": [],
+        "visibility": "public",
+        "isNew": false
+    },
+    {
+        "organization": "apache",
+        "key": "apache_sling-org-apache-sling-junit-teleporter",
+        "name": "Apache Sling JUnit Tests Teleporter",
+        "tags": [
+            "sling"
+        ],
+        "visibility": "public",
+        "isNew": false,
+        "repo_url": "https://github.com/apache/sling-org-apache-sling-junit-teleporter"
+    },
+    {
+        "organization": "apache",
+        "key": "apache_sling-org-apache-sling-xss",
+        "name": "Apache Sling XSS Protection API",
+        "tags": [
+            "sling"
+        ],
+        "visibility": "public",
+        "isNew": false,
+        "repo_url": "https://github.com/apache/sling-org-apache-sling-xss"
+    },
+    {
+        "organization": "onap",
+        "key": "onap_modeling-etsicatalog",
+        "name": "modeling-etsicatalog",
+        "tags": [],
+        "visibility": "public",
+        "isNew": false
+    },
+    {
+        "organization": "onap",
+        "key": "onap_policy-drools-pdp",
+        "name": "policy-drools-pdp",
+        "tags": [],
+        "visibility": "public",
+        "isNew": false
+    },
+    {
+        "organization": "apache",
+        "key": "apache_sling-org-apache-sling-app-cms",
+        "name": "Apache Sling - CMS",
+        "tags": [
+            "sling"
+        ],
+        "visibility": "public",
+        "isNew": false,
+        "repo_url": "https://github.com/apache/sling-org-apache-sling-app-cms"
+    },
+    {
+        "organization": "onap",
+        "key": "onap_aai-data-router",
+        "name": "aai-data-router",
+        "tags": [],
+        "visibility": "public",
+        "isNew": false
+    },
+    {
+        "organization": "apache",
+        "key": "apache_sling-org-apache-sling-jcr-repoinit",
+        "name": "Apache Sling Repoinit JCR",
+        "tags": [
+            "sling"
+        ],
+        "visibility": "public",
+        "isNew": false,
+        "repo_url": "https://github.com/apache/sling-org-apache-sling-jcr-repoinit"
+    },
+    {
+        "organization": "apache",
+        "key": "apache_sling-org-apache-sling-testing-sling-mock",
+        "name": "Apache Sling Testing Sling Mock",
+        "tags": [
+            "sling"
+        ],
+        "visibility": "public",
+        "isNew": false,
+        "repo_url": "https://github.com/apache/sling-org-apache-sling-testing-sling-mock"
+    },
+    {
+        "organization": "apache",
+        "key": "apache_sling-org-apache-sling-junit-core",
+        "name": "Apache Sling JUnit Core",
+        "tags": [
+            "sling"
+        ],
+        "visibility": "public",
+        "isNew": false,
+        "repo_url": "https://github.com/apache/sling-org-apache-sling-junit-core"
+    },
+    {
+        "organization": "apache",
+        "key": "apache_sling-org-apache-sling-feature-modelconverter",
+        "name": "Apache Sling Feature Model Converter",
+        "tags": [
+            "sling"
+        ],
+        "visibility": "public",
+        "isNew": false,
+        "repo_url": "https://github.com/apache/sling-org-apache-sling-feature-modelconverter"
+    },
+    {
+        "organization": "apache",
+        "key": "apache_sling-org-apache-sling-file-optimization",
+        "name": "Apache Sling File Optimization",
+        "tags": [
+            "sling"
+        ],
+        "visibility": "public",
+        "isNew": false,
+        "repo_url": "https://github.com/apache/sling-org-apache-sling-file-optimization"
+    },
+    {
+        "organization": "apache",
+        "key": "apache_sling-org-apache-sling-fsresource",
+        "name": "Apache Sling File System Resource Provider",
+        "tags": [
+            "sling"
+        ],
+        "visibility": "public",
+        "isNew": false,
+        "repo_url": "https://github.com/apache/sling-org-apache-sling-fsresource"
+    },
+    {
+        "organization": "apache",
+        "key": "apache_sling-org-apache-sling-auth-form",
+        "name": "Apache Sling Form Based Authentication",
+        "tags": [
+            "sling"
+        ],
+        "visibility": "public",
+        "isNew": false,
+        "repo_url": "https://github.com/apache/sling-org-apache-sling-auth-form"
+    },
+    {
+        "organization": "onap",
+        "key": "onap_policy-models",
+        "name": "policy-models",
+        "tags": [],
+        "visibility": "public",
+        "isNew": false
+    },
+    {
+        "organization": "apache",
+        "key": "apache_openmeetings",
+        "name": "Openmeetings",
+        "tags": [],
+        "visibility": "public",
+        "isNew": false,
+        "repo_url": "https://github.com/apache/openmeetings"
+    },
+    {
+        "organization": "apache",
+        "key": "jspwiki-builder",
+        "name": "Apache JSPWiki",
+        "tags": [],
+        "visibility": "public",
+        "isNew": false
+    },
+    {
+        "organization": "apache",
+        "key": "apache_sling-org-apache-sling-jobs",
+        "name": "Apache Sling Jobs Support",
+        "tags": [
+            "sling"
+        ],
+        "visibility": "public",
+        "isNew": false,
+        "repo_url": "https://github.com/apache/sling-org-apache-sling-jobs"
+    },
+    {
+        "organization": "apache",
+        "key": "apache_sling-org-apache-sling-launchpad-base",
+        "name": "Apache Sling Launchpad Base",
+        "tags": [
+            "sling"
+        ],
+        "visibility": "public",
+        "isNew": false,
+        "repo_url": "https://github.com/apache/sling-org-apache-sling-launchpad-base"
+    },
+    {
+        "organization": "apache",
+        "key": "apache_sling-org-apache-sling-launchpad-integration-tests",
+        "name": "Apache Sling Launchpad Integration Tests",
+        "tags": [
+            "sling"
+        ],
+        "visibility": "public",
+        "isNew": false,
+        "repo_url": "https://github.com/apache/sling-org-apache-sling-launchpad-integration-tests"
+    },
+    {
+        "organization": "apache",
+        "key": "apache_sling-org-apache-sling-launchpad-test-services",
+        "name": "Apache Sling Launchpad Testing Services",
+        "tags": [
+            "sling"
+        ],
+        "visibility": "public",
+        "isNew": false,
+        "repo_url": "https://github.com/apache/sling-org-apache-sling-launchpad-test-services"
+    },
+    {
+        "organization": "apache",
+        "key": "apache_sling-org-apache-sling-tracer",
+        "name": "Apache Sling Log Tracer",
+        "tags": [
+            "sling"
+        ],
+        "visibility": "public",
+        "isNew": false,
+        "repo_url": "https://github.com/apache/sling-org-apache-sling-tracer"
+    },
+    {
+        "organization": "apache",
+        "key": "apache_sling-maven-launchpad-plugin",
+        "name": "Apache Sling Maven Launchpad Plugin",
+        "tags": [
+            "sling"
+        ],
+        "visibility": "public",
+        "isNew": false,
+        "repo_url": "https://github.com/apache/sling-maven-launchpad-plugin"
+    },
+    {
+        "organization": "apache",
+        "key": "apache_sling-maven-plugin",
+        "name": "Apache Sling Maven Plugin Reactor",
+        "tags": [
+            "sling"
+        ],
+        "visibility": "public",
+        "isNew": false,
+        "repo_url": "https://github.com/apache/sling-maven-plugin"
+    },
+    {
+        "organization": "apache",
+        "key": "apache_sling-org-apache-sling-models-impl",
+        "name": "Apache Sling Models Implementation",
+        "tags": [
+            "sling"
+        ],
+        "visibility": "public",
+        "isNew": false,
+        "repo_url": "https://github.com/apache/sling-org-apache-sling-models-impl"
+    },
+    {
+        "organization": "apache",
+        "key": "apache_sling-org-apache-sling-models-integration-tests",
+        "name": "Apache Sling Models Integration Tests",
+        "tags": [
+            "sling"
+        ],
+        "visibility": "public",
+        "isNew": false,
+        "repo_url": "https://github.com/apache/sling-org-apache-sling-models-integration-tests"
+    },
+    {
+        "organization": "onap",
+        "key": "onap_aai-validation",
+        "name": "aai-validation",
+        "tags": [],
+        "visibility": "public",
+        "isNew": false
+    },
+    {
+        "organization": "apache",
+        "key": "apache_sling-org-apache-sling-api",
+        "name": "Apache Sling API",
+        "tags": [
+            "sling"
+        ],
+        "visibility": "public",
+        "isNew": false,
+        "repo_url": "https://github.com/apache/sling-org-apache-sling-api"
+    },
+    {
+        "organization": "apache",
+        "key": "apache_sling-org-apache-sling-auth-core",
+        "name": "Apache Sling Authentication Service",
+        "tags": [
+            "sling"
+        ],
+        "visibility": "public",
+        "isNew": false,
+        "repo_url": "https://github.com/apache/sling-org-apache-sling-auth-core"
+    },
+    {
+        "organization": "apache",
+        "key": "apache_sling-org-apache-sling-bundleresource-impl",
+        "name": "Apache Sling Bundle Resource Provider",
+        "tags": [
+            "sling"
+        ],
+        "visibility": "public",
+        "isNew": false,
+        "repo_url": "https://github.com/apache/sling-org-apache-sling-bundleresource-impl"
+    },
+    {
+        "organization": "apache",
+        "key": "apache_sling-org-apache-sling-clam",
+        "name": "Apache Sling Clam",
+        "tags": [
+            "sling"
+        ],
+        "visibility": "public",
+        "isNew": false,
+        "repo_url": "https://github.com/apache/sling-org-apache-sling-clam"
+    },
+    {
+        "organization": "apache",
+        "key": "apache_sling-org-apache-sling-committer-cli",
+        "name": "Apache Sling Committer CLI",
+        "tags": [
+            "sling"
+        ],
+        "visibility": "public",
+        "isNew": false,
+        "repo_url": "https://github.com/apache/sling-org-apache-sling-committer-cli"
+    },
+    {
+        "organization": "apache",
+        "key": "apache_sling-org-apache-sling-commons-jcr-file",
+        "name": "Apache Sling Commons JCR File",
+        "tags": [
+            "sling"
+        ],
+        "visibility": "public",
+        "isNew": false,
+        "repo_url": "https://github.com/apache/sling-org-apache-sling-commons-jcr-file"
+    },
+    {
+        "organization": "apache",
+        "key": "apache_sling-org-apache-sling-commons-log",
+        "name": "Apache Sling Commons Log",
+        "tags": [
+            "sling"
+        ],
+        "visibility": "public",
+        "isNew": false,
+        "repo_url": "https://github.com/apache/sling-org-apache-sling-commons-log"
+    },
+    {
+        "organization": "apache",
+        "key": "apache_sling-org-apache-sling-commons-metrics",
+        "name": "Apache Sling Commons Metrics",
+        "tags": [
+            "sling"
+        ],
+        "visibility": "public",
+        "isNew": false,
+        "repo_url": "https://github.com/apache/sling-org-apache-sling-commons-metrics"
+    },
+    {
+        "organization": "apache",
+        "key": "JMeter",
+        "name": "JMeter",
+        "tags": [],
+        "visibility": "public",
+        "isNew": false
+    },
+    {
+        "organization": "onap",
+        "key": "onap_aai-cacher",
+        "name": "aai-cacher",
+        "tags": [],
+        "visibility": "public",
+        "isNew": false
+    },
+    {
+        "organization": "onap",
+        "key": "onap_aai-esr-server",
+        "name": "aai-esr-server",
+        "tags": [],
+        "visibility": "public",
+        "isNew": false
+    },
+    {
+        "organization": "onap",
+        "key": "onap_aai-event-client",
+        "name": "aai-event-client",
+        "tags": [],
+        "visibility": "public",
+        "isNew": false
+    },
+    {
+        "organization": "onap",
+        "key": "onap_aai-gizmo",
+        "name": "aai-gizmo",
+        "tags": [],
+        "visibility": "public",
+        "isNew": false
+    },
+    {
+        "organization": "onap",
+        "key": "onap_aai-graphadmin",
+        "name": "aai-graphadmin",
+        "tags": [],
+        "visibility": "public",
+        "isNew": false
+    },
+    {
+        "organization": "onap",
+        "key": "onap_aai-model-loader",
+        "name": "aai-model-loader",
+        "tags": [],
+        "visibility": "public",
+        "isNew": false
+    },
+    {
+        "organization": "onap",
+        "key": "onap_aai-resources",
+        "name": "aai-resources",
+        "tags": [],
+        "visibility": "public",
+        "isNew": false
+    },
+    {
+        "organization": "onap",
+        "key": "onap_aai-router-core",
+        "name": "aai-router-core",
+        "tags": [],
+        "visibility": "public",
+        "isNew": false
+    },
+    {
+        "organization": "onap",
+        "key": "onap_appc",
+        "name": "appc",
+        "tags": [],
+        "visibility": "public",
+        "isNew": false
+    },
+    {
+        "organization": "onap",
+        "key": "onap_sdc-sdc-be-common",
+        "name": "sdc-be-common",
+        "tags": [],
+        "visibility": "public",
+        "isNew": false
+    },
+    {
+        "organization": "onap",
+        "key": "org.onap.sdc.sdc-be-common:sdc-be-common-parent",
+        "name": "sdc-be-common",
+        "tags": [],
+        "visibility": "public",
+        "isNew": false
+    },
+    {
+        "organization": "apache",
+        "key": "commons-compress",
+        "name": "Apache Commons Compress",
+        "tags": [],
+        "visibility": "public",
+        "isNew": false
+    },
+    {
+        "organization": "apache",
+        "key": "apache-dolphinscheduler",
+        "name": "dolphinscheduler",
+        "tags": [],
+        "visibility": "public",
+        "eligibilityStatus": "COMPLETED",
+        "eligible": false,
+        "isNew": false,
+        "repo_url": "https://github.com/apache/incubator-dolphinscheduler"
+    },
+    {
+        "organization": "apache",
+        "key": "apache_sling-org-apache-sling-feature-io",
+        "name": "Apache Sling Feature IO Module",
+        "tags": [
+            "sling"
+        ],
+        "visibility": "public",
+        "isNew": false,
+        "repo_url": "https://github.com/apache/sling-org-apache-sling-feature-io"
+    },
+    {
+        "organization": "onap",
+        "key": "onap_optf-cmso",
+        "name": "optf-cmso",
+        "tags": [],
+        "visibility": "public",
+        "isNew": false
+    },
+    {
+        "organization": "onap",
+        "key": "onap_optf-has",
+        "name": "optf-has",
+        "tags": [],
+        "visibility": "public",
+        "isNew": false
+    },
+    {
+        "organization": "onap",
+        "key": "onap_optf-osdf",
+        "name": "optf-osdf",
+        "tags": [],
+        "visibility": "public",
+        "isNew": false
+    },
+    {
+        "organization": "onap",
+        "key": "onap_vvp-validation-scripts",
+        "name": "vvp-validation-scripts",
+        "tags": [],
+        "visibility": "public",
+        "isNew": false
+    },
+    {
+        "organization": "onap",
+        "key": "onap_sdc",
+        "name": "sdc",
+        "tags": [],
+        "visibility": "public",
+        "isNew": false
+    },
+    {
+        "organization": "onap",
+        "key": "onap_externalapi-nbi",
+        "name": "externalapi-nbi",
+        "tags": [],
+        "visibility": "public",
+        "isNew": false
+    },
+    {
+        "organization": "apache",
+        "key": "apache_sling-org-apache-sling-jcr-webdav",
+        "name": "Apache Sling JCR WebDAV",
+        "tags": [
+            "sling"
+        ],
+        "visibility": "public",
+        "isNew": false,
+        "repo_url": "https://github.com/apache/sling-org-apache-sling-jcr-webdav"
+    },
+    {
+        "organization": "apache",
+        "key": "apache_sling-org-apache-sling-jmx-provider",
+        "name": "Apache Sling JMX Resource Provider",
+        "tags": [
+            "sling"
+        ],
+        "visibility": "public",
+        "isNew": false,
+        "repo_url": "https://github.com/apache/sling-org-apache-sling-jmx-provider"
+    },
+    {
+        "organization": "apache",
+        "key": "apache_sling-org-apache-sling-distribution-journal",
+        "name": "Apache Sling Journal based Content Distribution - Core bundle",
+        "tags": [
+            "sling"
+        ],
+        "visibility": "public",
+        "isNew": false,
+        "repo_url": "https://github.com/apache/sling-org-apache-sling-distribution-journal"
+    },
+    {
+        "organization": "apache",
+        "key": "apache_sling-kickstart-maven-plugin",
+        "name": "Apache Sling Kickstart Maven Plugin",
+        "tags": [],
+        "visibility": "public",
+        "isNew": false,
+        "repo_url": "https://github.com/apache/sling-kickstart-maven-plugin"
+    },
+    {
+        "organization": "onap",
+        "key": "onap_multicloud-azure",
+        "name": "multicloud-azure",
+        "tags": [],
+        "visibility": "public",
+        "isNew": false
+    },
+    {
+        "organization": "onap",
+        "key": "onap_aaf-certservice",
+        "name": "aaf-certservice",
+        "tags": [],
+        "visibility": "public",
+        "isNew": false
+    },
+    {
+        "organization": "onap",
+        "key": "onap_aai-aai-common",
+        "name": "aai-aai-common",
+        "tags": [],
+        "visibility": "public",
+        "isNew": false
+    },
+    {
+        "organization": "onap",
+        "key": "onap_aai-babel",
+        "name": "aai-babel",
+        "tags": [],
+        "visibility": "public",
+        "isNew": false
+    },
+    {
+        "organization": "onap",
+        "key": "onap_dcaegen2-platform-mod-onboardingapi",
+        "name": "dcaegen2-platform-mod-onboardingapi",
+        "tags": [],
+        "visibility": "public",
+        "isNew": false
+    },
+    {
+        "organization": "onap",
+        "key": "onap_dcaegen2-platform-mod-runtimeapi",
+        "name": "dcaegen2-platform-mod-runtimeapi",
+        "tags": [],
+        "visibility": "public",
+        "isNew": false
+    },
+    {
+        "organization": "onap",
+        "key": "onap_dcaegen2-platform-oti-event-handler",
+        "name": "dcaegen2-platform-oti-event-handler",
+        "tags": [],
+        "visibility": "public",
+        "isNew": false
+    },
+    {
+        "organization": "onap",
+        "key": "onap_dcaegen2-platform-plugins",
+        "name": "dcaegen2-platform-plugins",
+        "tags": [],
+        "visibility": "public",
+        "isNew": false
+    },
+    {
+        "organization": "onap",
+        "key": "onap_dcaegen2-platform-policy-handler",
+        "name": "dcaegen2-platform-policy-handler",
+        "tags": [],
+        "visibility": "public",
+        "isNew": false
+    },
+    {
+        "organization": "onap",
+        "key": "onap_dcaegen2-services-datalake-handler",
+        "name": "dcaegen2-service-datalake-handler",
+        "tags": [],
+        "visibility": "public",
+        "isNew": false
+    },
+    {
+        "organization": "onap",
+        "key": "onap_dcaegen2-services-datalake-handler-jess",
+        "name": "dcaegen2-service-datalake-handler",
+        "tags": [],
+        "visibility": "public",
+        "isNew": false
+    },
+    {
+        "organization": "onap",
+        "key": "onap_dcaegen2-services-heartbeat",
+        "name": "dcaegen2-services-heartbeat",
+        "tags": [],
+        "visibility": "public",
+        "isNew": false
+    },
+    {
+        "organization": "onap",
+        "key": "onap_dcaegen2-services-mapper",
+        "name": "dcaegen2-services-mapper",
+        "tags": [],
+        "visibility": "public",
+        "isNew": false
+    },
+    {
+        "organization": "apache",
+        "key": "ant-master",
+        "name": "Apache Ant",
+        "tags": [],
+        "visibility": "public",
+        "isNew": false
+    },
+    {
+        "organization": "onap",
+        "key": "onap_vfc-nfvo-lcm",
+        "name": "vfc-nfvo-lcm",
+        "tags": [],
+        "visibility": "public",
+        "isNew": false
+    },
+    {
+        "organization": "onap",
+        "key": "onap_ccsdk-cds",
+        "name": "CDS Parent",
+        "tags": [],
+        "visibility": "public",
+        "isNew": false
+    },
+    {
+        "organization": "onap",
+        "key": "onap_policy-common",
+        "name": "policy-common",
+        "tags": [],
+        "visibility": "public",
+        "isNew": false
+    },
+    {
+        "organization": "onap",
+        "key": "onap_policy-drools-applications",
+        "name": "policy-drools-applications",
+        "tags": [],
+        "visibility": "public",
+        "isNew": false
+    },
+    {
+        "organization": "onap",
+        "key": "onap_policy-xacml-pdp",
+        "name": "policy-xacml-pdp",
+        "tags": [],
+        "visibility": "public",
+        "isNew": false
+    },
+    {
+        "organization": "apache",
+        "key": "apache_ofbiz-plugins",
+        "name": "ofbiz-plugins",
+        "tags": [],
+        "visibility": "public",
+        "isNew": false,
+        "repo_url": "https://github.com/apache/ofbiz-plugins"
+    },
+    {
+        "organization": "apache",
+        "key": "apache_sling-org-apache-sling-scripting-thymeleaf",
+        "name": "Apache Sling Scripting Thymeleaf",
+        "tags": [
+            "sling"
+        ],
+        "visibility": "public",
+        "isNew": false,
+        "repo_url": "https://github.com/apache/sling-org-apache-sling-scripting-thymeleaf"
+    },
+    {
+        "organization": "apache",
+        "key": "poi-parent",
+        "name": "Apache POI - the Java API for Microsoft Documents",
+        "tags": [],
+        "visibility": "public",
+        "isNew": false
+    },
+    {
+        "organization": "apache",
+        "key": "apache_incubator-ratis",
+        "name": "Apache Ratis",
+        "tags": [],
+        "visibility": "public",
+        "eligibilityStatus": "COMPLETED",
+        "eligible": false,
+        "isNew": false,
+        "repo_url": "https://github.com/apache/incubator-ratis"
+    },
+    {
+        "organization": "onap",
+        "key": "onap_dmaap-dbcapi",
+        "name": "dmaap-dbcapi",
+        "tags": [],
+        "visibility": "public",
+        "isNew": false
+    },
+    {
+        "organization": "apache",
+        "key": "apache_sling-org-apache-sling-testing-clients",
+        "name": "Apache Sling Testing Clients",
+        "tags": [
+            "sling"
+        ],
+        "visibility": "public",
+        "isNew": false,
+        "repo_url": "https://github.com/apache/sling-org-apache-sling-testing-clients"
+    },
+    {
+        "organization": "apache",
+        "key": "apache_struts",
+        "name": "Struts 2",
+        "tags": [],
+        "visibility": "public",
+        "isNew": false,
+        "repo_url": "https://github.com/apache/struts"
+    },
+    {
+        "organization": "apache",
+        "key": "servicecomb-toolkit",
+        "name": "Apache ServiceComb Toolkit",
+        "tags": [
+            "servicecomb"
+        ],
+        "visibility": "public",
+        "isNew": false
+    },
+    {
+        "organization": "apache",
+        "key": "apache_ofbiz-framework",
+        "name": "ofbiz-framework",
+        "tags": [
+            "ofbiz"
+        ],
+        "visibility": "public",
+        "isNew": false,
+        "repo_url": "https://github.com/apache/ofbiz-framework"
+    },
+    {
+        "organization": "onap",
+        "key": "onap_aai-search-data-service",
+        "name": "aai-search-data-service aggregate pom",
+        "tags": [],
+        "visibility": "public",
+        "isNew": false
+    },
+    {
+        "organization": "apache",
+        "key": "apache_sling-org-apache-sling-servlets-get",
+        "name": "Apache Sling Default GET Servlets",
+        "tags": [
+            "sling"
+        ],
+        "visibility": "public",
+        "isNew": false,
+        "repo_url": "https://github.com/apache/sling-org-apache-sling-servlets-get"
+    },
+    {
+        "organization": "onap",
+        "key": "onap_logging-analytics-pomba-pomba-aai-context-builder",
+        "name": "pomba-aai-context-builder",
+        "tags": [],
+        "visibility": "public",
+        "isNew": false
+    },
+    {
+        "organization": "onap",
+        "key": "onap_logging-analytics-pomba-pomba-audit-common",
+        "name": "pomba-audit-common",
+        "tags": [],
+        "visibility": "public",
+        "isNew": false
+    },
+    {
+        "organization": "onap",
+        "key": "onap_logging-analytics-pomba-pomba-context-aggregator",
+        "name": "pomba-context-aggregator",
+        "tags": [],
+        "visibility": "public",
+        "isNew": false
+    },
+    {
+        "organization": "onap",
+        "key": "onap_logging-analytics-pomba-pomba-network-discovery-context-builder",
+        "name": "pomba-network-discovery-context-builder",
+        "tags": [],
+        "visibility": "public",
+        "isNew": false
+    },
+    {
+        "organization": "onap",
+        "key": "onap_logging-analytics-pomba-pomba-sdc-context-builder",
+        "name": "pomba-sdc-context-builder",
+        "tags": [],
+        "visibility": "public",
+        "isNew": false
+    },
+    {
+        "organization": "apache",
+        "key": "apache_plc4x",
+        "name": "PLC4X",
+        "tags": [],
+        "visibility": "public",
+        "isNew": false,
+        "repo_url": "https://github.com/apache/plc4x"
+    },
+    {
+        "organization": "apache",
+        "key": "apache_incubator-tamaya-sandbox",
+        "name": "Apache Tamaya Sandbox",
+        "tags": [
+            "tamaya"
+        ],
+        "visibility": "public",
+        "isNew": false,
+        "repo_url": "https://github.com/apache/incubator-tamaya-sandbox"
+    },
+    {
+        "organization": "onap",
+        "key": "onap_so-libs",
+        "name": "so-libs",
+        "tags": [],
+        "visibility": "public",
+        "isNew": false
+    },
+    {
+        "organization": "onap",
+        "key": "onap_aai-schema-service",
+        "name": "aai-schema-service",
+        "tags": [],
+        "visibility": "public",
+        "isNew": false
+    },
+    {
+        "organization": "apache",
+        "key": "commons-geometry",
+        "name": "Apache Commons Geometry",
+        "tags": [],
+        "visibility": "public",
+        "isNew": false
+    },
+    {
+        "organization": "onap",
+        "key": "onap_dcaegen2-services-prh",
+        "name": "dcaegen2-services-prh",
+        "tags": [],
+        "visibility": "public",
+        "isNew": false
+    },
+    {
+        "organization": "onap",
+        "key": "onap_dcaegen2-services-sdk",
+        "name": "dcaegen2-services-sdk",
+        "tags": [],
+        "visibility": "public",
+        "isNew": false
+    },
+    {
+        "organization": "onap",
+        "key": "onap_dcaegen2-services-son-handler",
+        "name": "dcaegen2-services-son-handler",
+        "tags": [],
+        "visibility": "public",
+        "isNew": false
+    },
+    {
+        "organization": "apache",
+        "key": "apache_sling-whiteboard",
+        "name": "Apache Sling Whiteboard (Builder)",
+        "tags": [
+            "sling"
+        ],
+        "visibility": "public",
+        "isNew": false,
+        "repo_url": "https://github.com/apache/sling-whiteboard"
+    },
+    {
+        "organization": "apache",
+        "key": "apache_sling-org-apache-sling-distribution-core",
+        "name": "Apache Sling Distribution Core",
+        "tags": [
+            "sling"
+        ],
+        "visibility": "public",
+        "isNew": false,
+        "repo_url": "https://github.com/apache/sling-org-apache-sling-distribution-core"
+    },
+    {
+        "organization": "apache",
+        "key": "apache_sling-org-apache-sling-testing-serversetup",
+        "name": "Apache Sling Server Setup Tools",
+        "tags": [
+            "sling"
+        ],
+        "visibility": "public",
+        "isNew": false,
+        "repo_url": "https://github.com/apache/sling-org-apache-sling-testing-serversetup"
+    },
+    {
+        "organization": "apache",
+        "key": "apache_sling-org-apache-sling-serviceusermapper",
+        "name": "Apache Sling Service User Mapper",
+        "tags": [
+            "sling"
+        ],
+        "visibility": "public",
+        "isNew": false,
+        "repo_url": "https://github.com/apache/sling-org-apache-sling-serviceusermapper"
+    },
+    {
+        "organization": "apache",
+        "key": "apache_sling-org-apache-sling-servlet-helpers",
+        "name": "Apache Sling Servlet Helpers",
+        "tags": [
+            "sling"
+        ],
+        "visibility": "public",
+        "isNew": false,
+        "repo_url": "https://github.com/apache/sling-org-apache-sling-servlet-helpers"
+    },
+    {
+        "organization": "apache",
+        "key": "apache_sling-org-apache-sling-servlets-resolver",
+        "name": "Apache Sling Servlets Resolver",
+        "tags": [
+            "sling"
+        ],
+        "visibility": "public",
+        "isNew": false,
+        "repo_url": "https://github.com/apache/sling-org-apache-sling-servlets-resolver"
+    },
+    {
+        "organization": "apache",
+        "key": "apache_sling-slingstart-maven-plugin",
+        "name": "Apache Sling SlingStart Maven Plugin",
+        "tags": [
+            "sling"
+        ],
+        "visibility": "public",
+        "isNew": false,
+        "repo_url": "https://github.com/apache/sling-slingstart-maven-plugin"
+    },
+    {
+        "organization": "apache",
+        "key": "apache_sling-org-apache-sling-testing-jcr-mock",
+        "name": "Apache Sling Testing JCR Mock",
+        "tags": [
+            "sling"
+        ],
+        "visibility": "public",
+        "isNew": false,
+        "repo_url": "https://github.com/apache/sling-org-apache-sling-testing-jcr-mock"
+    },
+    {
+        "organization": "apache",
+        "key": "apache_sling-org-apache-sling-testing-osgi-mock",
+        "name": "Apache Sling Testing OSGi Mock",
+        "tags": [
+            "sling"
+        ],
+        "visibility": "public",
+        "isNew": false,
+        "repo_url": "https://github.com/apache/sling-org-apache-sling-testing-osgi-mock"
+    },
+    {
+        "organization": "apache",
+        "key": "apache_sling-org-apache-sling-testing-paxexam",
+        "name": "Apache Sling Testing PaxExam",
+        "tags": [
+            "sling"
+        ],
+        "visibility": "public",
+        "isNew": false,
+        "repo_url": "https://github.com/apache/sling-org-apache-sling-testing-paxexam"
+    },
+    {
+        "organization": "apache",
+        "key": "apache_sling-org-apache-sling-testing-resourceresolver-mock",
+        "name": "Apache Sling Testing Resource Resolver Mock",
+        "tags": [
+            "sling"
+        ],
+        "visibility": "public",
+        "isNew": false,
+        "repo_url": "https://github.com/apache/sling-org-apache-sling-testing-resourceresolver-mock"
+    },
+    {
+        "organization": "onap",
+        "key": "onap_dmaap-datarouter",
+        "name": "dmaap-datarouter",
+        "tags": [],
+        "visibility": "public",
+        "isNew": false
+    },
+    {
+        "organization": "onap",
+        "key": "onap_integration-pnf-simulator",
+        "name": "integration-pnf-simulator",
+        "tags": [],
+        "visibility": "public",
+        "isNew": false
+    },
+    {
+        "organization": "onap",
+        "key": "onap_integration-simulators-pnf-simulator",
+        "name": "integration-pnf-simulator",
+        "tags": [],
+        "visibility": "public",
+        "isNew": false
+    },
+    {
+        "organization": "apache",
+        "key": "apache_sling-scriptingbundle-maven-plugin",
+        "name": "scriptingbundle-maven-plugin",
+        "tags": [
+            "sling"
+        ],
+        "visibility": "public",
+        "isNew": false,
+        "repo_url": "https://github.com/apache/sling-scriptingbundle-maven-plugin"
+    },
+    {
+        "organization": "onap",
+        "key": "onap_aai-sparky-be",
+        "name": "aai-sparky-be",
+        "tags": [],
+        "visibility": "public",
+        "isNew": false
+    },
+    {
+        "organization": "onap",
+        "key": "onap_dcaegen2-services-pm-mapper",
+        "name": "dcaegen2-services-pm-mapper",
+        "tags": [],
+        "visibility": "public",
+        "isNew": false
+    },
+    {
+        "organization": "onap",
+        "key": "onap_clamp",
+        "name": "clamp",
+        "tags": [],
+        "visibility": "public",
+        "isNew": false
+    },
+    {
+        "organization": "apache",
+        "key": "roller-master",
+        "name": "Roller",
+        "tags": [],
+        "visibility": "public",
+        "isNew": false
+    },
+    {
+        "organization": "apache",
+        "key": "milagro",
+        "name": "Apache Milagro",
+        "tags": [],
+        "visibility": "public",
+        "isNew": false
+    },
+    {
+        "organization": "apache",
+        "key": "apache_sling-org-apache-sling-scripting-jsp-taglib",
+        "name": "Apache Sling Scripting JSP Tag Library",
+        "tags": [
+            "sling"
+        ],
+        "visibility": "public",
+        "isNew": false,
+        "repo_url": "https://github.com/apache/sling-org-apache-sling-scripting-jsp-taglib"
+    },
+    {
+        "organization": "onap",
+        "key": "onap_portal",
+        "name": "portal",
+        "tags": [],
+        "visibility": "public",
+        "isNew": false
+    },
+    {
+        "organization": "onap",
+        "key": "onap_multicloud-framework-artifactbroker",
+        "name": "multicloud-framework-artifactbroker",
+        "tags": [],
+        "visibility": "public",
+        "isNew": false
+    },
+    {
+        "organization": "apache",
+        "key": "apache_incubator-milagro-MPC",
+        "name": "apache_incubator-milagro-MPC",
+        "tags": [],
+        "visibility": "public",
+        "eligibilityStatus": "COMPLETED",
+        "eligible": false,
+        "isNew": false,
+        "repo_url": "https://github.com/apache/incubator-milagro-MPC"
+    },
+    {
+        "organization": "onap",
+        "key": "onap_logging-analytics",
+        "name": "logging-analytics",
+        "tags": [],
+        "visibility": "public",
+        "isNew": false
+    },
+    {
+        "organization": "onap",
+        "key": "onap_ccsdk-apps",
+        "name": "ccsdk-apps",
+        "tags": [],
+        "visibility": "public",
+        "isNew": false
+    },
+    {
+        "organization": "onap",
+        "key": "onap_ccsdk-dashboard",
+        "name": "ccsdk-dashboard",
+        "tags": [],
+        "visibility": "public",
+        "isNew": false
+    },
+    {
+        "organization": "apache",
+        "key": "apache_sling-org-apache-sling-discovery-oak",
+        "name": "Apache Sling Oak-Based Discovery Service",
+        "tags": [
+            "sling"
+        ],
+        "visibility": "public",
+        "isNew": false,
+        "repo_url": "https://github.com/apache/sling-org-apache-sling-discovery-oak"
+    },
+    {
+        "organization": "apache",
+        "key": "knox-gateway",
+        "name": "gateway",
+        "tags": [],
+        "visibility": "public",
+        "isNew": false
+    },
+    {
+        "organization": "onap",
+        "key": "onap_vfc-nfvo-wfengine-activiti-extension",
+        "name": "vfc-nfvo-wfengine-activiti-extension",
+        "tags": [],
+        "visibility": "public",
+        "isNew": false
+    },
+    {
+        "organization": "onap",
+        "key": "onap_ccsdk-features",
+        "name": "ccsdk-features",
+        "tags": [],
+        "visibility": "public",
+        "isNew": false
+    },
+    {
+        "organization": "onap",
+        "key": "onap_dcaegen2-platform-inventory-api",
+        "name": "dcaegen2-platform-inventory-api",
+        "tags": [],
+        "visibility": "public",
+        "isNew": false
+    },
+    {
+        "organization": "onap",
+        "key": "onap_sdnc-apps",
+        "name": "sdnc-apps",
+        "tags": [],
+        "visibility": "public",
+        "isNew": false
+    },
+    {
+        "organization": "onap",
+        "key": "onap_cli",
+        "name": "cli",
+        "tags": [],
+        "visibility": "public",
+        "isNew": false
+    },
+    {
+        "organization": "apache",
+        "key": "pdfbox-reactor",
+        "name": "Apache PDFBox",
+        "tags": [],
+        "visibility": "public",
+        "isNew": false
+    },
+    {
+        "organization": "onap",
+        "key": "onap_ccsdk-sli-adaptors",
+        "name": "ccsdk-sli-adaptors",
+        "tags": [],
+        "visibility": "public",
+        "isNew": false
+    },
+    {
+        "organization": "onap",
+        "key": "onap_ccsdk-sli-core",
+        "name": "ccsdk-sli-core",
+        "tags": [],
+        "visibility": "public",
+        "isNew": false
+    },
+    {
+        "organization": "onap",
+        "key": "onap_ccsdk-sli-northbound",
+        "name": "ccsdk-sli-northbound",
+        "tags": [],
+        "visibility": "public",
+        "isNew": false
+    },
+    {
+        "organization": "onap",
+        "key": "onap_dcaegen2-collectors-datafile",
+        "name": "dcaegen2-collectors.datafile",
+        "tags": [],
+        "visibility": "public",
+        "isNew": false
+    },
+    {
+        "organization": "onap",
+        "key": "onap_vfc-nfvo-driver-vnfm-gvnfm-gvnfmadapter",
+        "name": "vfc-nfvo-driver-vnfm-gvnfm-gvnfmadapter",
+        "tags": [],
+        "visibility": "public",
+        "isNew": false
+    },
+    {
+        "organization": "apache",
+        "key": "apache_sling-org-apache-sling-discovery-base",
+        "name": "Apache Sling Discovery Base",
+        "tags": [
+            "sling"
+        ],
+        "visibility": "public",
+        "isNew": false,
+        "repo_url": "https://github.com/apache/sling-org-apache-sling-discovery-base"
+    },
+    {
+        "organization": "apache",
+        "key": "apache_sling-org-apache-sling-discovery-commons",
+        "name": "Apache Sling Discovery Commons",
+        "tags": [
+            "sling"
+        ],
+        "visibility": "public",
+        "isNew": false,
+        "repo_url": "https://github.com/apache/sling-org-apache-sling-discovery-commons"
+    },
+    {
+        "organization": "apache",
+        "key": "apache_sling-org-apache-sling-engine",
+        "name": "Apache Sling Engine Implementation",
+        "tags": [
+            "sling"
+        ],
+        "visibility": "public",
+        "isNew": false,
+        "repo_url": "https://github.com/apache/sling-org-apache-sling-engine"
+    },
+    {
+        "organization": "apache",
+        "key": "apache_sling-org-apache-sling-event",
+        "name": "Apache Sling Event Support",
+        "tags": [
+            "sling"
+        ],
+        "visibility": "public",
+        "isNew": false,
+        "repo_url": "https://github.com/apache/sling-org-apache-sling-event"
+    },
+    {
+        "organization": "apache",
+        "key": "apache_sling-org-apache-sling-feature",
+        "name": "Apache Sling Feature",
+        "tags": [
+            "sling"
+        ],
+        "visibility": "public",
+        "isNew": false,
+        "repo_url": "https://github.com/apache/sling-org-apache-sling-feature"
+    },
+    {
+        "organization": "apache",
+        "key": "apache_sling-org-apache-sling-feature-launcher",
+        "name": "Apache Sling Feature Launcher",
+        "tags": [
+            "sling"
+        ],
+        "visibility": "public",
+        "isNew": false,
+        "repo_url": "https://github.com/apache/sling-org-apache-sling-feature-launcher"
+    },
+    {
+        "organization": "apache",
+        "key": "apache_sling-org-apache-sling-feature-analyser",
+        "name": "Apache Sling Feature Model Analyser",
+        "tags": [
+            "sling"
+        ],
+        "visibility": "public",
+        "isNew": false,
+        "repo_url": "https://github.com/apache/sling-org-apache-sling-feature-analyser"
+    },
+    {
+        "organization": "apache",
+        "key": "org.apache.nemo:nemo-project",
+        "name": "Nemo Project",
+        "tags": [],
+        "visibility": "public",
+        "isNew": false,
+        "repo_url": "https://github.com/apache/incubator-nemo"
+    },
+    {
+        "organization": "onap",
+        "key": "onap_aai-spike",
+        "name": "aai-spike",
+        "tags": [],
+        "visibility": "public",
+        "isNew": false
+    },
+    {
+        "organization": "onap",
+        "key": "onap_aai-traversal",
+        "name": "aai-traversal",
+        "tags": [],
+        "visibility": "public",
+        "isNew": false
+    },
+    {
+        "organization": "onap",
+        "key": "onap_vid",
+        "name": "vid",
+        "tags": [],
+        "visibility": "public",
+        "isNew": false
+    },
+    {
+        "organization": "onap",
+        "key": "onap_dmaap-messagerouter-messageservice",
+        "name": "dmaap-messagerouter-messageservice",
+        "tags": [],
+        "visibility": "public",
+        "isNew": false
+    },
+    {
+        "organization": "onap",
+        "key": "onap_vfc-gvnfm-vnfres-res",
+        "name": "vfc-gvnfm-vnfres-res",
+        "tags": [],
+        "visibility": "public",
+        "isNew": false
+    },
+    {
+        "organization": "onap",
+        "key": "onap_vnfsdk-functest",
+        "name": "vnfsdk-functest",
+        "tags": [],
+        "visibility": "public",
+        "isNew": false
+    },
+    {
+        "organization": "onap",
+        "key": "onap_ccsdk-sli-plugins",
+        "name": "ccsdk-sli-plugins",
+        "tags": [],
+        "visibility": "public",
+        "isNew": false
+    },
+    {
+        "organization": "onap",
+        "key": "onap_holmes-engine-management",
+        "name": "holmes-engine-management",
+        "tags": [],
+        "visibility": "public",
+        "isNew": false
+    },
+    {
+        "organization": "onap",
+        "key": "onap_holmes-rule-management",
+        "name": "holmes-rule-management",
+        "tags": [],
+        "visibility": "public",
+        "isNew": false
+    },
+    {
+        "organization": "apache",
+        "key": "apache_sling-jspc-maven-plugin",
+        "name": "Apache Sling JSPC Maven Plugin",
+        "tags": [
+            "sling"
+        ],
+        "visibility": "public",
+        "isNew": false,
+        "repo_url": "https://github.com/apache/sling-jspc-maven-plugin"
+    },
+    {
+        "organization": "onap",
+        "key": "onap_msb-apigateway",
+        "name": "msb-apigateway",
+        "tags": [],
+        "visibility": "public",
+        "isNew": false
+    },
+    {
+        "organization": "onap",
+        "key": "onap_vnfsdk-ves-agent",
+        "name": "vnfsdk-ves-agent-vesjavalibrary",
+        "tags": [],
+        "visibility": "public",
+        "isNew": false,
+        "repo_url": "https://github.com/onap/vnfsdk-ves-agent"
+    },
+    {
+        "organization": "onap",
+        "key": "onap_music",
+        "name": "MUSIC",
+        "tags": [],
+        "visibility": "public",
+        "isNew": false
+    },
+    {
+        "organization": "onap",
+        "key": "onap_vfc-gvnfm-vnflcm-lcm",
+        "name": "vfc-gvnfm-vnflcm-lcm",
+        "tags": [],
+        "visibility": "public",
+        "isNew": false
+    },
+    {
+        "organization": "onap",
+        "key": "onap_vvp-test-engine",
+        "name": "vvp-test-engine",
+        "tags": [],
+        "visibility": "public",
+        "isNew": false
+    },
+    {
+        "organization": "apache",
+        "key": "apache_sling-org-apache-sling-commons-threads",
+        "name": "Apache Sling Commons Threads",
+        "tags": [
+            "sling"
+        ],
+        "visibility": "public",
+        "isNew": false,
+        "repo_url": "https://github.com/apache/sling-org-apache-sling-commons-threads"
+    },
+    {
+        "organization": "onap",
+        "key": "onap_holmes-common",
+        "name": "holmes-common",
+        "tags": [],
+        "visibility": "public",
+        "isNew": false
+    },
+    {
+        "organization": "onap",
+        "key": "onap_msb-discovery",
+        "name": "msb-discovery",
+        "tags": [],
+        "visibility": "public",
+        "isNew": false
+    },
+    {
+        "organization": "onap",
+        "key": "onap_msb-java-sdk",
+        "name": "msb-java-sdk",
+        "tags": [],
+        "visibility": "public",
+        "isNew": false
+    },
+    {
+        "organization": "onap",
+        "key": "onap_vfc-nfvo-multivimproxy",
+        "name": "vfc-nfvo-multivimproxy",
+        "tags": [],
+        "visibility": "public",
+        "isNew": false
+    },
+    {
+        "organization": "onap",
+        "key": "onap_vfc-nfvo-driver-vnfm-svnfm-zte",
+        "name": "vfc-nfvo-driver-vnfm-svnfm-zte",
+        "tags": [],
+        "visibility": "public",
+        "isNew": false
+    },
+    {
+        "organization": "apache",
+        "key": "apache_sling-org-apache-sling-testing-rules",
+        "name": "Apache Sling Testing Rules",
+        "tags": [
+            "sling"
+        ],
+        "visibility": "public",
+        "isNew": false,
+        "repo_url": "https://github.com/apache/sling-org-apache-sling-testing-rules"
+    },
+    {
+        "organization": "apache",
+        "key": "apache_sling-org-apache-sling-commons-testing",
+        "name": "Apache Sling Testing Utilities",
+        "tags": [
+            "sling"
+        ],
+        "visibility": "public",
+        "isNew": false,
+        "repo_url": "https://github.com/apache/sling-org-apache-sling-commons-testing"
+    },
+    {
+        "organization": "apache",
+        "key": "apache_sling-slingfeature-maven-plugin",
+        "name": "Apache Sling OSGi Feature Maven Plugin",
+        "tags": [
+            "sling"
+        ],
+        "visibility": "public",
+        "isNew": false,
+        "repo_url": "https://github.com/apache/sling-slingfeature-maven-plugin"
+    },
+    {
+        "organization": "apache",
+        "key": "apache_sling-org-apache-sling-commons-scheduler",
+        "name": "Apache Sling Commons Scheduler Support",
+        "tags": [
+            "sling"
+        ],
+        "visibility": "public",
+        "isNew": false,
+        "repo_url": "https://github.com/apache/sling-org-apache-sling-commons-scheduler"
+    },
+    {
+        "organization": "apache",
+        "key": "apache_sling-org-apache-sling-feature-cpconverter",
+        "name": "Apache Sling Content Package to Feature Model converter",
+        "tags": [
+            "sling"
+        ],
+        "visibility": "public",
+        "isNew": false,
+        "repo_url": "https://github.com/apache/sling-org-apache-sling-feature-cpconverter"
+    },
+    {
+        "organization": "apache",
+        "key": "apache_sling-org-apache-sling-caconfig-impl",
+        "name": "Apache Sling Context-Aware Configuration Implementation",
+        "tags": [
+            "sling"
+        ],
+        "visibility": "public",
+        "isNew": false,
+        "repo_url": "https://github.com/apache/sling-org-apache-sling-caconfig-impl"
+    },
+    {
+        "organization": "apache",
+        "key": "apache_sling-org-apache-sling-servlets-post",
+        "name": "Apache Sling Default POST Servlets",
+        "tags": [
+            "sling"
+        ],
+        "visibility": "public",
+        "isNew": false,
+        "repo_url": "https://github.com/apache/sling-org-apache-sling-servlets-post"
+    },
+    {
+        "organization": "onap",
+        "key": "onap_vfc-nfvo-driver-vnfm-gvnfm-juju",
+        "name": "vfc-nfvo-driver-vnfm-gvnfm-juju-vnfmadapter",
+        "tags": [],
+        "visibility": "public",
+        "isNew": false
+    },
+    {
+        "organization": "onap",
+        "key": "onap_dmaap-messagerouter-dmaapclient",
+        "name": "dmaap-messagerouter-dmaapclient",
+        "tags": [],
+        "visibility": "public",
+        "isNew": false
+    },
+    {
+        "organization": "onap",
+        "key": "onap_ccsdk-platform-plugins",
+        "name": "ccsdk-platform-plugins",
+        "tags": [],
+        "visibility": "public",
+        "isNew": false
+    },
+    {
+        "organization": "apache",
+        "key": "apache_sling-org-apache-sling-validation-core",
+        "name": "Apache Sling Validation Framework Core Implementation",
+        "tags": [
+            "sling"
+        ],
+        "visibility": "public",
+        "isNew": false,
+        "repo_url": "https://github.com/apache/sling-org-apache-sling-validation-core"
+    },
+    {
+        "organization": "onap",
+        "key": "onap_policy-apex-pdp",
+        "name": "policy-apex-pdp",
+        "tags": [],
+        "visibility": "public",
+        "isNew": false
+    },
+    {
+        "organization": "onap",
+        "key": "onap_logging-analytics-pomba-pomba-sdnc-context-builder",
+        "name": "pomba-sdnc-context-builder",
+        "tags": [],
+        "visibility": "public",
+        "isNew": false
+    },
+    {
+        "organization": "onap",
+        "key": "onap_sdc-sdc-distribution-client",
+        "name": "sdc-sdc-distribution-client",
+        "tags": [],
+        "visibility": "public",
+        "isNew": false
+    },
+    {
+        "organization": "onap",
+        "key": "onap_multicloud-openstack-vmware",
+        "name": "multicloud-openstack-vmware-root",
+        "tags": [],
+        "visibility": "public",
+        "isNew": false
+    },
+    {
+        "organization": "apache",
+        "key": "apache_sling-org-apache-sling-feature-extension-apiregions",
+        "name": "Sling Featuremodel - API Regions Exension",
+        "tags": [
+            "sling"
+        ],
+        "visibility": "public",
+        "isNew": false,
+        "repo_url": "https://github.com/apache/sling-org-apache-sling-feature-extension-apiregions"
+    },
+    {
+        "organization": "onap",
+        "key": "onap_dmaap-messagerouter-msgrtr",
+        "name": "dmaap-messagerouter-msgrtr",
+        "tags": [],
+        "visibility": "public",
+        "isNew": false
+    },
+    {
+        "organization": "onap",
+        "key": "onap_sdc-sdc-workflow-designer",
+        "name": "sdc-sdc-workflow-designer",
+        "tags": [],
+        "visibility": "public",
+        "isNew": false
+    },
+    {
+        "organization": "onap",
+        "key": "onap_vnfsdk-validation",
+        "name": "vnfsdk-validation",
+        "tags": [],
+        "visibility": "public",
+        "isNew": false
+    },
+    {
+        "organization": "onap",
+        "key": "onap_vnfsdk-refrepo",
+        "name": "vnfsdk-refrepo",
+        "tags": [],
+        "visibility": "public",
+        "isNew": false
+    },
+    {
+        "organization": "onap",
+        "key": "onap_sdc-dcae-d-dt-be-main",
+        "name": "sdc-dcae-d dt-be-main",
+        "tags": [],
+        "visibility": "public",
+        "isNew": false
+    },
+    {
+        "organization": "onap",
+        "key": "onap_sdnc-northbound",
+        "name": "sdnc-northbound",
+        "tags": [],
+        "visibility": "public",
+        "isNew": false
+    },
+    {
+        "organization": "onap",
+        "key": "onap_sdc-dcae-d-ci",
+        "name": "sdc-dcae-d ci tests",
+        "tags": [],
+        "visibility": "public",
+        "isNew": false
+    },
+    {
+        "organization": "onap",
+        "key": "onap_sdc-dcae-d-dt-be-property",
+        "name": "sdc-dcae-d-dt-be-property",
+        "tags": [],
+        "visibility": "public",
+        "isNew": false
+    },
+    {
+        "organization": "onap",
+        "key": "onap_sdc-dcae-d-tosca-lab",
+        "name": "sdc-dcae-d-tosca-lab",
+        "tags": [],
+        "visibility": "public",
+        "isNew": false
+    },
+    {
+        "organization": "onap",
+        "key": "onap_sdc-sdc-tosca",
+        "name": "sdc-tosca-jtosca",
+        "tags": [],
+        "visibility": "public",
+        "isNew": false
+    },
+    {
+        "organization": "onap",
+        "key": "onap_vfc-nfvo-driver-svnfm-huawei",
+        "name": "vfc-nfvo-driver-vnfm-svnfm-huawei",
+        "tags": [],
+        "visibility": "public",
+        "isNew": false
+    },
+    {
+        "organization": "onap",
+        "key": "onap_dmaap-messagerouter-mirroragent",
+        "name": "dmaap-messagerouter-mirroragent",
+        "tags": [],
+        "visibility": "public",
+        "isNew": false
+    },
+    {
+        "organization": "onap",
+        "key": "onap_vfc-nfvo-catalog",
+        "name": "vfc-nfvo-catalog",
+        "tags": [],
+        "visibility": "public",
+        "isNew": false
+    },
+    {
+        "organization": "onap",
+        "key": "onap_vfc-nfvo-driver-vnfm-svnfm-nokiav2",
+        "name": "vfc-nfvo-driver-vnfm-svnfm-nokiav2",
+        "tags": [],
+        "visibility": "public",
+        "isNew": false
+    },
+    {
+        "organization": "onap",
+        "key": "onap_vfc-nfvo-resmanagement",
+        "name": "vfc-nfvo-resmanagement",
+        "tags": [],
+        "visibility": "public",
+        "isNew": false
+    },
+    {
+        "organization": "onap",
+        "key": "onap_so",
+        "name": "so",
+        "tags": [],
+        "visibility": "public",
+        "isNew": false
+    },
+    {
+        "organization": "onap",
+        "key": "onap_vfc-nfvo-driver-ems",
+        "name": "vfc-nfvo-driver-ems",
+        "tags": [],
+        "visibility": "public",
+        "isNew": false
+    },
+    {
+        "organization": "onap",
+        "key": "onap_vfc-nfvo-driver-sfc",
+        "name": "vfc-nfvo-driver-sfc",
+        "tags": [],
+        "visibility": "public",
+        "isNew": false
+    }
+]

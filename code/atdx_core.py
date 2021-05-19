@@ -1,4 +1,3 @@
-from tool_parser_apache import *
 from util import *
 import numpy as np
 import ckwrap as ck
@@ -19,15 +18,16 @@ def get_dimensions(sua, atdd_tool, dimensions, rule_dimensions, ar_kmeans):
             if max(ar_kmeans.labels) - min(ar_kmeans.labels) == 0:
                 break
             else:
-                severity = (5 * ar_kmeans.centers[label] - (min(ar_kmeans.labels))) / (max(ar_kmeans.labels) - min(ar_kmeans.labels))
+                severity = (5 * ar_kmeans.centers[label] - (min(ar_kmeans.labels))) / (
+                            max(ar_kmeans.labels) - min(ar_kmeans.labels))
                 dimensions[rule_dimension][project_name] = dimensions[rule_dimension][project_name] + severity
 
     return dimensions, atdd_tool
 
 
-def norm_calculator1(data_set, gr_level, rule):
+def norm_calculator(data_set, gr_level, rule):
     """
-    norm_calculator1 function that returns an array with the normalized values
+    norm_calculator function that returns an array with the normalized values
 
     :param data_set: dictionary of the
     :param rule: key of the rule referring a rule existing in the dataset
@@ -57,7 +57,7 @@ def atdd_from_set_of_rules(set_of_rules):
     return atdd
 
 
-def atdx_core(sua, ar_tool, atdd_tool, norm_t=None):
+def atdx_core(sua, ar_tool, atdd_tool, norm_t):
     """
     atdx_core function used to calculate the adtx of a given set of projects
 
@@ -82,18 +82,14 @@ def atdx_core(sua, ar_tool, atdd_tool, norm_t=None):
     for rule in ar_tool:
         gr_level = ar_tool[rule]['granularity_level']
         rule_dimensions = ar_tool[rule]['atd_dimension']
-        if norm_t is None:
-            # norm_calculator returns an array of the norm values of the sua
-            # in this case, as there is no input on nom_t (it is the first run, we would only calculate it)
-            normalized_updated[rule] = norm_calculator1(sua, gr_level, rule)
-        else:
-            # in this case, we append the return values to the norm_t of the input to calculate it together
-            normalized_updated[rule] = norm_t[rule]
-            normalized_updated[rule].extend(norm_calculator1(sua, gr_level, rule))
+        # norma_t update with the new element to add
+        normalized_updated[rule] = norm_t[rule]
+        normalized_updated[rule].extend(norm_calculator(sua, gr_level, rule))
         # Calculation of severeness and storing adding to the dimensions
         num_clusters = min(len(np.unique(normalized_updated[rule])), 6)
         ar_kmeans = ck.ckmeans(normalized_updated[rule], k=(1, num_clusters))
         dimensions, atdd_tool = get_dimensions(sua, atdd_tool, dimensions, rule_dimensions, ar_kmeans)
+        # number_cluster check (1-5) (better 0-6)
 
     # calculation of atdx per project in sua
     for dimension in dimensions:
@@ -108,15 +104,20 @@ def atdx_core(sua, ar_tool, atdd_tool, norm_t=None):
     return dimensions, atdx, normalized_updated
 
 
-ar_rules = read_json('../data/ar_rules.json')
-ar_rules = split_dimensions(ar_rules)
-project_dataset = read_json('../data/apache_ATDx_input.json')
+if __name__ == "__main__":
+    ar_rules = read_json('../data/ar_rules.json')
+    ar_rules = split_dimensions(ar_rules)
+    project_dataset = read_json('../data/ATDx_input.json')
 
-atdd = atdd_from_set_of_rules(ar_rules)
+    atdd = atdd_from_set_of_rules(ar_rules)
+    norm_t = {}
+    dimensions_t, atdx, norm = atdx_core(project_dataset, ar_rules, atdd, norm_t)
 
-dimensions_t, atdx, norm = atdx_core(project_dataset, ar_rules, atdd)
+    save_dict_as_json('../data/atdx_dataset_output.json', atdx)
+    save_dict_as_json('../data/dimensions_dataset_output.json', dimensions_t)
+    save_dict_as_json('../data/normalized.json.json', norm)
 
-print(atdx)
-dimensions_t, atdx, norm = atdx_core(project_dataset, ar_rules, atdd,norm )
-
-print (atdx)
+    print(atdx)
+    dimensions_t, atdx, norm = atdx_core(project_dataset, ar_rules, atdd, norm)
+    print(dimensions_t)
+    print(atdx)

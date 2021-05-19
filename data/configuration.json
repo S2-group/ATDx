@@ -1,0 +1,7 @@
+{
+    "tool": "SonarCloudTool",
+    "store": 0,
+    "rules_location": "ar_rules.json",
+    "projects_location": "filtered_projects.json",
+    "files_suffix": "filtered"
+}
