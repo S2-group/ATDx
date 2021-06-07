@@ -1,6 +1,6 @@
 import re
 import os
-from json_reader import *
+import json
 
 
 # Save JSON data into the given filePath
@@ -62,3 +62,18 @@ def merge_crawled_files(directory, prefix, suffix, field, target_file, save_step
     if save_step:
         save(target_file, merged_items)
     return merged_items
+
+def get_dimension_list(triple):
+    dimensions_with_rules = {}
+
+    for rule in triple:
+        dimensions_list = rule['dimensions']
+        rule_name = rule['rule']
+
+        for dimension_element in dimensions_list:
+            if dimension_element not in dimensions_with_rules:
+                dimensions_with_rules[dimension_element] = [rule_name]
+                continue
+            dimensions_with_rules[dimension_element].append(rule_name)
+
+    return dimensions_with_rules
