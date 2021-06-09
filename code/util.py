@@ -61,6 +61,7 @@ def merge_crawled_files(directory, prefix, suffix, field, target_file, save_step
 
     if save_step:
         save(target_file, merged_items)
+
     return merged_items
 
 def get_dimension_list(triple):

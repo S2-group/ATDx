@@ -52,7 +52,7 @@ class AtdxCore():
         for names in dimensions:
             for dimension in dimensions[names]:
                 value = dimensions[project_name][dimension] / len(atdd_tool[dimension])
-            self.atd_x[project_name] = self.atd_x[project_name] + value
+                self.atd_x[project_name] = self.atd_x[project_name] + value
 
         # final step of atdx
         self.atd_x[project_name] = self.atd_x[project_name] / len(atdd_tool)
@@ -89,24 +89,6 @@ def norm_calculator(project, gr_level, rule):
     """
     norm = int(project[rule]) / int(project[gr_level])
     return norm
-
-
-def atdd_from_set_of_rules(set_of_rules):
-    """
-    atdd_from_set_of_rules function used to get the atdd dictionary with the key as the dimension and the number of rules
-    as the content
-
-    :param set_of_rules: it is a dictionary of a dictionary containing the keys of the 3-tuple
-    :return it returns a tuple of the dimensions and the atdx given as a dictionary with the projects as key
-    """
-    atdd = {}
-    for rule in set_of_rules:
-        for key in set_of_rules[rule]['atd_dimension']:
-            if key in atdd:
-                atdd[key] = atdd[key] + 1
-            else:
-                atdd[key] = 1
-    return atdd
 
 
 def get_dimension_list(triple):
