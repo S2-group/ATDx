@@ -106,7 +106,7 @@ class ReportGen(ABC):
         return class_ATD_values
 
     @abstractmethod
-    def generate_report(self, project):
+    def generate_report(self, projects_data, project):
         pass
 
     @abstractmethod
