@@ -7,5 +7,5 @@ class MediatorSonarCloudAtdx(ClassMediator, ABC):
         self.atdx = atdx_core
         self.sonar_cloud = sonar_cloud
 
-    def notify(self, sender, event, argument):
+    def notify(self, sender, event):
         pass

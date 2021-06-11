@@ -8,11 +8,12 @@ from util import *
 
 class ReportGen(ABC):
 
-    def __init__(self, max_number_of_projects, max_number_of_classes, dimensions_to_print, issues_location):
+    def __init__(self, max_number_of_projects, max_number_of_classes, dimensions_to_print, issues_location, portfolio_info):
         self.max_number_of_projects = max_number_of_projects
         self.max_number_of_classes = max_number_of_classes
         self.dimensions = dimensions_to_print
         self.issues_location = issues_location
+        self.portfolio_info = portfolio_info
 
     def get_categories_pair(self, my_dict):
         category_value = []

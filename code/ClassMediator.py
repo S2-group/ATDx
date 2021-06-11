@@ -8,5 +8,5 @@ class ClassMediator(ABC):
         self.atdx = atdx_core
 
     @abstractmethod
-    def notify(self, sender, event, argument):
+    def notify(self, sender, event):
         pass

@@ -2,10 +2,11 @@ import requests
 from util import *
 from AnalysisTool import *
 
+
 class SonarCloudTool(AnalysisTool, ABC):
 
-    def __init__(self, n, suffix):
-        self.save_intermediate_steps = n
+    def __init__(self, n, portfolio_info, suffix):
+        super.__init__(n, portfolio_info)
         self.suffix = suffix
 
     def filter_rules(self, issues, ar_rules):
@@ -94,7 +95,7 @@ class SonarCloudTool(AnalysisTool, ABC):
 
             if ncloc_java > 0:
                 project_values[projectKey] = {}
-                project_values[projectKey]['ncloc_java'] = ncloc_java
+                project_values[projectKey]['ncloc'] = ncloc_java
                 project_values[projectKey]['files'] = files
                 project_values[projectKey]['classes'] = classes
                 project_values[projectKey]['functions'] = functions
@@ -104,7 +105,6 @@ class SonarCloudTool(AnalysisTool, ABC):
             save('../data/meta_data' + self.suffix + '.json', project_values)
 
         return project_values
-
 
     def get_from_tool(self, url, path, save_to_fs, field_to_check):
         response = requests.get(url)
@@ -164,12 +164,12 @@ class SonarCloudTool(AnalysisTool, ABC):
                                                                                                              sort_by).replace(
                 'PROJECT_KEY', project_key)
             reached_limit = not self.get_from_tool(url,
-                                              '../data/issues/issues_' + org + '_' + project_key + '_' + sort_by + '_' + ascending_string + '_' + str(
-                                                  page_num) + '.json', True, 'issues')
+                                                   '../data/issues/issues_' + org + '_' + project_key + '_' + sort_by + '_' + ascending_string + '_' + str(
+                                                       page_num) + '.json', True, 'issues')
             page_num += 1
 
-    def mine_issues(self, project_path):
-        projects = json.load(open(project_path, 'r'))
+    def mine_issues(self, projects_path):
+        projects = json.load(open(projects_path, 'r'))
         counter = 1
 
         for p in projects:
@@ -193,23 +193,23 @@ class SonarCloudTool(AnalysisTool, ABC):
             self.download_issues(p['organization'], p['key'], 'FILE_LINE', 'true')
 
         location = '../data/merged_issues' + self.suffix + '.json'
-        merged_issues = merge_crawled_files('../data/issues', 'issues_', '.json', 'issues', location, self.save_intermediate_steps)
+        merged_issues = merge_crawled_files('../data/issues', 'issues_', '.json', 'issues', location,
+                                            self.save_intermediate_steps)
         return merged_issues
 
 
 if __name__ == "__main__":
-
     tool = SonarCloudTool(1, 'apache')
     ar_rules = read_json('../data/ar_rules.json')
     merged_issues = tool.mine_issues('../data/filtered_projects.json')
-    
+
     # Merge_crawled_files need a refactoring
     arch_issues = tool.filter_rules(merged_issues, ar_rules)
 
     ar_issues = tool.count_ar_issues(arch_issues, '../data/filtered_projects.json', ar_rules, '../data/ar_issues.json')
     measures = tool.mine_measures('../data/filtered_projects.json', '../data/measures.json')
 
-    metada_data= tool.filter_metadata(measures)
+    metada_data = tool.filter_metadata(measures)
 
     atdx_input = update_dict_of_dict(ar_issues, metada_data)
     save('../data/ATDx_input.json', atdx_input)

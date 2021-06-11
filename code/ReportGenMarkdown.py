@@ -146,7 +146,7 @@ if __name__ == "__main__":
     rep_gen = ReportGenMarkdown(3, 5, dimensions_to_store, '../data/arch_issues.json')
     projects_data = my_projects
 
-    #    rep_gen.generate_radarchart(new_dict[project], project)
+    # rep_gen.generate_radarchart(new_dict[project], project)
     for project in new_dict:
         rep_gen.generate_report(new_dict[project], project)
         break
