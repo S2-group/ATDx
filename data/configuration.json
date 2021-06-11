@@ -3,7 +3,6 @@
     "store": 0,
     "rules_location": "ar_rules.json",
     "projects_location": "filtered_projects.json",
-    "issues_location": "merged_issues.json",
-    "files_suffix": "filtered",
-    "report_gen": "Markdown"
+    "issues": "merged_issues.json",
+    "files_suffix": "filtered"
 }

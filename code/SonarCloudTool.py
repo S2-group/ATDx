@@ -1,6 +1,7 @@
 import requests
 from util import *
 from AnalysisTool import *
+from PortfolioData import *
 
 
 class SonarCloudTool(AnalysisTool, ABC):
@@ -18,9 +19,8 @@ class SonarCloudTool(AnalysisTool, ABC):
             save('../data/arch_issues' + self.suffix + '.json', result)
         return result
 
-    def pad_with_zero_projects(self, projects_with_issues, all_projects_path, ar_rules):
+    def pad_with_zero_projects(self, projects_with_issues, all_projects, ar_rules):
         to_merge = {}
-        all_projects = json.load(open(all_projects_path, 'r'))
         for p in all_projects:
             if not p['key'] in projects_with_issues:
                 to_merge[p['key']] = {
@@ -32,7 +32,7 @@ class SonarCloudTool(AnalysisTool, ABC):
         projects_with_issues.update(to_merge)
         return projects_with_issues
 
-    def count_ar_issues(self, arch_issues, all_projects_path, ar_rules, ar_issues_path):
+    def count_ar_issues(self, arch_issues, all_projects, ar_rules, ar_issues_path):
         counted_ar_issues = {}
         for i in arch_issues:
             if not arch_issues[i]['project'] in counted_ar_issues:
@@ -48,7 +48,7 @@ class SonarCloudTool(AnalysisTool, ABC):
                 counted_ar_issues[arch_issues[i]['project']]['design_issues'] += 1
                 # result[arch_issues[i]['project']]['total_issues'] = 0
                 counted_ar_issues[arch_issues[i]['project']][arch_issues[i]['rule']] += 1
-        counted_ar_issues = self.pad_with_zero_projects(counted_ar_issues, all_projects_path, ar_rules)
+        counted_ar_issues = self.pad_with_zero_projects(counted_ar_issues, all_projects, ar_rules)
 
         column_names = ['projectKey', 'design_issues']
         column_names.extend(ar_rules)
@@ -168,48 +168,49 @@ class SonarCloudTool(AnalysisTool, ABC):
                                                        page_num) + '.json', True, 'issues')
             page_num += 1
 
-    def mine_issues(self, projects_path):
-        projects = json.load(open(projects_path, 'r'))
-        counter = 1
+    def mine_issues(self, project):
 
-        for p in projects:
-            print(p['key'] + ' --- ' + str(counter) + '/' + str(len(projects)))
-            counter += 1
-            # CREATION_DATE, UPDATE_DATE, CLOSE_DATE, ASSIGNEE, SEVERITY, STATUS, FILE_LINE
-            # self.download_issues(p['organization'], p['key'], 'CREATION_DATE', 'false')
-            # self.download_issues(p['organization'], p['key'], 'UPDATE_DATE', 'false')
-            # self.download_issues(p['organization'], p['key'], 'CLOSE_DATE', 'false')
-            # issues = download_issues(org, p['key'], 'ASSIGNEE', 'false')
-            self.download_issues(p['organization'], p['key'], 'SEVERITY', 'false')
-            self.download_issues(p['organization'], p['key'], 'STATUS', 'false')
-            self.download_issues(p['organization'], p['key'], 'FILE_LINE', 'false')
+        print("Mining issues for: " + project['key'])
 
-            # self.download_issues(p['organization'], p['key'], 'CREATION_DATE', 'true')
-            # self.download_issues(p['organization'], p['key'], 'UPDATE_DATE', 'true')
-            # self.download_issues(p['organization'], p['key'], 'CLOSE_DATE', 'true')
-            # issues = download_issues(org, p['key'], 'ASSIGNEE', 'true')
-            self.download_issues(p['organization'], p['key'], 'SEVERITY', 'true')
-            self.download_issues(p['organization'], p['key'], 'STATUS', 'true')
-            self.download_issues(p['organization'], p['key'], 'FILE_LINE', 'true')
+        # CREATION_DATE, UPDATE_DATE, CLOSE_DATE, ASSIGNEE, SEVERITY, STATUS, FILE_LINE
+        # self.download_issues(project['organization'], project['key'], 'CREATION_DATE', 'false')
+        # self.download_issues(project['organization'], project['key'], 'UPDATE_DATE', 'false')
+        # self.download_issues(project['organization'], project['key'], 'CLOSE_DATE', 'false')
+        # issues = download_issues(org, project['key'], 'ASSIGNEE', 'false')
+        self.download_issues(project['organization'], project['key'], 'SEVERITY', 'false')
+        self.download_issues(project['organization'], project['key'], 'STATUS', 'false')
+        self.download_issues(project['organization'], project['key'], 'FILE_LINE', 'false')
+
+        # self.download_issues(project['organization'], project['key'], 'CREATION_DATE', 'true')
+        # self.download_issues(project['organization'], project['key'], 'UPDATE_DATE', 'true')
+        # self.download_issues(project['organization'], project['key'], 'CLOSE_DATE', 'true')
+        # issues = download_issues(org, project['key'], 'ASSIGNEE', 'true')
+        self.download_issues(project['organization'], project['key'], 'SEVERITY', 'true')
+        self.download_issues(project['organization'], project['key'], 'STATUS', 'true')
+        self.download_issues(project['organization'], project['key'], 'FILE_LINE', 'true')
 
         location = '../data/merged_issues' + self.suffix + '.json'
         merged_issues = merge_crawled_files('../data/issues', 'issues_', '.json', 'issues', location,
                                             self.save_intermediate_steps)
         return merged_issues
 
+    def execute_analysis(self):
+        projects = self.portfolio_info.get_projects_info
+        ar_rules = self.portfolio_info.get_ar_rules
+        merged_issues = self.portfolio_info.get_issues
 
-if __name__ == "__main__":
-    tool = SonarCloudTool(1, 'apache')
-    ar_rules = read_json('../data/ar_rules.json')
-    merged_issues = tool.mine_issues('../data/filtered_projects.json')
+        if merged_issues is None:
+            for project in projects:
+                merged_issues = self.mine_issues(projects[project])
 
-    # Merge_crawled_files need a refactoring
-    arch_issues = tool.filter_rules(merged_issues, ar_rules)
+        # Merge_crawled_files need a refactoring
+        arch_issues = self.filter_rules(merged_issues, ar_rules)
+        ar_issues = self.count_ar_issues(arch_issues, projects, ar_rules, '../data/ar_issues.json')
+        measures = self.mine_measures('../data/filtered_projects.json', '../data/measures.json')
 
-    ar_issues = tool.count_ar_issues(arch_issues, '../data/filtered_projects.json', ar_rules, '../data/ar_issues.json')
-    measures = tool.mine_measures('../data/filtered_projects.json', '../data/measures.json')
+        metada_data = self.filter_metadata(measures)
 
-    metada_data = tool.filter_metadata(measures)
+        atdx_input = update_dict_of_dict(ar_issues, metada_data)
 
-    atdx_input = update_dict_of_dict(ar_issues, metada_data)
-    save('../data/ATDx_input.json', atdx_input)
+        self.portfolio_info.set_arch_issues(arch_issues)
+        save('../data/ATDx_input.json', atdx_input)
