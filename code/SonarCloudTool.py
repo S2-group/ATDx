@@ -1,13 +1,13 @@
 import requests
-from util import *
+
 from AnalysisTool import *
-from PortfolioData import *
+from util import *
 
 
 class SonarCloudTool(AnalysisTool, ABC):
 
     def __init__(self, n, portfolio_info, suffix):
-        super.__init__(n, portfolio_info)
+        super().__init__(n, portfolio_info)
         self.suffix = suffix
 
     def filter_rules(self, issues, ar_rules):
@@ -19,11 +19,12 @@ class SonarCloudTool(AnalysisTool, ABC):
             save('../data/arch_issues' + self.suffix + '.json', result)
         return result
 
+
     def pad_with_zero_projects(self, projects_with_issues, all_projects, ar_rules):
         to_merge = {}
         for p in all_projects:
             if not p in projects_with_issues:
-                to_merge[p['key']] = {
+                to_merge[p] = {
                     'projectKey': p,
                     'design_issues': 0
                 }
@@ -77,7 +78,6 @@ class SonarCloudTool(AnalysisTool, ABC):
                 if current_measure['metric'] in metrics:
 
                     if current_measure['metric'] == 'ncloc_language_distribution':
-
                         try:
                             ncloc_java = int(re.search('java=([0-9]*)', current_measure['value']).group(1))
 
@@ -130,16 +130,15 @@ class SonarCloudTool(AnalysisTool, ABC):
         spec_project_list = list()
 
         for p in filtered_projects:
-            p_key = p['key']
-
-            query = {'componentKey': p_key,
+            query = {'componentKey': p,
                      'metricKeys': 'duplicated_blocks,duplicated_lines,duplicated_lines_density,violations,false_positive_issues,open_issues,confirmed_issues,reopened_issues,code_smells,sqale_rating,sqale_index,sqale_debt_ratio,bugs,reliability_rating,reliability_remediation_effort,vulnerabilities,security_rating,classes,comment_lines,comment_lines_density,directories,files,lines,ncloc,ncloc_language_distribution,functions'}
 
             r = requests.get(url, params=query)
             project_specs_new = r.json()
-            if 'error' in project_specs_new:
 
-                print('There was error when trying to obtain metrixs for: ' + p)
+            if 'errors' in project_specs_new:
+                print('There was error when trying to obtain metrixs for: ' + p + 'the error message is: '+ project_specs_new['errors'][0]['msg'])
+                continue
 
             spec_project_list.append(project_specs_new)
 
@@ -189,27 +188,33 @@ class SonarCloudTool(AnalysisTool, ABC):
         self.download_issues(project['organization'], project['key'], 'FILE_LINE', 'true')
 
         location = '../data/merged_issues' + self.suffix + '.json'
-        merged_issues = merge_crawled_files('../data/issues', 'issues_', '.json', 'issues', location,
-                                            self.save_intermediate_steps)
-        return merged_issues
 
-    def execute_analysis(self):
+    def execute_analysis(self, sua):
         projects = self.portfolio_info.get_projects_info()
         ar_rules = self.portfolio_info.get_ar_rules()
         merged_issues = self.portfolio_info.get_issues()
 
         if merged_issues is None:
             for project in projects:
-                merged_issues = self.mine_issues(projects[project])
+                self.mine_issues(projects[project])
 
-        # Merge_crawled_files need a refactoring
+            merged_issues = merge_crawled_files('../data/issues', 'issues_', '.json', 'issues', '../data/' + self.suffix + 'merged_issues.json',
+                                                self.save_intermediate_steps)
+        else:
+            self.mine_issues(sua)
+            items_to_add = merge_crawled_files('../data/issues', 'issues_', '.json', 'issues', '../data/' + self.suffix + 'merged_issues.json',
+                                                self.save_intermediate_steps)
+            merged_issues.append(items_to_add)
+            # We should clean up the issues directory
+
         arch_issues = self.filter_rules(merged_issues, ar_rules)
         ar_issues = self.count_ar_issues(arch_issues, projects, ar_rules, '../data/ar_issues.json')
-        measures = self.mine_measures('../data/filtered_projects.json', '../data/measures.json')
-
+        measures = self.mine_measures(projects, '../data/measures.json')
         metada_data = self.filter_metadata(measures)
 
+        # atdx_input is what will be used for the mediator
         atdx_input = update_dict_of_dict(ar_issues, metada_data)
 
+        self.portfolio_info.set_analysis_projects_info(atdx_input)
         self.portfolio_info.set_arch_issues(arch_issues)
-        save('../data/ATDx_input.json', atdx_input)
+        # save('../data/ATDx_input.json', atdx_input)

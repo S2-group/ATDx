@@ -20,30 +20,37 @@ class Controller:
         config = read_json('../data/report_config.json')
 
         report_name = config["report"]
-        number_class = read_json(config["max_number_class"])
-        number_projects = read_json(config["max_number_projects"])
-        store = config["store"]
+        number_class = read_json('../data/' + config["max_number_class"])
+        number_projects = read_json('../data/' + config["max_number_projects"])
+        # store = config["store"]
         self.report_gen = self.report_factory.get_report_gen(report_name, number_projects, number_class, None, None)
 
-    def init_portfolio_info(self, rules, sua_info, projects_info, issues, arch_issues):
-        self.portfolio_data = PortfolioData(rules, sua_info, projects_info, issues, arch_issues)
+    def init_portfolio_info(self, rules, triple, sua_info, projects_info, issues, arch_issues):
+        self.portfolio_data = PortfolioData(rules, triple, sua_info, projects_info, issues, arch_issues)
 
     def setup_analysis_tool_portfolio(self, sua_name):
         config = read_json('../data/configuration.json')
 
+        rules = read_json('../data/' + config["rules_location"])
+        projects = read_json('../data/' + config["projects_location"])
+
         tool_name = config["tool"]
-        rules = read_json(config["rules_location"])
-        projects = read_json(config["projects_location"])
-        issues = read_json(config["issues_location"])
         store = config["store"]
         suffix = config["files_suffix"]
 
-        if issues == "None":
+        if config["issues"] == "None":
             issues = None
+        else:
+            issues = read_json('../data/' + config["issues"])
 
-        self.init_portfolio_info(rules["rules"], projects[sua_name], projects, issues, None)
+        self.init_portfolio_info(rules["rules"], rules["triple"], projects[sua_name], projects, issues, None)
         self.tool = self.tool_factory.get_analysis_tool(tool_name, store, self.portfolio_data, suffix)
 
     def run(self, sua_name):
         self.setup(sua_name)
+        self.tool.execute_analysis(sua_name)
 
+
+if __name__ == "__main__":
+    controller = Controller()
+    controller.run('onap_dcaegen2-services-bbs-event-processor')
