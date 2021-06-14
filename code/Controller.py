@@ -14,7 +14,7 @@ class Controller:
 
     def setup(self, sua_name):
         self.setup_analysis_tool_portfolio(sua_name)
-        self.setup_report_gen()
+        # self.setup_report_gen()
 
     def setup_report_gen(self):
         config = read_json('../data/report_config.json')
@@ -23,7 +23,7 @@ class Controller:
         number_class = read_json(config["max_number_class"])
         number_projects = read_json(config["max_number_projects"])
         store = config["store"]
-        self.report_gen = self.report_factory.get_report_gen(report_name, number_projects, number_class, None)
+        self.report_gen = self.report_factory.get_report_gen(report_name, number_projects, number_class, None, None)
 
     def init_portfolio_info(self, rules, sua_info, projects_info, issues, arch_issues):
         self.portfolio_data = PortfolioData(rules, sua_info, projects_info, issues, arch_issues)
@@ -37,8 +37,6 @@ class Controller:
         issues = read_json(config["issues_location"])
         store = config["store"]
         suffix = config["files_suffix"]
-
-        report_name = config["report_gen"]
 
         if issues == "None":
             issues = None
