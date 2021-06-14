@@ -7,7 +7,7 @@ from PortfolioData import *
 class SonarCloudTool(AnalysisTool, ABC):
 
     def __init__(self, n, portfolio_info, suffix):
-        super().__init__(n, portfolio_info)
+        super.__init__(n, portfolio_info)
         self.suffix = suffix
 
     def filter_rules(self, issues, ar_rules):
@@ -23,12 +23,12 @@ class SonarCloudTool(AnalysisTool, ABC):
         to_merge = {}
         for p in all_projects:
             if not p in projects_with_issues:
-                to_merge[p] = {
+                to_merge[p['key']] = {
                     'projectKey': p,
                     'design_issues': 0
                 }
                 for r in ar_rules:
-                    to_merge[p['key']][r] = 0
+                    to_merge[p][r] = 0
         projects_with_issues.update(to_merge)
         return projects_with_issues
 
@@ -121,31 +121,30 @@ class SonarCloudTool(AnalysisTool, ABC):
             print(response)
             return False
 
-    def mine_measures(self, projects_path, measures_path):
-        with open(projects_path) as json_data:
-            projects_dict = json.load(json_data, )
+    def mine_measures(self, filtered_projects, measures_path):
 
-            filtered_projects = projects_dict
+        url = 'https://sonarcloud.io/api/measures/component?'
 
-            url = 'https://sonarcloud.io/api/measures/component?'
+        j = 0
 
-            j = 0
+        spec_project_list = list()
 
-            spec_project_list = list()
+        for p in filtered_projects:
+            p_key = p['key']
 
-            for p in filtered_projects:
-                p_key = p['key']
+            query = {'componentKey': p_key,
+                     'metricKeys': 'duplicated_blocks,duplicated_lines,duplicated_lines_density,violations,false_positive_issues,open_issues,confirmed_issues,reopened_issues,code_smells,sqale_rating,sqale_index,sqale_debt_ratio,bugs,reliability_rating,reliability_remediation_effort,vulnerabilities,security_rating,classes,comment_lines,comment_lines_density,directories,files,lines,ncloc,ncloc_language_distribution,functions'}
 
-                query = {'componentKey': p_key,
-                         'metricKeys': 'duplicated_blocks,duplicated_lines,duplicated_lines_density,violations,false_positive_issues,open_issues,confirmed_issues,reopened_issues,code_smells,sqale_rating,sqale_index,sqale_debt_ratio,bugs,reliability_rating,reliability_remediation_effort,vulnerabilities,security_rating,classes,comment_lines,comment_lines_density,directories,files,lines,ncloc,ncloc_language_distribution,functions'}
+            r = requests.get(url, params=query)
+            project_specs_new = r.json()
+            if 'error' in project_specs_new:
 
-                r = requests.get(url, params=query)
-                project_specs_new = r.json()
+                print('There was error when trying to obtain metrixs for: ' + p)
 
-                spec_project_list.append(project_specs_new)
+            spec_project_list.append(project_specs_new)
 
-                j += 1
-                print('Mined measures for project number ' + str(j))
+            j += 1
+            print('Mined measures for project number ' + str(j))
         if self.save_intermediate_steps == 1:
             save(measures_path, spec_project_list)
 
@@ -195,9 +194,9 @@ class SonarCloudTool(AnalysisTool, ABC):
         return merged_issues
 
     def execute_analysis(self):
-        projects = self.portfolio_info.get_projects_info
-        ar_rules = self.portfolio_info.get_ar_rules
-        merged_issues = self.portfolio_info.get_issues
+        projects = self.portfolio_info.get_projects_info()
+        ar_rules = self.portfolio_info.get_ar_rules()
+        merged_issues = self.portfolio_info.get_issues()
 
         if merged_issues is None:
             for project in projects:
