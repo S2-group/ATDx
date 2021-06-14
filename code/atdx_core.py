@@ -4,10 +4,11 @@ import ckwrap as ck
 
 
 class AtdxCore():
-    def __init__(self):
+    def __init__(self, projects_info):
         self.atd_x = {}
         self.normalized_updated = {}
         self.project_names = []
+        self.projets_info = projects_info
 
     def atdx_core(self, sua, ar_tool, atdd_tool, norm_t):
         """
