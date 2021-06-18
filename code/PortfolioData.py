@@ -3,13 +3,14 @@ class PortfolioData:
     as we don't expect to have it since the beginning. The functions it contains are just getter and setters.
     """
 
-    def __init__(self, ar_rules, triple_rules, sua_info, projects_info, issues, arch_issues):
+    def __init__(self, ar_rules, triple_rules, sua_info, projects_info, issues, measures, arch_issues):
         """
         :param ar_rules: List of Architectural rules
         :param sua_info: Single project information
         :param projects_info: Dict of projects as keys holding it's information
         :param arch_issues: This attribute hols the architectural issues if already calculated.
         """
+        self.meaures = measures
         self.issues = issues
         self.triple = triple_rules
         self.arch_issues = arch_issues
@@ -20,6 +21,9 @@ class PortfolioData:
 
     def set_arch_issues(self, arch_issues):
         self.arch_issues = arch_issues
+
+    def set_issues(self, issues):
+        self.issues = issues
 
     def set_analysis_projects_info(self, info):
         self.analysis_projects_info = info
@@ -41,6 +45,9 @@ class PortfolioData:
 
     def get_triple(self):
         return self.triple
+
+    def get_measures(self):
+        return self.meaures
 
     def get_analysis_projects_info(self):
         return self.analysis_projects_info

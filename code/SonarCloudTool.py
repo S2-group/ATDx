@@ -10,17 +10,18 @@ class SonarCloudTool(AnalysisTool, ABC):
         super().__init__(n, portfolio_info)
         self.suffix = suffix
 
-    def filter_rules(self, issues, ar_rules):
+    def filter_rules(self, ar_rules):
         result = {}
-        for i in issues:
-            if issues[i]['rule'] in ar_rules:
-                result[i] = issues[i]
+
+        for i in self.portfolio_info.get_issues():
+            if self.portfolio_info.get_issues()[i]['rule'] in ar_rules and self.portfolio_info.get_issues()[i]['project'] in self.portfolio_info.get_projects_info():
+                result[i] = self.portfolio_info.get_issues()[i]
         if self.save_intermediate_steps == 1:
             save('../data/arch_issues' + self.suffix + '.json', result)
         return result
 
-
-    def pad_with_zero_projects(self, projects_with_issues, all_projects, ar_rules):
+    @staticmethod
+    def pad_with_zero_projects(projects_with_issues, all_projects, ar_rules):
         to_merge = {}
         for p in all_projects:
             if not p in projects_with_issues:
@@ -95,7 +96,7 @@ class SonarCloudTool(AnalysisTool, ABC):
 
             if ncloc_java > 0:
                 project_values[projectKey] = {}
-                project_values[projectKey]['ncloc'] = ncloc_java
+                project_values[projectKey]['ncloc_java'] = ncloc_java
                 project_values[projectKey]['files'] = files
                 project_values[projectKey]['classes'] = classes
                 project_values[projectKey]['functions'] = functions
@@ -168,48 +169,54 @@ class SonarCloudTool(AnalysisTool, ABC):
 
     def mine_issues(self, project):
 
-        print("Mining issues for: " + project['key'])
+        print("Mining issues for: " + project['projectKey'])
 
         # CREATION_DATE, UPDATE_DATE, CLOSE_DATE, ASSIGNEE, SEVERITY, STATUS, FILE_LINE
-        # self.download_issues(project['organization'], project['key'], 'CREATION_DATE', 'false')
-        # self.download_issues(project['organization'], project['key'], 'UPDATE_DATE', 'false')
-        # self.download_issues(project['organization'], project['key'], 'CLOSE_DATE', 'false')
-        # issues = download_issues(org, project['key'], 'ASSIGNEE', 'false')
-        self.download_issues(project['organization'], project['key'], 'SEVERITY', 'false')
-        self.download_issues(project['organization'], project['key'], 'STATUS', 'false')
-        self.download_issues(project['organization'], project['key'], 'FILE_LINE', 'false')
+        # self.download_issues(project['organization'], project['projectKey'], 'CREATION_DATE', 'false')
+        # self.download_issues(project['organization'], project['projectKey'], 'UPDATE_DATE', 'false')
+        # self.download_issues(project['organization'], project['projectKey'], 'CLOSE_DATE', 'false')
+        # issues = download_issues(org, project['projectKey'], 'ASSIGNEE', 'false')
+        self.download_issues(project['organization'], project['projectKey'], 'SEVERITY', 'false')
+        self.download_issues(project['organization'], project['projectKey'], 'STATUS', 'false')
+        self.download_issues(project['organization'], project['projectKey'], 'FILE_LINE', 'false')
 
-        # self.download_issues(project['organization'], project['key'], 'CREATION_DATE', 'true')
-        # self.download_issues(project['organization'], project['key'], 'UPDATE_DATE', 'true')
-        # self.download_issues(project['organization'], project['key'], 'CLOSE_DATE', 'true')
-        # issues = download_issues(org, project['key'], 'ASSIGNEE', 'true')
-        self.download_issues(project['organization'], project['key'], 'SEVERITY', 'true')
-        self.download_issues(project['organization'], project['key'], 'STATUS', 'true')
-        self.download_issues(project['organization'], project['key'], 'FILE_LINE', 'true')
+        # self.download_issues(project['organization'], project['projectKey'], 'CREATION_DATE', 'true')
+        # self.download_issues(project['organization'], project['projectKey'], 'UPDATE_DATE', 'true')
+        # self.download_issues(project['organization'], project['projectKey'], 'CLOSE_DATE', 'true')
+        # issues = download_issues(org, project['projectKey'], 'ASSIGNEE', 'true')
+        self.download_issues(project['organization'], project['projectKey'], 'SEVERITY', 'true')
+        self.download_issues(project['organization'], project['projectKey'], 'STATUS', 'true')
+        self.download_issues(project['organization'], project['projectKey'], 'FILE_LINE', 'true')
 
         location = '../data/merged_issues' + self.suffix + '.json'
 
-    def execute_analysis(self, sua):
-        projects = self.portfolio_info.get_projects_info()
-        ar_rules = self.portfolio_info.get_ar_rules()
+    def merge_issues(self, sua):
         merged_issues = self.portfolio_info.get_issues()
+        if self.portfolio_info.get_issues() is None:
+            for project in self.portfolio_info.get_projects_info():
+                self.mine_issues(self.portfolio_info.get_projects_info()[project])
 
-        if merged_issues is None:
-            for project in projects:
-                self.mine_issues(projects[project])
-
-            merged_issues = merge_crawled_files('../data/issues', 'issues_', '.json', 'issues', '../data/' + self.suffix + 'merged_issues.json',
+            merged_issues = merge_crawled_files('../data/issues', 'issues_', '.json', 'issues', '../data/' + self.suffix + 'non_filtered.json',
                                                 self.save_intermediate_steps)
         else:
-            self.mine_issues(sua)
-            items_to_add = merge_crawled_files('../data/issues', 'issues_', '.json', 'issues', '../data/' + self.suffix + 'merged_issues.json',
+            self.mine_issues(self.portfolio_info.get_projects_info()[sua])
+            items_to_add = merge_crawled_files('../data/issues', 'issues_', '.json', 'issues', '../data/' + self.suffix + 'non_filtered.json',
                                                 self.save_intermediate_steps)
-            merged_issues.append(items_to_add)
-            # We should clean up the issues directory
+            merged_issues.update(items_to_add)
+        self.portfolio_info.set_issues(merged_issues)
 
-        arch_issues = self.filter_rules(merged_issues, ar_rules)
-        ar_issues = self.count_ar_issues(arch_issues, projects, ar_rules, '../data/ar_issues.json')
-        measures = self.mine_measures(projects, '../data/measures.json')
+    def execute_analysis(self, sua):
+        ar_rules = self.portfolio_info.get_ar_rules()
+        measures = self.portfolio_info.get_measures()
+
+        # self.merge_issues(sua)
+        arch_issues = read_json('../data/arch_issues.json')
+        arch_issues = self.filter_rules(ar_rules)
+        ar_issues = self.count_ar_issues(arch_issues, self.portfolio_info.get_projects_info(), ar_rules, '../data/ar_issues.json')
+        # ar_issues =  read_json('../data/ar_issues.json')
+        if measures is None:
+            measures = self.mine_measures(self.portfolio_info.get_projects_info(), '../data/measures.json')
+
         metada_data = self.filter_metadata(measures)
 
         # atdx_input is what will be used for the mediator

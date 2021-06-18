@@ -4,8 +4,8 @@ import pandas as pd
 
 
 class ReportGenMarkdown(ReportGen, ABC):
-    def __init__(self, max_number_of_projects, max_number_of_classes, dimensions_to_print, issues_location):
-        super().__init__(max_number_of_projects, max_number_of_classes, dimensions_to_print, issues_location)
+    def __init__(self, max_number_of_projects, max_number_of_classes, dimensions_to_print, portfolio_info):
+        super().__init__(max_number_of_projects, max_number_of_classes, dimensions_to_print, portfolio_info)
         self.report_header = """# ATDx Report Summary
 Our ATDx analysis targets a portfolio of software projects and identifies the pain points of each project in terms of Architectural Technical Debt (ATD). This evaluation is based on a statistical analysis of the violations of SonarCloud rules.
 
@@ -33,11 +33,11 @@ If you are curious about more theoretical background on ATDx, you can have a loo
 
     def generate_report(self, projects_data, project):
         table = ''
-        clustered_issues = self.cluster_issues_per_class(self.issues_location)
+        clustered_issues = self.cluster_issues_per_class()
         clustered_issues_for_function = pd.DataFrame.from_dict(clustered_issues).transpose()
         sorted_max_issues = self.sort_by_max_sums_per_project(clustered_issues_for_function)
-        print(sorted_max_issues.get_group('apache_sling-org-apache-sling-commons-html'))
-        self.generate_radarchart(projects_data, project)
+        print(project)
+        self.generate_radarchart(projects_data[project], project)
 
         blocks = []
         block = '### Analysed project ' + project +'\n<img src=\"radarchart/' + project + '.jpg\"/><p style="text-align:left">[Project on Github](https://github.com/' + project + ') <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=' + project + ') <br></p>\n'
@@ -51,7 +51,7 @@ If you are curious about more theoretical background on ATDx, you can have a loo
         i = 0
         report = report + '# ATDx project report summaries\n'
         for elements in sorted_max_issues:
-            # rep_gen.generate_report(new_dict[project], project)
+            self.generate_radarchart(projects_data[elements[0]], elements[0])
             report = report + '## Project ' + str(i + 1) + ': _' + elements[0] + '_' + '\n'
             report = report + '<img src=\"radarchart/' + elements[0] + '.jpg\"/>' + '<p style="text-align:left">[Project on Github](https://github.com/' + elements[0] + ') <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=' + elements[0] + ') <br></p>\n'
             report = report + '\n'
@@ -87,7 +87,6 @@ If you are curious about more theoretical background on ATDx, you can have a loo
             f.write('### Top classes with architectural debt' + '\n' + project_df.to_markdown(index=False) + '\n')
             f.close()
 
-
     def get_table_for_project(self, project):
         # number_of_projects = 0
         # for project in class_ATD_values:
@@ -105,9 +104,18 @@ If you are curious about more theoretical background on ATDx, you can have a loo
         while i <= self.max_number_of_classes - row_count:
             project_df.loc[i + row_count] = '-'
             i += 1
-        string_to_return = '### Top classes with architectural debt violations'+ '\n' +project_df.to_markdown(index=False) +'\n'
+        string_to_return = '### Top classes with architectural debt violations'+ '\n' + project_df.to_markdown(index=False) +'\n'
         return string_to_return
         # number_of_projects += 1
+
+    def execute_report_gen(self, sua):
+        # This part is just a fix for the ATDx implementation. it will be changed
+        dimensions = read_json('../data/test_dimensions_dataset_output.json')
+        rules = read_json('../data/ar_rules.json')
+        dimensions_to_store = get_dimension_list(rules['triple'])
+        self.dimensions = dimensions_to_store
+        self.generate_radarchart(dimensions[sua], sua)
+        self.generate_report(dimensions, sua)
 
 
 def get_dimension_list(triple):
@@ -125,28 +133,3 @@ def get_dimension_list(triple):
 
     return dimensions_with_rules
 
-
-if __name__ == "__main__":
-
-    # This part is just a fix for the ATDx implementation. it will be changed
-    dimensions = read_json('../data/dimensions_dataset_output.json')
-    my_projects = read_json('../data/filtered_projects.json')
-    rules = read_json('../data/ar_rules.json')
-    new_dict = {}
-
-    dimensions_to_store = get_dimension_list(rules['triple'])
-
-    for dimension in dimensions:
-        for projects in dimensions[dimension]:
-            if projects not in new_dict:
-                new_dict[projects] = {}
-            new_dict[projects][dimension] = dimensions[dimension][projects]
-
-    # print(dimensions_to_store)
-    rep_gen = ReportGenMarkdown(3, 5, dimensions_to_store, '../data/arch_issues.json')
-    projects_data = my_projects
-
-    # rep_gen.generate_radarchart(new_dict[project], project)
-    for project in new_dict:
-        rep_gen.generate_report(new_dict[project], project)
-        break

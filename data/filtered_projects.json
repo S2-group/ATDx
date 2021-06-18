@@ -1,7 +1,7 @@
 {
     "onap_vfc-nfvo-wfengine-wfenginemgrservice": {
         "organization": "onap",
-        "key": "onap_vfc-nfvo-wfengine-wfenginemgrservice",
+        "projectKey": "onap_vfc-nfvo-wfengine-wfenginemgrservice",
         "name": "vfc-nfvo-wfengine-wfenginemgrservice",
         "tags": [],
         "visibility": "public",
@@ -9,7 +9,7 @@
     },
     "onap_dcaegen2-services-bbs-event-processor": {
         "organization": "onap",
-        "key": "onap_dcaegen2-services-bbs-event-processor",
+        "projectKey": "onap_dcaegen2-services-bbs-event-processor",
         "name": "dcaegen2-services-bbs-event-processor",
         "tags": [],
         "visibility": "public",
@@ -17,7 +17,7 @@
     },
     "apache_sling-org-apache-sling-scripting-bundle-tracker": {
         "organization": "apache",
-        "key": "apache_sling-org-apache-sling-scripting-bundle-tracker",
+        "projectKey": "apache_sling-org-apache-sling-scripting-bundle-tracker",
         "name": "Apache Sling Scripting Bundle Tracker",
         "tags": [
             "sling"
@@ -28,7 +28,7 @@
     },
     "apache_sling-org-apache-sling-scripting-core": {
         "organization": "apache",
-        "key": "apache_sling-org-apache-sling-scripting-core",
+        "projectKey": "apache_sling-org-apache-sling-scripting-core",
         "name": "Apache Sling Scripting Core",
         "tags": [
             "sling"
@@ -39,7 +39,7 @@
     },
     "apache_sling-org-apache-sling-scripting-esx": {
         "organization": "apache",
-        "key": "apache_sling-org-apache-sling-scripting-esx",
+        "projectKey": "apache_sling-org-apache-sling-scripting-esx",
         "name": "Apache Sling Scripting ESX",
         "tags": [
             "sling"
@@ -50,7 +50,7 @@
     },
     "apache_sling-org-apache-sling-scripting-sightly-compiler": {
         "organization": "apache",
-        "key": "apache_sling-org-apache-sling-scripting-sightly-compiler",
+        "projectKey": "apache_sling-org-apache-sling-scripting-sightly-compiler",
         "name": "Apache Sling Scripting HTL Compiler",
         "tags": [
             "sling"
@@ -61,7 +61,7 @@
     },
     "apache_sling-org-apache-sling-scripting-sightly": {
         "organization": "apache",
-        "key": "apache_sling-org-apache-sling-scripting-sightly",
+        "projectKey": "apache_sling-org-apache-sling-scripting-sightly",
         "name": "Apache Sling Scripting HTL Engine",
         "tags": [
             "sling"
@@ -72,7 +72,7 @@
     },
     "apache_sling-org-apache-sling-scripting-sightly-compiler-java": {
         "organization": "apache",
-        "key": "apache_sling-org-apache-sling-scripting-sightly-compiler-java",
+        "projectKey": "apache_sling-org-apache-sling-scripting-sightly-compiler-java",
         "name": "Apache Sling Scripting HTL Java Compiler",
         "tags": [
             "sling"
@@ -83,7 +83,7 @@
     },
     "apache_sling-org-apache-sling-scripting-sightly-js-provider": {
         "organization": "apache",
-        "key": "apache_sling-org-apache-sling-scripting-sightly-js-provider",
+        "projectKey": "apache_sling-org-apache-sling-scripting-sightly-js-provider",
         "name": "Apache Sling Scripting HTL JS Use Provider",
         "tags": [
             "sling"
@@ -94,7 +94,7 @@
     },
     "apache_sling-org-apache-sling-scripting-java": {
         "organization": "apache",
-        "key": "apache_sling-org-apache-sling-scripting-java",
+        "projectKey": "apache_sling-org-apache-sling-scripting-java",
         "name": "Apache Sling Scripting Java Support",
         "tags": [
             "sling"
@@ -105,7 +105,7 @@
     },
     "apache_sling-org-apache-sling-scripting-javascript": {
         "organization": "apache",
-        "key": "apache_sling-org-apache-sling-scripting-javascript",
+        "projectKey": "apache_sling-org-apache-sling-scripting-javascript",
         "name": "Apache Sling Scripting JavaScript",
         "tags": [
             "sling"
@@ -116,7 +116,7 @@
     },
     "apache_sling-org-apache-sling-scripting-jsp": {
         "organization": "apache",
-        "key": "apache_sling-org-apache-sling-scripting-jsp",
+        "projectKey": "apache_sling-org-apache-sling-scripting-jsp",
         "name": "Apache Sling Scripting JSP",
         "tags": [
             "sling"
@@ -127,7 +127,7 @@
     },
     "onap_policy-engine": {
         "organization": "onap",
-        "key": "onap_policy-engine",
+        "projectKey": "onap_policy-engine",
         "name": "policy-engine",
         "tags": [],
         "visibility": "public",
@@ -135,7 +135,7 @@
     },
     "apache_incubator-daffodil": {
         "organization": "apache",
-        "key": "apache_incubator-daffodil",
+        "projectKey": "apache_incubator-daffodil",
         "name": "incubator-daffodil",
         "tags": [],
         "visibility": "public",
@@ -144,7 +144,7 @@
     },
     "apache_sling-org-apache-sling-commons-html": {
         "organization": "apache",
-        "key": "apache_sling-org-apache-sling-commons-html",
+        "projectKey": "apache_sling-org-apache-sling-commons-html",
         "name": "Apache Sling Commons HTML Utilities",
         "tags": [
             "sling"
@@ -155,7 +155,7 @@
     },
     "onap_optf-fgps": {
         "organization": "onap",
-        "key": "onap_optf-fgps",
+        "projectKey": "onap_optf-fgps",
         "name": "fgps",
         "tags": [],
         "visibility": "public",
@@ -163,7 +163,7 @@
     },
     "apache_sling-org-apache-sling-hapi": {
         "organization": "apache",
-        "key": "apache_sling-org-apache-sling-hapi",
+        "projectKey": "apache_sling-org-apache-sling-hapi",
         "name": "Apache Sling Hypermedia API tools",
         "tags": [
             "sling"
@@ -174,7 +174,7 @@
     },
     "apache_sling-org-apache-sling-i18n": {
         "organization": "apache",
-        "key": "apache_sling-org-apache-sling-i18n",
+        "projectKey": "apache_sling-org-apache-sling-i18n",
         "name": "Apache Sling I18N Support",
         "tags": [
             "sling"
@@ -185,7 +185,7 @@
     },
     "apache_sling-org-apache-sling-jcr-contentloader": {
         "organization": "apache",
-        "key": "apache_sling-org-apache-sling-jcr-contentloader",
+        "projectKey": "apache_sling-org-apache-sling-jcr-contentloader",
         "name": "Apache Sling Initial Content Loader",
         "tags": [
             "sling"
@@ -196,7 +196,7 @@
     },
     "apache_sling-org-apache-sling-installer-core": {
         "organization": "apache",
-        "key": "apache_sling-org-apache-sling-installer-core",
+        "projectKey": "apache_sling-org-apache-sling-installer-core",
         "name": "Apache Sling Installer Core",
         "tags": [
             "sling"
@@ -207,7 +207,7 @@
     },
     "apache_sling-org-apache-sling-jcr-jackrabbit-accessmanager": {
         "organization": "apache",
-        "key": "apache_sling-org-apache-sling-jcr-jackrabbit-accessmanager",
+        "projectKey": "apache_sling-org-apache-sling-jcr-jackrabbit-accessmanager",
         "name": "Apache Sling Jackrabbit JSR-283 Access Control Manager Support",
         "tags": [
             "sling"
@@ -218,7 +218,7 @@
     },
     "apache_sling-org-apache-sling-jcr-jackrabbit-usermanager": {
         "organization": "apache",
-        "key": "apache_sling-org-apache-sling-jcr-jackrabbit-usermanager",
+        "projectKey": "apache_sling-org-apache-sling-jcr-jackrabbit-usermanager",
         "name": "Apache Sling Jackrabbit UserManager Support",
         "tags": [
             "sling"
@@ -229,7 +229,7 @@
     },
     "apache_sling-org-apache-sling-jcr-base": {
         "organization": "apache",
-        "key": "apache_sling-org-apache-sling-jcr-base",
+        "projectKey": "apache_sling-org-apache-sling-jcr-base",
         "name": "Apache Sling JCR Base Bundle",
         "tags": [
             "sling"
@@ -240,7 +240,7 @@
     },
     "apache_sling-org-apache-sling-jcr-classloader": {
         "organization": "apache",
-        "key": "apache_sling-org-apache-sling-jcr-classloader",
+        "projectKey": "apache_sling-org-apache-sling-jcr-classloader",
         "name": "Apache Sling JCR ClassLoader",
         "tags": [
             "sling"
@@ -251,7 +251,7 @@
     },
     "apache_sling-org-apache-sling-installer-provider-jcr": {
         "organization": "apache",
-        "key": "apache_sling-org-apache-sling-installer-provider-jcr",
+        "projectKey": "apache_sling-org-apache-sling-installer-provider-jcr",
         "name": "Apache Sling JCR Installer",
         "tags": [
             "sling"
@@ -262,7 +262,7 @@
     },
     "apache_sling-org-apache-sling-jcr-resource": {
         "organization": "apache",
-        "key": "apache_sling-org-apache-sling-jcr-resource",
+        "projectKey": "apache_sling-org-apache-sling-jcr-resource",
         "name": "Apache Sling JCR Resource Resolver",
         "tags": [
             "sling"
@@ -273,7 +273,7 @@
     },
     "servicecomb-pack": {
         "organization": "apache",
-        "key": "servicecomb-pack",
+        "projectKey": "servicecomb-pack",
         "name": "Apache ServiceComb Pack",
         "tags": [
             "servicecomb"
@@ -283,7 +283,7 @@
     },
     "commons-numbers": {
         "organization": "apache",
-        "key": "commons-numbers",
+        "projectKey": "commons-numbers",
         "name": "Apache Commons Numbers",
         "tags": [],
         "visibility": "public",
@@ -291,7 +291,7 @@
     },
     "commons-rng": {
         "organization": "apache",
-        "key": "commons-rng",
+        "projectKey": "commons-rng",
         "name": "Apache Commons RNG",
         "tags": [],
         "visibility": "public",
@@ -300,7 +300,7 @@
     },
     "commons-statistics": {
         "organization": "apache",
-        "key": "commons-statistics",
+        "projectKey": "commons-statistics",
         "name": "Apache Commons Statistics",
         "tags": [],
         "visibility": "public",
@@ -308,7 +308,7 @@
     },
     "cxf": {
         "organization": "apache",
-        "key": "cxf",
+        "projectKey": "cxf",
         "name": "Apache CXF",
         "tags": [],
         "visibility": "public",
@@ -316,7 +316,7 @@
     },
     "onap_usecase-ui-server": {
         "organization": "onap",
-        "key": "onap_usecase-ui-server",
+        "projectKey": "onap_usecase-ui-server",
         "name": "usecase-ui-server-parent",
         "tags": [],
         "visibility": "public",
@@ -324,7 +324,7 @@
     },
     "apache_sling-parent": {
         "organization": "apache",
-        "key": "apache_sling-parent",
+        "projectKey": "apache_sling-parent",
         "name": "Apache Sling Parent Reactor",
         "tags": [
             "sling"
@@ -335,7 +335,7 @@
     },
     "apache_sling-org-apache-sling-pipes": {
         "organization": "apache",
-        "key": "apache_sling-org-apache-sling-pipes",
+        "projectKey": "apache_sling-org-apache-sling-pipes",
         "name": "Apache Sling Pipes",
         "tags": [
             "sling"
@@ -346,7 +346,7 @@
     },
     "apache_sling-org-apache-sling-provisioning-model": {
         "organization": "apache",
-        "key": "apache_sling-org-apache-sling-provisioning-model",
+        "projectKey": "apache_sling-org-apache-sling-provisioning-model",
         "name": "Apache Sling Provisioning Model",
         "tags": [
             "sling"
@@ -357,7 +357,7 @@
     },
     "apache_sling-org-apache-sling-query": {
         "organization": "apache",
-        "key": "apache_sling-org-apache-sling-query",
+        "projectKey": "apache_sling-org-apache-sling-query",
         "name": "Apache Sling Query",
         "tags": [
             "sling"
@@ -368,7 +368,7 @@
     },
     "apache_sling-org-apache-sling-resource-filter": {
         "organization": "apache",
-        "key": "apache_sling-org-apache-sling-resource-filter",
+        "projectKey": "apache_sling-org-apache-sling-resource-filter",
         "name": "Apache Sling Resource Filter",
         "tags": [
             "sling"
@@ -379,7 +379,7 @@
     },
     "apache_sling-org-apache-sling-resourcemerger": {
         "organization": "apache",
-        "key": "apache_sling-org-apache-sling-resourcemerger",
+        "projectKey": "apache_sling-org-apache-sling-resourcemerger",
         "name": "Apache Sling Resource Merger",
         "tags": [
             "sling"
@@ -390,7 +390,7 @@
     },
     "apache_sling-org-apache-sling-resourceresolver": {
         "organization": "apache",
-        "key": "apache_sling-org-apache-sling-resourceresolver",
+        "projectKey": "apache_sling-org-apache-sling-resourceresolver",
         "name": "Apache Sling Resource Resolver",
         "tags": [
             "sling"
@@ -401,7 +401,7 @@
     },
     "apache_sling-org-apache-sling-discovery-impl": {
         "organization": "apache",
-        "key": "apache_sling-org-apache-sling-discovery-impl",
+        "projectKey": "apache_sling-org-apache-sling-discovery-impl",
         "name": "Apache Sling Resource-Based Discovery Service",
         "tags": [
             "sling"
@@ -412,7 +412,7 @@
     },
     "apache_sling-org-apache-sling-rewriter": {
         "organization": "apache",
-        "key": "apache_sling-org-apache-sling-rewriter",
+        "projectKey": "apache_sling-org-apache-sling-rewriter",
         "name": "Apache Sling Rewriter",
         "tags": [
             "sling"
@@ -423,7 +423,7 @@
     },
     "onap_policy-distribution": {
         "organization": "onap",
-        "key": "onap_policy-distribution",
+        "projectKey": "onap_policy-distribution",
         "name": "policy-distribution",
         "tags": [],
         "visibility": "public",
@@ -431,7 +431,7 @@
     },
     "onap_policy-pap": {
         "organization": "onap",
-        "key": "onap_policy-pap",
+        "projectKey": "onap_policy-pap",
         "name": "policy-pap",
         "tags": [],
         "visibility": "public",
@@ -439,7 +439,7 @@
     },
     "apache_groovy": {
         "organization": "apache",
-        "key": "apache_groovy",
+        "projectKey": "apache_groovy",
         "name": "Apache Groovy",
         "tags": [],
         "visibility": "public",
@@ -450,7 +450,7 @@
     },
     "hadoop-ozone": {
         "organization": "apache",
-        "key": "hadoop-ozone",
+        "projectKey": "hadoop-ozone",
         "name": "Apache Hadoop Ozone Main",
         "tags": [],
         "visibility": "public",
@@ -458,7 +458,7 @@
     },
     "apache_incubator-iotdb": {
         "organization": "apache",
-        "key": "apache_incubator-iotdb",
+        "projectKey": "apache_incubator-iotdb",
         "name": "Apache IoTDB (incubating) Project Parent POM",
         "tags": [],
         "visibility": "public",
@@ -467,7 +467,7 @@
     },
     "apache_isis": {
         "organization": "apache",
-        "key": "apache_isis",
+        "projectKey": "apache_isis",
         "name": "Apache Isis (Aggregator)",
         "tags": [],
         "visibility": "public",
@@ -476,7 +476,7 @@
     },
     "onap_dcaegen2-analytics-tca": {
         "organization": "onap",
-        "key": "onap_dcaegen2-analytics-tca",
+        "projectKey": "onap_dcaegen2-analytics-tca",
         "name": "dcaegen2-analytics-tca",
         "tags": [],
         "visibility": "public",
@@ -484,7 +484,7 @@
     },
     "onap_dcaegen2-analytics-tca-gen2": {
         "organization": "onap",
-        "key": "onap_dcaegen2-analytics-tca-gen2",
+        "projectKey": "onap_dcaegen2-analytics-tca-gen2",
         "name": "dcaegen2-analytics-tca-gen2",
         "tags": [],
         "visibility": "public",
@@ -492,7 +492,7 @@
     },
     "onap_dcaegen2-collectors-restconf": {
         "organization": "onap",
-        "key": "onap_dcaegen2-collectors-restconf",
+        "projectKey": "onap_dcaegen2-collectors-restconf",
         "name": "dcaegen2-collectors-restconf",
         "tags": [],
         "visibility": "public",
@@ -500,7 +500,7 @@
     },
     "onap_dcaegen2-collectors-snmptrap": {
         "organization": "onap",
-        "key": "onap_dcaegen2-collectors-snmptrap",
+        "projectKey": "onap_dcaegen2-collectors-snmptrap",
         "name": "dcaegen2-collectors-snmptrap",
         "tags": [],
         "visibility": "public",
@@ -508,7 +508,7 @@
     },
     "onap_dcaegen2-collectors-ves": {
         "organization": "onap",
-        "key": "onap_dcaegen2-collectors-ves",
+        "projectKey": "onap_dcaegen2-collectors-ves",
         "name": "dcaegen2-collectors-ves",
         "tags": [],
         "visibility": "public",
@@ -516,7 +516,7 @@
     },
     "onap_dcaegen2-collectors-hv-ves": {
         "organization": "onap",
-        "key": "onap_dcaegen2-collectors-hv-ves",
+        "projectKey": "onap_dcaegen2-collectors-hv-ves",
         "name": "dcaegen2-collectors-veshv",
         "tags": [],
         "visibility": "public",
@@ -524,7 +524,7 @@
     },
     "onap_portal-sdk": {
         "organization": "onap",
-        "key": "onap_portal-sdk",
+        "projectKey": "onap_portal-sdk",
         "name": "portal-sdk",
         "tags": [],
         "visibility": "public",
@@ -532,7 +532,7 @@
     },
     "apache_incubator-tamaya": {
         "organization": "apache",
-        "key": "apache_incubator-tamaya",
+        "projectKey": "apache_incubator-tamaya",
         "name": "Apache Tamaya Base",
         "tags": [
             "tamaya"
@@ -543,7 +543,7 @@
     },
     "apache_incubator-tamaya-extensions": {
         "organization": "apache",
-        "key": "apache_incubator-tamaya-extensions",
+        "projectKey": "apache_incubator-tamaya-extensions",
         "name": "Apache Tamaya Extensions",
         "tags": [
             "tamaya"
@@ -554,7 +554,7 @@
     },
     "onap_policy-api": {
         "organization": "onap",
-        "key": "onap_policy-api",
+        "projectKey": "onap_policy-api",
         "name": "policy-api",
         "tags": [],
         "visibility": "public",
@@ -562,7 +562,7 @@
     },
     "onap_aaf-authz": {
         "organization": "onap",
-        "key": "onap_aaf-authz",
+        "projectKey": "onap_aaf-authz",
         "name": "aaf-authz",
         "tags": [],
         "visibility": "public",
@@ -570,7 +570,7 @@
     },
     "apache_sling-org-apache-sling-junit-teleporter": {
         "organization": "apache",
-        "key": "apache_sling-org-apache-sling-junit-teleporter",
+        "projectKey": "apache_sling-org-apache-sling-junit-teleporter",
         "name": "Apache Sling JUnit Tests Teleporter",
         "tags": [
             "sling"
@@ -581,7 +581,7 @@
     },
     "apache_sling-org-apache-sling-xss": {
         "organization": "apache",
-        "key": "apache_sling-org-apache-sling-xss",
+        "projectKey": "apache_sling-org-apache-sling-xss",
         "name": "Apache Sling XSS Protection API",
         "tags": [
             "sling"
@@ -592,7 +592,7 @@
     },
     "onap_modeling-etsicatalog": {
         "organization": "onap",
-        "key": "onap_modeling-etsicatalog",
+        "projectKey": "onap_modeling-etsicatalog",
         "name": "modeling-etsicatalog",
         "tags": [],
         "visibility": "public",
@@ -600,7 +600,7 @@
     },
     "onap_policy-drools-pdp": {
         "organization": "onap",
-        "key": "onap_policy-drools-pdp",
+        "projectKey": "onap_policy-drools-pdp",
         "name": "policy-drools-pdp",
         "tags": [],
         "visibility": "public",
@@ -608,7 +608,7 @@
     },
     "apache_sling-org-apache-sling-app-cms": {
         "organization": "apache",
-        "key": "apache_sling-org-apache-sling-app-cms",
+        "projectKey": "apache_sling-org-apache-sling-app-cms",
         "name": "Apache Sling - CMS",
         "tags": [
             "sling"
@@ -619,7 +619,7 @@
     },
     "onap_aai-data-router": {
         "organization": "onap",
-        "key": "onap_aai-data-router",
+        "projectKey": "onap_aai-data-router",
         "name": "aai-data-router",
         "tags": [],
         "visibility": "public",
@@ -627,7 +627,7 @@
     },
     "apache_sling-org-apache-sling-jcr-repoinit": {
         "organization": "apache",
-        "key": "apache_sling-org-apache-sling-jcr-repoinit",
+        "projectKey": "apache_sling-org-apache-sling-jcr-repoinit",
         "name": "Apache Sling Repoinit JCR",
         "tags": [
             "sling"
@@ -638,7 +638,7 @@
     },
     "apache_sling-org-apache-sling-testing-sling-mock": {
         "organization": "apache",
-        "key": "apache_sling-org-apache-sling-testing-sling-mock",
+        "projectKey": "apache_sling-org-apache-sling-testing-sling-mock",
         "name": "Apache Sling Testing Sling Mock",
         "tags": [
             "sling"
@@ -649,7 +649,7 @@
     },
     "apache_sling-org-apache-sling-junit-core": {
         "organization": "apache",
-        "key": "apache_sling-org-apache-sling-junit-core",
+        "projectKey": "apache_sling-org-apache-sling-junit-core",
         "name": "Apache Sling JUnit Core",
         "tags": [
             "sling"
@@ -660,7 +660,7 @@
     },
     "apache_sling-org-apache-sling-feature-modelconverter": {
         "organization": "apache",
-        "key": "apache_sling-org-apache-sling-feature-modelconverter",
+        "projectKey": "apache_sling-org-apache-sling-feature-modelconverter",
         "name": "Apache Sling Feature Model Converter",
         "tags": [
             "sling"
@@ -671,7 +671,7 @@
     },
     "apache_sling-org-apache-sling-file-optimization": {
         "organization": "apache",
-        "key": "apache_sling-org-apache-sling-file-optimization",
+        "projectKey": "apache_sling-org-apache-sling-file-optimization",
         "name": "Apache Sling File Optimization",
         "tags": [
             "sling"
@@ -682,7 +682,7 @@
     },
     "apache_sling-org-apache-sling-fsresource": {
         "organization": "apache",
-        "key": "apache_sling-org-apache-sling-fsresource",
+        "projectKey": "apache_sling-org-apache-sling-fsresource",
         "name": "Apache Sling File System Resource Provider",
         "tags": [
             "sling"
@@ -693,7 +693,7 @@
     },
     "apache_sling-org-apache-sling-auth-form": {
         "organization": "apache",
-        "key": "apache_sling-org-apache-sling-auth-form",
+        "projectKey": "apache_sling-org-apache-sling-auth-form",
         "name": "Apache Sling Form Based Authentication",
         "tags": [
             "sling"
@@ -704,7 +704,7 @@
     },
     "onap_policy-models": {
         "organization": "onap",
-        "key": "onap_policy-models",
+        "projectKey": "onap_policy-models",
         "name": "policy-models",
         "tags": [],
         "visibility": "public",
@@ -712,7 +712,7 @@
     },
     "apache_openmeetings": {
         "organization": "apache",
-        "key": "apache_openmeetings",
+        "projectKey": "apache_openmeetings",
         "name": "Openmeetings",
         "tags": [],
         "visibility": "public",
@@ -721,7 +721,7 @@
     },
     "jspwiki-builder": {
         "organization": "apache",
-        "key": "jspwiki-builder",
+        "projectKey": "jspwiki-builder",
         "name": "Apache JSPWiki",
         "tags": [],
         "visibility": "public",
@@ -729,7 +729,7 @@
     },
     "apache_sling-org-apache-sling-jobs": {
         "organization": "apache",
-        "key": "apache_sling-org-apache-sling-jobs",
+        "projectKey": "apache_sling-org-apache-sling-jobs",
         "name": "Apache Sling Jobs Support",
         "tags": [
             "sling"
@@ -740,7 +740,7 @@
     },
     "apache_sling-org-apache-sling-launchpad-base": {
         "organization": "apache",
-        "key": "apache_sling-org-apache-sling-launchpad-base",
+        "projectKey": "apache_sling-org-apache-sling-launchpad-base",
         "name": "Apache Sling Launchpad Base",
         "tags": [
             "sling"
@@ -751,7 +751,7 @@
     },
     "apache_sling-org-apache-sling-launchpad-integration-tests": {
         "organization": "apache",
-        "key": "apache_sling-org-apache-sling-launchpad-integration-tests",
+        "projectKey": "apache_sling-org-apache-sling-launchpad-integration-tests",
         "name": "Apache Sling Launchpad Integration Tests",
         "tags": [
             "sling"
@@ -762,7 +762,7 @@
     },
     "apache_sling-org-apache-sling-launchpad-test-services": {
         "organization": "apache",
-        "key": "apache_sling-org-apache-sling-launchpad-test-services",
+        "projectKey": "apache_sling-org-apache-sling-launchpad-test-services",
         "name": "Apache Sling Launchpad Testing Services",
         "tags": [
             "sling"
@@ -773,7 +773,7 @@
     },
     "apache_sling-org-apache-sling-tracer": {
         "organization": "apache",
-        "key": "apache_sling-org-apache-sling-tracer",
+        "projectKey": "apache_sling-org-apache-sling-tracer",
         "name": "Apache Sling Log Tracer",
         "tags": [
             "sling"
@@ -784,7 +784,7 @@
     },
     "apache_sling-maven-launchpad-plugin": {
         "organization": "apache",
-        "key": "apache_sling-maven-launchpad-plugin",
+        "projectKey": "apache_sling-maven-launchpad-plugin",
         "name": "Apache Sling Maven Launchpad Plugin",
         "tags": [
             "sling"
@@ -795,7 +795,7 @@
     },
     "apache_sling-maven-plugin": {
         "organization": "apache",
-        "key": "apache_sling-maven-plugin",
+        "projectKey": "apache_sling-maven-plugin",
         "name": "Apache Sling Maven Plugin Reactor",
         "tags": [
             "sling"
@@ -806,7 +806,7 @@
     },
     "apache_sling-org-apache-sling-models-impl": {
         "organization": "apache",
-        "key": "apache_sling-org-apache-sling-models-impl",
+        "projectKey": "apache_sling-org-apache-sling-models-impl",
         "name": "Apache Sling Models Implementation",
         "tags": [
             "sling"
@@ -817,7 +817,7 @@
     },
     "apache_sling-org-apache-sling-models-integration-tests": {
         "organization": "apache",
-        "key": "apache_sling-org-apache-sling-models-integration-tests",
+        "projectKey": "apache_sling-org-apache-sling-models-integration-tests",
         "name": "Apache Sling Models Integration Tests",
         "tags": [
             "sling"
@@ -828,7 +828,7 @@
     },
     "onap_aai-validation": {
         "organization": "onap",
-        "key": "onap_aai-validation",
+        "projectKey": "onap_aai-validation",
         "name": "aai-validation",
         "tags": [],
         "visibility": "public",
@@ -836,7 +836,7 @@
     },
     "apache_sling-org-apache-sling-api": {
         "organization": "apache",
-        "key": "apache_sling-org-apache-sling-api",
+        "projectKey": "apache_sling-org-apache-sling-api",
         "name": "Apache Sling API",
         "tags": [
             "sling"
@@ -847,7 +847,7 @@
     },
     "apache_sling-org-apache-sling-auth-core": {
         "organization": "apache",
-        "key": "apache_sling-org-apache-sling-auth-core",
+        "projectKey": "apache_sling-org-apache-sling-auth-core",
         "name": "Apache Sling Authentication Service",
         "tags": [
             "sling"
@@ -858,7 +858,7 @@
     },
     "apache_sling-org-apache-sling-bundleresource-impl": {
         "organization": "apache",
-        "key": "apache_sling-org-apache-sling-bundleresource-impl",
+        "projectKey": "apache_sling-org-apache-sling-bundleresource-impl",
         "name": "Apache Sling Bundle Resource Provider",
         "tags": [
             "sling"
@@ -869,7 +869,7 @@
     },
     "apache_sling-org-apache-sling-clam": {
         "organization": "apache",
-        "key": "apache_sling-org-apache-sling-clam",
+        "projectKey": "apache_sling-org-apache-sling-clam",
         "name": "Apache Sling Clam",
         "tags": [
             "sling"
@@ -880,7 +880,7 @@
     },
     "apache_sling-org-apache-sling-committer-cli": {
         "organization": "apache",
-        "key": "apache_sling-org-apache-sling-committer-cli",
+        "projectKey": "apache_sling-org-apache-sling-committer-cli",
         "name": "Apache Sling Committer CLI",
         "tags": [
             "sling"
@@ -891,7 +891,7 @@
     },
     "apache_sling-org-apache-sling-commons-jcr-file": {
         "organization": "apache",
-        "key": "apache_sling-org-apache-sling-commons-jcr-file",
+        "projectKey": "apache_sling-org-apache-sling-commons-jcr-file",
         "name": "Apache Sling Commons JCR File",
         "tags": [
             "sling"
@@ -902,7 +902,7 @@
     },
     "apache_sling-org-apache-sling-commons-log": {
         "organization": "apache",
-        "key": "apache_sling-org-apache-sling-commons-log",
+        "projectKey": "apache_sling-org-apache-sling-commons-log",
         "name": "Apache Sling Commons Log",
         "tags": [
             "sling"
@@ -913,7 +913,7 @@
     },
     "apache_sling-org-apache-sling-commons-metrics": {
         "organization": "apache",
-        "key": "apache_sling-org-apache-sling-commons-metrics",
+        "projectKey": "apache_sling-org-apache-sling-commons-metrics",
         "name": "Apache Sling Commons Metrics",
         "tags": [
             "sling"
@@ -924,7 +924,7 @@
     },
     "JMeter": {
         "organization": "apache",
-        "key": "JMeter",
+        "projectKey": "JMeter",
         "name": "JMeter",
         "tags": [],
         "visibility": "public",
@@ -932,7 +932,7 @@
     },
     "onap_aai-cacher": {
         "organization": "onap",
-        "key": "onap_aai-cacher",
+        "projectKey": "onap_aai-cacher",
         "name": "aai-cacher",
         "tags": [],
         "visibility": "public",
@@ -940,7 +940,7 @@
     },
     "onap_aai-esr-server": {
         "organization": "onap",
-        "key": "onap_aai-esr-server",
+        "projectKey": "onap_aai-esr-server",
         "name": "aai-esr-server",
         "tags": [],
         "visibility": "public",
@@ -948,7 +948,7 @@
     },
     "onap_aai-event-client": {
         "organization": "onap",
-        "key": "onap_aai-event-client",
+        "projectKey": "onap_aai-event-client",
         "name": "aai-event-client",
         "tags": [],
         "visibility": "public",
@@ -956,7 +956,7 @@
     },
     "onap_aai-gizmo": {
         "organization": "onap",
-        "key": "onap_aai-gizmo",
+        "projectKey": "onap_aai-gizmo",
         "name": "aai-gizmo",
         "tags": [],
         "visibility": "public",
@@ -964,7 +964,7 @@
     },
     "onap_aai-graphadmin": {
         "organization": "onap",
-        "key": "onap_aai-graphadmin",
+        "projectKey": "onap_aai-graphadmin",
         "name": "aai-graphadmin",
         "tags": [],
         "visibility": "public",
@@ -972,7 +972,7 @@
     },
     "onap_aai-model-loader": {
         "organization": "onap",
-        "key": "onap_aai-model-loader",
+        "projectKey": "onap_aai-model-loader",
         "name": "aai-model-loader",
         "tags": [],
         "visibility": "public",
@@ -980,7 +980,7 @@
     },
     "onap_aai-resources": {
         "organization": "onap",
-        "key": "onap_aai-resources",
+        "projectKey": "onap_aai-resources",
         "name": "aai-resources",
         "tags": [],
         "visibility": "public",
@@ -988,7 +988,7 @@
     },
     "onap_aai-router-core": {
         "organization": "onap",
-        "key": "onap_aai-router-core",
+        "projectKey": "onap_aai-router-core",
         "name": "aai-router-core",
         "tags": [],
         "visibility": "public",
@@ -996,7 +996,7 @@
     },
     "onap_appc": {
         "organization": "onap",
-        "key": "onap_appc",
+        "projectKey": "onap_appc",
         "name": "appc",
         "tags": [],
         "visibility": "public",
@@ -1004,7 +1004,7 @@
     },
     "onap_sdc-sdc-be-common": {
         "organization": "onap",
-        "key": "onap_sdc-sdc-be-common",
+        "projectKey": "onap_sdc-sdc-be-common",
         "name": "sdc-be-common",
         "tags": [],
         "visibility": "public",
@@ -1012,7 +1012,7 @@
     },
     "org.onap.sdc.sdc-be-common:sdc-be-common-parent": {
         "organization": "onap",
-        "key": "org.onap.sdc.sdc-be-common:sdc-be-common-parent",
+        "projectKey": "org.onap.sdc.sdc-be-common:sdc-be-common-parent",
         "name": "sdc-be-common",
         "tags": [],
         "visibility": "public",
@@ -1020,7 +1020,7 @@
     },
     "commons-compress": {
         "organization": "apache",
-        "key": "commons-compress",
+        "projectKey": "commons-compress",
         "name": "Apache Commons Compress",
         "tags": [],
         "visibility": "public",
@@ -1028,7 +1028,7 @@
     },
     "apache-dolphinscheduler": {
         "organization": "apache",
-        "key": "apache-dolphinscheduler",
+        "projectKey": "apache-dolphinscheduler",
         "name": "dolphinscheduler",
         "tags": [],
         "visibility": "public",
@@ -1039,7 +1039,7 @@
     },
     "apache_sling-org-apache-sling-feature-io": {
         "organization": "apache",
-        "key": "apache_sling-org-apache-sling-feature-io",
+        "projectKey": "apache_sling-org-apache-sling-feature-io",
         "name": "Apache Sling Feature IO Module",
         "tags": [
             "sling"
@@ -1050,7 +1050,7 @@
     },
     "onap_optf-cmso": {
         "organization": "onap",
-        "key": "onap_optf-cmso",
+        "projectKey": "onap_optf-cmso",
         "name": "optf-cmso",
         "tags": [],
         "visibility": "public",
@@ -1058,7 +1058,7 @@
     },
     "onap_optf-has": {
         "organization": "onap",
-        "key": "onap_optf-has",
+        "projectKey": "onap_optf-has",
         "name": "optf-has",
         "tags": [],
         "visibility": "public",
@@ -1066,7 +1066,7 @@
     },
     "onap_optf-osdf": {
         "organization": "onap",
-        "key": "onap_optf-osdf",
+        "projectKey": "onap_optf-osdf",
         "name": "optf-osdf",
         "tags": [],
         "visibility": "public",
@@ -1074,7 +1074,7 @@
     },
     "onap_vvp-validation-scripts": {
         "organization": "onap",
-        "key": "onap_vvp-validation-scripts",
+        "projectKey": "onap_vvp-validation-scripts",
         "name": "vvp-validation-scripts",
         "tags": [],
         "visibility": "public",
@@ -1082,7 +1082,7 @@
     },
     "onap_sdc": {
         "organization": "onap",
-        "key": "onap_sdc",
+        "projectKey": "onap_sdc",
         "name": "sdc",
         "tags": [],
         "visibility": "public",
@@ -1090,7 +1090,7 @@
     },
     "onap_externalapi-nbi": {
         "organization": "onap",
-        "key": "onap_externalapi-nbi",
+        "projectKey": "onap_externalapi-nbi",
         "name": "externalapi-nbi",
         "tags": [],
         "visibility": "public",
@@ -1098,7 +1098,7 @@
     },
     "apache_sling-org-apache-sling-jcr-webdav": {
         "organization": "apache",
-        "key": "apache_sling-org-apache-sling-jcr-webdav",
+        "projectKey": "apache_sling-org-apache-sling-jcr-webdav",
         "name": "Apache Sling JCR WebDAV",
         "tags": [
             "sling"
@@ -1109,7 +1109,7 @@
     },
     "apache_sling-org-apache-sling-jmx-provider": {
         "organization": "apache",
-        "key": "apache_sling-org-apache-sling-jmx-provider",
+        "projectKey": "apache_sling-org-apache-sling-jmx-provider",
         "name": "Apache Sling JMX Resource Provider",
         "tags": [
             "sling"
@@ -1120,7 +1120,7 @@
     },
     "apache_sling-org-apache-sling-distribution-journal": {
         "organization": "apache",
-        "key": "apache_sling-org-apache-sling-distribution-journal",
+        "projectKey": "apache_sling-org-apache-sling-distribution-journal",
         "name": "Apache Sling Journal based Content Distribution - Core bundle",
         "tags": [
             "sling"
@@ -1131,7 +1131,7 @@
     },
     "apache_sling-kickstart-maven-plugin": {
         "organization": "apache",
-        "key": "apache_sling-kickstart-maven-plugin",
+        "projectKey": "apache_sling-kickstart-maven-plugin",
         "name": "Apache Sling Kickstart Maven Plugin",
         "tags": [],
         "visibility": "public",
@@ -1140,7 +1140,7 @@
     },
     "onap_multicloud-azure": {
         "organization": "onap",
-        "key": "onap_multicloud-azure",
+        "projectKey": "onap_multicloud-azure",
         "name": "multicloud-azure",
         "tags": [],
         "visibility": "public",
@@ -1148,7 +1148,7 @@
     },
     "onap_aaf-certservice": {
         "organization": "onap",
-        "key": "onap_aaf-certservice",
+        "projectKey": "onap_aaf-certservice",
         "name": "aaf-certservice",
         "tags": [],
         "visibility": "public",
@@ -1156,7 +1156,7 @@
     },
     "onap_aai-aai-common": {
         "organization": "onap",
-        "key": "onap_aai-aai-common",
+        "projectKey": "onap_aai-aai-common",
         "name": "aai-aai-common",
         "tags": [],
         "visibility": "public",
@@ -1164,7 +1164,7 @@
     },
     "onap_aai-babel": {
         "organization": "onap",
-        "key": "onap_aai-babel",
+        "projectKey": "onap_aai-babel",
         "name": "aai-babel",
         "tags": [],
         "visibility": "public",
@@ -1172,7 +1172,7 @@
     },
     "onap_dcaegen2-platform-mod-onboardingapi": {
         "organization": "onap",
-        "key": "onap_dcaegen2-platform-mod-onboardingapi",
+        "projectKey": "onap_dcaegen2-platform-mod-onboardingapi",
         "name": "dcaegen2-platform-mod-onboardingapi",
         "tags": [],
         "visibility": "public",
@@ -1180,7 +1180,7 @@
     },
     "onap_dcaegen2-platform-mod-runtimeapi": {
         "organization": "onap",
-        "key": "onap_dcaegen2-platform-mod-runtimeapi",
+        "projectKey": "onap_dcaegen2-platform-mod-runtimeapi",
         "name": "dcaegen2-platform-mod-runtimeapi",
         "tags": [],
         "visibility": "public",
@@ -1188,7 +1188,7 @@
     },
     "onap_dcaegen2-platform-oti-event-handler": {
         "organization": "onap",
-        "key": "onap_dcaegen2-platform-oti-event-handler",
+        "projectKey": "onap_dcaegen2-platform-oti-event-handler",
         "name": "dcaegen2-platform-oti-event-handler",
         "tags": [],
         "visibility": "public",
@@ -1196,7 +1196,7 @@
     },
     "onap_dcaegen2-platform-plugins": {
         "organization": "onap",
-        "key": "onap_dcaegen2-platform-plugins",
+        "projectKey": "onap_dcaegen2-platform-plugins",
         "name": "dcaegen2-platform-plugins",
         "tags": [],
         "visibility": "public",
@@ -1204,7 +1204,7 @@
     },
     "onap_dcaegen2-platform-policy-handler": {
         "organization": "onap",
-        "key": "onap_dcaegen2-platform-policy-handler",
+        "projectKey": "onap_dcaegen2-platform-policy-handler",
         "name": "dcaegen2-platform-policy-handler",
         "tags": [],
         "visibility": "public",
@@ -1212,7 +1212,7 @@
     },
     "onap_dcaegen2-services-datalake-handler": {
         "organization": "onap",
-        "key": "onap_dcaegen2-services-datalake-handler",
+        "projectKey": "onap_dcaegen2-services-datalake-handler",
         "name": "dcaegen2-service-datalake-handler",
         "tags": [],
         "visibility": "public",
@@ -1220,7 +1220,7 @@
     },
     "onap_dcaegen2-services-datalake-handler-jess": {
         "organization": "onap",
-        "key": "onap_dcaegen2-services-datalake-handler-jess",
+        "projectKey": "onap_dcaegen2-services-datalake-handler-jess",
         "name": "dcaegen2-service-datalake-handler",
         "tags": [],
         "visibility": "public",
@@ -1228,7 +1228,7 @@
     },
     "onap_dcaegen2-services-heartbeat": {
         "organization": "onap",
-        "key": "onap_dcaegen2-services-heartbeat",
+        "projectKey": "onap_dcaegen2-services-heartbeat",
         "name": "dcaegen2-services-heartbeat",
         "tags": [],
         "visibility": "public",
@@ -1236,7 +1236,7 @@
     },
     "onap_dcaegen2-services-mapper": {
         "organization": "onap",
-        "key": "onap_dcaegen2-services-mapper",
+        "projectKey": "onap_dcaegen2-services-mapper",
         "name": "dcaegen2-services-mapper",
         "tags": [],
         "visibility": "public",
@@ -1244,7 +1244,7 @@
     },
     "ant-master": {
         "organization": "apache",
-        "key": "ant-master",
+        "projectKey": "ant-master",
         "name": "Apache Ant",
         "tags": [],
         "visibility": "public",
@@ -1252,7 +1252,7 @@
     },
     "onap_vfc-nfvo-lcm": {
         "organization": "onap",
-        "key": "onap_vfc-nfvo-lcm",
+        "projectKey": "onap_vfc-nfvo-lcm",
         "name": "vfc-nfvo-lcm",
         "tags": [],
         "visibility": "public",
@@ -1260,7 +1260,7 @@
     },
     "onap_ccsdk-cds": {
         "organization": "onap",
-        "key": "onap_ccsdk-cds",
+        "projectKey": "onap_ccsdk-cds",
         "name": "CDS Parent",
         "tags": [],
         "visibility": "public",
@@ -1268,7 +1268,7 @@
     },
     "onap_policy-common": {
         "organization": "onap",
-        "key": "onap_policy-common",
+        "projectKey": "onap_policy-common",
         "name": "policy-common",
         "tags": [],
         "visibility": "public",
@@ -1276,7 +1276,7 @@
     },
     "onap_policy-drools-applications": {
         "organization": "onap",
-        "key": "onap_policy-drools-applications",
+        "projectKey": "onap_policy-drools-applications",
         "name": "policy-drools-applications",
         "tags": [],
         "visibility": "public",
@@ -1284,7 +1284,7 @@
     },
     "onap_policy-xacml-pdp": {
         "organization": "onap",
-        "key": "onap_policy-xacml-pdp",
+        "projectKey": "onap_policy-xacml-pdp",
         "name": "policy-xacml-pdp",
         "tags": [],
         "visibility": "public",
@@ -1292,7 +1292,7 @@
     },
     "apache_ofbiz-plugins": {
         "organization": "apache",
-        "key": "apache_ofbiz-plugins",
+        "projectKey": "apache_ofbiz-plugins",
         "name": "ofbiz-plugins",
         "tags": [],
         "visibility": "public",
@@ -1301,7 +1301,7 @@
     },
     "apache_sling-org-apache-sling-scripting-thymeleaf": {
         "organization": "apache",
-        "key": "apache_sling-org-apache-sling-scripting-thymeleaf",
+        "projectKey": "apache_sling-org-apache-sling-scripting-thymeleaf",
         "name": "Apache Sling Scripting Thymeleaf",
         "tags": [
             "sling"
@@ -1312,7 +1312,7 @@
     },
     "poi-parent": {
         "organization": "apache",
-        "key": "poi-parent",
+        "projectKey": "poi-parent",
         "name": "Apache POI - the Java API for Microsoft Documents",
         "tags": [],
         "visibility": "public",
@@ -1320,7 +1320,7 @@
     },
     "apache_incubator-ratis": {
         "organization": "apache",
-        "key": "apache_incubator-ratis",
+        "projectKey": "apache_incubator-ratis",
         "name": "Apache Ratis",
         "tags": [],
         "visibility": "public",
@@ -1331,7 +1331,7 @@
     },
     "onap_dmaap-dbcapi": {
         "organization": "onap",
-        "key": "onap_dmaap-dbcapi",
+        "projectKey": "onap_dmaap-dbcapi",
         "name": "dmaap-dbcapi",
         "tags": [],
         "visibility": "public",
@@ -1339,7 +1339,7 @@
     },
     "apache_sling-org-apache-sling-testing-clients": {
         "organization": "apache",
-        "key": "apache_sling-org-apache-sling-testing-clients",
+        "projectKey": "apache_sling-org-apache-sling-testing-clients",
         "name": "Apache Sling Testing Clients",
         "tags": [
             "sling"
@@ -1350,7 +1350,7 @@
     },
     "apache_struts": {
         "organization": "apache",
-        "key": "apache_struts",
+        "projectKey": "apache_struts",
         "name": "Struts 2",
         "tags": [],
         "visibility": "public",
@@ -1359,7 +1359,7 @@
     },
     "servicecomb-toolkit": {
         "organization": "apache",
-        "key": "servicecomb-toolkit",
+        "projectKey": "servicecomb-toolkit",
         "name": "Apache ServiceComb Toolkit",
         "tags": [
             "servicecomb"
@@ -1369,7 +1369,7 @@
     },
     "apache_ofbiz-framework": {
         "organization": "apache",
-        "key": "apache_ofbiz-framework",
+        "projectKey": "apache_ofbiz-framework",
         "name": "ofbiz-framework",
         "tags": [
             "ofbiz"
@@ -1380,7 +1380,7 @@
     },
     "onap_aai-search-data-service": {
         "organization": "onap",
-        "key": "onap_aai-search-data-service",
+        "projectKey": "onap_aai-search-data-service",
         "name": "aai-search-data-service aggregate pom",
         "tags": [],
         "visibility": "public",
@@ -1388,7 +1388,7 @@
     },
     "apache_sling-org-apache-sling-servlets-get": {
         "organization": "apache",
-        "key": "apache_sling-org-apache-sling-servlets-get",
+        "projectKey": "apache_sling-org-apache-sling-servlets-get",
         "name": "Apache Sling Default GET Servlets",
         "tags": [
             "sling"
@@ -1399,7 +1399,7 @@
     },
     "onap_logging-analytics-pomba-pomba-aai-context-builder": {
         "organization": "onap",
-        "key": "onap_logging-analytics-pomba-pomba-aai-context-builder",
+        "projectKey": "onap_logging-analytics-pomba-pomba-aai-context-builder",
         "name": "pomba-aai-context-builder",
         "tags": [],
         "visibility": "public",
@@ -1407,7 +1407,7 @@
     },
     "onap_logging-analytics-pomba-pomba-audit-common": {
         "organization": "onap",
-        "key": "onap_logging-analytics-pomba-pomba-audit-common",
+        "projectKey": "onap_logging-analytics-pomba-pomba-audit-common",
         "name": "pomba-audit-common",
         "tags": [],
         "visibility": "public",
@@ -1415,7 +1415,7 @@
     },
     "onap_logging-analytics-pomba-pomba-context-aggregator": {
         "organization": "onap",
-        "key": "onap_logging-analytics-pomba-pomba-context-aggregator",
+        "projectKey": "onap_logging-analytics-pomba-pomba-context-aggregator",
         "name": "pomba-context-aggregator",
         "tags": [],
         "visibility": "public",
@@ -1423,7 +1423,7 @@
     },
     "onap_logging-analytics-pomba-pomba-network-discovery-context-builder": {
         "organization": "onap",
-        "key": "onap_logging-analytics-pomba-pomba-network-discovery-context-builder",
+        "projectKey": "onap_logging-analytics-pomba-pomba-network-discovery-context-builder",
         "name": "pomba-network-discovery-context-builder",
         "tags": [],
         "visibility": "public",
@@ -1431,7 +1431,7 @@
     },
     "onap_logging-analytics-pomba-pomba-sdc-context-builder": {
         "organization": "onap",
-        "key": "onap_logging-analytics-pomba-pomba-sdc-context-builder",
+        "projectKey": "onap_logging-analytics-pomba-pomba-sdc-context-builder",
         "name": "pomba-sdc-context-builder",
         "tags": [],
         "visibility": "public",
@@ -1439,7 +1439,7 @@
     },
     "apache_plc4x": {
         "organization": "apache",
-        "key": "apache_plc4x",
+        "projectKey": "apache_plc4x",
         "name": "PLC4X",
         "tags": [],
         "visibility": "public",
@@ -1448,7 +1448,7 @@
     },
     "apache_incubator-tamaya-sandbox": {
         "organization": "apache",
-        "key": "apache_incubator-tamaya-sandbox",
+        "projectKey": "apache_incubator-tamaya-sandbox",
         "name": "Apache Tamaya Sandbox",
         "tags": [
             "tamaya"
@@ -1459,7 +1459,7 @@
     },
     "onap_so-libs": {
         "organization": "onap",
-        "key": "onap_so-libs",
+        "projectKey": "onap_so-libs",
         "name": "so-libs",
         "tags": [],
         "visibility": "public",
@@ -1467,7 +1467,7 @@
     },
     "onap_aai-schema-service": {
         "organization": "onap",
-        "key": "onap_aai-schema-service",
+        "projectKey": "onap_aai-schema-service",
         "name": "aai-schema-service",
         "tags": [],
         "visibility": "public",
@@ -1475,7 +1475,7 @@
     },
     "commons-geometry": {
         "organization": "apache",
-        "key": "commons-geometry",
+        "projectKey": "commons-geometry",
         "name": "Apache Commons Geometry",
         "tags": [],
         "visibility": "public",
@@ -1483,7 +1483,7 @@
     },
     "onap_dcaegen2-services-prh": {
         "organization": "onap",
-        "key": "onap_dcaegen2-services-prh",
+        "projectKey": "onap_dcaegen2-services-prh",
         "name": "dcaegen2-services-prh",
         "tags": [],
         "visibility": "public",
@@ -1491,7 +1491,7 @@
     },
     "onap_dcaegen2-services-sdk": {
         "organization": "onap",
-        "key": "onap_dcaegen2-services-sdk",
+        "projectKey": "onap_dcaegen2-services-sdk",
         "name": "dcaegen2-services-sdk",
         "tags": [],
         "visibility": "public",
@@ -1499,7 +1499,7 @@
     },
     "onap_dcaegen2-services-son-handler": {
         "organization": "onap",
-        "key": "onap_dcaegen2-services-son-handler",
+        "projectKey": "onap_dcaegen2-services-son-handler",
         "name": "dcaegen2-services-son-handler",
         "tags": [],
         "visibility": "public",
@@ -1507,7 +1507,7 @@
     },
     "apache_sling-whiteboard": {
         "organization": "apache",
-        "key": "apache_sling-whiteboard",
+        "projectKey": "apache_sling-whiteboard",
         "name": "Apache Sling Whiteboard (Builder)",
         "tags": [
             "sling"
@@ -1518,7 +1518,7 @@
     },
     "apache_sling-org-apache-sling-distribution-core": {
         "organization": "apache",
-        "key": "apache_sling-org-apache-sling-distribution-core",
+        "projectKey": "apache_sling-org-apache-sling-distribution-core",
         "name": "Apache Sling Distribution Core",
         "tags": [
             "sling"
@@ -1529,7 +1529,7 @@
     },
     "apache_sling-org-apache-sling-testing-serversetup": {
         "organization": "apache",
-        "key": "apache_sling-org-apache-sling-testing-serversetup",
+        "projectKey": "apache_sling-org-apache-sling-testing-serversetup",
         "name": "Apache Sling Server Setup Tools",
         "tags": [
             "sling"
@@ -1540,7 +1540,7 @@
     },
     "apache_sling-org-apache-sling-serviceusermapper": {
         "organization": "apache",
-        "key": "apache_sling-org-apache-sling-serviceusermapper",
+        "projectKey": "apache_sling-org-apache-sling-serviceusermapper",
         "name": "Apache Sling Service User Mapper",
         "tags": [
             "sling"
@@ -1551,7 +1551,7 @@
     },
     "apache_sling-org-apache-sling-servlet-helpers": {
         "organization": "apache",
-        "key": "apache_sling-org-apache-sling-servlet-helpers",
+        "projectKey": "apache_sling-org-apache-sling-servlet-helpers",
         "name": "Apache Sling Servlet Helpers",
         "tags": [
             "sling"
@@ -1562,7 +1562,7 @@
     },
     "apache_sling-org-apache-sling-servlets-resolver": {
         "organization": "apache",
-        "key": "apache_sling-org-apache-sling-servlets-resolver",
+        "projectKey": "apache_sling-org-apache-sling-servlets-resolver",
         "name": "Apache Sling Servlets Resolver",
         "tags": [
             "sling"
@@ -1573,7 +1573,7 @@
     },
     "apache_sling-slingstart-maven-plugin": {
         "organization": "apache",
-        "key": "apache_sling-slingstart-maven-plugin",
+        "projectKey": "apache_sling-slingstart-maven-plugin",
         "name": "Apache Sling SlingStart Maven Plugin",
         "tags": [
             "sling"
@@ -1584,7 +1584,7 @@
     },
     "apache_sling-org-apache-sling-testing-jcr-mock": {
         "organization": "apache",
-        "key": "apache_sling-org-apache-sling-testing-jcr-mock",
+        "projectKey": "apache_sling-org-apache-sling-testing-jcr-mock",
         "name": "Apache Sling Testing JCR Mock",
         "tags": [
             "sling"
@@ -1595,7 +1595,7 @@
     },
     "apache_sling-org-apache-sling-testing-osgi-mock": {
         "organization": "apache",
-        "key": "apache_sling-org-apache-sling-testing-osgi-mock",
+        "projectKey": "apache_sling-org-apache-sling-testing-osgi-mock",
         "name": "Apache Sling Testing OSGi Mock",
         "tags": [
             "sling"
@@ -1606,7 +1606,7 @@
     },
     "apache_sling-org-apache-sling-testing-paxexam": {
         "organization": "apache",
-        "key": "apache_sling-org-apache-sling-testing-paxexam",
+        "projectKey": "apache_sling-org-apache-sling-testing-paxexam",
         "name": "Apache Sling Testing PaxExam",
         "tags": [
             "sling"
@@ -1617,7 +1617,7 @@
     },
     "apache_sling-org-apache-sling-testing-resourceresolver-mock": {
         "organization": "apache",
-        "key": "apache_sling-org-apache-sling-testing-resourceresolver-mock",
+        "projectKey": "apache_sling-org-apache-sling-testing-resourceresolver-mock",
         "name": "Apache Sling Testing Resource Resolver Mock",
         "tags": [
             "sling"
@@ -1628,7 +1628,7 @@
     },
     "onap_dmaap-datarouter": {
         "organization": "onap",
-        "key": "onap_dmaap-datarouter",
+        "projectKey": "onap_dmaap-datarouter",
         "name": "dmaap-datarouter",
         "tags": [],
         "visibility": "public",
@@ -1636,7 +1636,7 @@
     },
     "onap_integration-pnf-simulator": {
         "organization": "onap",
-        "key": "onap_integration-pnf-simulator",
+        "projectKey": "onap_integration-pnf-simulator",
         "name": "integration-pnf-simulator",
         "tags": [],
         "visibility": "public",
@@ -1644,7 +1644,7 @@
     },
     "onap_integration-simulators-pnf-simulator": {
         "organization": "onap",
-        "key": "onap_integration-simulators-pnf-simulator",
+        "projectKey": "onap_integration-simulators-pnf-simulator",
         "name": "integration-pnf-simulator",
         "tags": [],
         "visibility": "public",
@@ -1652,7 +1652,7 @@
     },
     "apache_sling-scriptingbundle-maven-plugin": {
         "organization": "apache",
-        "key": "apache_sling-scriptingbundle-maven-plugin",
+        "projectKey": "apache_sling-scriptingbundle-maven-plugin",
         "name": "scriptingbundle-maven-plugin",
         "tags": [
             "sling"
@@ -1663,7 +1663,7 @@
     },
     "onap_aai-sparky-be": {
         "organization": "onap",
-        "key": "onap_aai-sparky-be",
+        "projectKey": "onap_aai-sparky-be",
         "name": "aai-sparky-be",
         "tags": [],
         "visibility": "public",
@@ -1671,7 +1671,7 @@
     },
     "onap_dcaegen2-services-pm-mapper": {
         "organization": "onap",
-        "key": "onap_dcaegen2-services-pm-mapper",
+        "projectKey": "onap_dcaegen2-services-pm-mapper",
         "name": "dcaegen2-services-pm-mapper",
         "tags": [],
         "visibility": "public",
@@ -1679,7 +1679,7 @@
     },
     "onap_clamp": {
         "organization": "onap",
-        "key": "onap_clamp",
+        "projectKey": "onap_clamp",
         "name": "clamp",
         "tags": [],
         "visibility": "public",
@@ -1687,7 +1687,7 @@
     },
     "roller-master": {
         "organization": "apache",
-        "key": "roller-master",
+        "projectKey": "roller-master",
         "name": "Roller",
         "tags": [],
         "visibility": "public",
@@ -1695,7 +1695,7 @@
     },
     "milagro": {
         "organization": "apache",
-        "key": "milagro",
+        "projectKey": "milagro",
         "name": "Apache Milagro",
         "tags": [],
         "visibility": "public",
@@ -1703,7 +1703,7 @@
     },
     "apache_sling-org-apache-sling-scripting-jsp-taglib": {
         "organization": "apache",
-        "key": "apache_sling-org-apache-sling-scripting-jsp-taglib",
+        "projectKey": "apache_sling-org-apache-sling-scripting-jsp-taglib",
         "name": "Apache Sling Scripting JSP Tag Library",
         "tags": [
             "sling"
@@ -1714,7 +1714,7 @@
     },
     "onap_portal": {
         "organization": "onap",
-        "key": "onap_portal",
+        "projectKey": "onap_portal",
         "name": "portal",
         "tags": [],
         "visibility": "public",
@@ -1722,7 +1722,7 @@
     },
     "onap_multicloud-framework-artifactbroker": {
         "organization": "onap",
-        "key": "onap_multicloud-framework-artifactbroker",
+        "projectKey": "onap_multicloud-framework-artifactbroker",
         "name": "multicloud-framework-artifactbroker",
         "tags": [],
         "visibility": "public",
@@ -1730,7 +1730,7 @@
     },
     "apache_incubator-milagro-MPC": {
         "organization": "apache",
-        "key": "apache_incubator-milagro-MPC",
+        "projectKey": "apache_incubator-milagro-MPC",
         "name": "apache_incubator-milagro-MPC",
         "tags": [],
         "visibility": "public",
@@ -1741,7 +1741,7 @@
     },
     "onap_logging-analytics": {
         "organization": "onap",
-        "key": "onap_logging-analytics",
+        "projectKey": "onap_logging-analytics",
         "name": "logging-analytics",
         "tags": [],
         "visibility": "public",
@@ -1749,7 +1749,7 @@
     },
     "onap_ccsdk-apps": {
         "organization": "onap",
-        "key": "onap_ccsdk-apps",
+        "projectKey": "onap_ccsdk-apps",
         "name": "ccsdk-apps",
         "tags": [],
         "visibility": "public",
@@ -1757,7 +1757,7 @@
     },
     "onap_ccsdk-dashboard": {
         "organization": "onap",
-        "key": "onap_ccsdk-dashboard",
+        "projectKey": "onap_ccsdk-dashboard",
         "name": "ccsdk-dashboard",
         "tags": [],
         "visibility": "public",
@@ -1765,7 +1765,7 @@
     },
     "apache_sling-org-apache-sling-discovery-oak": {
         "organization": "apache",
-        "key": "apache_sling-org-apache-sling-discovery-oak",
+        "projectKey": "apache_sling-org-apache-sling-discovery-oak",
         "name": "Apache Sling Oak-Based Discovery Service",
         "tags": [
             "sling"
@@ -1776,7 +1776,7 @@
     },
     "knox-gateway": {
         "organization": "apache",
-        "key": "knox-gateway",
+        "projectKey": "knox-gateway",
         "name": "gateway",
         "tags": [],
         "visibility": "public",
@@ -1784,7 +1784,7 @@
     },
     "onap_vfc-nfvo-wfengine-activiti-extension": {
         "organization": "onap",
-        "key": "onap_vfc-nfvo-wfengine-activiti-extension",
+        "projectKey": "onap_vfc-nfvo-wfengine-activiti-extension",
         "name": "vfc-nfvo-wfengine-activiti-extension",
         "tags": [],
         "visibility": "public",
@@ -1792,7 +1792,7 @@
     },
     "onap_ccsdk-features": {
         "organization": "onap",
-        "key": "onap_ccsdk-features",
+        "projectKey": "onap_ccsdk-features",
         "name": "ccsdk-features",
         "tags": [],
         "visibility": "public",
@@ -1800,7 +1800,7 @@
     },
     "onap_dcaegen2-platform-inventory-api": {
         "organization": "onap",
-        "key": "onap_dcaegen2-platform-inventory-api",
+        "projectKey": "onap_dcaegen2-platform-inventory-api",
         "name": "dcaegen2-platform-inventory-api",
         "tags": [],
         "visibility": "public",
@@ -1808,7 +1808,7 @@
     },
     "onap_sdnc-apps": {
         "organization": "onap",
-        "key": "onap_sdnc-apps",
+        "projectKey": "onap_sdnc-apps",
         "name": "sdnc-apps",
         "tags": [],
         "visibility": "public",
@@ -1816,7 +1816,7 @@
     },
     "onap_cli": {
         "organization": "onap",
-        "key": "onap_cli",
+        "projectKey": "onap_cli",
         "name": "cli",
         "tags": [],
         "visibility": "public",
@@ -1824,7 +1824,7 @@
     },
     "pdfbox-reactor": {
         "organization": "apache",
-        "key": "pdfbox-reactor",
+        "projectKey": "pdfbox-reactor",
         "name": "Apache PDFBox",
         "tags": [],
         "visibility": "public",
@@ -1832,7 +1832,7 @@
     },
     "onap_ccsdk-sli-adaptors": {
         "organization": "onap",
-        "key": "onap_ccsdk-sli-adaptors",
+        "projectKey": "onap_ccsdk-sli-adaptors",
         "name": "ccsdk-sli-adaptors",
         "tags": [],
         "visibility": "public",
@@ -1840,7 +1840,7 @@
     },
     "onap_ccsdk-sli-core": {
         "organization": "onap",
-        "key": "onap_ccsdk-sli-core",
+        "projectKey": "onap_ccsdk-sli-core",
         "name": "ccsdk-sli-core",
         "tags": [],
         "visibility": "public",
@@ -1848,7 +1848,7 @@
     },
     "onap_ccsdk-sli-northbound": {
         "organization": "onap",
-        "key": "onap_ccsdk-sli-northbound",
+        "projectKey": "onap_ccsdk-sli-northbound",
         "name": "ccsdk-sli-northbound",
         "tags": [],
         "visibility": "public",
@@ -1856,7 +1856,7 @@
     },
     "onap_dcaegen2-collectors-datafile": {
         "organization": "onap",
-        "key": "onap_dcaegen2-collectors-datafile",
+        "projectKey": "onap_dcaegen2-collectors-datafile",
         "name": "dcaegen2-collectors.datafile",
         "tags": [],
         "visibility": "public",
@@ -1864,7 +1864,7 @@
     },
     "onap_vfc-nfvo-driver-vnfm-gvnfm-gvnfmadapter": {
         "organization": "onap",
-        "key": "onap_vfc-nfvo-driver-vnfm-gvnfm-gvnfmadapter",
+        "projectKey": "onap_vfc-nfvo-driver-vnfm-gvnfm-gvnfmadapter",
         "name": "vfc-nfvo-driver-vnfm-gvnfm-gvnfmadapter",
         "tags": [],
         "visibility": "public",
@@ -1872,7 +1872,7 @@
     },
     "apache_sling-org-apache-sling-discovery-base": {
         "organization": "apache",
-        "key": "apache_sling-org-apache-sling-discovery-base",
+        "projectKey": "apache_sling-org-apache-sling-discovery-base",
         "name": "Apache Sling Discovery Base",
         "tags": [
             "sling"
@@ -1883,7 +1883,7 @@
     },
     "apache_sling-org-apache-sling-discovery-commons": {
         "organization": "apache",
-        "key": "apache_sling-org-apache-sling-discovery-commons",
+        "projectKey": "apache_sling-org-apache-sling-discovery-commons",
         "name": "Apache Sling Discovery Commons",
         "tags": [
             "sling"
@@ -1894,7 +1894,7 @@
     },
     "apache_sling-org-apache-sling-engine": {
         "organization": "apache",
-        "key": "apache_sling-org-apache-sling-engine",
+        "projectKey": "apache_sling-org-apache-sling-engine",
         "name": "Apache Sling Engine Implementation",
         "tags": [
             "sling"
@@ -1905,7 +1905,7 @@
     },
     "apache_sling-org-apache-sling-event": {
         "organization": "apache",
-        "key": "apache_sling-org-apache-sling-event",
+        "projectKey": "apache_sling-org-apache-sling-event",
         "name": "Apache Sling Event Support",
         "tags": [
             "sling"
@@ -1916,7 +1916,7 @@
     },
     "apache_sling-org-apache-sling-feature": {
         "organization": "apache",
-        "key": "apache_sling-org-apache-sling-feature",
+        "projectKey": "apache_sling-org-apache-sling-feature",
         "name": "Apache Sling Feature",
         "tags": [
             "sling"
@@ -1927,7 +1927,7 @@
     },
     "apache_sling-org-apache-sling-feature-launcher": {
         "organization": "apache",
-        "key": "apache_sling-org-apache-sling-feature-launcher",
+        "projectKey": "apache_sling-org-apache-sling-feature-launcher",
         "name": "Apache Sling Feature Launcher",
         "tags": [
             "sling"
@@ -1938,7 +1938,7 @@
     },
     "apache_sling-org-apache-sling-feature-analyser": {
         "organization": "apache",
-        "key": "apache_sling-org-apache-sling-feature-analyser",
+        "projectKey": "apache_sling-org-apache-sling-feature-analyser",
         "name": "Apache Sling Feature Model Analyser",
         "tags": [
             "sling"
@@ -1949,7 +1949,7 @@
     },
     "org.apache.nemo:nemo-project": {
         "organization": "apache",
-        "key": "org.apache.nemo:nemo-project",
+        "projectKey": "org.apache.nemo:nemo-project",
         "name": "Nemo Project",
         "tags": [],
         "visibility": "public",
@@ -1958,7 +1958,7 @@
     },
     "onap_aai-spike": {
         "organization": "onap",
-        "key": "onap_aai-spike",
+        "projectKey": "onap_aai-spike",
         "name": "aai-spike",
         "tags": [],
         "visibility": "public",
@@ -1966,7 +1966,7 @@
     },
     "onap_aai-traversal": {
         "organization": "onap",
-        "key": "onap_aai-traversal",
+        "projectKey": "onap_aai-traversal",
         "name": "aai-traversal",
         "tags": [],
         "visibility": "public",
@@ -1974,7 +1974,7 @@
     },
     "onap_vid": {
         "organization": "onap",
-        "key": "onap_vid",
+        "projectKey": "onap_vid",
         "name": "vid",
         "tags": [],
         "visibility": "public",
@@ -1982,7 +1982,7 @@
     },
     "onap_dmaap-messagerouter-messageservice": {
         "organization": "onap",
-        "key": "onap_dmaap-messagerouter-messageservice",
+        "projectKey": "onap_dmaap-messagerouter-messageservice",
         "name": "dmaap-messagerouter-messageservice",
         "tags": [],
         "visibility": "public",
@@ -1990,7 +1990,7 @@
     },
     "onap_vfc-gvnfm-vnfres-res": {
         "organization": "onap",
-        "key": "onap_vfc-gvnfm-vnfres-res",
+        "projectKey": "onap_vfc-gvnfm-vnfres-res",
         "name": "vfc-gvnfm-vnfres-res",
         "tags": [],
         "visibility": "public",
@@ -1998,7 +1998,7 @@
     },
     "onap_vnfsdk-functest": {
         "organization": "onap",
-        "key": "onap_vnfsdk-functest",
+        "projectKey": "onap_vnfsdk-functest",
         "name": "vnfsdk-functest",
         "tags": [],
         "visibility": "public",
@@ -2006,7 +2006,7 @@
     },
     "onap_ccsdk-sli-plugins": {
         "organization": "onap",
-        "key": "onap_ccsdk-sli-plugins",
+        "projectKey": "onap_ccsdk-sli-plugins",
         "name": "ccsdk-sli-plugins",
         "tags": [],
         "visibility": "public",
@@ -2014,7 +2014,7 @@
     },
     "onap_holmes-engine-management": {
         "organization": "onap",
-        "key": "onap_holmes-engine-management",
+        "projectKey": "onap_holmes-engine-management",
         "name": "holmes-engine-management",
         "tags": [],
         "visibility": "public",
@@ -2022,7 +2022,7 @@
     },
     "onap_holmes-rule-management": {
         "organization": "onap",
-        "key": "onap_holmes-rule-management",
+        "projectKey": "onap_holmes-rule-management",
         "name": "holmes-rule-management",
         "tags": [],
         "visibility": "public",
@@ -2030,7 +2030,7 @@
     },
     "apache_sling-jspc-maven-plugin": {
         "organization": "apache",
-        "key": "apache_sling-jspc-maven-plugin",
+        "projectKey": "apache_sling-jspc-maven-plugin",
         "name": "Apache Sling JSPC Maven Plugin",
         "tags": [
             "sling"
@@ -2041,7 +2041,7 @@
     },
     "onap_msb-apigateway": {
         "organization": "onap",
-        "key": "onap_msb-apigateway",
+        "projectKey": "onap_msb-apigateway",
         "name": "msb-apigateway",
         "tags": [],
         "visibility": "public",
@@ -2049,7 +2049,7 @@
     },
     "onap_vnfsdk-ves-agent": {
         "organization": "onap",
-        "key": "onap_vnfsdk-ves-agent",
+        "projectKey": "onap_vnfsdk-ves-agent",
         "name": "vnfsdk-ves-agent-vesjavalibrary",
         "tags": [],
         "visibility": "public",
@@ -2058,7 +2058,7 @@
     },
     "onap_music": {
         "organization": "onap",
-        "key": "onap_music",
+        "projectKey": "onap_music",
         "name": "MUSIC",
         "tags": [],
         "visibility": "public",
@@ -2066,7 +2066,7 @@
     },
     "onap_vfc-gvnfm-vnflcm-lcm": {
         "organization": "onap",
-        "key": "onap_vfc-gvnfm-vnflcm-lcm",
+        "projectKey": "onap_vfc-gvnfm-vnflcm-lcm",
         "name": "vfc-gvnfm-vnflcm-lcm",
         "tags": [],
         "visibility": "public",
@@ -2074,7 +2074,7 @@
     },
     "onap_vvp-test-engine": {
         "organization": "onap",
-        "key": "onap_vvp-test-engine",
+        "projectKey": "onap_vvp-test-engine",
         "name": "vvp-test-engine",
         "tags": [],
         "visibility": "public",
@@ -2082,7 +2082,7 @@
     },
     "apache_sling-org-apache-sling-commons-threads": {
         "organization": "apache",
-        "key": "apache_sling-org-apache-sling-commons-threads",
+        "projectKey": "apache_sling-org-apache-sling-commons-threads",
         "name": "Apache Sling Commons Threads",
         "tags": [
             "sling"
@@ -2093,7 +2093,7 @@
     },
     "onap_holmes-common": {
         "organization": "onap",
-        "key": "onap_holmes-common",
+        "projectKey": "onap_holmes-common",
         "name": "holmes-common",
         "tags": [],
         "visibility": "public",
@@ -2101,7 +2101,7 @@
     },
     "onap_msb-discovery": {
         "organization": "onap",
-        "key": "onap_msb-discovery",
+        "projectKey": "onap_msb-discovery",
         "name": "msb-discovery",
         "tags": [],
         "visibility": "public",
@@ -2109,7 +2109,7 @@
     },
     "onap_msb-java-sdk": {
         "organization": "onap",
-        "key": "onap_msb-java-sdk",
+        "projectKey": "onap_msb-java-sdk",
         "name": "msb-java-sdk",
         "tags": [],
         "visibility": "public",
@@ -2117,7 +2117,7 @@
     },
     "onap_vfc-nfvo-multivimproxy": {
         "organization": "onap",
-        "key": "onap_vfc-nfvo-multivimproxy",
+        "projectKey": "onap_vfc-nfvo-multivimproxy",
         "name": "vfc-nfvo-multivimproxy",
         "tags": [],
         "visibility": "public",
@@ -2125,7 +2125,7 @@
     },
     "onap_vfc-nfvo-driver-vnfm-svnfm-zte": {
         "organization": "onap",
-        "key": "onap_vfc-nfvo-driver-vnfm-svnfm-zte",
+        "projectKey": "onap_vfc-nfvo-driver-vnfm-svnfm-zte",
         "name": "vfc-nfvo-driver-vnfm-svnfm-zte",
         "tags": [],
         "visibility": "public",
@@ -2133,7 +2133,7 @@
     },
     "apache_sling-org-apache-sling-testing-rules": {
         "organization": "apache",
-        "key": "apache_sling-org-apache-sling-testing-rules",
+        "projectKey": "apache_sling-org-apache-sling-testing-rules",
         "name": "Apache Sling Testing Rules",
         "tags": [
             "sling"
@@ -2144,7 +2144,7 @@
     },
     "apache_sling-org-apache-sling-commons-testing": {
         "organization": "apache",
-        "key": "apache_sling-org-apache-sling-commons-testing",
+        "projectKey": "apache_sling-org-apache-sling-commons-testing",
         "name": "Apache Sling Testing Utilities",
         "tags": [
             "sling"
@@ -2155,7 +2155,7 @@
     },
     "apache_sling-slingfeature-maven-plugin": {
         "organization": "apache",
-        "key": "apache_sling-slingfeature-maven-plugin",
+        "projectKey": "apache_sling-slingfeature-maven-plugin",
         "name": "Apache Sling OSGi Feature Maven Plugin",
         "tags": [
             "sling"
@@ -2166,7 +2166,7 @@
     },
     "apache_sling-org-apache-sling-commons-scheduler": {
         "organization": "apache",
-        "key": "apache_sling-org-apache-sling-commons-scheduler",
+        "projectKey": "apache_sling-org-apache-sling-commons-scheduler",
         "name": "Apache Sling Commons Scheduler Support",
         "tags": [
             "sling"
@@ -2177,7 +2177,7 @@
     },
     "apache_sling-org-apache-sling-feature-cpconverter": {
         "organization": "apache",
-        "key": "apache_sling-org-apache-sling-feature-cpconverter",
+        "projectKey": "apache_sling-org-apache-sling-feature-cpconverter",
         "name": "Apache Sling Content Package to Feature Model converter",
         "tags": [
             "sling"
@@ -2188,7 +2188,7 @@
     },
     "apache_sling-org-apache-sling-caconfig-impl": {
         "organization": "apache",
-        "key": "apache_sling-org-apache-sling-caconfig-impl",
+        "projectKey": "apache_sling-org-apache-sling-caconfig-impl",
         "name": "Apache Sling Context-Aware Configuration Implementation",
         "tags": [
             "sling"
@@ -2199,7 +2199,7 @@
     },
     "apache_sling-org-apache-sling-servlets-post": {
         "organization": "apache",
-        "key": "apache_sling-org-apache-sling-servlets-post",
+        "projectKey": "apache_sling-org-apache-sling-servlets-post",
         "name": "Apache Sling Default POST Servlets",
         "tags": [
             "sling"
@@ -2210,7 +2210,7 @@
     },
     "onap_vfc-nfvo-driver-vnfm-gvnfm-juju": {
         "organization": "onap",
-        "key": "onap_vfc-nfvo-driver-vnfm-gvnfm-juju",
+        "projectKey": "onap_vfc-nfvo-driver-vnfm-gvnfm-juju",
         "name": "vfc-nfvo-driver-vnfm-gvnfm-juju-vnfmadapter",
         "tags": [],
         "visibility": "public",
@@ -2218,7 +2218,7 @@
     },
     "onap_dmaap-messagerouter-dmaapclient": {
         "organization": "onap",
-        "key": "onap_dmaap-messagerouter-dmaapclient",
+        "projectKey": "onap_dmaap-messagerouter-dmaapclient",
         "name": "dmaap-messagerouter-dmaapclient",
         "tags": [],
         "visibility": "public",
@@ -2226,7 +2226,7 @@
     },
     "onap_ccsdk-platform-plugins": {
         "organization": "onap",
-        "key": "onap_ccsdk-platform-plugins",
+        "projectKey": "onap_ccsdk-platform-plugins",
         "name": "ccsdk-platform-plugins",
         "tags": [],
         "visibility": "public",
@@ -2234,7 +2234,7 @@
     },
     "apache_sling-org-apache-sling-validation-core": {
         "organization": "apache",
-        "key": "apache_sling-org-apache-sling-validation-core",
+        "projectKey": "apache_sling-org-apache-sling-validation-core",
         "name": "Apache Sling Validation Framework Core Implementation",
         "tags": [
             "sling"
@@ -2245,7 +2245,7 @@
     },
     "onap_policy-apex-pdp": {
         "organization": "onap",
-        "key": "onap_policy-apex-pdp",
+        "projectKey": "onap_policy-apex-pdp",
         "name": "policy-apex-pdp",
         "tags": [],
         "visibility": "public",
@@ -2253,7 +2253,7 @@
     },
     "onap_logging-analytics-pomba-pomba-sdnc-context-builder": {
         "organization": "onap",
-        "key": "onap_logging-analytics-pomba-pomba-sdnc-context-builder",
+        "projectKey": "onap_logging-analytics-pomba-pomba-sdnc-context-builder",
         "name": "pomba-sdnc-context-builder",
         "tags": [],
         "visibility": "public",
@@ -2261,7 +2261,7 @@
     },
     "onap_sdc-sdc-distribution-client": {
         "organization": "onap",
-        "key": "onap_sdc-sdc-distribution-client",
+        "projectKey": "onap_sdc-sdc-distribution-client",
         "name": "sdc-sdc-distribution-client",
         "tags": [],
         "visibility": "public",
@@ -2269,7 +2269,7 @@
     },
     "onap_multicloud-openstack-vmware": {
         "organization": "onap",
-        "key": "onap_multicloud-openstack-vmware",
+        "projectKey": "onap_multicloud-openstack-vmware",
         "name": "multicloud-openstack-vmware-root",
         "tags": [],
         "visibility": "public",
@@ -2277,7 +2277,7 @@
     },
     "apache_sling-org-apache-sling-feature-extension-apiregions": {
         "organization": "apache",
-        "key": "apache_sling-org-apache-sling-feature-extension-apiregions",
+        "projectKey": "apache_sling-org-apache-sling-feature-extension-apiregions",
         "name": "Sling Featuremodel - API Regions Exension",
         "tags": [
             "sling"
@@ -2288,7 +2288,7 @@
     },
     "onap_dmaap-messagerouter-msgrtr": {
         "organization": "onap",
-        "key": "onap_dmaap-messagerouter-msgrtr",
+        "projectKey": "onap_dmaap-messagerouter-msgrtr",
         "name": "dmaap-messagerouter-msgrtr",
         "tags": [],
         "visibility": "public",
@@ -2296,7 +2296,7 @@
     },
     "onap_sdc-sdc-workflow-designer": {
         "organization": "onap",
-        "key": "onap_sdc-sdc-workflow-designer",
+        "projectKey": "onap_sdc-sdc-workflow-designer",
         "name": "sdc-sdc-workflow-designer",
         "tags": [],
         "visibility": "public",
@@ -2304,7 +2304,7 @@
     },
     "onap_vnfsdk-validation": {
         "organization": "onap",
-        "key": "onap_vnfsdk-validation",
+        "projectKey": "onap_vnfsdk-validation",
         "name": "vnfsdk-validation",
         "tags": [],
         "visibility": "public",
@@ -2312,7 +2312,7 @@
     },
     "onap_vnfsdk-refrepo": {
         "organization": "onap",
-        "key": "onap_vnfsdk-refrepo",
+        "projectKey": "onap_vnfsdk-refrepo",
         "name": "vnfsdk-refrepo",
         "tags": [],
         "visibility": "public",
@@ -2320,7 +2320,7 @@
     },
     "onap_sdc-dcae-d-dt-be-main": {
         "organization": "onap",
-        "key": "onap_sdc-dcae-d-dt-be-main",
+        "projectKey": "onap_sdc-dcae-d-dt-be-main",
         "name": "sdc-dcae-d dt-be-main",
         "tags": [],
         "visibility": "public",
@@ -2328,7 +2328,7 @@
     },
     "onap_sdnc-northbound": {
         "organization": "onap",
-        "key": "onap_sdnc-northbound",
+        "projectKey": "onap_sdnc-northbound",
         "name": "sdnc-northbound",
         "tags": [],
         "visibility": "public",
@@ -2336,7 +2336,7 @@
     },
     "onap_sdc-dcae-d-ci": {
         "organization": "onap",
-        "key": "onap_sdc-dcae-d-ci",
+        "projectKey": "onap_sdc-dcae-d-ci",
         "name": "sdc-dcae-d ci tests",
         "tags": [],
         "visibility": "public",
@@ -2344,7 +2344,7 @@
     },
     "onap_sdc-dcae-d-dt-be-property": {
         "organization": "onap",
-        "key": "onap_sdc-dcae-d-dt-be-property",
+        "projectKey": "onap_sdc-dcae-d-dt-be-property",
         "name": "sdc-dcae-d-dt-be-property",
         "tags": [],
         "visibility": "public",
@@ -2352,7 +2352,7 @@
     },
     "onap_sdc-dcae-d-tosca-lab": {
         "organization": "onap",
-        "key": "onap_sdc-dcae-d-tosca-lab",
+        "projectKey": "onap_sdc-dcae-d-tosca-lab",
         "name": "sdc-dcae-d-tosca-lab",
         "tags": [],
         "visibility": "public",
@@ -2360,7 +2360,7 @@
     },
     "onap_sdc-sdc-tosca": {
         "organization": "onap",
-        "key": "onap_sdc-sdc-tosca",
+        "projectKey": "onap_sdc-sdc-tosca",
         "name": "sdc-tosca-jtosca",
         "tags": [],
         "visibility": "public",
@@ -2368,7 +2368,7 @@
     },
     "onap_vfc-nfvo-driver-svnfm-huawei": {
         "organization": "onap",
-        "key": "onap_vfc-nfvo-driver-svnfm-huawei",
+        "projectKey": "onap_vfc-nfvo-driver-svnfm-huawei",
         "name": "vfc-nfvo-driver-vnfm-svnfm-huawei",
         "tags": [],
         "visibility": "public",
@@ -2376,7 +2376,7 @@
     },
     "onap_dmaap-messagerouter-mirroragent": {
         "organization": "onap",
-        "key": "onap_dmaap-messagerouter-mirroragent",
+        "projectKey": "onap_dmaap-messagerouter-mirroragent",
         "name": "dmaap-messagerouter-mirroragent",
         "tags": [],
         "visibility": "public",
@@ -2384,7 +2384,7 @@
     },
     "onap_vfc-nfvo-catalog": {
         "organization": "onap",
-        "key": "onap_vfc-nfvo-catalog",
+        "projectKey": "onap_vfc-nfvo-catalog",
         "name": "vfc-nfvo-catalog",
         "tags": [],
         "visibility": "public",
@@ -2392,7 +2392,7 @@
     },
     "onap_vfc-nfvo-driver-vnfm-svnfm-nokiav2": {
         "organization": "onap",
-        "key": "onap_vfc-nfvo-driver-vnfm-svnfm-nokiav2",
+        "projectKey": "onap_vfc-nfvo-driver-vnfm-svnfm-nokiav2",
         "name": "vfc-nfvo-driver-vnfm-svnfm-nokiav2",
         "tags": [],
         "visibility": "public",
@@ -2400,7 +2400,7 @@
     },
     "onap_vfc-nfvo-resmanagement": {
         "organization": "onap",
-        "key": "onap_vfc-nfvo-resmanagement",
+        "projectKey": "onap_vfc-nfvo-resmanagement",
         "name": "vfc-nfvo-resmanagement",
         "tags": [],
         "visibility": "public",
@@ -2408,7 +2408,7 @@
     },
     "onap_so": {
         "organization": "onap",
-        "key": "onap_so",
+        "projectKey": "onap_so",
         "name": "so",
         "tags": [],
         "visibility": "public",
@@ -2416,7 +2416,7 @@
     },
     "onap_vfc-nfvo-driver-ems": {
         "organization": "onap",
-        "key": "onap_vfc-nfvo-driver-ems",
+        "projectKey": "onap_vfc-nfvo-driver-ems",
         "name": "vfc-nfvo-driver-ems",
         "tags": [],
         "visibility": "public",
@@ -2424,7 +2424,7 @@
     },
     "onap_vfc-nfvo-driver-sfc": {
         "organization": "onap",
-        "key": "onap_vfc-nfvo-driver-sfc",
+        "projectKey": "onap_vfc-nfvo-driver-sfc",
         "name": "vfc-nfvo-driver-sfc",
         "tags": [],
         "visibility": "public",

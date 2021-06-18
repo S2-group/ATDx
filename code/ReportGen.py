@@ -3,16 +3,14 @@ from abc import ABC, abstractmethod
 
 import matplotlib.pylab as plot
 import numpy as np
-from util import *
 
 
 class ReportGen(ABC):
 
-    def __init__(self, max_number_of_projects, max_number_of_classes, dimensions_to_print, issues_location, portfolio_info):
+    def __init__(self, max_number_of_projects, max_number_of_classes, dimensions_to_print,portfolio_info):
         self.max_number_of_projects = max_number_of_projects
         self.max_number_of_classes = max_number_of_classes
         self.dimensions = dimensions_to_print
-        self.issues_location = issues_location
         self.portfolio_info = portfolio_info
 
     def get_categories_pair(self, my_dict):
@@ -38,25 +36,25 @@ class ReportGen(ABC):
         ax.set_rlabel_position(0)
         ax.set_title([project_name])
         plot.yticks([0, 1, 2, 3, 4, 5], color="grey", size=7)
-        plot.savefig('../data/radarchart/' + project_name + '.jpg')
+        plot.savefig('../data/reports/radarchart/' + project_name + '.jpg')
 
-    def cluster_issues_per_class(self, json_path):
-
-        json_issues = json.load(open(json_path))
+    def cluster_issues_per_class(self):
+        issues = self.portfolio_info.get_issues()
 
         D = defaultdict(dict)
         D_with_rules = defaultdict(dict)
-        for obj in json_issues:
-            D[json_issues[obj]['component']] = defaultdict(int)
-            D_with_rules[json_issues[obj]['component']] = defaultdict(int)
 
-        for obj in json_issues:
-            D[json_issues[obj]["component"]]['project'] = json_issues[obj]['project']
-            D[json_issues[obj]["component"]]['component'] = json_issues[obj]["component"]
-            D[json_issues[obj]["component"]]['issue_sum'] = 0
-            D_with_rules[json_issues[obj]["component"]][json_issues[obj]['rule']] += 1
+        for obj in self.portfolio_info.get_issues():
+            D[issues[obj]['component']] = defaultdict(int)
+            D_with_rules[issues[obj]['component']] = defaultdict(int)
+
+        for obj in issues:
+            D[issues[obj]["component"]]['project'] = issues[obj]['project']
+            D[issues[obj]["component"]]['component'] = issues[obj]["component"]
+            D[issues[obj]["component"]]['issue_sum'] = 0
+            D_with_rules[issues[obj]["component"]][issues[obj]['rule']] += 1
             for dimension in self.dimensions:
-                D[json_issues[obj]["component"]][dimension] = 0
+                D[issues[obj]["component"]][dimension] = 0
 
         for k, v in D_with_rules.items():
             for k1, v1 in v.items():
@@ -71,6 +69,7 @@ class ReportGen(ABC):
 
         # remove classes with less no violations
         class_ATD_values = class_ATD_values[class_ATD_values['issue_sum'] > 0]
+
         # reduce to max_number_of_classes per project (files with higher value)
         class_ATD_values = class_ATD_values.sort_values(['project', 'issue_sum'], ascending=False).groupby('project').head(self.max_number_of_classes)
         # get the name of the class

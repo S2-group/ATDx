@@ -68,10 +68,9 @@ class AnalysisTool(ABC):
         pass
 
     @abstractmethod
-    def filter_rules(self, issues_path, ar_rules):
+    def filter_rules(self, ar_rules):
         """Function to filter the architectural issues that are contained within the architectural rules we have
 
-        :param issues_path: Path to the issues location
         :param ar_rules: List of all the architectural rules
 
         """
