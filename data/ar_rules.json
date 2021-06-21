@@ -1,0 +1,877 @@
+{
+    "rules": {
+        "java:S104": {
+            "squid": "squid:S00104",
+            "id": "java:S104",
+            "present": "OUT OF QUALITY PROFILE",
+            "doc_url": "https://jira.sonarsource.com/browse/RSPEC-104",
+            "new_doc_url": "",
+            "short_description": "Files should not have too many lines",
+            "granularity_level": "files",
+            "atd_dimension": [
+                "complexity"
+            ]
+        },
+        "java:S107": {
+            "squid": "squid:S00107",
+            "id": "java:S107",
+            "present": "",
+            "doc_url": "https://jira.sonarsource.com/browse/RSPEC-107",
+            "new_doc_url": "",
+            "short_description": "Methods should not have too many parameters",
+            "granularity_level": "functions",
+            "atd_dimension": [
+                "interface"
+            ]
+        },
+        "java:S112": {
+            "squid": "squid:S00112",
+            "id": "java:S112",
+            "present": "",
+            "doc_url": "https://jira.sonarsource.com/browse/RSPEC-112",
+            "new_doc_url": "",
+            "short_description": "Generic exceptions should never be thrown",
+            "granularity_level": "ncloc_java",
+            "atd_dimension": [
+                "exception"
+            ]
+        },
+        "java:S133": {
+            "squid": "squid:MethodCyclomaticComplexity",
+            "id": "java:S133",
+            "present": "OUT OF QUALITY PROFILE",
+            "doc_url": "https://jira.sonarsource.com/browse/RSPEC-133",
+            "new_doc_url": "https://jira.sonarsource.com/browse/RSPEC-1541",
+            "short_description": "Methods should not be too complex",
+            "granularity_level": "functions",
+            "atd_dimension": [
+                "complexity"
+            ]
+        },
+        "java:S1104": {
+            "squid": "squid:ClassVariableVisibilityCheck",
+            "id": "java:S1104",
+            "present": "",
+            "doc_url": "https://jira.sonarsource.com/browse/RSPEC-1104",
+            "new_doc_url": "",
+            "short_description": "Class variable fields should not have public accessibility",
+            "granularity_level": "classes",
+            "atd_dimension": [
+                "interface",
+                "member"
+            ]
+        },
+        "java:S1113": {
+            "squid": "squid:ObjectFinalizeOverridenCheck",
+            "id": "java:S1113",
+            "present": "",
+            "doc_url": "https://jira.sonarsource.com/browse/RSPEC-1113",
+            "new_doc_url": "",
+            "short_description": "The Object.finalize() method should not be overriden",
+            "granularity_level": "classes",
+            "atd_dimension": [
+                "inheritance"
+            ]
+        },
+        "java:S1118": {
+            "squid": "squid:S1118",
+            "id": "java:S1118",
+            "present": "",
+            "doc_url": "https://jira.sonarsource.com/browse/RSPEC-1118",
+            "new_doc_url": "",
+            "short_description": "Utility classes should not have public constructors",
+            "granularity_level": "classes",
+            "atd_dimension": [
+                "interface"
+            ]
+        },
+        "java:S1130": {
+            "squid": "squid:RedundantThrowsDeclarationCheck",
+            "id": "java:S1130",
+            "present": "",
+            "doc_url": "https://jira.sonarsource.com/browse/RSPEC-1130",
+            "new_doc_url": "",
+            "short_description": "Throws declarations should not be superfluous",
+            "granularity_level": "ncloc_java",
+            "atd_dimension": [
+                "exception"
+            ]
+        },
+        "java:S1133": {
+            "squid": "squid:S1133",
+            "id": "java:S1133",
+            "present": "",
+            "doc_url": "https://jira.sonarsource.com/browse/RSPEC-1133",
+            "new_doc_url": "",
+            "short_description": "Deprecated code should be removed eventually",
+            "granularity_level": "functions",
+            "atd_dimension": [
+                "interface",
+                "complexity"
+            ]
+        },
+        "java:S1160": {
+            "squid": "squid:S1160",
+            "id": "java:S1160",
+            "present": "OUT OF QUALITY PROFILE",
+            "doc_url": "https://jira.sonarsource.com/browse/RSPEC-1160",
+            "new_doc_url": "",
+            "short_description": "Public methods should throw at most one checked exception",
+            "granularity_level": "functions",
+            "atd_dimension": [
+                "exception",
+                "interface"
+            ]
+        },
+        "java:S1161": {
+            "squid": "squid:S1161",
+            "id": "java:S1161",
+            "present": "",
+            "doc_url": "https://jira.sonarsource.com/browse/RSPEC-1161",
+            "new_doc_url": "",
+            "short_description": "@Override annotation should be used on any method overriding (since Java 5) or implementing (since Java 6) another one",
+            "granularity_level": "functions",
+            "atd_dimension": [
+                "inheritance"
+            ]
+        },
+        "java:S1165": {
+            "squid": "squid:S1165",
+            "id": "java:S1165",
+            "present": "",
+            "doc_url": "https://jira.sonarsource.com/browse/RSPEC-1165",
+            "new_doc_url": "",
+            "short_description": "Exception classes should be immutable",
+            "granularity_level": "classes",
+            "atd_dimension": [
+                "exception"
+            ]
+        },
+        "java:S1166": {
+            "squid": "squid:S1166",
+            "id": "java:S1166",
+            "present": "OUT OF QUALITY PROFILE",
+            "doc_url": "https://jira.sonarsource.com/browse/RSPEC-1166",
+            "new_doc_url": "",
+            "short_description": "Exception handlers should preserve the original exceptions",
+            "granularity_level": "ncloc_java",
+            "atd_dimension": [
+                "exception"
+            ]
+        },
+        "java:S1182": {
+            "squid": "squid:S1182",
+            "id": "java:S1182",
+            "present": "",
+            "doc_url": "https://jira.sonarsource.com/browse/RSPEC-1182",
+            "new_doc_url": "",
+            "short_description": "Classes that override \"clone\" should be \"Cloneable\" and call \"super.clone()\"",
+            "granularity_level": "classes",
+            "atd_dimension": [
+                "inheritance"
+            ]
+        },
+        "java:S1185": {
+            "squid": "squid:S1185",
+            "id": "java:S1185",
+            "present": "",
+            "doc_url": "https://jira.sonarsource.com/browse/RSPEC-1185",
+            "new_doc_url": "",
+            "short_description": "Overriding methods should do more than simply call the same method in the super class",
+            "granularity_level": "functions",
+            "atd_dimension": [
+                "inheritance"
+            ]
+        },
+        "java:S1188": {
+            "squid": "squid:S1188",
+            "id": "java:S1188",
+            "present": "OUT OF QUALITY PROFILE",
+            "doc_url": "https://jira.sonarsource.com/browse/RSPEC-1188",
+            "new_doc_url": "",
+            "short_description": "Lambdas and anonymous classes should not have too many lines",
+            "granularity_level": "classes",
+            "atd_dimension": [
+                "complexity"
+            ]
+        },
+        "java:S1194": {
+            "squid": "squid:S1194",
+            "id": "java:S1194",
+            "present": "OUT OF QUALITY PROFILE",
+            "doc_url": "https://jira.sonarsource.com/browse/RSPEC-1194",
+            "new_doc_url": "",
+            "short_description": "\"java.lang.Error\" should not be extended",
+            "granularity_level": "classes",
+            "atd_dimension": [
+                "exception",
+                "vmsmell"
+            ]
+        },
+        "java:S1199": {
+            "squid": "squid:S1199",
+            "id": "java:S1199",
+            "present": "",
+            "doc_url": "https://jira.sonarsource.com/browse/RSPEC-1199",
+            "new_doc_url": "",
+            "short_description": "Nested code blocks should not be used",
+            "granularity_level": "ncloc_java",
+            "atd_dimension": [
+                "complexity"
+            ]
+        },
+        "java:S1210": {
+            "squid": "squid:S1210",
+            "id": "java:S1210",
+            "present": "",
+            "doc_url": "https://jira.sonarsource.com/browse/RSPEC-1210",
+            "new_doc_url": "",
+            "short_description": "\"equals(Object obj)\" should be overridden along with the \"compareTo(T obj)\" method",
+            "granularity_level": "functions",
+            "atd_dimension": [
+                "inheritance",
+                "vmsmell"
+            ]
+        },
+        "java:S1217": {
+            "squid": "squid:S1217",
+            "id": "java:S1217",
+            "present": "",
+            "doc_url": "https://jira.sonarsource.com/browse/RSPEC-1217",
+            "new_doc_url": "",
+            "short_description": "Thread.run() and Runnable.run() should not be called directly",
+            "granularity_level": "ncloc_java",
+            "atd_dimension": [
+                "vmsmell"
+            ]
+        },
+        "java:S1220": {
+            "squid": "squid:S1220",
+            "id": "java:S1220",
+            "present": "OUT OF QUALITY PROFILE",
+            "doc_url": "https://jira.sonarsource.com/browse/RSPEC-1220",
+            "new_doc_url": "",
+            "short_description": "The default unnamed package should not be used",
+            "granularity_level": "classes",
+            "atd_dimension": [
+                "naming"
+            ]
+        },
+        "java:S1221": {
+            "squid": "squid:S1221",
+            "id": "java:S1221",
+            "present": "OUT OF QUALITY PROFILE",
+            "doc_url": "https://jira.sonarsource.com/browse/RSPEC-1221",
+            "new_doc_url": "",
+            "short_description": "Methods should not be named \"hashcode\" or \"equal\"",
+            "granularity_level": "functions",
+            "atd_dimension": [
+                "naming"
+            ]
+        },
+        "java:1311": {
+            "squid": "squid:ClassCyclomaticComplexity",
+            "id": "java:1311",
+            "present": "OUT OF QUALITY PROFILE",
+            "doc_url": "https://jira.sonarsource.com/browse/RSPEC-1311",
+            "new_doc_url": "",
+            "short_description": "Classes should not be too complex",
+            "granularity_level": "classes",
+            "atd_dimension": [
+                "complexity"
+            ]
+        },
+        "java:S1444": {
+            "squid": "squid:S1444",
+            "id": "java:S1444",
+            "present": "OUT OF QUALITY PROFILE",
+            "doc_url": "https://jira.sonarsource.com/browse/RSPEC-1444",
+            "new_doc_url": "",
+            "short_description": "\"public static\" fields should be constant",
+            "granularity_level": "classes",
+            "atd_dimension": [
+                "constants"
+            ]
+        },
+        "java:S1598": {
+            "squid": "squid:S1598",
+            "id": "java:S1598",
+            "present": "OUT OF QUALITY PROFILE",
+            "doc_url": "https://jira.sonarsource.com/browse/RSPEC-1598",
+            "new_doc_url": "",
+            "short_description": "Package declaration should match source file directory",
+            "granularity_level": "classes",
+            "atd_dimension": [
+                "naming"
+            ]
+        },
+        "java:S1609": {
+            "squid": "squid:S1609",
+            "id": "java:S1609",
+            "present": "OUT OF QUALITY PROFILE",
+            "doc_url": "https://jira.sonarsource.com/browse/RSPEC-1609",
+            "new_doc_url": "",
+            "short_description": "@FunctionalInterface annotation should be used to flag Single Abstract Method interfaces",
+            "granularity_level": "functions",
+            "atd_dimension": [
+                "interface"
+            ]
+        },
+        "java:S1610": {
+            "squid": "squid:S1610",
+            "id": "java:S1610",
+            "present": "",
+            "doc_url": "https://jira.sonarsource.com/browse/RSPEC-1610",
+            "new_doc_url": "",
+            "short_description": "Abstract classes without fields should be converted to interfaces",
+            "granularity_level": "classes",
+            "atd_dimension": [
+                "interface"
+            ]
+        },
+        "java:S2059": {
+            "squid": "squid:S2059",
+            "id": "java:S2059",
+            "present": "OUT OF QUALITY PROFILE",
+            "doc_url": "https://jira.sonarsource.com/browse/RSPEC-2059",
+            "new_doc_url": "",
+            "short_description": "Serializable inner classes of \"Serializable\" classes should be static",
+            "granularity_level": "classes",
+            "atd_dimension": [
+                "vmsmell"
+            ]
+        },
+        "java:S2062": {
+            "squid": "squid:S2062",
+            "id": "java:S2062",
+            "present": "",
+            "doc_url": "https://jira.sonarsource.com/browse/RSPEC-2062",
+            "new_doc_url": "",
+            "short_description": "readResolve methods should be inheritable",
+            "granularity_level": "classes",
+            "atd_dimension": [
+                "inheritance"
+            ]
+        },
+        "java:S2134": {
+            "squid": "squid:S2134",
+            "id": "java:S2134",
+            "present": "ABSENT",
+            "doc_url": "https://jira.sonarsource.com/browse/RSPEC-2134",
+            "new_doc_url": "",
+            "short_description": "Classes extending java.lang.Thread should override the \"run\" method",
+            "granularity_level": "classes",
+            "atd_dimension": [
+                "threading"
+            ]
+        },
+        "java:S2157": {
+            "squid": "squid:S2157",
+            "id": "java:S2157",
+            "present": "",
+            "doc_url": "https://jira.sonarsource.com/browse/RSPEC-2157",
+            "new_doc_url": "",
+            "short_description": "\"Cloneables\" should implement \"clone\"",
+            "granularity_level": "classes",
+            "atd_dimension": [
+                "inheritance",
+                "vmsmell"
+            ]
+        },
+        "java:S2166": {
+            "squid": "squid:S2166",
+            "id": "java:S2166",
+            "present": "",
+            "doc_url": "https://jira.sonarsource.com/browse/RSPEC-2166",
+            "new_doc_url": "",
+            "short_description": "Classes named like \"Exception\" should extend \"Exception\" or a subclass",
+            "granularity_level": "classes",
+            "atd_dimension": [
+                "exception"
+            ]
+        },
+        "java:S2221": {
+            "squid": "squid:S2221",
+            "id": "java:S2221",
+            "present": "OUT OF QUALITY PROFILE",
+            "doc_url": "https://jira.sonarsource.com/browse/RSPEC-2221",
+            "new_doc_url": "",
+            "short_description": "\"Exception\" should not be caught when not required by called methods",
+            "granularity_level": "ncloc_java",
+            "atd_dimension": [
+                "exception"
+            ]
+        },
+        "java:S2222": {
+            "squid": "squid:S2222",
+            "id": "java:S2222",
+            "present": "",
+            "doc_url": "https://jira.sonarsource.com/browse/RSPEC-2222",
+            "new_doc_url": "",
+            "short_description": "Locks should be released",
+            "granularity_level": "ncloc_java",
+            "atd_dimension": [
+                "threading"
+            ]
+        },
+        "java:S2236": {
+            "squid": "squid:S2236",
+            "id": "java:S2236",
+            "present": "",
+            "doc_url": "https://jira.sonarsource.com/browse/RSPEC-2236",
+            "new_doc_url": "",
+            "short_description": "Methods \"wait(...)\"\t \"notify()\" and \"notifyAll()\" should never be called on Thread instances",
+            "granularity_level": "ncloc_java",
+            "atd_dimension": [
+                "threading"
+            ]
+        },
+        "java:S2273": {
+            "squid": "squid:S2273",
+            "id": "java:S2273",
+            "present": "",
+            "doc_url": "https://jira.sonarsource.com/browse/RSPEC-2273",
+            "new_doc_url": "",
+            "short_description": "\"wait(...)\"\t \"notify()\" and \"notifyAll()\" methods should only be called when a lock is obviously held on an object",
+            "granularity_level": "ncloc_java",
+            "atd_dimension": [
+                "threading"
+            ]
+        },
+        "java:S2276": {
+            "squid": "squid:S2276",
+            "id": "java:S2276",
+            "present": "",
+            "doc_url": "https://jira.sonarsource.com/browse/RSPEC-2276",
+            "new_doc_url": "",
+            "short_description": "\"wait(...)\" should be used instead of \"Thread.sleep(...)\" when a lock is held",
+            "granularity_level": "ncloc_java",
+            "atd_dimension": [
+                "threading"
+            ]
+        },
+        "java:S2386": {
+            "squid": "squid:S2386",
+            "id": "java:S2386",
+            "present": "OUT OF QUALITY PROFILE",
+            "doc_url": "https://jira.sonarsource.com/browse/RSPEC-2386",
+            "new_doc_url": "",
+            "short_description": "Mutable fields should not be \"public static\"",
+            "granularity_level": "classes",
+            "atd_dimension": [
+                "member"
+            ]
+        },
+        "java:S2638": {
+            "squid": "squid:S2638",
+            "id": "java:S2638",
+            "present": "",
+            "doc_url": "https://jira.sonarsource.com/browse/RSPEC-2638",
+            "new_doc_url": "",
+            "short_description": "Method overrides should not change contracts",
+            "granularity_level": "functions",
+            "atd_dimension": [
+                "inheritance",
+                "vmsmell"
+            ]
+        },
+        "java:S2693": {
+            "squid": "squid:S2693",
+            "id": "java:S2693",
+            "present": "OUT OF QUALITY PROFILE",
+            "doc_url": "https://jira.sonarsource.com/browse/RSPEC-2693",
+            "new_doc_url": "",
+            "short_description": "Threads should not be started in constructors",
+            "granularity_level": "classes",
+            "atd_dimension": [
+                "threading"
+            ]
+        },
+        "java:S2696": {
+            "squid": "squid:S2696",
+            "id": "java:S2696",
+            "present": "OUT OF QUALITY PROFILE",
+            "doc_url": "https://jira.sonarsource.com/browse/RSPEC-2696",
+            "new_doc_url": "",
+            "short_description": "Instance methods should not write to \"static\" fields",
+            "granularity_level": "ncloc_java",
+            "atd_dimension": [
+                "variables"
+            ]
+        },
+        "java:S2885": {
+            "squid": "squid:S2885",
+            "id": "java:S2885",
+            "present": "",
+            "doc_url": "https://jira.sonarsource.com/browse/RSPEC-2885",
+            "new_doc_url": "",
+            "short_description": "\"Calendars\" and \"DateFormats\" should not be static",
+            "granularity_level": "classes",
+            "atd_dimension": [
+                "threading"
+            ]
+        },
+        "java:S2975": {
+            "squid": "squid:S2975",
+            "id": "java:S2975",
+            "present": "",
+            "doc_url": "https://jira.sonarsource.com/browse/RSPEC-2975",
+            "new_doc_url": "",
+            "short_description": "clone should not be overridden",
+            "granularity_level": "classes",
+            "atd_dimension": [
+                "inheritance",
+                "vmsmell"
+            ]
+        },
+        "java:S3389": {
+            "squid": "squid:S3398",
+            "id": "java:S3389",
+            "present": "OUT OF QUALITY PROFILE",
+            "doc_url": "https://jira.sonarsource.com/browse/RSPEC-3398",
+            "new_doc_url": "",
+            "short_description": "private methods called only by inner classes should be moved to those classes",
+            "granularity_level": "functions",
+            "atd_dimension": [
+                "member"
+            ]
+        },
+        "java:S3422": {
+            "squid": "squid:S3422",
+            "id": "java:S3422",
+            "present": "OUT OF QUALITY PROFILE",
+            "doc_url": "https://jira.sonarsource.com/browse/RSPEC-3422",
+            "new_doc_url": "",
+            "short_description": "Dependencies should not have \"system\" scope",
+            "granularity_level": "ncloc_java",
+            "atd_dimension": [
+                "lockin"
+            ]
+        }
+    },
+    "triple": [
+        {
+            "rule": "java:S104",
+            "granularity_level": "files",
+            "dimensions": [
+                "complexity"
+            ]
+        },
+        {
+            "rule": "java:S107",
+            "granularity_level": "functions",
+            "dimensions": [
+                "interface"
+            ]
+        },
+        {
+            "rule": "java:S112",
+            "granularity_level": "ncloc_java",
+            "dimensions": [
+                "exception"
+            ]
+        },
+        {
+            "rule": "java:S133",
+            "granularity_level": "functions",
+            "dimensions": [
+                "complexity"
+            ]
+        },
+        {
+            "rule": "java:S1104",
+            "granularity_level": "classes",
+            "dimensions": [
+                "interface",
+                "member"
+            ]
+        },
+        {
+            "rule": "java:S1113",
+            "granularity_level": "classes",
+            "dimensions": [
+                "inheritance"
+            ]
+        },
+        {
+            "rule": "java:S1118",
+            "granularity_level": "classes",
+            "dimensions": [
+                "interface"
+            ]
+        },
+        {
+            "rule": "java:S1130",
+            "granularity_level": "ncloc_java",
+            "dimensions": [
+                "exception"
+            ]
+        },
+        {
+            "rule": "java:S1133",
+            "granularity_level": "functions",
+            "dimensions": [
+                "interface",
+                "complexity"
+            ]
+        },
+        {
+            "rule": "java:S1160",
+            "granularity_level": "functions",
+            "dimensions": [
+                "exception",
+                "interface"
+            ]
+        },
+        {
+            "rule": "java:S1161",
+            "granularity_level": "functions",
+            "dimensions": [
+                "inheritance"
+            ]
+        },
+        {
+            "rule": "java:S1165",
+            "granularity_level": "classes",
+            "dimensions": [
+                "exception"
+            ]
+        },
+        {
+            "rule": "java:S1166",
+            "granularity_level": "ncloc_java",
+            "dimensions": [
+                "exception"
+            ]
+        },
+        {
+            "rule": "java:S1182",
+            "granularity_level": "classes",
+            "dimensions": [
+                "inheritance"
+            ]
+        },
+        {
+            "rule": "java:S1185",
+            "granularity_level": "functions",
+            "dimensions": [
+                "inheritance"
+            ]
+        },
+        {
+            "rule": "java:S1188",
+            "granularity_level": "classes",
+            "dimensions": [
+                "complexity"
+            ]
+        },
+        {
+            "rule": "java:S1194",
+            "granularity_level": "classes",
+            "dimensions": [
+                "exception",
+                "vmsmell"
+            ]
+        },
+        {
+            "rule": "java:S1199",
+            "granularity_level": "ncloc_java",
+            "dimensions": [
+                "complexity"
+            ]
+        },
+        {
+            "rule": "java:S1210",
+            "granularity_level": "functions",
+            "dimensions": [
+                "inheritance",
+                "vmsmell"
+            ]
+        },
+        {
+            "rule": "java:S1217",
+            "granularity_level": "ncloc_java",
+            "dimensions": [
+                "vmsmell"
+            ]
+        },
+        {
+            "rule": "java:S1220",
+            "granularity_level": "classes",
+            "dimensions": [
+                "naming"
+            ]
+        },
+        {
+            "rule": "java:S1221",
+            "granularity_level": "functions",
+            "dimensions": [
+                "naming"
+            ]
+        },
+        {
+            "rule": "java:1311",
+            "granularity_level": "classes",
+            "dimensions": [
+                "complexity"
+            ]
+        },
+        {
+            "rule": "java:S1444",
+            "granularity_level": "classes",
+            "dimensions": [
+                "constants"
+            ]
+        },
+        {
+            "rule": "java:S1598",
+            "granularity_level": "classes",
+            "dimensions": [
+                "naming"
+            ]
+        },
+        {
+            "rule": "java:S1609",
+            "granularity_level": "functions",
+            "dimensions": [
+                "interface"
+            ]
+        },
+        {
+            "rule": "java:S1610",
+            "granularity_level": "classes",
+            "dimensions": [
+                "interface"
+            ]
+        },
+        {
+            "rule": "java:S2059",
+            "granularity_level": "classes",
+            "dimensions": [
+                "vmsmell"
+            ]
+        },
+        {
+            "rule": "java:S2062",
+            "granularity_level": "classes",
+            "dimensions": [
+                "inheritance"
+            ]
+        },
+        {
+            "rule": "java:S2134",
+            "granularity_level": "classes",
+            "dimensions": [
+                "threading"
+            ]
+        },
+        {
+            "rule": "java:S2157",
+            "granularity_level": "classes",
+            "dimensions": [
+                "inheritance",
+                "vmsmell"
+            ]
+        },
+        {
+            "rule": "java:S2166",
+            "granularity_level": "classes",
+            "dimensions": [
+                "exception"
+            ]
+        },
+        {
+            "rule": "java:S2221",
+            "granularity_level": "ncloc_java",
+            "dimensions": [
+                "exception"
+            ]
+        },
+        {
+            "rule": "java:S2222",
+            "granularity_level": "ncloc_java",
+            "dimensions": [
+                "threading"
+            ]
+        },
+        {
+            "rule": "java:S2236",
+            "granularity_level": "ncloc_java",
+            "dimensions": [
+                "threading"
+            ]
+        },
+        {
+            "rule": "java:S2273",
+            "granularity_level": "ncloc_java",
+            "dimensions": [
+                "threading"
+            ]
+        },
+        {
+            "rule": "java:S2276",
+            "granularity_level": "ncloc_java",
+            "dimensions": [
+                "threading"
+            ]
+        },
+        {
+            "rule": "java:S2386",
+            "granularity_level": "classes",
+            "dimensions": [
+                "member"
+            ]
+        },
+        {
+            "rule": "java:S2638",
+            "granularity_level": "functions",
+            "dimensions": [
+                "inheritance",
+                "vmsmell"
+            ]
+        },
+        {
+            "rule": "java:S2693",
+            "granularity_level": "classes",
+            "dimensions": [
+                "threading"
+            ]
+        },
+        {
+            "rule": "java:S2696",
+            "granularity_level": "ncloc_java",
+            "dimensions": [
+                "variables"
+            ]
+        },
+        {
+            "rule": "java:S2885",
+            "granularity_level": "classes",
+            "dimensions": [
+                "threading"
+            ]
+        },
+        {
+            "rule": "java:S2975",
+            "granularity_level": "classes",
+            "dimensions": [
+                "inheritance",
+                "vmsmell"
+            ]
+        },
+        {
+            "rule": "java:S3389",
+            "granularity_level": "functions",
+            "dimensions": [
+                "member"
+            ]
+        },
+        {
+            "rule": "java:S3422",
+            "granularity_level": "ncloc_java",
+            "dimensions": [
+                "lockin"
+            ]
+        }
+    ]
+}
