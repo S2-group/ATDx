@@ -1,6 +1,6 @@
 from ReportGen import *
-from util import *
 import pandas as pd
+from util import *
 
 
 class ReportGenMarkdown(ReportGen, ABC):
@@ -31,13 +31,12 @@ If you are curious about more theoretical background on ATDx, you can have a loo
 ## ATDx radar charts of your projects
 """
 
-    def generate_report(self, projects_data, project):
+    def generate_report(self, project):
         table = ''
         clustered_issues = self.cluster_issues_per_class()
         clustered_issues_for_function = pd.DataFrame.from_dict(clustered_issues).transpose()
         sorted_max_issues = self.sort_by_max_sums_per_project(clustered_issues_for_function)
-        print(project)
-        self.generate_radarchart(projects_data[project], project)
+        self.generate_radarchart(project)
 
         blocks = []
         block = '### Analysed project ' + project +'\n<img src=\"radarchart/' + project + '.jpg\"/><p style="text-align:left">[Project on Github](https://github.com/' + project + ') <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=' + project + ') <br></p>\n'
@@ -48,88 +47,47 @@ If you are curious about more theoretical background on ATDx, you can have a loo
         table = table + blocks[0]
         report = self.report_header + table + '\n'
 
-        i = 0
         report = report + '# ATDx project report summaries\n'
         for elements in sorted_max_issues:
-            self.generate_radarchart(projects_data[elements[0]], elements[0])
-            report = report + '## Project ' + str(i + 1) + ': _' + elements[0] + '_' + '\n'
-            report = report + '<img src=\"radarchart/' + elements[0] + '.jpg\"/>' + '<p style="text-align:left">[Project on Github](https://github.com/' + elements[0] + ') <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=' + elements[0] + ') <br></p>\n'
-            report = report + '\n'
-            report = report + self.get_table_for_project(elements)
-            # if max_number_of_projects included
-            if i == self.max_number_of_projects:
+            if elements[0] == project:
+                report = report + '## Project ' + elements[0] + '_' + '\n'
+                report = report + '<img src=\"radarchart/' + elements[0] + '.jpg\"/>' + '<p style="text-align:left">[Project on Github](https://github.com/' + elements[0] + ') <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=' + elements[0] + ') <br></p>\n'
+                report = report + '\n'
+                report = report + self.get_table_for_project(elements)
                 break
-            i += 1
 
         filename = '../data/reports/test_report.md'
-
-        with open(filename, 'w') as file:
-            file.write(report)
-
-    def generate_max_dimensions_per_project(self, json_location):
-        class_ATD_values = pd.read_json(json_location).transpose()
-        max_all_dimensions = pd.DataFrame()
-        array_of_dimensions= []
-        for dimension in self.dimensions:
-            max_class_sum = class_ATD_values.sort_values(dimension, ascending=False).drop_duplicates(['project'])
-            max_class_sum.insert(2, 'max_type', dimension)
-            max_all_dimensions = pd.concat([max_all_dimensions, max_class_sum])
-            array_of_dimensions.append(dimension)
-
-        max_all_dimensions['max_type'] = pd.Categorical(max_all_dimensions['max_type'], array_of_dimensions)
-
-        grouped = max_all_dimensions.groupby('project')
-
-        for project in grouped:
-            project_df = project[1]
-            # project_df = project_df.drop('project', axis=1)
-            f = open('../data/reports/{0}.md'.format('test_report'), 'w')
-            f.write('### Top classes with architectural debt' + '\n' + project_df.to_markdown(index=False) + '\n')
-            f.close()
+        save(filename, report)
 
     def get_table_for_project(self, project):
-        # number_of_projects = 0
-        # for project in class_ATD_values:
-        #    if number_of_projects >= self.max_number_of_projects:
-        #        break
         project_df = project[1]
-        # project_name = project[0]
-
-        # project_df = project_df.drop('Project', axis=1)
-
         row_count = project_df.shape[0]
 
         i = 0
-
         while i <= self.max_number_of_classes - row_count:
             project_df.loc[i + row_count] = '-'
             i += 1
         string_to_return = '### Top classes with architectural debt violations'+ '\n' + project_df.to_markdown(index=False) +'\n'
+
         return string_to_return
-        # number_of_projects += 1
 
     def execute_report_gen(self, sua):
-        # This part is just a fix for the ATDx implementation. it will be changed
-        dimensions = read_json('../data/test_dimensions_dataset_output.json')
-        rules = read_json('../data/ar_rules.json')
-        dimensions_to_store = get_dimension_list(rules['triple'])
-        self.dimensions = dimensions_to_store
-        self.generate_radarchart(dimensions[sua], sua)
-        self.generate_report(dimensions, sua)
+        self.set_dimension_list()
+        self.generate_radarchart(sua)
+        self.generate_report(sua)
 
+    def set_dimension_list(self):
+        dimensions_with_rules = {}
 
-def get_dimension_list(triple):
-    dimensions_with_rules = {}
+        for rule in self.portfolio_info.get_triple():
+            dimensions_list = rule['dimensions']
+            rule_name = rule['rule']
 
-    for rule in triple:
-        dimensions_list = rule['dimensions']
-        rule_name = rule['rule']
+            for dimension_element in dimensions_list:
+                if dimension_element not in dimensions_with_rules:
+                    dimensions_with_rules[dimension_element] = [rule_name]
+                    continue
+                dimensions_with_rules[dimension_element].append(rule_name)
 
-        for dimension_element in dimensions_list:
-            if dimension_element not in dimensions_with_rules:
-                dimensions_with_rules[dimension_element] = [rule_name]
-                continue
-            dimensions_with_rules[dimension_element].append(rule_name)
-
-    return dimensions_with_rules
+        self.dimensions = dimensions_with_rules
 

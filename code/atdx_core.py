@@ -4,13 +4,10 @@ import ckwrap as ck
 
 
 class AtdxCore:
-    def __init__(self, projects_info):
-        self.atd_x = {}
-        self.normalized_updated = {}
-        self.project_names = []
-        self.projects_info = projects_info
+    def __init__(self):
+        pass
 
-    def atdx_core(self, sua, ar_tool, atdd_tool, norm_t):
+    def atdx_core(self, projects_info, sua, ar_tool, atdd_tool, norm_t):
         """
         atdx_core function used to calculate the adtx of a given set of projects
 
@@ -26,7 +23,7 @@ class AtdxCore:
         # projects) the same happens with the atdx
         dimensions = {}
         atd_x = 0
-        for project in self.projects_info.get_analysis_projects_info():
+        for project in projects_info.get_analysis_projects_info():
             dimensions[project] = {}
             for dimension in atdd_tool:
                 dimensions[project][dimension] = 0
@@ -37,7 +34,7 @@ class AtdxCore:
             # Calculation of severeness and storing adding to the dimensions
             num_clusters = min(len(np.unique(norm_t[rule])), 6)
             ar_kmeans = ck.ckmeans(norm_t[rule], k=(1, num_clusters))
-            dimensions = self.get_dimensions(dimensions, rule_dimensions, ar_kmeans)
+            dimensions = self.get_dimensions(projects_info, dimensions, rule_dimensions, ar_kmeans)
 
         # calculation of atdx per project in sua
         for names in dimensions:
@@ -50,7 +47,8 @@ class AtdxCore:
 
         return dimensions, atd_x
 
-    def get_dimensions(self, dimensions, rule_dimensions, ar_kmeans):
+    @staticmethod
+    def get_dimensions(projects_info, dimensions, rule_dimensions, ar_kmeans):
         """
         get_dimensions function that returns an array with the normalized values
 
@@ -59,7 +57,7 @@ class AtdxCore:
         :param ar_kmeans: it's content refers to NORM^t
         """
         for rule_dimension in rule_dimensions:
-            for label, project_name in zip(ar_kmeans.labels, self.projects_info.get_analysis_projects_info()):
+            for label, project_name in zip(ar_kmeans.labels, projects_info.get_analysis_projects_info()):
 
                 if max(ar_kmeans.labels) - min(ar_kmeans.labels) == 0:
                     break
@@ -70,33 +68,32 @@ class AtdxCore:
 
         return dimensions
 
-    def set_normalized_values(self, sua):
+    def set_normalized_values(self, projects_info, sua):
         normalized_update = {}
 
-        for rule in self.projects_info.get_ar_rules():
-            gr_level = self.projects_info.get_ar_rules()[rule]['granularity_level']
+        for rule in projects_info.get_ar_rules():
+            gr_level = projects_info.get_ar_rules()[rule]['granularity_level']
             normalized_update[rule] = []
-            for project in self.projects_info.get_analysis_projects_info():
-                normalized_update[rule].append(self.norm_calculator(self.projects_info.get_analysis_projects_info()[project], gr_level, rule))
+            for project in projects_info.get_analysis_projects_info():
+                normalized_update[rule].append(self.norm_calculator(projects_info.get_analysis_projects_info()[project], gr_level, rule))
 
             normalized_update[rule].append(self.norm_calculator(sua, gr_level, rule))
 
         return normalized_update
 
-    def execute_atdx_analysis(self, sua_name):
-        atdd = get_dimension_list(self.projects_info.get_triple())
+    def execute_atdx_analysis(self, projects_info, sua_name):
+        atdd = get_dimension_list(projects_info.get_triple())
 
-        norm_t = self.set_normalized_values(self.projects_info.get_analysis_projects_info()[sua_name])
+        norm_t = self.set_normalized_values(projects_info, projects_info.get_analysis_projects_info()[sua_name])
 
-        dimensions_t, atdx = self.atdx_core(self.projects_info.get_analysis_projects_info()[sua_name], self.projects_info.get_ar_rules(), atdd, norm_t)
+        dimensions_t, atdx = self.atdx_core(projects_info, projects_info.get_analysis_projects_info()[sua_name], projects_info.get_ar_rules(), atdd, norm_t)
 
+        projects_info.set_analysis_projects_info(dimensions_t)
+        projects_info.set_atdx(atdx)
         save_dict_as_json('../data/test_atdx_dataset_output.json', atdx)
         save_dict_as_json('../data/test_dimensions_dataset_output.json', dimensions_t)
         save_dict_as_json('../data/test_normalized.json', norm_t)
-        # print(atdx)
-        # dimensions_t, atdx, norm = atdx_core(project_dataset, ar_rules, atdd, norm)
-        # print(dimensions_t)
-        # atdx_core print(atdx)
+
 
     @staticmethod
     def norm_calculator(project, gr_level, rule):

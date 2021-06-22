@@ -53,12 +53,12 @@ class Controller:
 
         self.init_portfolio_info(rules["rules"], rules["triple"], projects[sua_name], projects, issues, measures, None)
         self.tool = self.tool_factory.get_analysis_tool(tool_name, store, self.portfolio_data, suffix)
-        self.atdx = AtdxCore(self.portfolio_data)
+        self.atdx = AtdxCore()
 
     def run(self, sua_name):
         self.setup(sua_name)
         self.tool.execute_analysis(sua_name)
-        self.atdx.execute_atdx_analysis(sua_name)
+        self.atdx.execute_atdx_analysis(self.portfolio_data, sua_name)
         self.report_gen.execute_report_gen(sua_name)
 
 

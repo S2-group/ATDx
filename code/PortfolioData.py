@@ -1,13 +1,16 @@
 class PortfolioData:
-    """This class is a mere information holder. It can take 4 arguments from which, arch_issues is set by default to None
-    as we don't expect to have it since the beginning. The functions it contains are just getter and setters.
+    """This class is a mere information holder. Storing all the information that we want to use to analyse.
     """
 
     def __init__(self, ar_rules, triple_rules, sua_info, projects_info, issues, measures, arch_issues):
         """
+
         :param ar_rules: List of Architectural rules
+        :param triple_rules:
         :param sua_info: Single project information
         :param projects_info: Dict of projects as keys holding it's information
+        :param issues:
+        :param measures:
         :param arch_issues: This attribute hols the architectural issues if already calculated.
         """
         self.meaures = measures
@@ -18,9 +21,13 @@ class PortfolioData:
         self.projects_info = projects_info
         self.SUA_info = sua_info
         self.analysis_projects_info = None
+        self.atdx = None
 
     def set_arch_issues(self, arch_issues):
         self.arch_issues = arch_issues
+
+    def set_atdx(self, atdx):
+        self.atdx = atdx
 
     def set_issues(self, issues):
         self.issues = issues
@@ -51,3 +58,13 @@ class PortfolioData:
 
     def get_analysis_projects_info(self):
         return self.analysis_projects_info
+
+    def get_atdx(self):
+        return self.atdx
+
+    def get_project_key(self, sua):
+        for projects in self.get_projects_info():
+            if projects == sua:
+                return self.get_projects_info()[projects]['projectKey']
+
+        print("The selected project was not found")

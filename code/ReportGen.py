@@ -7,23 +7,33 @@ import numpy as np
 
 class ReportGen(ABC):
 
-    def __init__(self, max_number_of_projects, max_number_of_classes, dimensions_to_print,portfolio_info):
+    def __init__(self, max_number_of_projects, max_number_of_classes, dimensions_to_print, portfolio_info):
         self.max_number_of_projects = max_number_of_projects
         self.max_number_of_classes = max_number_of_classes
         self.dimensions = dimensions_to_print
         self.portfolio_info = portfolio_info
 
     def get_categories_pair(self, my_dict):
+        """
+        Function to get the get the dimensions values in the same order they are stored in the self.dimension variable
+        :param my_dict: Is a dictionary containing a projects dimensions as keys and it's values as the content
+        :return: Array containing the values of the different dimensions
+        """
         category_value = []
+
         for category in self.dimensions:
             category_value.append(my_dict[category])
 
         return category_value
 
-    def generate_radarchart(self, dimension_value_pair, project_name):
+    def generate_radarchart(self, project_name):
+        """
+        Function to generate the radarchart images, storing them into a default folder where all the radarchar will be stored
+        :param project_name:
+        """
         ax = plot.subplot(polar="True")
 
-        values = self.get_categories_pair(dimension_value_pair)
+        values = self.get_categories_pair(self.portfolio_info.get_analysis_projects_info()[project_name])
         N = len(self.dimensions)
         values += values[:1]
 
@@ -37,8 +47,13 @@ class ReportGen(ABC):
         ax.set_title([project_name])
         plot.yticks([0, 1, 2, 3, 4, 5], color="grey", size=7)
         plot.savefig('../data/reports/radarchart/' + project_name + '.jpg')
+        plot.close()
 
     def cluster_issues_per_class(self):
+        """
+        This function will cluster the issues per class which are stored in the object portfolio_info
+        :return:
+        """
         issues = self.portfolio_info.get_issues()
 
         D = defaultdict(dict)
@@ -66,12 +81,18 @@ class ReportGen(ABC):
         return D
 
     def sort_by_max_sums_per_project(self, class_ATD_values):
+        """
+        Function that sorts the issue sum of the different projects.
+        :param class_ATD_values: It should be a Dataframe containing all the cluster issues
+        :return: It returns a Pandas Dataframe which is sorted by the issue_sum and grouped by the Project
+        """
 
         # remove classes with less no violations
         class_ATD_values = class_ATD_values[class_ATD_values['issue_sum'] > 0]
 
         # reduce to max_number_of_classes per project (files with higher value)
-        class_ATD_values = class_ATD_values.sort_values(['project', 'issue_sum'], ascending=False).groupby('project').head(self.max_number_of_classes)
+        class_ATD_values = class_ATD_values.sort_values(['project', 'issue_sum'], ascending=False).groupby(
+            'project').head(self.max_number_of_classes)
         # get the name of the class
         class_ATD_values['class'] = class_ATD_values['component'].str.split('/').str[-1]
         class_ATD_values = self.capitalize_table(class_ATD_values)
@@ -80,6 +101,11 @@ class ReportGen(ABC):
         return class_ATD_values
 
     def capitalize_table(self, class_ATD_values):
+        """
+        Capitalize a table
+        :param class_ATD_values:
+        :return: Capitalized column names
+        """
         list_of_dimensions = ['class']
 
         for dimension in self.dimensions:
@@ -106,14 +132,19 @@ class ReportGen(ABC):
         return class_ATD_values
 
     @abstractmethod
-    def generate_report(self, projects_data, project):
-        pass
-
-    @abstractmethod
-    def generate_max_dimensions_per_project(self, json_location):
+    def generate_report(self, project):
+        """
+        This function Generates the report and stores it in a default location
+        :param project: Name of the project to make a report for
+        :return:
+        """
         pass
 
     @abstractmethod
     def get_table_for_project(self, project):
-       pass
-
+        """
+        Sets a table for the report that suits the max_number_of_classes
+        :param project: Name of the project we want the table for
+        :return:
+        """
+        pass

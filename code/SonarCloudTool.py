@@ -209,8 +209,8 @@ class SonarCloudTool(AnalysisTool, ABC):
         ar_rules = self.portfolio_info.get_ar_rules()
         measures = self.portfolio_info.get_measures()
 
-        # self.merge_issues(sua)
-        arch_issues = read_json('../data/arch_issues.json')
+        self.merge_issues(sua)
+        # arch_issues = read_json('../data/arch_issues.json')
         arch_issues = self.filter_rules(ar_rules)
         ar_issues = self.count_ar_issues(arch_issues, self.portfolio_info.get_projects_info(), ar_rules, '../data/ar_issues.json')
         # ar_issues =  read_json('../data/ar_issues.json')
