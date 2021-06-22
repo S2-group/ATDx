@@ -1,4 +1,4 @@
-# from Controller import *
+from Controller import *
 import multiprocessing as mp
 from flask import *
 from flask_github import GitHub
@@ -16,7 +16,7 @@ def api_gh_message():
     if request.headers['Content-Type'] == 'application/json':
         some_info = request.json
         print(some_info['pull_request']['head']['repo']['name'])
-        # pool.apply_async(controller.run)
+        pool.apply_async(controller.run, 'apache_sling-org-apache-sling-launchpad-integration-tests')
 
         return 'success', 200
     else:
@@ -26,7 +26,7 @@ def api_gh_message():
 if __name__ == '__main__':
     # process
     pool = mp.Pool(1)
-    # controller = Controller()
+    controller = Controller()
 
     app.run(debug=True)
     pool.join()
