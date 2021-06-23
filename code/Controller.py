@@ -64,5 +64,5 @@ class Controller:
 
 if __name__ == "__main__":
     controller = Controller()
-    controller.run('apache_sling-org-apache-sling-launchpad-integration-tests')
+    controller.run('apache_sling-org-apache-sling-commons-html')
 

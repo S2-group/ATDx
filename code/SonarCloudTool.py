@@ -125,9 +125,7 @@ class SonarCloudTool(AnalysisTool, ABC):
     def mine_measures(self, filtered_projects, measures_path):
 
         url = 'https://sonarcloud.io/api/measures/component?'
-
         j = 0
-
         spec_project_list = list()
 
         for p in filtered_projects:

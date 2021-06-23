@@ -36,11 +36,11 @@ class AtdxCore:
             ar_kmeans = ck.ckmeans(norm_t[rule], k=(1, num_clusters))
             dimensions = self.get_dimensions(projects_info, dimensions, rule_dimensions, ar_kmeans)
 
-        # calculation of atdx per project in sua
-        for names in dimensions:
-            for dimension in dimensions[names]:
-                value = dimensions[project_name][dimension] / len(atdd_tool[dimension])
-                atd_x = atd_x + value
+        # calculation of atdx of a sua
+
+        for dimension in dimensions[project_name]:
+            value = dimensions[project_name][dimension] / len(atdd_tool[dimension])
+            atd_x = atd_x + value
 
         # final step of atdx
         atd_x = atd_x / len(atdd_tool)
