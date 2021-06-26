@@ -64,6 +64,7 @@ def merge_crawled_files(directory, prefix, suffix, field, target_file, save_step
 
     return merged_items
 
+
 def get_dimension_list(triple):
     dimensions_with_rules = {}
 
@@ -79,13 +80,13 @@ def get_dimension_list(triple):
 
     return dimensions_with_rules
 
+
 def save_dict_as_json(file_path, data):
     with open(file_path, 'w') as outfile:
         json.dump(data, outfile, indent=4, default=str)
 
 
 def read_json(path):
-    f = open(path, )
+    f = open(path, 'r')
     dictionary = json.load(f)
-
     return dictionary

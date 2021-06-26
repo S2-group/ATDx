@@ -1,6 +1,6 @@
 {
     "tool": "SonarCloud",
-    "store": 1,
+    "store": 0,
     "rules_location": "ar_rules.json",
     "projects_location": "filtered_projects.json",
     "measures": "measures.json" ,

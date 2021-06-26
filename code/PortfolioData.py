@@ -2,7 +2,7 @@ class PortfolioData:
     """This class is a mere information holder. Storing all the information that we want to use to analyse.
     """
 
-    def __init__(self, ar_rules, triple_rules, sua_info, projects_info, issues, measures, arch_issues):
+    def __init__(self, ar_rules, triple_rules, dimensions, sua_info, projects_info, issues, measures, arch_issues):
         """
 
         :param ar_rules: List of Architectural rules
@@ -13,6 +13,7 @@ class PortfolioData:
         :param measures:
         :param arch_issues: This attribute hols the architectural issues if already calculated.
         """
+        self.dimensions = dimensions
         self.meaures = measures
         self.issues = issues
         self.triple = triple_rules
@@ -68,3 +69,6 @@ class PortfolioData:
                 return self.get_projects_info()[projects]['projectKey']
 
         print("The selected project was not found")
+
+    def get_dimension_info(self):
+        return self.dimensions

@@ -7,10 +7,10 @@ import numpy as np
 
 class ReportGen(ABC):
 
-    def __init__(self, max_number_of_projects, max_number_of_classes, dimensions_to_print, portfolio_info):
+    def __init__(self, max_number_of_projects, max_number_of_classes, portfolio_info):
         self.max_number_of_projects = max_number_of_projects
         self.max_number_of_classes = max_number_of_classes
-        self.dimensions = dimensions_to_print
+        self.dimensions = None
         self.portfolio_info = portfolio_info
 
     def get_categories_pair(self, my_dict):

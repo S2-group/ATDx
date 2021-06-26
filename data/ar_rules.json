@@ -549,6 +549,19 @@
             ]
         }
     },
+    "dimensions": {
+        "complexity": "flaws derived from prominent complexity measures, such as McCabe’s cyclomatic complexity",
+        "interface": "flaws related to the usage of Java interfaces",
+        "exception": "flaws regarding the management of Java exceptions and the subclassing of the “Exception” Java class",
+        "member": "flaws regarding the use of members",
+        "vmsmell": "potential misuses of the Java Virtual Machine, e.g., the incorrect usage of the specific Java class “Serializable”",
+        "threading":  "flaws arising from the implementation of multiple execution threads, which could potentially lead to concurrency problems",
+        "lockin" : "flaws regarding the usage of locking objects",
+        "naming": "flaws regarding the naming",
+        "constant": "flaws regarding the use of constants",
+        "Inheritance": "flaws concerning inheritance mechanisms between classes, such as overrides and inheritance of methods or fields"
+
+    },
     "triple": [
         {
             "rule": "java:S104",

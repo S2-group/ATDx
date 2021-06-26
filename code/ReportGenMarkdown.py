@@ -1,11 +1,11 @@
 from ReportGen import *
 import pandas as pd
-from util import *
 
 
 class ReportGenMarkdown(ReportGen, ABC):
-    def __init__(self, max_number_of_projects, max_number_of_classes, dimensions_to_print, portfolio_info):
-        super().__init__(max_number_of_projects, max_number_of_classes, dimensions_to_print, portfolio_info)
+    def __init__(self, max_number_of_projects, max_number_of_classes, portfolio_info):
+        super().__init__(max_number_of_projects, max_number_of_classes, portfolio_info)
+        self.set_dimension_list()
         self.report_header = """# ATDx Report Summary
 Our ATDx analysis targets a portfolio of software projects and identifies the pain points of each project in terms of Architectural Technical Debt (ATD). This evaluation is based on a statistical analysis of the violations of SonarCloud rules.
 
@@ -15,17 +15,16 @@ ATDx works by comparing architectural debt metrics across the projects of a soft
 The ATDx approach is by itself tool-independent, and can be customized according the analysis tools available, and the portfolio considered.
 In the case of this report, we used an instance of ATDx based on the static analysis tool [SonarQube](https://www.sonarqube.org/).
 The instance of ATDx used to analyze your projects provides an overview of the architectural technical debt in a project in distinct dimensions:
-* **Inheritance**: flaws concerning inheritance mechanisms between classes, such as overrides and inheritance of methods or fields
-* **Exception**: flaws regarding the management of Java exceptions and the subclassing of the “Exception” Java class.
-* **JVMS**: potential misuses of the Java Virtual Machine, e.g., the incorrect usage of the specific Java class “Serializable”
-* **Threading**: flaws arising from the implementation of multiple execution threads, which could potentially lead to concurrency problems
-* **Interface**: flaws related to the usage of Java interfaces
-* **Complexity**: flaws derived from prominent complexity measures, such as McCabe’s cyclomatic complexity
+"""
 
-For each project, the dimensions assume a value between 0 and 5, where 0 denotes minimum architectural debt of the project in that dimension, and 5 maximum architectural debt.
+        for dimension in self.portfolio_info.get_dimension_info():
+            string_to_store = "* **" + dimension + "**: " + self.portfolio_info.get_dimension_info()[dimension]
+            self.report_header = self.report_header + string_to_store + "\n"
+
+        self.report_header =  self.report_header + """\nFor each project, the dimensions assume a value between 0 and 5, where 0 denotes minimum architectural debt of the project in that dimension, and 5 maximum architectural debt.
 In the reminder of this report, we give for the analysed project the following:
 1. A radar chart for the project
-2. A table showing the top-x classes of the project with the highest architectural technical debt.
+2. A table showing the top-""" + str(max_number_of_classes) +  """ classes of the project with the highest architectural technical debt.
 If you are curious about more theoretical background on ATDx, you can have a look at [this scientific publication](https://robertoverdecchia.github.io/papers/ENASE_2020.pdf).
 
 ## ATDx radar charts of your projects
@@ -73,10 +72,6 @@ If you are curious about more theoretical background on ATDx, you can have a loo
         string_to_return = '### Top classes with architectural debt violations'+ '\n' + project_df.to_markdown(index=False) +'\n'
 
         return string_to_return
-
-    def execute_report_gen(self, sua):
-        self.set_dimension_list()
-        self.generate_report(sua)
 
     def set_dimension_list(self):
         dimensions_with_rules = {}

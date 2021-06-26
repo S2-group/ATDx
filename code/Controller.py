@@ -24,10 +24,10 @@ class Controller:
         number_class = int(config["max_number_class"])
         number_projects = int(config["max_number_projects"])
         # store = config["store"]
-        self.report_gen = self.report_factory.get_report_gen(report_name, number_projects, number_class, None, self.portfolio_data)
+        self.report_gen = self.report_factory.get_report_gen(report_name, number_projects, number_class, self.portfolio_data)
 
-    def init_portfolio_info(self, rules, triple, sua_info, projects_info, issues, measures,arch_issues):
-        self.portfolio_data = PortfolioData(rules, triple, sua_info, projects_info, issues, measures, arch_issues)
+    def init_portfolio_info(self, rules, triple, dimensions,sua_info, projects_info, issues, measures,arch_issues):
+        self.portfolio_data = PortfolioData(rules, triple,dimensions, sua_info, projects_info, issues, measures, arch_issues)
 
     @staticmethod
     def get_content(config, string):
@@ -51,7 +51,7 @@ class Controller:
         issues = self.get_content(config, "issues")
         measures = self.get_content(config, "measures")
 
-        self.init_portfolio_info(rules["rules"], rules["triple"], projects[sua_name], projects, issues, measures, None)
+        self.init_portfolio_info(rules["rules"], rules["triple"], rules['dimensions'], projects[sua_name], projects, issues, measures, None)
         self.tool = self.tool_factory.get_analysis_tool(tool_name, store, self.portfolio_data, suffix)
         self.atdx = AtdxCore()
 
@@ -59,7 +59,10 @@ class Controller:
         self.setup(sua_name)
         self.tool.execute_analysis(sua_name)
         self.atdx.execute_atdx_analysis(self.portfolio_data, sua_name)
-        self.report_gen.execute_report_gen(sua_name)
+        self.report_gen.generate_report(sua_name)
+
+    def get_atdx_value(self):
+        return self.portfolio_data.get_atdx()
 
 
 if __name__ == "__main__":

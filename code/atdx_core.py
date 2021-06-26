@@ -94,7 +94,6 @@ class AtdxCore:
         save_dict_as_json('../data/test_dimensions_dataset_output.json', dimensions_t)
         save_dict_as_json('../data/test_normalized.json', norm_t)
 
-
     @staticmethod
     def norm_calculator(project, gr_level, rule):
         """
