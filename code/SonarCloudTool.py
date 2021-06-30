@@ -6,18 +6,20 @@ from util import *
 
 class SonarCloudTool(AnalysisTool, ABC):
 
-    def __init__(self, n, portfolio_info, suffix):
-        super().__init__(n, portfolio_info)
+    def __init__(self, save_intermediate_steps,  suffix):
+        super().__init__(save_intermediate_steps)
         self.suffix = suffix
 
-    def filter_rules(self, ar_rules):
+    def filter_arch_rules(self, portfolio_info, ar_rules):
         result = {}
 
-        for i in self.portfolio_info.get_issues():
-            if self.portfolio_info.get_issues()[i]['rule'] in ar_rules and self.portfolio_info.get_issues()[i]['project'] in self.portfolio_info.get_projects_info():
-                result[i] = self.portfolio_info.get_issues()[i]
-        if self.save_intermediate_steps == 1:
+        for i in portfolio_info.get_issues():
+            if portfolio_info.get_issues()[i]['rule'] in ar_rules and portfolio_info.get_issues()[i]['project'] in portfolio_info.get_projects_info():
+                result[i] = portfolio_info.get_issues()[i]
+
+        if self.save_intermediate_steps:
             save('../data/arch_issues' + self.suffix + '.json', result)
+
         return result
 
     @staticmethod
@@ -55,7 +57,7 @@ class SonarCloudTool(AnalysisTool, ABC):
         column_names = ['projectKey', 'design_issues']
         column_names.extend(ar_rules)
 
-        if self.save_intermediate_steps == 1:
+        if self.save_intermediate_steps:
             save(ar_issues_path + self.suffix + '.json', counted_ar_issues)
         return counted_ar_issues
 
@@ -102,7 +104,8 @@ class SonarCloudTool(AnalysisTool, ABC):
                 project_values[projectKey]['functions'] = functions
 
             j += 1
-        if self.save_intermediate_steps == 1:
+
+        if self.save_intermediate_steps:
             save('../data/meta_data' + self.suffix + '.json', project_values)
 
         return project_values
@@ -111,13 +114,17 @@ class SonarCloudTool(AnalysisTool, ABC):
         response = requests.get(url)
         if response.status_code != 400:
             data = response.json()
+
             if field_to_check is not None and not data[field_to_check]:
                 return False
+
             if save_to_fs:
                 save(path, data)
             else:
                 return data
+
             return True
+
         else:
             print(response)
             return False
@@ -143,7 +150,8 @@ class SonarCloudTool(AnalysisTool, ABC):
 
             j += 1
             print('Mined measures for project number ' + str(j))
-        if self.save_intermediate_steps == 1:
+
+        if self.save_intermediate_steps:
             save(measures_path, spec_project_list)
 
         return spec_project_list
@@ -186,40 +194,36 @@ class SonarCloudTool(AnalysisTool, ABC):
         self.download_issues(project['organization'], project['projectKey'], 'STATUS', 'true')
         self.download_issues(project['organization'], project['projectKey'], 'FILE_LINE', 'true')
 
-        location = '../data/merged_issues' + self.suffix + '.json'
+    def merge_issues(self, portfolio_info, sua):
+        merged_issues = portfolio_info.get_issues()
 
-    def merge_issues(self, sua):
-        merged_issues = self.portfolio_info.get_issues()
-        if self.portfolio_info.get_issues() is None:
-            for project in self.portfolio_info.get_projects_info():
-                self.mine_issues(self.portfolio_info.get_projects_info()[project])
+        if portfolio_info.get_issues() is None:
+            for project in portfolio_info.get_projects_info():
+                self.mine_issues(portfolio_info.get_projects_info()[project])
 
             merged_issues = merge_crawled_files('../data/issues', 'issues_', '.json', 'issues', '../data/' + self.suffix + 'non_filtered.json',
                                                 self.save_intermediate_steps)
         else:
-            self.mine_issues(self.portfolio_info.get_projects_info()[sua])
+            self.mine_issues(portfolio_info.get_projects_info()[sua])
             items_to_add = merge_crawled_files('../data/issues', 'issues_', '.json', 'issues', '../data/' + self.suffix + 'non_filtered.json',
                                                 self.save_intermediate_steps)
             merged_issues.update(items_to_add)
-        self.portfolio_info.set_issues(merged_issues)
 
-    def execute_analysis(self, sua):
-        ar_rules = self.portfolio_info.get_ar_rules()
-        measures = self.portfolio_info.get_measures()
+        portfolio_info.set_issues(merged_issues)
 
-        self.merge_issues(sua)
-        # arch_issues = read_json('../data/arch_issues.json')
-        arch_issues = self.filter_rules(ar_rules)
-        ar_issues = self.count_ar_issues(arch_issues, self.portfolio_info.get_projects_info(), ar_rules, '../data/ar_issues.json')
-        # ar_issues =  read_json('../data/ar_issues.json')
+    def execute_analysis(self, portfolio_info, sua):
+        ar_rules = portfolio_info.get_ar_rules()
+        measures = portfolio_info.get_measures()
+        self.merge_issues(portfolio_info, sua)
+        arch_issues = self.filter_arch_rules(portfolio_info, ar_rules)
+        ar_issues = self.count_ar_issues(arch_issues, portfolio_info.get_projects_info(), ar_rules, '../data/ar_issues.json')
+
         if measures is None:
-            measures = self.mine_measures(self.portfolio_info.get_projects_info(), '../data/measures.json')
+            measures = self.mine_measures(portfolio_info.get_projects_info(), '../data/measures.json')
 
         metada_data = self.filter_metadata(measures)
 
-        # atdx_input is what will be used for the mediator
         atdx_input = update_dict_of_dict(ar_issues, metada_data)
 
-        self.portfolio_info.set_analysis_projects_info(atdx_input)
-        self.portfolio_info.set_arch_issues(arch_issues)
-        # save('../data/ATDx_input.json', atdx_input)
+        portfolio_info.set_analysis_projects_info(atdx_input)
+        portfolio_info.set_arch_issues(arch_issues)

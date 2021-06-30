@@ -1,11 +1,12 @@
 from ReportGen import *
 import pandas as pd
+from util import *
 
 
 class ReportGenMarkdown(ReportGen, ABC):
     def __init__(self, max_number_of_projects, max_number_of_classes, portfolio_info):
-        super().__init__(max_number_of_projects, max_number_of_classes, portfolio_info)
-        self.set_dimension_list()
+        super().__init__(max_number_of_projects, max_number_of_classes)
+        self.set_dimension_list(portfolio_info.get_triple())
         self.report_header = """# ATDx Report Summary
 Our ATDx analysis targets a portfolio of software projects and identifies the pain points of each project in terms of Architectural Technical Debt (ATD). This evaluation is based on a statistical analysis of the violations of SonarCloud rules.
 
@@ -16,12 +17,7 @@ The ATDx approach is by itself tool-independent, and can be customized according
 In the case of this report, we used an instance of ATDx based on the static analysis tool [SonarQube](https://www.sonarqube.org/).
 The instance of ATDx used to analyze your projects provides an overview of the architectural technical debt in a project in distinct dimensions:
 """
-
-        for dimension in self.portfolio_info.get_dimension_info():
-            string_to_store = "* **" + dimension + "**: " + self.portfolio_info.get_dimension_info()[dimension]
-            self.report_header = self.report_header + string_to_store + "\n"
-
-        self.report_header =  self.report_header + """\nFor each project, the dimensions assume a value between 0 and 5, where 0 denotes minimum architectural debt of the project in that dimension, and 5 maximum architectural debt.
+        second_part = """\nFor each project, the dimensions assume a value between 0 and 5, where 0 denotes minimum architectural debt of the project in that dimension, and 5 maximum architectural debt.
 In the reminder of this report, we give for the analysed project the following:
 1. A radar chart for the project
 2. A table showing the top-""" + str(max_number_of_classes) +  """ classes of the project with the highest architectural technical debt.
@@ -29,16 +25,21 @@ If you are curious about more theoretical background on ATDx, you can have a loo
 
 ## ATDx radar charts of your projects
 """
+        for dimension in portfolio_info.get_dimension_info():
+            string_to_store = "* **" + dimension + "**: " + portfolio_info.get_dimension_info()[dimension]
+            self.report_header = self.report_header + string_to_store + "\n"
 
-    def generate_report(self, project):
+        self.report_header = self.report_header + second_part
+
+    def generate_report(self, project, portfolio_info):
         table = ''
-        clustered_issues = self.cluster_issues_per_class()
+        clustered_issues = self.cluster_issues_per_class(portfolio_info)
         clustered_issues_for_function = pd.DataFrame.from_dict(clustered_issues).transpose()
         sorted_max_issues = self.sort_by_max_sums_per_project(clustered_issues_for_function)
-        self.generate_radarchart(project)
+        self.generate_radarchart(project, portfolio_info)
 
         blocks = []
-        block = '### Analysed project ' + project +'\nThe atdx for this project is: '+ str(self.portfolio_info.get_atdx()) +'\n\n<img src=\"radarchart/' + project + '.jpg\"/><p style="text-align:left">[Project on Github](https://github.com/' + project + ') <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=' + project + ') <br></p>\n'
+        block = '### Analysed project ' + project +'\nThe atdx for this project is: '+ str(portfolio_info.get_atdx()) +'\n\n<img src=\"radarchart/' + project + '.jpg\"/><p style="text-align:left">[Project on Github](https://github.com/' + project + ') <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=' + project + ') <br></p>\n'
         blocks.append(block)
 
         # create table with overview of the projects
@@ -54,7 +55,6 @@ If you are curious about more theoretical background on ATDx, you can have a loo
                 report = report + '\n'
                 report = report + self.get_table_for_project(elements)
                 break
-
 
         filename = '../data/reports/test_report.md'
 
@@ -73,18 +73,7 @@ If you are curious about more theoretical background on ATDx, you can have a loo
 
         return string_to_return
 
-    def set_dimension_list(self):
-        dimensions_with_rules = {}
-
-        for rule in self.portfolio_info.get_triple():
-            dimensions_list = rule['dimensions']
-            rule_name = rule['rule']
-
-            for dimension_element in dimensions_list:
-                if dimension_element not in dimensions_with_rules:
-                    dimensions_with_rules[dimension_element] = [rule_name]
-                    continue
-                dimensions_with_rules[dimension_element].append(rule_name)
-
+    def set_dimension_list(self, triple):
+        dimensions_with_rules = get_dimension_list(triple)
         self.dimensions = dimensions_with_rules
 

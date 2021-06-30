@@ -5,9 +5,8 @@ class AnalysisTool(ABC):
     """This super class is the skeleton for the different analysis tools that could be implemented."""
 
     @abstractmethod
-    def __init__(self, save_intermediate_steps, portfolio_info):
+    def __init__(self, save_intermediate_steps):
         self.save_intermediate_steps = save_intermediate_steps
-        self.portfolio_info = portfolio_info
 
     @abstractmethod
     def get_from_tool(self, url, path, save_to_fs, field_to_check):
@@ -68,11 +67,12 @@ class AnalysisTool(ABC):
         pass
 
     @abstractmethod
-    def filter_rules(self, ar_rules):
-        """Function to filter the architectural issues that are contained within the architectural rules we have
+    def filter_arch_rules(self, portfolio_data, ar_rules):
+        """Function to filter the architectural issues that are contained within the architectural rules given
 
+        :param portfolio_data: PorfolioData object from which we can get the issues of it
         :param ar_rules: List of all the architectural rules
-
+        :return result: Dict with the the filtered issues
         """
         pass
 

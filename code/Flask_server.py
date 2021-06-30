@@ -32,15 +32,15 @@ def index():
     return t
 
 
-def post_comment(some_info):
+def post_comment(github_info):
     controller = Controller()
 
-    controller.run('apache_sling-org-apache-sling-launchpad-integration-tests')
+    controller.run(github_info['pull_request']["head"]["repo"]["name"])
 
     atdx_value = controller.get_atdx_value()
-    data_to_send_back = {'owner': some_info['repository']['owner']['login'], 'repo': some_info['repository']['name'], 'pull_number': some_info['pull_request']['number'], 'body': 'The atdx value of the project is:' + atdx_value}
+    data_to_send_back = {'owner': github_info['repository']['owner']['login'], 'repo': github_info['repository']['name'], 'pull_number': github_info['pull_request']['number'], 'body': 'The atdx value of the project is:' + atdx_value}
 
-    url_of_comments = some_info['pull_request']['issue_url']
+    url_of_comments = github_info['pull_request']['issue_url']
     value = github.post(resource=url_of_comments, data=data_to_send_back)
     return value
 
@@ -48,9 +48,9 @@ def post_comment(some_info):
 @app.route('/Github', methods=['POST'])
 def api_gh_message():
     if request.headers['Content-Type'] == 'application/json':
-        some_info = request.json
+        github_info = request.json
         # print('Let\'s start the apply_async operation')
-        pool.apply_async(post_comment, args=(some_info,))
+        pool.apply_async(post_comment, args=(github_info,))
         return 'success', 200
     else:
         abort(400)

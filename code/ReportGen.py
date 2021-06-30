@@ -7,11 +7,10 @@ import numpy as np
 
 class ReportGen(ABC):
 
-    def __init__(self, max_number_of_projects, max_number_of_classes, portfolio_info):
+    def __init__(self, max_number_of_projects, max_number_of_classes):
         self.max_number_of_projects = max_number_of_projects
         self.max_number_of_classes = max_number_of_classes
         self.dimensions = None
-        self.portfolio_info = portfolio_info
 
     def get_categories_pair(self, my_dict):
         """
@@ -26,14 +25,15 @@ class ReportGen(ABC):
 
         return category_value
 
-    def generate_radarchart(self, project_name):
+    def generate_radarchart(self, project_name, portfolio_info):
         """
-        Function to generate the radarchart images, storing them into a default folder where all the radarchar will be stored
-        :param project_name:
+        Function to generate the radarchart images, storing them into a default folder where all the radarchart will be stored
+        :param portfolio_info: PorfotolioData structure containing all necessary information for the generation of the radarchar
+        :param project_name: String containing the name of the project that you want to generate the radarchart for
         """
         ax = plot.subplot(polar="True")
 
-        values = self.get_categories_pair(self.portfolio_info.get_analysis_projects_info()[project_name])
+        values = self.get_categories_pair(portfolio_info.get_analysis_projects_info()[project_name])
         N = len(self.dimensions)
         values += values[:1]
 
@@ -49,17 +49,18 @@ class ReportGen(ABC):
         plot.savefig('../data/reports/radarchart/' + project_name + '.jpg')
         plot.close()
 
-    def cluster_issues_per_class(self):
+    def cluster_issues_per_class(self, portfolio_info):
         """
         This function will cluster the issues per class which are stored in the object portfolio_info
+        :param portfolio_info: PorfotolioData structure containing all necessary information for the generation of the radarchar
         :return:
         """
-        issues = self.portfolio_info.get_issues()
+        issues = portfolio_info.get_issues()
 
         D = defaultdict(dict)
         D_with_rules = defaultdict(dict)
 
-        for obj in self.portfolio_info.get_issues():
+        for obj in portfolio_info.get_issues():
             D[issues[obj]['component']] = defaultdict(int)
             D_with_rules[issues[obj]['component']] = defaultdict(int)
 
@@ -132,11 +133,11 @@ class ReportGen(ABC):
         return class_ATD_values
 
     @abstractmethod
-    def generate_report(self, project):
+    def generate_report(self, project, portfolio_info):
         """
         This function Generates the report and stores it in a default location
+        :param portfolio_info: PortfolioData object containing the already analysed data
         :param project: Name of the project to make a report for
-        :return:
         """
         pass
 
@@ -145,6 +146,6 @@ class ReportGen(ABC):
         """
         Sets a table for the report that suits the max_number_of_classes
         :param project: Name of the project we want the table for
-        :return:
+        :return: the corresponding format for the specific ReportGen
         """
         pass

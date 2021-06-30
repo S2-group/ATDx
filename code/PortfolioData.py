@@ -4,13 +4,13 @@ class PortfolioData:
 
     def __init__(self, ar_rules, triple_rules, dimensions, sua_info, projects_info, issues, measures, arch_issues):
         """
-
+        :param dimensions: Dict containing the dimensions and their definitions
         :param ar_rules: List of Architectural rules
-        :param triple_rules:
+        :param triple_rules: 3-tuples containing the ATDD and the granularity of the architectural rules
         :param sua_info: Single project information
         :param projects_info: Dict of projects as keys holding it's information
-        :param issues:
-        :param measures:
+        :param issues: Dict containing all the mined issues from the analysis tool
+        :param measures: Dict containing all the projects as key and measures as content
         :param arch_issues: This attribute hols the architectural issues if already calculated.
         """
         self.dimensions = dimensions
