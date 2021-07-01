@@ -71,8 +71,8 @@ class AtdxCore:
     def set_normalized_values(self, projects_info, sua):
         normalized_update = {}
 
-        for rule in projects_info.get_ar_rules():
-            gr_level = projects_info.get_ar_rules()[rule]['granularity_level']
+        for rule in projects_info.get_triple():
+            gr_level = projects_info.get_triple()[rule]['granularity_level']
             normalized_update[rule] = []
             for project in projects_info.get_analysis_projects_info():
                 normalized_update[rule].append(self.norm_calculator(projects_info.get_analysis_projects_info()[project], gr_level, rule))
@@ -86,14 +86,13 @@ class AtdxCore:
 
         norm_t = self.set_normalized_values(projects_info, projects_info.get_analysis_projects_info()[sua_name])
 
-        dimensions_t, atdx = self.atdx_core(projects_info, projects_info.get_analysis_projects_info()[sua_name], projects_info.get_ar_rules(), atdd, norm_t)
+        dimensions_t, atdx = self.atdx_core(projects_info, projects_info.get_analysis_projects_info()[sua_name], projects_info.get_triple(), atdd, norm_t)
 
         projects_info.set_analysis_projects_info(dimensions_t)
         projects_info.set_atdx(atdx)
         save_dict_as_json('../data/test_atdx_dataset_output.json', atdx)
         save_dict_as_json('../data/test_dimensions_dataset_output.json', dimensions_t)
         save_dict_as_json('../data/test_normalized.json', norm_t)
-
 
     @staticmethod
     def norm_calculator(project, gr_level, rule):
@@ -107,22 +106,7 @@ class AtdxCore:
         norm = int(project[rule]) / int(project[gr_level])
         return norm
 
-    @staticmethod
-    def get_dimension_list(triple):
-        dimensions_with_rules = {}
 
-        for rule in triple:
-            dimensions_list = rule['dimensions']
-            rule_name = rule['rule']
-
-            for dimension_element in dimensions_list:
-                if dimension_element not in dimensions_with_rules:
-                    dimensions_with_rules[dimension_element] = [rule_name]
-                    continue
-
-                dimensions_with_rules[dimension_element].append(rule_name)
-
-        return dimensions_with_rules
 
 
 

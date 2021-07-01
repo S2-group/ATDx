@@ -1,9 +1,9 @@
 {
     "tool": "SonarCloud",
-    "store": 1,
-    "rules_location": "ar_rules.json",
-    "projects_location": "filtered_projects.json",
+    "save_intermediate_steps": true,
+    "rules_location": "demo_ar_rules.json",
+    "projects_location": "projects.json",
     "measures": "measures.json" ,
-    "issues": "arch_issues.json",
-    "files_suffix": "new_files"
+    "ar_issues": "ar_issues.json",
+    "files_suffix": "_"
 }
