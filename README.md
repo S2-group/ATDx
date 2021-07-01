@@ -35,10 +35,11 @@ This file should have this attributes filled in:
    {
        "tool": "SonarCloud",
        "save_intermediate_steps": true,
-       "rules_location": "ar_rules.json",
+       "rules_location": "demo_ar_rules.json",
        "projects_location": "projects.json",
        "measures": "measures.json" ,
-       "files_suffix": "new_files"
+       "ar_issues": "ar_issues.json",
+       "files_suffix": "_"
    }
    ```
 ### report_config.json
