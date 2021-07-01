@@ -17,7 +17,7 @@ As visualized below, ATDx  consists of the following components:
 </p>
 
 ## Setting up environment, installation and dependencies
-Instructions can be found [here](https://github.com/S2-group/atdx/Demo_1/SETUP.md).
+Instructions can be found [here](https://github.com/S2-group/ATDx/blob/Demo_1/SETUP.md).
 
 ## Quick start
 To run an experiment, run:
