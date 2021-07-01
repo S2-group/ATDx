@@ -79,8 +79,8 @@ def get_dimension_list(triple):
     dimensions_with_rules = {}
 
     for rule in triple:
-        dimensions_list = rule['dimensions']
-        rule_name = rule['rule']
+        dimensions_list = triple[rule]['atd_dimension']
+        rule_name = rule
 
         for dimension_element in dimensions_list:
             if dimension_element not in dimensions_with_rules:

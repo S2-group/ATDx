@@ -10,11 +10,11 @@ class SonarCloudTool(AnalysisTool, ABC):
         super().__init__(save_intermediate_steps)
         self.suffix = suffix
 
-    def filter_arch_rules(self, portfolio_info, ar_rules):
+    def filter_arch_rules(self, portfolio_info, triple):
         result = {}
 
         for i in portfolio_info.get_issues():
-            if portfolio_info.get_issues()[i]['rule'] in ar_rules and portfolio_info.get_issues()[i]['project'] in portfolio_info.get_projects_info():
+            if portfolio_info.get_issues()[i]['rule'] in triple and portfolio_info.get_issues()[i]['project'] in portfolio_info.get_projects_info():
                 result[i] = portfolio_info.get_issues()[i]
 
         if self.save_intermediate_steps:
@@ -137,7 +137,7 @@ class SonarCloudTool(AnalysisTool, ABC):
 
         for p in filtered_projects:
             query = {'componentKey': p,
-                     'metricKeys': 'duplicated_blocks,duplicated_lines,duplicated_lines_density,violations,false_positive_issues,open_issues,confirmed_issues,reopened_issues,code_smells,sqale_rating,sqale_index,sqale_debt_ratio,bugs,reliability_rating,reliability_remediation_effort,vulnerabilities,security_rating,classes,comment_lines,comment_lines_density,directories,files,lines,ncloc,ncloc_language_distribution,functions'}
+                     'metricKeys': 'classes,files,lines,ncloc,ncloc_language_distribution,functions'}
 
             r = requests.get(url, params=query)
             project_specs_new = r.json()
@@ -178,26 +178,16 @@ class SonarCloudTool(AnalysisTool, ABC):
         print("Mining issues for: " + project['projectKey'])
 
         # CREATION_DATE, UPDATE_DATE, CLOSE_DATE, ASSIGNEE, SEVERITY, STATUS, FILE_LINE
-        # self.download_issues(project['organization'], project['projectKey'], 'CREATION_DATE', 'false')
+        self.download_issues(project['organization'], project['projectKey'], 'CREATION_DATE', 'false')
         # self.download_issues(project['organization'], project['projectKey'], 'UPDATE_DATE', 'false')
         # self.download_issues(project['organization'], project['projectKey'], 'CLOSE_DATE', 'false')
-        # issues = download_issues(org, project['projectKey'], 'ASSIGNEE', 'false')
-        self.download_issues(project['organization'], project['projectKey'], 'SEVERITY', 'false')
-        self.download_issues(project['organization'], project['projectKey'], 'STATUS', 'false')
-        self.download_issues(project['organization'], project['projectKey'], 'FILE_LINE', 'false')
-
-        # self.download_issues(project['organization'], project['projectKey'], 'CREATION_DATE', 'true')
-        # self.download_issues(project['organization'], project['projectKey'], 'UPDATE_DATE', 'true')
-        # self.download_issues(project['organization'], project['projectKey'], 'CLOSE_DATE', 'true')
-        # issues = download_issues(org, project['projectKey'], 'ASSIGNEE', 'true')
-        self.download_issues(project['organization'], project['projectKey'], 'SEVERITY', 'true')
-        self.download_issues(project['organization'], project['projectKey'], 'STATUS', 'true')
-        self.download_issues(project['organization'], project['projectKey'], 'FILE_LINE', 'true')
+        # self.download_issues(project['organization'], project['projectKey'], 'SEVERITY', 'false')
+        # self.download_issues(project['organization'], project['projectKey'], 'STATUS', 'false')
+        # self.download_issues(project['organization'], project['projectKey'], 'FILE_LINE', 'false')
 
     def merge_issues(self, portfolio_info, sua):
-        merged_issues = portfolio_info.get_issues()
 
-        if portfolio_info.get_issues() is None:
+        if portfolio_info.get_ar_issues() is None:
             for project in portfolio_info.get_projects_info():
                 self.mine_issues(portfolio_info.get_projects_info()[project])
 
@@ -207,16 +197,17 @@ class SonarCloudTool(AnalysisTool, ABC):
             self.mine_issues(portfolio_info.get_projects_info()[sua])
             items_to_add = merge_crawled_files('../data/issues', 'issues_', '.json', 'issues', '../data/' + self.suffix + 'non_filtered.json',
                                                 self.save_intermediate_steps)
-            merged_issues.update(items_to_add)
+            merged_issues = items_to_add
 
         portfolio_info.set_issues(merged_issues)
 
     def execute_analysis(self, portfolio_info, sua):
-        ar_rules = portfolio_info.get_ar_rules()
+        triple = portfolio_info.get_triple()
         measures = portfolio_info.get_measures()
+
         self.merge_issues(portfolio_info, sua)
-        arch_issues = self.filter_arch_rules(portfolio_info, ar_rules)
-        ar_issues = self.count_ar_issues(arch_issues, portfolio_info.get_projects_info(), ar_rules, '../data/ar_issues.json')
+        arch_issues = self.filter_arch_rules(portfolio_info, triple)
+        ar_issues = self.count_ar_issues(arch_issues, portfolio_info.get_projects_info(), triple, '../data/ar_issues.json')
 
         if measures is None:
             measures = self.mine_measures(portfolio_info.get_projects_info(), '../data/measures.json')
@@ -224,6 +215,6 @@ class SonarCloudTool(AnalysisTool, ABC):
         metada_data = self.filter_metadata(measures)
 
         atdx_input = update_dict_of_dict(ar_issues, metada_data)
-
+        save("../data/test_atdx_input.json",atdx_input)
         portfolio_info.set_analysis_projects_info(atdx_input)
         portfolio_info.set_arch_issues(arch_issues)

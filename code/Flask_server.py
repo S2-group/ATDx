@@ -81,7 +81,7 @@ def authorized(oauth_token):
 @app.route('/login')
 def login():
     if session.get('user_id', None) is None:
-        return_value = github.authorize()
+        return_value = github.authorize(scope='repo:status')
         return return_value
     else:
         return 'Already logged in'

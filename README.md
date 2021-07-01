@@ -36,9 +36,8 @@ This file should have this attributes filled in:
        "tool": "SonarCloud",
        "save_intermediate_steps": true,
        "rules_location": "ar_rules.json",
-       "projects_location": "filtered_projects.json",
+       "projects_location": "projects.json",
        "measures": "measures.json" ,
-       "issues": "arch_issues.json",
        "files_suffix": "new_files"
    }
    ```

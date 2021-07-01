@@ -9,6 +9,7 @@ class Controller:
         self.tool = None
         self.report_gen = None
         self.atdx = None
+        self.portfolio_data = None
 
     def setup(self, sua_name):
         """
@@ -31,9 +32,6 @@ class Controller:
         number_projects = int(config["max_number_projects"])
         # store = config["store"]
         self.report_gen = report_factory.get_report_gen(report_name, number_projects, number_class, self.portfolio_data)
-
-    def init_portfolio_info(self, rules, triple, dimensions,sua_info, projects_info, issues, measures,arch_issues):
-        self.portfolio_data = PortfolioData(rules, triple,dimensions, sua_info, projects_info, issues, measures, arch_issues)
 
     @staticmethod
     def get_content(config, key):
@@ -65,10 +63,10 @@ class Controller:
         save_intermediate_steps = config["save_intermediate_steps"]
         suffix = config["files_suffix"]
 
-        issues = self.get_content(config, "issues")
+        issues = self.get_content(config, "ar_issues")
         measures = self.get_content(config, "measures")
 
-        self.init_portfolio_info(rules["rules"], rules["triple"], rules['dimensions'], projects[sua_name], projects, issues, measures, None)
+        self.portfolio_data =  PortfolioData(rules["triple"], rules['dimensions'], projects[sua_name], projects, issues, measures, None)
         self.tool = tool_factory.get_analysis_tool(tool_name, save_intermediate_steps, suffix)
         self.atdx = AtdxCore()
 
@@ -89,4 +87,3 @@ class Controller:
 if __name__ == "__main__":
     controller = Controller()
     controller.run('apache_sling-org-apache-sling-commons-html')
-
