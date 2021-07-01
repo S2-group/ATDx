@@ -29,10 +29,9 @@ class AnalysisTool(ABC):
         pass
 
     @abstractmethod
-    def download_issues(self, org, project_key, sort_by, ascending_string):
+    def download_issues(self, project_key, sort_by, ascending_string):
         """Function to download all the issues of a project. Typically used to call get_from_tool
 
-       :param org: String containing the organization name
        :param project_key: Key of the project we want to request from the tool Analysis
        :param sort_by: The name of the metric we want it to be sorted by
        :param ascending_string: Boolean to refer the sort

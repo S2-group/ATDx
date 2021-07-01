@@ -7,18 +7,13 @@ from flask_github import GitHub
 app = Flask(__name__)
 app.config.from_object(__name__)
 
-app.config['GITHUB_CLIENT_ID'] = 'xxx'
-app.config['GITHUB_CLIENT_SECRET'] = 'yyy'
+app.config['GITHUB_CLIENT_ID'] = 'XXX'
+app.config['GITHUB_CLIENT_SECRET'] = 'YYY'
 
 # setup github-flask
 github = GitHub(app)
 
 access_token = None
-
-
-class User:
-    def __init__(self, github_access_token):
-        self.github_access_token = github_access_token
 
 
 @app.route('/')
@@ -32,15 +27,33 @@ def index():
     return t
 
 
+def get_body_comment(atdx_value):
+    body_to_return = '''### ATDx tool 
+ATDx is a data-driven approach that, by leveraging the analysis of a software portfolio, severity calculation of precomputed architectural violations via clustering, and severity aggregation into different ATD “dimensions” (ATDD), provides an overview of the ATD present in a software-intensive system.
+    
+'''
+    body_to_return = body_to_return + 'The **ATDx** value for this project is: ' + str(round(atdx_value, 4))
+
+    return body_to_return
+
+
 def post_comment(github_info):
     controller = Controller()
-
-    controller.run(github_info['pull_request']["head"]["repo"]["name"])
+    name = github_info['pull_request']["head"]["repo"]["name"]
+    # controller.run(github_info['pull_request']["head"]["repo"]["name"])
+    controller.run('apache_sling-org-apache-sling-commons-html')
 
     atdx_value = controller.get_atdx_value()
-    data_to_send_back = {'owner': github_info['repository']['owner']['login'], 'repo': github_info['repository']['name'], 'pull_number': github_info['pull_request']['number'], 'body': 'The atdx value of the project is:' + atdx_value}
 
-    url_of_comments = github_info['pull_request']['issue_url']
+    query = 'git add ../data/reports/test_report.md; git commit -am "Analysis of the ' + name + ' repository for PR number' + str(github_info['pull_request']['number']) + '"; git push'
+
+    os.system(query)
+
+    body_of_comment = get_body_comment(atdx_value)
+
+    data_to_send_back = {'owner': github_info['repository']['owner']['login'], 'repo': name, 'pull_number': github_info['pull_request']['number'], 'body': body_of_comment}
+
+    url_of_comments = github_info['pull_request']['comments_url']
     value = github.post(resource=url_of_comments, data=data_to_send_back)
     return value
 
@@ -50,7 +63,8 @@ def api_gh_message():
     if request.headers['Content-Type'] == 'application/json':
         github_info = request.json
         # print('Let\'s start the apply_async operation')
-        pool.apply_async(post_comment, args=(github_info,))
+        # pool.apply_async(post_comment, args=(github_info,))
+        post_comment(github_info)
         return 'success', 200
     else:
         abort(400)
@@ -81,7 +95,7 @@ def authorized(oauth_token):
 @app.route('/login')
 def login():
     if session.get('user_id', None) is None:
-        return_value = github.authorize(scope='repo:status')
+        return_value = github.authorize(scope='repo')
         return return_value
     else:
         return 'Already logged in'

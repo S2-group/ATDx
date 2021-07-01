@@ -156,7 +156,7 @@ class SonarCloudTool(AnalysisTool, ABC):
 
         return spec_project_list
 
-    def download_issues(self, org, project_key, sort_by, ascending_string):
+    def download_issues(self, project_key, sort_by, ascending_string):
         print('Start downloading issues for: ' + project_key + ' --- ' + sort_by + ' --- ' + ascending_string)
 
         base_url = 'https://sonarcloud.io/api/issues/search?p=PAGE_NUM&ps=10&s=SORT_BY&asc=ASCENDING&projectKeys=PROJECT_KEY'
@@ -169,7 +169,7 @@ class SonarCloudTool(AnalysisTool, ABC):
                                                                                                              sort_by).replace(
                 'PROJECT_KEY', project_key)
             reached_limit = not self.get_from_tool(url,
-                                                   '../data/issues/issues_' + org + '_' + project_key + '_' + sort_by + '_' + ascending_string + '_' + str(
+                                                   '../data/issues/issues_' + '_' + project_key + '_' + sort_by + '_' + ascending_string + '_' + str(
                                                        page_num) + '.json', True, 'issues')
             page_num += 1
 
@@ -178,7 +178,7 @@ class SonarCloudTool(AnalysisTool, ABC):
         print("Mining issues for: " + project['projectKey'])
 
         # CREATION_DATE, UPDATE_DATE, CLOSE_DATE, ASSIGNEE, SEVERITY, STATUS, FILE_LINE
-        self.download_issues(project['organization'], project['projectKey'], 'CREATION_DATE', 'false')
+        self.download_issues(project['projectKey'], 'CREATION_DATE', 'false')
         # self.download_issues(project['organization'], project['projectKey'], 'UPDATE_DATE', 'false')
         # self.download_issues(project['organization'], project['projectKey'], 'CLOSE_DATE', 'false')
         # self.download_issues(project['organization'], project['projectKey'], 'SEVERITY', 'false')

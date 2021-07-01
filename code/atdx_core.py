@@ -7,6 +7,19 @@ class AtdxCore:
     def __init__(self):
         pass
 
+    @staticmethod
+    def calculate_ATDx_sua(dimensions_sua, atdd_tool):
+        ATDx = 0
+
+        for dimension in dimensions_sua:
+            value = dimensions_sua[dimension] / len(atdd_tool[dimension])
+            ATDx = ATDx + value
+
+        # final step of atdx
+        ATDx = ATDx / len(atdd_tool)
+
+        return ATDx
+
     def atdx_core(self, projects_info, sua, ar_tool, atdd_tool, norm_t):
         """
         atdx_core function used to calculate the adtx of a given set of projects
@@ -18,11 +31,9 @@ class AtdxCore:
         :return it returns a tuple of the dimensions and the atdx given as a dictionary with the projects as key
         """
         project_name = sua['projectKey']
-
         # initialization of the atd dimensions. We initialize them all to 0 (it can happen that sua is a dictionary of
         # projects) the same happens with the atdx
         dimensions = {}
-        atd_x = 0
         for project in projects_info.get_analysis_projects_info():
             dimensions[project] = {}
             for dimension in atdd_tool:
@@ -38,14 +49,9 @@ class AtdxCore:
 
         # calculation of atdx of a sua
 
-        for dimension in dimensions[project_name]:
-            value = dimensions[project_name][dimension] / len(atdd_tool[dimension])
-            atd_x = atd_x + value
+        ATDx = self.calculate_ATDx_sua(dimensions[project_name], atdd_tool)
 
-        # final step of atdx
-        atd_x = atd_x / len(atdd_tool)
-
-        return dimensions, atd_x
+        return dimensions, ATDx
 
     @staticmethod
     def get_dimensions(projects_info, dimensions, rule_dimensions, ar_kmeans):

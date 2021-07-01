@@ -39,7 +39,7 @@ If you are curious about more theoretical background on ATDx, you can have a loo
         self.generate_radarchart(project, portfolio_info)
 
         blocks = []
-        block = '### Analysed project ' + project +'\nThe atdx for this project is: '+ str(portfolio_info.get_atdx()) +'\n\n<img src=\"radarchart/' + project + '.jpg\"/><p style="text-align:left">[Project on Github](https://github.com/' + project + ') <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=' + project + ') <br></p>\n'
+        block = '### Analysed project ' + project + '\nThe ATDx value for this project is: ' + str(round(portfolio_info.get_atdx(), 4)) +'\n\n<img src=\"radarchart/' + project + '.jpg\"/><p style="text-align:left">[Project on Github](https://github.com/' + project + ') <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=' + project + ') <br></p>\n'
         blocks.append(block)
 
         # create table with overview of the projects
