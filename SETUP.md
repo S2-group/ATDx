@@ -8,7 +8,7 @@ This framework requires Python 3 along with MacOS or Linux.  Current and former 
 
 ## Setting up environment and dependencies
 1. Click on the **Fork** icon in the top right hand corner once you're logged into Github.
-2. Once it finishes loading, click on the green **Code** button. Copy `git clone git@github.com:[your_username]/android-runner.git` and then paste that into your terminal after navigating to the desired local development environment.
+2. Once it finishes loading, click on the green **Code** button. Copy `git clone git@github.com:[your_username]/ATDx.git` and then paste that into your terminal after navigating to the desired local development environment.
 3. Type `cd atdx` to enter the framework's main directory. 
 4. Create a virtual machine with a public IP.
 5. Install dependencies.
