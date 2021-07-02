@@ -1,0 +1,8 @@
+   {
+        "tool": "SonarCloud",
+        "rules_location": "triplets.json",
+        "projects_location": "Apache_projects.json",
+        "measures": "measures.json" ,
+        "ar_issues": "ar_issues.json",
+        "files_suffix": "new_"
+  }

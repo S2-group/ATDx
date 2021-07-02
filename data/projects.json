@@ -1,0 +1,544 @@
+{
+    "apache_sling-org-apache-sling-scripting-bundle-tracker": {
+        "projectKey": "apache_sling-org-apache-sling-scripting-bundle-tracker",
+        "name": "Apache Sling Scripting Bundle Tracker",
+        "repo_url": "https://github.com/apache/sling-org-apache-sling-scripting-bundle-tracker"
+    },
+    "apache_sling-org-apache-sling-scripting-core": {
+        "projectKey": "apache_sling-org-apache-sling-scripting-core",
+        "name": "Apache Sling Scripting Core",
+        "repo_url": "https://github.com/apache/sling-org-apache-sling-scripting-core"
+    },
+    "apache_sling-org-apache-sling-scripting-esx": {
+        "projectKey": "apache_sling-org-apache-sling-scripting-esx",
+        "name": "Apache Sling Scripting ESX",
+        "repo_url": "https://github.com/apache/sling-org-apache-sling-scripting-esx"
+    },
+    "apache_sling-org-apache-sling-scripting-sightly-compiler": {
+        "projectKey": "apache_sling-org-apache-sling-scripting-sightly-compiler",
+        "name": "Apache Sling Scripting HTL Compiler",
+        "repo_url": "https://github.com/apache/sling-org-apache-sling-scripting-sightly-compiler"
+    },
+    "apache_sling-org-apache-sling-scripting-sightly": {
+        "projectKey": "apache_sling-org-apache-sling-scripting-sightly",
+        "name": "Apache Sling Scripting HTL Engine",
+        "repo_url": "https://github.com/apache/sling-org-apache-sling-scripting-sightly"
+    },
+    "apache_sling-org-apache-sling-scripting-sightly-compiler-java": {
+        "projectKey": "apache_sling-org-apache-sling-scripting-sightly-compiler-java",
+        "name": "Apache Sling Scripting HTL Java Compiler",
+        "repo_url": "https://github.com/apache/sling-org-apache-sling-scripting-sightly-compiler-java"
+    },
+    "apache_sling-org-apache-sling-scripting-sightly-js-provider": {
+        "projectKey": "apache_sling-org-apache-sling-scripting-sightly-js-provider",
+        "name": "Apache Sling Scripting HTL JS Use Provider",
+        "repo_url": "https://github.com/apache/sling-org-apache-sling-scripting-sightly-js-provider"
+    },
+    "apache_sling-org-apache-sling-scripting-java": {
+        "projectKey": "apache_sling-org-apache-sling-scripting-java",
+        "name": "Apache Sling Scripting Java Support",
+        "repo_url": "https://github.com/apache/sling-org-apache-sling-scripting-java"
+    },
+    "apache_sling-org-apache-sling-scripting-javascript": {
+        "projectKey": "apache_sling-org-apache-sling-scripting-javascript",
+        "name": "Apache Sling Scripting JavaScript",
+        "repo_url": "https://github.com/apache/sling-org-apache-sling-scripting-javascript"
+    },
+    "apache_sling-org-apache-sling-scripting-jsp": {
+        "projectKey": "apache_sling-org-apache-sling-scripting-jsp",
+        "name": "Apache Sling Scripting JSP",
+        "repo_url": "https://github.com/apache/sling-org-apache-sling-scripting-jsp"
+    },
+
+    "apache_sling-org-apache-sling-commons-html": {
+        "projectKey": "apache_sling-org-apache-sling-commons-html",
+        "name": "Apache Sling Commons HTML Utilities",
+        "repo_url": "https://github.com/apache/sling-org-apache-sling-commons-html"
+    },
+    "apache_sling-org-apache-sling-hapi": {
+        "projectKey": "apache_sling-org-apache-sling-hapi",
+        "name": "Apache Sling Hypermedia API tools",
+        "repo_url": "https://github.com/apache/sling-org-apache-sling-hapi"
+    },
+    "apache_sling-org-apache-sling-i18n": {
+        "projectKey": "apache_sling-org-apache-sling-i18n",
+        "name": "Apache Sling I18N Support",
+        "repo_url": "https://github.com/apache/sling-org-apache-sling-i18n"
+    },
+    "apache_sling-org-apache-sling-jcr-contentloader": {
+        "projectKey": "apache_sling-org-apache-sling-jcr-contentloader",
+        "name": "Apache Sling Initial Content Loader",
+        "repo_url": "https://github.com/apache/sling-org-apache-sling-jcr-contentloader"
+    },
+    "apache_sling-org-apache-sling-installer-core": {
+        "projectKey": "apache_sling-org-apache-sling-installer-core",
+        "name": "Apache Sling Installer Core",
+        "repo_url": "https://github.com/apache/sling-org-apache-sling-installer-core"
+    },
+    "apache_sling-org-apache-sling-jcr-jackrabbit-accessmanager": {
+        "projectKey": "apache_sling-org-apache-sling-jcr-jackrabbit-accessmanager",
+        "name": "Apache Sling Jackrabbit JSR-283 Access Control Manager Support",
+        "repo_url": "https://github.com/apache/sling-org-apache-sling-jcr-jackrabbit-accessmanager"
+    },
+    "apache_sling-org-apache-sling-jcr-jackrabbit-usermanager": {
+        "projectKey": "apache_sling-org-apache-sling-jcr-jackrabbit-usermanager",
+        "name": "Apache Sling Jackrabbit UserManager Support",
+        "repo_url": "https://github.com/apache/sling-org-apache-sling-jcr-jackrabbit-usermanager"
+    },
+    "apache_sling-org-apache-sling-jcr-base": {
+        "projectKey": "apache_sling-org-apache-sling-jcr-base",
+        "name": "Apache Sling JCR Base Bundle",
+        "repo_url": "https://github.com/apache/sling-org-apache-sling-jcr-base"
+    },
+    "apache_sling-org-apache-sling-jcr-classloader": {
+        "projectKey": "apache_sling-org-apache-sling-jcr-classloader",
+        "name": "Apache Sling JCR ClassLoader",
+        "repo_url": "https://github.com/apache/sling-org-apache-sling-jcr-classloader"
+    },
+    "apache_sling-org-apache-sling-installer-provider-jcr": {
+        "projectKey": "apache_sling-org-apache-sling-installer-provider-jcr",
+        "name": "Apache Sling JCR Installer",
+        "repo_url": "https://github.com/apache/sling-org-apache-sling-installer-provider-jcr"
+    },
+    "apache_sling-org-apache-sling-jcr-resource": {
+        "projectKey": "apache_sling-org-apache-sling-jcr-resource",
+        "name": "Apache Sling JCR Resource Resolver",
+        "repo_url": "https://github.com/apache/sling-org-apache-sling-jcr-resource"
+    },
+    "commons-rng": {
+        "projectKey": "commons-rng",
+        "name": "Apache Commons RNG",
+        "repo_url": "https://github.com/apache/commons-rng"
+    },
+    "apache_sling-org-apache-sling-pipes": {
+        "projectKey": "apache_sling-org-apache-sling-pipes",
+        "name": "Apache Sling Pipes",
+        "repo_url": "https://github.com/apache/sling-org-apache-sling-pipes"
+    },
+    "apache_sling-org-apache-sling-provisioning-model": {
+        "projectKey": "apache_sling-org-apache-sling-provisioning-model",
+        "name": "Apache Sling Provisioning Model",
+        "repo_url": "https://github.com/apache/sling-org-apache-sling-provisioning-model"
+    },
+    "apache_sling-org-apache-sling-query": {
+        "projectKey": "apache_sling-org-apache-sling-query",
+        "name": "Apache Sling Query",
+        "repo_url": "https://github.com/apache/sling-org-apache-sling-query"
+    },
+    "apache_sling-org-apache-sling-resource-filter": {
+        "projectKey": "apache_sling-org-apache-sling-resource-filter",
+        "name": "Apache Sling Resource Filter",
+        "repo_url": "https://github.com/apache/sling-org-apache-sling-resource-filter"
+    },
+    "apache_sling-org-apache-sling-resourcemerger": {
+        "projectKey": "apache_sling-org-apache-sling-resourcemerger",
+        "name": "Apache Sling Resource Merger",
+        "repo_url": "https://github.com/apache/sling-org-apache-sling-resourcemerger"
+    },
+    "apache_sling-org-apache-sling-resourceresolver": {
+        "projectKey": "apache_sling-org-apache-sling-resourceresolver",
+        "name": "Apache Sling Resource Resolver",
+        "repo_url": "https://github.com/apache/sling-org-apache-sling-resourceresolver"
+    },
+    "apache_sling-org-apache-sling-discovery-impl": {
+        "projectKey": "apache_sling-org-apache-sling-discovery-impl",
+        "name": "Apache Sling Resource-Based Discovery Service",
+        "repo_url": "https://github.com/apache/sling-org-apache-sling-discovery-impl"
+    },
+    "apache_sling-org-apache-sling-rewriter": {
+        "projectKey": "apache_sling-org-apache-sling-rewriter",
+        "name": "Apache Sling Rewriter",
+        "repo_url": "https://github.com/apache/sling-org-apache-sling-rewriter"
+    },
+    "apache_groovy": {
+        "projectKey": "apache_groovy",
+        "name": "Apache Groovy",
+        "eligibilityStatus": "COMPLETED",
+        "eligible": false,
+        "repo_url": "https://github.com/apache/groovy"
+    },
+    "apache_incubator-iotdb": {
+        "projectKey": "apache_incubator-iotdb",
+        "name": "Apache IoTDB (incubating) Project Parent POM",
+        "repo_url": "https://github.com/apache/incubator-iotdb"
+    },
+    "apache_isis": {
+        "projectKey": "apache_isis",
+        "name": "Apache Isis (Aggregator)",
+        "repo_url": "https://github.com/apache/isis"
+    },
+    "apache_incubator-tamaya": {
+        "projectKey": "apache_incubator-tamaya",
+        "name": "Apache Tamaya Base",
+        "repo_url": "https://github.com/apache/incubator-tamaya"
+    },
+    "apache_incubator-tamaya-extensions": {
+        "projectKey": "apache_incubator-tamaya-extensions",
+        "name": "Apache Tamaya Extensions",
+        "repo_url": "https://github.com/apache/incubator-tamaya-extensions"
+    },
+    "apache_sling-org-apache-sling-junit-teleporter": {
+        "projectKey": "apache_sling-org-apache-sling-junit-teleporter",
+        "name": "Apache Sling JUnit Tests Teleporter",
+        "repo_url": "https://github.com/apache/sling-org-apache-sling-junit-teleporter"
+    },
+    "apache_sling-org-apache-sling-xss": {
+        "projectKey": "apache_sling-org-apache-sling-xss",
+        "name": "Apache Sling XSS Protection API",
+        "repo_url": "https://github.com/apache/sling-org-apache-sling-xss"
+    },
+    "apache_sling-org-apache-sling-app-cms": {
+        "projectKey": "apache_sling-org-apache-sling-app-cms",
+        "name": "Apache Sling - CMS",
+        "repo_url": "https://github.com/apache/sling-org-apache-sling-app-cms"
+    },
+    "apache_sling-org-apache-sling-jcr-repoinit": {
+        "projectKey": "apache_sling-org-apache-sling-jcr-repoinit",
+        "name": "Apache Sling Repoinit JCR",
+        "repo_url": "https://github.com/apache/sling-org-apache-sling-jcr-repoinit"
+    },
+    "apache_sling-org-apache-sling-testing-sling-mock": {
+        "projectKey": "apache_sling-org-apache-sling-testing-sling-mock",
+        "name": "Apache Sling Testing Sling Mock",
+        "repo_url": "https://github.com/apache/sling-org-apache-sling-testing-sling-mock"
+    },
+    "apache_sling-org-apache-sling-junit-core": {
+        "projectKey": "apache_sling-org-apache-sling-junit-core",
+        "name": "Apache Sling JUnit Core",
+        "repo_url": "https://github.com/apache/sling-org-apache-sling-junit-core"
+    },
+    "apache_sling-org-apache-sling-feature-modelconverter": {
+        "projectKey": "apache_sling-org-apache-sling-feature-modelconverter",
+        "name": "Apache Sling Feature Model Converter",
+        "repo_url": "https://github.com/apache/sling-org-apache-sling-feature-modelconverter"
+    },
+    "apache_sling-org-apache-sling-file-optimization": {
+        "projectKey": "apache_sling-org-apache-sling-file-optimization",
+        "name": "Apache Sling File Optimization",
+        "repo_url": "https://github.com/apache/sling-org-apache-sling-file-optimization"
+    },
+    "apache_sling-org-apache-sling-fsresource": {
+        "projectKey": "apache_sling-org-apache-sling-fsresource",
+        "name": "Apache Sling File System Resource Provider",
+        "repo_url": "https://github.com/apache/sling-org-apache-sling-fsresource"
+    },
+    "apache_sling-org-apache-sling-auth-form": {
+        "projectKey": "apache_sling-org-apache-sling-auth-form",
+        "name": "Apache Sling Form Based Authentication",
+        "repo_url": "https://github.com/apache/sling-org-apache-sling-auth-form"
+    },
+    "apache_openmeetings": {
+        "projectKey": "apache_openmeetings",
+        "name": "Openmeetings",
+        "repo_url": "https://github.com/apache/openmeetings"
+    },
+    "apache_sling-org-apache-sling-jobs": {
+        "projectKey": "apache_sling-org-apache-sling-jobs",
+        "name": "Apache Sling Jobs Support",
+        "repo_url": "https://github.com/apache/sling-org-apache-sling-jobs"
+    },
+    "apache_sling-org-apache-sling-launchpad-base": {
+        "projectKey": "apache_sling-org-apache-sling-launchpad-base",
+        "name": "Apache Sling Launchpad Base",
+        "repo_url": "https://github.com/apache/sling-org-apache-sling-launchpad-base"
+    },
+    "apache_sling-org-apache-sling-launchpad-integration-tests": {
+        "projectKey": "apache_sling-org-apache-sling-launchpad-integration-tests",
+        "name": "Apache Sling Launchpad Integration Tests",
+        "repo_url": "https://github.com/apache/sling-org-apache-sling-launchpad-integration-tests"
+    },
+    "apache_sling-org-apache-sling-launchpad-test-services": {
+        "projectKey": "apache_sling-org-apache-sling-launchpad-test-services",
+        "name": "Apache Sling Launchpad Testing Services",
+        "repo_url": "https://github.com/apache/sling-org-apache-sling-launchpad-test-services"
+    },
+    "apache_sling-org-apache-sling-tracer": {
+        "projectKey": "apache_sling-org-apache-sling-tracer",
+        "name": "Apache Sling Log Tracer",
+        "repo_url": "https://github.com/apache/sling-org-apache-sling-tracer"
+    },
+    "apache_sling-maven-launchpad-plugin": {
+        "projectKey": "apache_sling-maven-launchpad-plugin",
+        "name": "Apache Sling Maven Launchpad Plugin",
+        "repo_url": "https://github.com/apache/sling-maven-launchpad-plugin"
+    },
+    "apache_sling-maven-plugin": {
+        "projectKey": "apache_sling-maven-plugin",
+        "name": "Apache Sling Maven Plugin Reactor",
+        "repo_url": "https://github.com/apache/sling-maven-plugin"
+    },
+    "apache_sling-org-apache-sling-models-impl": {
+        "projectKey": "apache_sling-org-apache-sling-models-impl",
+        "name": "Apache Sling Models Implementation",
+        "repo_url": "https://github.com/apache/sling-org-apache-sling-models-impl"
+    },
+    "apache_sling-org-apache-sling-models-integration-tests": {
+        "projectKey": "apache_sling-org-apache-sling-models-integration-tests",
+        "name": "Apache Sling Models Integration Tests",
+        "repo_url": "https://github.com/apache/sling-org-apache-sling-models-integration-tests"
+    },
+    "apache_sling-org-apache-sling-api": {
+        "projectKey": "apache_sling-org-apache-sling-api",
+        "name": "Apache Sling API",
+        "repo_url": "https://github.com/apache/sling-org-apache-sling-api"
+    },
+    "apache_sling-org-apache-sling-auth-core": {
+        "projectKey": "apache_sling-org-apache-sling-auth-core",
+        "name": "Apache Sling Authentication Service",
+        "repo_url": "https://github.com/apache/sling-org-apache-sling-auth-core"
+    },
+    "apache_sling-org-apache-sling-bundleresource-impl": {
+        "projectKey": "apache_sling-org-apache-sling-bundleresource-impl",
+        "name": "Apache Sling Bundle Resource Provider",
+        "repo_url": "https://github.com/apache/sling-org-apache-sling-bundleresource-impl"
+    },
+    "apache_sling-org-apache-sling-clam": {
+        "projectKey": "apache_sling-org-apache-sling-clam",
+        "name": "Apache Sling Clam",
+        "repo_url": "https://github.com/apache/sling-org-apache-sling-clam"
+    },
+    "apache_sling-org-apache-sling-committer-cli": {
+        "projectKey": "apache_sling-org-apache-sling-committer-cli",
+        "name": "Apache Sling Committer CLI",
+        "repo_url": "https://github.com/apache/sling-org-apache-sling-committer-cli"
+    },
+    "apache_sling-org-apache-sling-commons-jcr-file": {
+        "projectKey": "apache_sling-org-apache-sling-commons-jcr-file",
+        "name": "Apache Sling Commons JCR File",
+        "repo_url": "https://github.com/apache/sling-org-apache-sling-commons-jcr-file"
+    },
+    "apache_sling-org-apache-sling-commons-log": {
+        "projectKey": "apache_sling-org-apache-sling-commons-log",
+        "name": "Apache Sling Commons Log",
+        "repo_url": "https://github.com/apache/sling-org-apache-sling-commons-log"
+    },
+    "apache_sling-org-apache-sling-commons-metrics": {
+        "projectKey": "apache_sling-org-apache-sling-commons-metrics",
+        "name": "Apache Sling Commons Metrics",
+        "repo_url": "https://github.com/apache/sling-org-apache-sling-commons-metrics"
+    },
+    "apache-dolphinscheduler": {
+        "projectKey": "apache-dolphinscheduler",
+        "name": "dolphinscheduler",
+        "eligibilityStatus": "COMPLETED",
+        "eligible": false,
+        "repo_url": "https://github.com/apache/incubator-dolphinscheduler"
+    },
+    "apache_sling-org-apache-sling-feature-io": {
+        "projectKey": "apache_sling-org-apache-sling-feature-io",
+        "name": "Apache Sling Feature IO Module",
+        "repo_url": "https://github.com/apache/sling-org-apache-sling-feature-io"
+    },
+    "apache_sling-org-apache-sling-jcr-webdav": {
+        "projectKey": "apache_sling-org-apache-sling-jcr-webdav",
+        "name": "Apache Sling JCR WebDAV",
+        "repo_url": "https://github.com/apache/sling-org-apache-sling-jcr-webdav"
+    },
+    "apache_sling-org-apache-sling-jmx-provider": {
+        "projectKey": "apache_sling-org-apache-sling-jmx-provider",
+        "name": "Apache Sling JMX Resource Provider",
+        "repo_url": "https://github.com/apache/sling-org-apache-sling-jmx-provider"
+    },
+    "apache_sling-org-apache-sling-distribution-journal": {
+        "projectKey": "apache_sling-org-apache-sling-distribution-journal",
+        "name": "Apache Sling Journal based Content Distribution - Core bundle",
+        "repo_url": "https://github.com/apache/sling-org-apache-sling-distribution-journal"
+    },
+    "apache_sling-kickstart-maven-plugin": {
+        "projectKey": "apache_sling-kickstart-maven-plugin",
+        "name": "Apache Sling Kickstart Maven Plugin",
+        "repo_url": "https://github.com/apache/sling-kickstart-maven-plugin"
+    },
+    "apache_sling-org-apache-sling-scripting-thymeleaf": {
+        "projectKey": "apache_sling-org-apache-sling-scripting-thymeleaf",
+        "name": "Apache Sling Scripting Thymeleaf",
+        "repo_url": "https://github.com/apache/sling-org-apache-sling-scripting-thymeleaf"
+    },
+    "apache_sling-org-apache-sling-testing-clients": {
+        "projectKey": "apache_sling-org-apache-sling-testing-clients",
+        "name": "Apache Sling Testing Clients",
+        "repo_url": "https://github.com/apache/sling-org-apache-sling-testing-clients"
+    },
+    "apache_struts": {
+        "projectKey": "apache_struts",
+        "name": "Struts 2",
+        "repo_url": "https://github.com/apache/struts"
+    },
+
+    "apache_sling-org-apache-sling-servlets-get": {
+        "projectKey": "apache_sling-org-apache-sling-servlets-get",
+        "name": "Apache Sling Default GET Servlets",
+        "repo_url": "https://github.com/apache/sling-org-apache-sling-servlets-get"
+    },
+    "apache_plc4x": {
+        "projectKey": "apache_plc4x",
+        "name": "PLC4X",
+        "repo_url": "https://github.com/apache/plc4x"
+    },
+    "apache_incubator-tamaya-sandbox": {
+        "projectKey": "apache_incubator-tamaya-sandbox",
+        "name": "Apache Tamaya Sandbox",
+        "repo_url": "https://github.com/apache/incubator-tamaya-sandbox"
+    },
+    "apache_sling-whiteboard": {
+        "projectKey": "apache_sling-whiteboard",
+        "name": "Apache Sling Whiteboard (Builder)",
+        "repo_url": "https://github.com/apache/sling-whiteboard"
+    },
+    "apache_sling-org-apache-sling-distribution-core": {
+        "projectKey": "apache_sling-org-apache-sling-distribution-core",
+        "name": "Apache Sling Distribution Core",
+        "repo_url": "https://github.com/apache/sling-org-apache-sling-distribution-core"
+    },
+    "apache_sling-org-apache-sling-testing-serversetup": {
+        "projectKey": "apache_sling-org-apache-sling-testing-serversetup",
+        "name": "Apache Sling Server Setup Tools",
+        "repo_url": "https://github.com/apache/sling-org-apache-sling-testing-serversetup"
+    },
+    "apache_sling-org-apache-sling-serviceusermapper": {
+        "projectKey": "apache_sling-org-apache-sling-serviceusermapper",
+        "name": "Apache Sling Service User Mapper",
+        "repo_url": "https://github.com/apache/sling-org-apache-sling-serviceusermapper"
+    },
+    "apache_sling-org-apache-sling-servlet-helpers": {
+        "projectKey": "apache_sling-org-apache-sling-servlet-helpers",
+        "name": "Apache Sling Servlet Helpers",
+        "repo_url": "https://github.com/apache/sling-org-apache-sling-servlet-helpers"
+    },
+    "apache_sling-org-apache-sling-servlets-resolver": {
+        "projectKey": "apache_sling-org-apache-sling-servlets-resolver",
+        "name": "Apache Sling Servlets Resolver",
+        "repo_url": "https://github.com/apache/sling-org-apache-sling-servlets-resolver"
+    },
+    "apache_sling-slingstart-maven-plugin": {
+        "projectKey": "apache_sling-slingstart-maven-plugin",
+        "name": "Apache Sling SlingStart Maven Plugin",
+        "repo_url": "https://github.com/apache/sling-slingstart-maven-plugin"
+    },
+    "apache_sling-org-apache-sling-testing-jcr-mock": {
+        "projectKey": "apache_sling-org-apache-sling-testing-jcr-mock",
+        "name": "Apache Sling Testing JCR Mock",
+        "repo_url": "https://github.com/apache/sling-org-apache-sling-testing-jcr-mock"
+    },
+    "apache_sling-org-apache-sling-testing-osgi-mock": {
+        "projectKey": "apache_sling-org-apache-sling-testing-osgi-mock",
+        "name": "Apache Sling Testing OSGi Mock",
+        "repo_url": "https://github.com/apache/sling-org-apache-sling-testing-osgi-mock"
+    },
+    "apache_sling-org-apache-sling-testing-paxexam": {
+        "projectKey": "apache_sling-org-apache-sling-testing-paxexam",
+        "name": "Apache Sling Testing PaxExam",
+        "repo_url": "https://github.com/apache/sling-org-apache-sling-testing-paxexam"
+    },
+    "apache_sling-org-apache-sling-testing-resourceresolver-mock": {
+        "projectKey": "apache_sling-org-apache-sling-testing-resourceresolver-mock",
+        "name": "Apache Sling Testing Resource Resolver Mock",
+        "repo_url": "https://github.com/apache/sling-org-apache-sling-testing-resourceresolver-mock"
+    },
+    "apache_sling-scriptingbundle-maven-plugin": {
+        "projectKey": "apache_sling-scriptingbundle-maven-plugin",
+        "name": "scriptingbundle-maven-plugin",
+        "repo_url": "https://github.com/apache/sling-scriptingbundle-maven-plugin"
+    },
+    "apache_sling-org-apache-sling-scripting-jsp-taglib": {
+        "projectKey": "apache_sling-org-apache-sling-scripting-jsp-taglib",
+        "name": "Apache Sling Scripting JSP Tag Library",
+        "repo_url": "https://github.com/apache/sling-org-apache-sling-scripting-jsp-taglib"
+    },
+
+    "apache_sling-org-apache-sling-discovery-oak": {
+        "projectKey": "apache_sling-org-apache-sling-discovery-oak",
+        "name": "Apache Sling Oak-Based Discovery Service",
+        "repo_url": "https://github.com/apache/sling-org-apache-sling-discovery-oak"
+    },
+    "apache_sling-org-apache-sling-discovery-base": {
+        "projectKey": "apache_sling-org-apache-sling-discovery-base",
+        "name": "Apache Sling Discovery Base",
+        "repo_url": "https://github.com/apache/sling-org-apache-sling-discovery-base"
+    },
+    "apache_sling-org-apache-sling-discovery-commons": {
+        "projectKey": "apache_sling-org-apache-sling-discovery-commons",
+        "name": "Apache Sling Discovery Commons",
+        "repo_url": "https://github.com/apache/sling-org-apache-sling-discovery-commons"
+    },
+    "apache_sling-org-apache-sling-engine": {
+        "projectKey": "apache_sling-org-apache-sling-engine",
+        "name": "Apache Sling Engine Implementation",
+        "repo_url": "https://github.com/apache/sling-org-apache-sling-engine"
+    },
+    "apache_sling-org-apache-sling-event": {
+        "projectKey": "apache_sling-org-apache-sling-event",
+        "name": "Apache Sling Event Support",
+        "repo_url": "https://github.com/apache/sling-org-apache-sling-event"
+    },
+    "apache_sling-org-apache-sling-feature": {
+        "projectKey": "apache_sling-org-apache-sling-feature",
+        "name": "Apache Sling Feature",
+        "repo_url": "https://github.com/apache/sling-org-apache-sling-feature"
+    },
+    "apache_sling-org-apache-sling-feature-launcher": {
+        "projectKey": "apache_sling-org-apache-sling-feature-launcher",
+        "name": "Apache Sling Feature Launcher",
+        "repo_url": "https://github.com/apache/sling-org-apache-sling-feature-launcher"
+    },
+    "apache_sling-org-apache-sling-feature-analyser": {
+        "projectKey": "apache_sling-org-apache-sling-feature-analyser",
+        "name": "Apache Sling Feature Model Analyser",
+        "repo_url": "https://github.com/apache/sling-org-apache-sling-feature-analyser"
+    },
+    "apache_sling-jspc-maven-plugin": {
+        "projectKey": "apache_sling-jspc-maven-plugin",
+        "name": "Apache Sling JSPC Maven Plugin",
+        "repo_url": "https://github.com/apache/sling-jspc-maven-plugin"
+    },
+    "apache_sling-org-apache-sling-commons-threads": {
+        "projectKey": "apache_sling-org-apache-sling-commons-threads",
+        "name": "Apache Sling Commons Threads",
+        "repo_url": "https://github.com/apache/sling-org-apache-sling-commons-threads"
+    },
+    "apache_sling-org-apache-sling-testing-rules": {
+        "projectKey": "apache_sling-org-apache-sling-testing-rules",
+        "name": "Apache Sling Testing Rules",
+        "repo_url": "https://github.com/apache/sling-org-apache-sling-testing-rules"
+    },
+    "apache_sling-org-apache-sling-commons-testing": {
+        "projectKey": "apache_sling-org-apache-sling-commons-testing",
+        "name": "Apache Sling Testing Utilities",
+        "repo_url": "https://github.com/apache/sling-org-apache-sling-commons-testing"
+    },
+    "apache_sling-slingfeature-maven-plugin": {
+        "projectKey": "apache_sling-slingfeature-maven-plugin",
+        "name": "Apache Sling OSGi Feature Maven Plugin",
+        "repo_url": "https://github.com/apache/sling-slingfeature-maven-plugin"
+    },
+    "apache_sling-org-apache-sling-commons-scheduler": {
+        "projectKey": "apache_sling-org-apache-sling-commons-scheduler",
+        "name": "Apache Sling Commons Scheduler Support",
+        "repo_url": "https://github.com/apache/sling-org-apache-sling-commons-scheduler"
+    },
+    "apache_sling-org-apache-sling-feature-cpconverter": {
+        "projectKey": "apache_sling-org-apache-sling-feature-cpconverter",
+        "name": "Apache Sling Content Package to Feature Model converter",
+        "repo_url": "https://github.com/apache/sling-org-apache-sling-feature-cpconverter"
+    },
+    "apache_sling-org-apache-sling-caconfig-impl": {
+        "projectKey": "apache_sling-org-apache-sling-caconfig-impl",
+        "name": "Apache Sling Context-Aware Configuration Implementation",
+        "repo_url": "https://github.com/apache/sling-org-apache-sling-caconfig-impl"
+    },
+    "apache_sling-org-apache-sling-servlets-post": {
+        "projectKey": "apache_sling-org-apache-sling-servlets-post",
+        "name": "Apache Sling Default POST Servlets",
+        "repo_url": "https://github.com/apache/sling-org-apache-sling-servlets-post"
+    },
+    "apache_sling-org-apache-sling-validation-core": {
+        "projectKey": "apache_sling-org-apache-sling-validation-core",
+        "name": "Apache Sling Validation Framework Core Implementation",
+        "repo_url": "https://github.com/apache/sling-org-apache-sling-validation-core"
+    },
+    "apache_sling-org-apache-sling-feature-extension-apiregions": {
+        "projectKey": "apache_sling-org-apache-sling-feature-extension-apiregions",
+        "name": "Sling Featuremodel - API Regions Exension",
+        "repo_url": "https://github.com/apache/sling-org-apache-sling-feature-extension-apiregions"
+    }
+}

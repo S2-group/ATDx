@@ -1,0 +1,9 @@
+{
+    "tool": "SonarCloud",
+    "rules_location": "ar_rules.json",
+    "projects_location": "projects.json",
+    "measures": "measures.json" ,
+    "counted_issues": "ar_issues.json",
+    "arch_issues": "arch_issues.json",
+    "files_suffix": "_"
+}
