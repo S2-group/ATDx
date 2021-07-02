@@ -56,7 +56,7 @@ If you are curious about more theoretical background on ATDx, you can have a loo
                 report = report + self.get_table_for_project(elements)
                 break
 
-        filename = '../data/reports/test_report.md'
+        filename = '../data/reports/' + project + '.md'
 
         with open(filename, 'w') as file:
             file.write(report)

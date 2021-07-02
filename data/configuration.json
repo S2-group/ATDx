@@ -5,5 +5,6 @@
     "projects_location": "projects.json",
     "measures": "measures.json" ,
     "ar_issues": "ar_issues.json",
-    "files_suffix": "_"
+    "files_suffix": "_",
+    "github_repository_report": "https://github.com/S2-group/ATDx/blob/fix_PR_comment/data/reports/"
 }

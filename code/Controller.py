@@ -10,6 +10,7 @@ class Controller:
         self.report_gen = None
         self.atdx = None
         self.portfolio_data = None
+        self.reports_location = None
 
     def setup(self, sua_name):
         """
@@ -62,6 +63,7 @@ class Controller:
         tool_name = config["tool"]
         save_intermediate_steps = config["save_intermediate_steps"]
         suffix = config["files_suffix"]
+        self.reports_location = config["github_repository_report"]
 
         issues = self.get_content(config, "ar_issues")
         measures = self.get_content(config, "measures")
@@ -82,6 +84,9 @@ class Controller:
 
     def get_atdx_value(self):
         return self.portfolio_data.get_atdx()
+
+    def get_report_location(self):
+        return self.reports_location
 
 
 if __name__ == "__main__":
