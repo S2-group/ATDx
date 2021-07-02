@@ -126,11 +126,9 @@ if __name__ == "__main__":
             controller.run_sua(SUA)
             valid_input = True
 
-        if single_or_portfolio == '2':
-            #main_config_location = input("Please input the main configuration file location.\n")
-            #report_config = input("Please input the report configuration file location.\n")
-            main_config_location = '../data/configuration.json'
-            report_config = '../data/report_config.json'
+       if single_or_portfolio == '2':
+            main_config_location = input("Please input the main configuration file location.\n")
+            report_config = input("Please input the report configuration file location.\n")
             controller.run_portfolio(main_config_location, report_config)
             valid_input = True
 
