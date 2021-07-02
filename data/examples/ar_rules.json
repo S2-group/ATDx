@@ -1,0 +1,268 @@
+{
+    "triple": {
+        "java:S104": {
+            "granularity_level": "files",
+            "atd_dimension": [
+                "complexity"
+            ]
+        },
+        "java:S107": {
+            "granularity_level": "functions",
+            "atd_dimension": [
+                "interface"
+            ]
+        },
+        "java:S112": {
+            "granularity_level": "ncloc_java",
+            "atd_dimension": [
+                "exception"
+            ]
+        },
+        "java:S133": {
+            "granularity_level": "functions",
+            "atd_dimension": [
+                "complexity"
+            ]
+        },
+        "java:S1104": {
+            "granularity_level": "classes",
+            "atd_dimension": [
+                "interface",
+                "member"
+            ]
+        },
+        "java:S1113": {
+            "granularity_level": "classes",
+            "atd_dimension": [
+                "inheritance"
+            ]
+        },
+        "java:S1118": {
+            "granularity_level": "classes",
+            "atd_dimension": [
+                "interface"
+            ]
+        },
+        "java:S1130": {
+            "granularity_level": "ncloc_java",
+            "atd_dimension": [
+                "exception"
+            ]
+        },
+        "java:S1133": {
+            "granularity_level": "functions",
+            "atd_dimension": [
+                "interface",
+                "complexity"
+            ]
+        },
+        "java:S1160": {
+            "granularity_level": "functions",
+            "atd_dimension": [
+                "exception",
+                "interface"
+            ]
+        },
+        "java:S1161": {
+            "granularity_level": "functions",
+            "atd_dimension": [
+                "inheritance"
+            ]
+        },
+        "java:S1165": {
+            "granularity_level": "classes",
+            "atd_dimension": [
+                "exception"
+            ]
+        },
+        "java:S1166": {
+            "granularity_level": "ncloc_java",
+            "atd_dimension": [
+                "exception"
+            ]
+        },
+        "java:S1182": {
+            "granularity_level": "classes",
+            "atd_dimension": [
+                "inheritance"
+            ]
+        },
+        "java:S1185": {
+            "granularity_level": "functions",
+            "atd_dimension": [
+                "inheritance"
+            ]
+        },
+        "java:S1188": {
+            "granularity_level": "classes",
+            "atd_dimension": [
+                "complexity"
+            ]
+        },
+        "java:S1194": {
+            "granularity_level": "classes",
+            "atd_dimension": [
+                "exception",
+                "vmsmell"
+            ]
+        },
+        "java:S1199": {
+            "granularity_level": "ncloc_java",
+            "atd_dimension": [
+                "complexity"
+            ]
+        },
+        "java:S1210": {
+            "granularity_level": "functions",
+            "atd_dimension": [
+                "inheritance",
+                "vmsmell"
+            ]
+        },
+        "java:S1217": {
+            "granularity_level": "ncloc_java",
+            "atd_dimension": [
+                "vmsmell"
+            ]
+        },
+        "java:1311": {
+            "granularity_level": "classes",
+            "atd_dimension": [
+                "complexity"
+            ]
+        },
+        "java:S1609": {
+            "granularity_level": "functions",
+            "atd_dimension": [
+                "interface"
+            ]
+        },
+        "java:S1610": {
+            "granularity_level": "classes",
+            "atd_dimension": [
+                "interface"
+            ]
+        },
+        "java:S2059": {
+            "granularity_level": "classes",
+            "atd_dimension": [
+                "vmsmell"
+            ]
+        },
+        "java:S2062": {
+            "granularity_level": "classes",
+            "atd_dimension": [
+                "inheritance"
+            ]
+        },
+        "java:S2134": {
+            "granularity_level": "classes",
+            "atd_dimension": [
+                "threading"
+            ]
+        },
+        "java:S2157": {
+            "granularity_level": "classes",
+            "atd_dimension": [
+                "inheritance",
+                "vmsmell"
+            ]
+        },
+        "java:S2166": {
+            "granularity_level": "classes",
+            "atd_dimension": [
+                "exception"
+            ]
+        },
+        "java:S2221": {
+            "granularity_level": "ncloc_java",
+            "atd_dimension": [
+                "exception"
+            ]
+        },
+        "java:S2222": {
+            "granularity_level": "ncloc_java",
+            "atd_dimension": [
+                "threading"
+            ]
+        },
+        "java:S2236": {
+            "granularity_level": "ncloc_java",
+            "atd_dimension": [
+                "threading"
+            ]
+        },
+        "java:S2273": {
+            "granularity_level": "ncloc_java",
+            "atd_dimension": [
+                "threading"
+            ]
+        },
+        "java:S2276": {
+            "granularity_level": "ncloc_java",
+            "atd_dimension": [
+                "threading"
+            ]
+        },
+        "java:S2386": {
+            "granularity_level": "classes",
+            "atd_dimension": [
+                "member"
+            ]
+        },
+        "java:S2638": {
+            "granularity_level": "functions",
+            "atd_dimension": [
+                "inheritance",
+                "vmsmell"
+            ]
+        },
+        "java:S2693": {
+            "granularity_level": "classes",
+            "atd_dimension": [
+                "threading"
+            ]
+        },
+        "java:S2696": {
+            "granularity_level": "ncloc_java",
+            "atd_dimension": [
+                "variables"
+            ]
+        },
+        "java:S2885": {
+            "granularity_level": "classes",
+            "atd_dimension": [
+                "threading"
+            ]
+        },
+        "java:S2975": {
+            "granularity_level": "classes",
+            "atd_dimension": [
+                "inheritance",
+                "vmsmell"
+            ]
+        },
+        "java:S3389": {
+            "granularity_level": "functions",
+            "atd_dimension": [
+                "member"
+            ]
+        },
+        "java:S3422": {
+            "granularity_level": "ncloc_java",
+            "atd_dimension": [
+                "lockin"
+            ]
+        }
+    },
+    "dimensions": {
+        "complexity": "flaws derived from prominent complexity measures, such as McCabe\u2019s cyclomatic complexity",
+        "interface": "flaws related to the usage of Java interfaces",
+        "exception": "flaws regarding the management of Java exceptions and the subclassing of the \u201cException\u201d Java class",
+        "member": "flaws regarding the use of members",
+        "vmsmell": "potential misuses of the Java Virtual Machine, e.g., the incorrect usage of the specific Java class \u201cSerializable\u201d",
+        "threading": "flaws arising from the implementation of multiple execution threads, which could potentially lead to concurrency problems",
+        "lockin": "flaws regarding the usage of locking objects",
+        "Inheritance": "flaws concerning inheritance mechanisms between classes, such as overrides and inheritance of methods or fields"
+    }
+}

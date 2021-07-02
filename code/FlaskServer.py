@@ -6,8 +6,8 @@ from flask_github import GitHub
 app = Flask(__name__)
 app.config.from_object(__name__)
 
-app.config['GITHUB_CLIENT_ID'] = 'XXX'
-app.config['GITHUB_CLIENT_SECRET'] = 'YYY'
+app.config['GITHUB_CLIENT_ID'] = '8de3753bb4330ff0f850'
+app.config['GITHUB_CLIENT_SECRET'] = '1d08f58c82b497bcad86a5378c3c738700b2a4a4'
 
 # setup github-flask
 github = GitHub(app)
@@ -93,5 +93,5 @@ def user():
 if __name__ == '__main__':
     # process
     pool = mp.Pool(1)
-    app.run(debug=False, host="145.108.225.34")
+    app.run(debug=False, host="YOUR_IP_ADDRESS")
     pool.join()

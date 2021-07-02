@@ -14,7 +14,7 @@ As visualized below, ATDx  consists of the following components:
 
 
 <p align="center">
-<img src="./documentation/Architecture.jpg" alt="Overview of ATDx" width="500"/>
+<img src="./documentation/Architecture.png" alt="Overview of ATDx" width="500"/>
 </p>
 
 ## Setting up environment, installation and dependencies
