@@ -27,13 +27,14 @@ def index():
     return t
 
 
-def get_body_comment(atdx_value):
+def get_body_comment(atdx_value, report_name, report_location):
     body_to_return = '''### ATDx tool 
 ATDx is a data-driven approach that, by leveraging the analysis of a software portfolio, severity calculation of precomputed architectural violations via clustering, and severity aggregation into different ATD “dimensions” (ATDD), provides an overview of the ATD present in a software-intensive system.
     
 '''
     body_to_return = body_to_return + 'The **ATDx** value for this project is: ' + str(round(atdx_value, 4))
-
+    report = '['+' here'+']('+ report_location + report_name +'.md)'
+    body_to_return = body_to_return + 'The report with the overview of the project can be found' + report
     return body_to_return
 
 
@@ -45,11 +46,11 @@ def post_comment(github_info):
 
     atdx_value = controller.get_atdx_value()
 
-    query = 'git add ../data/reports/test_report.md; git commit -am "Analysis of the ' + name + ' repository for PR number' + str(github_info['pull_request']['number']) + '"; git push'
+    query = 'git add ../data/reports/'+'apache_sling-org-apache-sling-commons-html'+'.md; git commit -m "Analysis of the ' + name + ' repository for PR number ' + str(github_info['pull_request']['number']) + '"; git pull;git push'
 
     os.system(query)
 
-    body_of_comment = get_body_comment(atdx_value)
+    body_of_comment = get_body_comment(atdx_value, 'apache_sling-org-apache-sling-commons-html', controller.get_report_location())
 
     data_to_send_back = {'owner': github_info['repository']['owner']['login'], 'repo': name, 'pull_number': github_info['pull_request']['number'], 'body': body_of_comment}
 
