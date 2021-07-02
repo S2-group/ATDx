@@ -3,23 +3,16 @@ import multiprocessing as mp
 from flask import Flask, request, session, redirect, url_for, abort, jsonify
 from flask_github import GitHub
 
-
 app = Flask(__name__)
 app.config.from_object(__name__)
 
-app.config['GITHUB_CLIENT_ID'] = 'xxx'
-app.config['GITHUB_CLIENT_SECRET'] = 'yyy'
+app.config['GITHUB_CLIENT_ID'] = 'XXX'
+app.config['GITHUB_CLIENT_SECRET'] = 'YYY'
 
 # setup github-flask
 github = GitHub(app)
 
 access_token = None
-
-
-class User:
-    def __init__(self, github_access_token):
-        self.github_access_token = github_access_token
-
 
 @app.route('/')
 def api_root():
@@ -34,13 +27,17 @@ def index():
 
 def post_comment(github_info):
     controller = Controller()
+    name = github_info['pull_request']["head"]["repo"]["name"]
+    controller.run_sua(name)
 
-    controller.run(github_info['pull_request']["head"]["repo"]["name"])
+    controller.publish_report(name, github_info['pull_request']['number'], )
 
-    atdx_value = controller.get_atdx_value()
-    data_to_send_back = {'owner': github_info['repository']['owner']['login'], 'repo': github_info['repository']['name'], 'pull_number': github_info['pull_request']['number'], 'body': 'The atdx value of the project is:' + atdx_value}
+    body_of_comment = controller.get_body_comment(name)
 
-    url_of_comments = github_info['pull_request']['issue_url']
+    data_to_send_back = {'owner': github_info['repository']['owner']['login'], 'repo': github_info['pull_request']["head"]["repo"]["name"],
+                         'pull_number': github_info['pull_request']['number'], 'body': body_of_comment}
+
+    url_of_comments = github_info['pull_request']['comments_url']
     value = github.post(resource=url_of_comments, data=data_to_send_back)
     return value
 
@@ -49,8 +46,9 @@ def post_comment(github_info):
 def api_gh_message():
     if request.headers['Content-Type'] == 'application/json':
         github_info = request.json
-        # print('Let\'s start the apply_async operation')
-        pool.apply_async(post_comment, args=(github_info,))
+        if 'pull_request' in github_info:
+            if github_info['action'] == 'opened' or github_info['action'] == 'reopened':
+                pool.apply_async(post_comment, args=(github_info,))
         return 'success', 200
     else:
         abort(400)
@@ -81,7 +79,7 @@ def authorized(oauth_token):
 @app.route('/login')
 def login():
     if session.get('user_id', None) is None:
-        return_value = github.authorize(scope='repo:status')
+        return_value = github.authorize(scope='repo')
         return return_value
     else:
         return 'Already logged in'
@@ -95,5 +93,5 @@ def user():
 if __name__ == '__main__':
     # process
     pool = mp.Pool(1)
-    app.run(debug=True, host="145.108.225.34")
+    app.run(debug=False, host="145.108.225.34")
     pool.join()

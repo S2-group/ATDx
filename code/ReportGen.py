@@ -5,12 +5,17 @@ import matplotlib.pylab as plot
 import numpy as np
 
 
+github_normal_header = 'https://github.com/'
+github_raw_content_header = 'https://raw.githubusercontent.com/'
+
+
 class ReportGen(ABC):
 
-    def __init__(self, max_number_of_projects, max_number_of_classes):
-        self.max_number_of_projects = max_number_of_projects
+    def __init__(self,  max_number_of_classes, repo_location, github_branch):
         self.max_number_of_classes = max_number_of_classes
         self.dimensions = None
+        self.repo_location = repo_location
+        self.github_branch = github_branch
 
     def get_categories_pair(self, my_dict):
         """
@@ -55,12 +60,12 @@ class ReportGen(ABC):
         :param portfolio_info: PorfotolioData structure containing all necessary information for the generation of the radarchar
         :return:
         """
-        issues = portfolio_info.get_issues()
+        issues = portfolio_info.get_arch_issues()
 
         D = defaultdict(dict)
         D_with_rules = defaultdict(dict)
 
-        for obj in portfolio_info.get_issues():
+        for obj in portfolio_info.get_arch_issues():
             D[issues[obj]['component']] = defaultdict(int)
             D_with_rules[issues[obj]['component']] = defaultdict(int)
 
@@ -148,4 +153,13 @@ class ReportGen(ABC):
         :param project: Name of the project we want the table for
         :return: the corresponding format for the specific ReportGen
         """
+        pass
+
+    @abstractmethod
+    def get_body_comment(self, atdx_value, project_name):
+        pass
+
+    @staticmethod
+    @abstractmethod
+    def get_git_command(name, number):
         pass

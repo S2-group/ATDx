@@ -36,7 +36,7 @@ def split_dimensions(rules):
     return rules
 
 
-def merge_crawled_files(directory, prefix, suffix, field, target_file, save_step):
+def merge_crawled_files(directory, prefix, suffix, field, target_file):
     print('Start merging files...')
 
     items = list()
@@ -58,9 +58,6 @@ def merge_crawled_files(directory, prefix, suffix, field, target_file, save_step
     merged_items = {}
     for p in items:
         merged_items[p['key']] = p
-
-    if save_step:
-        save(target_file, merged_items)
 
     return merged_items
 

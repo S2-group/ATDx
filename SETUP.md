@@ -1,27 +1,43 @@
-# Setting up the environment
+Setting up the environment
 ---
 
 Thank you for your interest in using the ATDx framework. With the help of Bachelor students and professors, we developed this 
 
 ## Requirements
-This framework requires Python 3 along with MacOS or Linux.  Current and former contributors have used Ubuntu 18.04 and Ubuntu 20.04 along with Python 3.6.9 and 3.7.4.
+This framework requires Python 3 along with MacOS or Linux.  Current and former contributors have used Ubuntu 18.04 and Ubuntu 20.04 along with Python 3.8
 
 ## Setting up environment and dependencies
+### Local machine
 1. Click on the **Fork** icon in the top right hand corner once you're logged into Github.
 2. Once it finishes loading, click on the green **Code** button. Copy `git clone git@github.com:[your_username]/ATDx.git` and then paste that into your terminal after navigating to the desired local development environment.
-3. Type `cd atdx` to enter the framework's main directory. 
-4. Create a virtual machine with a public IP.
-5. Install dependencies.
-    1. For running the server:
-        - `pip install Flask`
-        - `pip install GitHub-Flask`
-    2. For controller to work:
+3. Type `cd atdx` to enter the framework's main directory.
+4. Install dependencies:
+    1. For controller to work:
         - `pip install jsons`
         - `pip install pandas`
         - `pip install matplotlib`
         - `pip install ckwrap`
         - `pip install tabulate`
     
+Now you can run it locally
+
+### Server option
+In the case that you want to run the server, steps from 1 to 4 are the same but in addition you have to:
+4. Install extra dependencies:
+    1. For running the server:
+        - `pip install Flask`
+        - `pip install GitHub-Flask`
+5. You need to set the following variables in the Flask_server according to [Github authentication requirements](https://docs.github.com/en/rest/guides/basics-of-authentication):
+    1. ```app.config['GITHUB_CLIENT_ID']```
+    2. ```app.config['GITHUB_CLIENT_SECRET']```
+6. Once this values have been set up, check that your server has a public ip and add it to the FlaskServer initialization:
+    1. ``` app.run(debug=False, host="YOUR_IP_ADDRESS"")```
+7. You can run the server but you need to log in because your account hasn't been validated yet:
+    1. In your browser run: ```YOUR_IP_ADDRESS:5000/LOGIN```
+    2. It will redirect your to a Github page where you need to enter your credentials
+8. All set in the server side.
+
+Now you need to set your repository to trigger the events and communicate it so to the ATDx tool. A detailed explanation can be found [here](https://docs.github.com/en/enterprise-server@3.0/developers/webhooks-and-events/webhooks/about-webhooks).
 
 ## Before You Begin
 It's important for us to make sure that any updates to the framework add value and that the updates adhere to the original goals of the framework.  Before spending a lot of time making substantial changes, please raise an `issue` on Github so we're made aware of the changes you'd like to implement.  We'll provide feedback to inform you whether we think it's viable.
@@ -38,7 +54,3 @@ Pull requests should be made from secondary branches (ie, not `master`).  Also m
 
 ## Communication
 The best way to communicate with the ATDx team is by raising an `issue` on Github or asking on Slack or Canvas.
-
-## Projects
-### In the Works
-### Yet to be Assigned
