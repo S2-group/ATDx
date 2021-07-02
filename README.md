@@ -20,6 +20,7 @@ As visualized below, ATDx  consists of the following components:
 ## Setting up environment, installation and dependencies
 Instructions can be found [here](https://github.com/S2-group/atdx/main/SETUP.md).
 
+
 ## Quick start
 To run at the server:
 ```bash
@@ -31,8 +32,37 @@ To run at the local machine run:
 python3 Controller.py
 ```
 
+
 ### Input and output
 Example of Input and output files can be found in the `data/examples` directory.
 
+
+## Structure
+### config.json
+A JSON config that contains the location of the different attributes that are required for the execution of the analysis.
+This file should have this attributes filled in:
+
+   ```json
+   {
+       "tool": "SonarCloud",
+       "save_intermediate_steps": true,
+       "rules_location": "demo_ar_rules.json",
+       "projects_location": "projects.json",
+       "measures": "measures.json" ,
+       "ar_issues": "ar_issues.json",
+       "files_suffix": "_"
+   }
+   ```
+### report_config.json
+A JSON config that contains the "settings" for the report that is being generated.
+This file should have this attributes filled in:
+   ```json
+   {
+       "report": "Markdown",
+       "store": 0,
+       "max_number_class": "5",
+       "max_number_projects": "3"
+   }
+   ```
 
 
