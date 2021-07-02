@@ -93,5 +93,5 @@ def user():
 if __name__ == '__main__':
     # process
     pool = mp.Pool(1)
-    app.run(debug=False, host="145.108.225.34")
+    app.run(debug=False, host="YOUR_IP_ADDRESS")
     pool.join()
