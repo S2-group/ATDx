@@ -6,20 +6,18 @@ from util import *
 
 class SonarCloudTool(AnalysisTool, ABC):
 
-    def __init__(self, save_intermediate_steps,  suffix):
-        super().__init__(save_intermediate_steps)
+    def __init__(self, suffix):
+        super().__init__()
         self.suffix = suffix
 
     def filter_arch_rules(self, portfolio_info, triple):
         result = {}
 
-        for i in portfolio_info.get_issues():
-            if portfolio_info.get_issues()[i]['rule'] in triple and portfolio_info.get_issues()[i]['project'] in portfolio_info.get_projects_info():
-                result[i] = portfolio_info.get_issues()[i]
+        for i in portfolio_info.get_arch_issues():
+            if portfolio_info.get_arch_issues()[i]['rule'] in triple and portfolio_info.get_arch_issues()[i]['project'] in portfolio_info.get_projects_info():
+                result[i] = portfolio_info.get_arch_issues()[i]
 
-        if self.save_intermediate_steps:
-            save('../data/arch_issues' + self.suffix + '.json', result)
-
+        portfolio_info.set_arch_issues(result)
         return result
 
     @staticmethod
@@ -43,22 +41,18 @@ class SonarCloudTool(AnalysisTool, ABC):
                 counted_ar_issues[arch_issues[i]['project']] = {
                     'projectKey': arch_issues[i]['project'],
                     'design_issues': 1
-                    # 'total_issues': 0
                 }
                 for r in ar_rules:
                     counted_ar_issues[arch_issues[i]['project']][r] = 0
                 counted_ar_issues[arch_issues[i]['project']][arch_issues[i]['rule']] = 1
             else:
                 counted_ar_issues[arch_issues[i]['project']]['design_issues'] += 1
-                # result[arch_issues[i]['project']]['total_issues'] = 0
                 counted_ar_issues[arch_issues[i]['project']][arch_issues[i]['rule']] += 1
         counted_ar_issues = self.pad_with_zero_projects(counted_ar_issues, all_projects, ar_rules)
 
         column_names = ['projectKey', 'design_issues']
         column_names.extend(ar_rules)
 
-        if self.save_intermediate_steps:
-            save(ar_issues_path + self.suffix + '.json', counted_ar_issues)
         return counted_ar_issues
 
     def filter_metadata(self, project_metadata):
@@ -105,9 +99,6 @@ class SonarCloudTool(AnalysisTool, ABC):
 
             j += 1
 
-        if self.save_intermediate_steps:
-            save('../data/meta_data' + self.suffix + '.json', project_values)
-
         return project_values
 
     def get_from_tool(self, url, path, save_to_fs, field_to_check):
@@ -151,9 +142,6 @@ class SonarCloudTool(AnalysisTool, ABC):
             j += 1
             print('Mined measures for project number ' + str(j))
 
-        if self.save_intermediate_steps:
-            save(measures_path, spec_project_list)
-
         return spec_project_list
 
     def download_issues(self, project_key, sort_by, ascending_string):
@@ -179,42 +167,66 @@ class SonarCloudTool(AnalysisTool, ABC):
 
         # CREATION_DATE, UPDATE_DATE, CLOSE_DATE, ASSIGNEE, SEVERITY, STATUS, FILE_LINE
         self.download_issues(project['projectKey'], 'CREATION_DATE', 'false')
-        # self.download_issues(project['organization'], project['projectKey'], 'UPDATE_DATE', 'false')
-        # self.download_issues(project['organization'], project['projectKey'], 'CLOSE_DATE', 'false')
-        # self.download_issues(project['organization'], project['projectKey'], 'SEVERITY', 'false')
-        # self.download_issues(project['organization'], project['projectKey'], 'STATUS', 'false')
-        # self.download_issues(project['organization'], project['projectKey'], 'FILE_LINE', 'false')
+
+    def merge_portfolio_issues(self, portfolio_info):
+
+        for project in portfolio_info.get_projects_info():
+            self.mine_issues(portfolio_info.get_projects_info()[project])
+
+        merged_issues = merge_crawled_files('../data/issues', 'issues_', '.json', 'issues',
+                                            '../data/' + self.suffix + 'non_filtered.json')
+        portfolio_info.set_arch_issues(merged_issues)
+
+        return merged_issues
 
     def merge_issues(self, portfolio_info, sua):
 
         if portfolio_info.get_ar_issues() is None:
-            for project in portfolio_info.get_projects_info():
-                self.mine_issues(portfolio_info.get_projects_info()[project])
-
-            merged_issues = merge_crawled_files('../data/issues', 'issues_', '.json', 'issues', '../data/' + self.suffix + 'non_filtered.json',
-                                                self.save_intermediate_steps)
+            merged_issues = self.merge_portfolio_issues(portfolio_info)
         else:
             self.mine_issues(portfolio_info.get_projects_info()[sua])
-            items_to_add = merge_crawled_files('../data/issues', 'issues_', '.json', 'issues', '../data/' + self.suffix + 'non_filtered.json',
-                                                self.save_intermediate_steps)
+            items_to_add = merge_crawled_files('../data/issues', 'issues_', '.json', 'issues', '../data/' + self.suffix + 'non_filtered.json')
             merged_issues = items_to_add
 
-        portfolio_info.set_issues(merged_issues)
+        portfolio_info.set_arch_issues(merged_issues)
+
+    def prepare_ATDx_input(self, portfolio_info,  measures, ar_issues):
+        metada_data = self.filter_metadata(measures)
+
+        atdx_input = update_dict_of_dict(metada_data, ar_issues)
+        portfolio_info.set_analysis_projects_info(atdx_input)
 
     def execute_analysis(self, portfolio_info, sua):
         triple = portfolio_info.get_triple()
         measures = portfolio_info.get_measures()
+        read_ar_issues = portfolio_info.get_ar_issues()
 
         self.merge_issues(portfolio_info, sua)
         arch_issues = self.filter_arch_rules(portfolio_info, triple)
-        ar_issues = self.count_ar_issues(arch_issues, portfolio_info.get_projects_info(), triple, '../data/ar_issues.json')
+
+        ar_issues = self.count_ar_issues(arch_issues, portfolio_info.get_projects_info(), triple,
+                                         '../data/ar_issues')
+
+        if read_ar_issues is not None:
+            read_ar_issues.update(ar_issues[sua])
+            ar_issues = read_ar_issues
 
         if measures is None:
             measures = self.mine_measures(portfolio_info.get_projects_info(), '../data/measures.json')
 
-        metada_data = self.filter_metadata(measures)
+        self.prepare_ATDx_input(portfolio_info, measures, ar_issues)
 
-        atdx_input = update_dict_of_dict(ar_issues, metada_data)
-        save("../data/test_atdx_input.json",atdx_input)
-        portfolio_info.set_analysis_projects_info(atdx_input)
-        portfolio_info.set_arch_issues(arch_issues)
+    def execute_portfolio_analysis(self, portfolio_info):
+        triple = portfolio_info.get_triple()
+        ar_issues = portfolio_info.get_ar_issues()
+        measures = portfolio_info.get_measures()
+
+        if ar_issues is None:
+            self.merge_portfolio_issues(portfolio_info)
+            arch_issues = self.filter_arch_rules(portfolio_info, triple)
+            ar_issues = self.count_ar_issues(arch_issues, portfolio_info.get_projects_info(), triple,
+                                         '../data/ar_issues')
+        if measures is None:
+            measures = self.mine_measures(portfolio_info.get_projects_info(), '../data/measures.json')
+
+        self.prepare_ATDx_input(portfolio_info, measures, ar_issues)

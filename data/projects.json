@@ -49,11 +49,7 @@
         "name": "Apache Sling Scripting JSP",
         "repo_url": "https://github.com/apache/sling-org-apache-sling-scripting-jsp"
     },
-    "apache_incubator-daffodil": {
-        "projectKey": "apache_incubator-daffodil",
-        "name": "incubator-daffodil",
-        "repo_url": "https://github.com/apache/incubator-daffodil"
-    },
+
     "apache_sling-org-apache-sling-commons-html": {
         "projectKey": "apache_sling-org-apache-sling-commons-html",
         "name": "Apache Sling Commons HTML Utilities",
@@ -109,31 +105,10 @@
         "name": "Apache Sling JCR Resource Resolver",
         "repo_url": "https://github.com/apache/sling-org-apache-sling-jcr-resource"
     },
-    "servicecomb-pack": {
-        "projectKey": "servicecomb-pack",
-        "name": "Apache ServiceComb Pack"
-    },
-    "commons-numbers": {
-        "projectKey": "commons-numbers",
-        "name": "Apache Commons Numbers"
-    },
     "commons-rng": {
         "projectKey": "commons-rng",
         "name": "Apache Commons RNG",
         "repo_url": "https://github.com/apache/commons-rng"
-    },
-    "commons-statistics": {
-        "projectKey": "commons-statistics",
-        "name": "Apache Commons Statistics"
-    },
-    "cxf": {
-        "projectKey": "cxf",
-        "name": "Apache CXF"
-    },
-    "apache_sling-parent": {
-        "projectKey": "apache_sling-parent",
-        "name": "Apache Sling Parent Reactor",
-        "repo_url": "https://github.com/apache/sling-parent"
     },
     "apache_sling-org-apache-sling-pipes": {
         "projectKey": "apache_sling-org-apache-sling-pipes",
@@ -181,10 +156,6 @@
         "eligibilityStatus": "COMPLETED",
         "eligible": false,
         "repo_url": "https://github.com/apache/groovy"
-    },
-    "hadoop-ozone": {
-        "projectKey": "hadoop-ozone",
-        "name": "Apache Hadoop Ozone Main"
     },
     "apache_incubator-iotdb": {
         "projectKey": "apache_incubator-iotdb",
@@ -260,10 +231,6 @@
         "projectKey": "apache_openmeetings",
         "name": "Openmeetings",
         "repo_url": "https://github.com/apache/openmeetings"
-    },
-    "jspwiki-builder": {
-        "projectKey": "jspwiki-builder",
-        "name": "Apache JSPWiki"
     },
     "apache_sling-org-apache-sling-jobs": {
         "projectKey": "apache_sling-org-apache-sling-jobs",
@@ -350,14 +317,6 @@
         "name": "Apache Sling Commons Metrics",
         "repo_url": "https://github.com/apache/sling-org-apache-sling-commons-metrics"
     },
-    "JMeter": {
-        "projectKey": "JMeter",
-        "name": "JMeter"
-    },
-    "commons-compress": {
-        "projectKey": "commons-compress",
-        "name": "Apache Commons Compress"
-    },
     "apache-dolphinscheduler": {
         "projectKey": "apache-dolphinscheduler",
         "name": "dolphinscheduler",
@@ -390,30 +349,10 @@
         "name": "Apache Sling Kickstart Maven Plugin",
         "repo_url": "https://github.com/apache/sling-kickstart-maven-plugin"
     },
-    "ant-master": {
-        "projectKey": "ant-master",
-        "name": "Apache Ant"
-    },
-    "apache_ofbiz-plugins": {
-        "projectKey": "apache_ofbiz-plugins",
-        "name": "ofbiz-plugins",
-        "repo_url": "https://github.com/apache/ofbiz-plugins"
-    },
     "apache_sling-org-apache-sling-scripting-thymeleaf": {
         "projectKey": "apache_sling-org-apache-sling-scripting-thymeleaf",
         "name": "Apache Sling Scripting Thymeleaf",
         "repo_url": "https://github.com/apache/sling-org-apache-sling-scripting-thymeleaf"
-    },
-    "poi-parent": {
-        "projectKey": "poi-parent",
-        "name": "Apache POI - the Java API for Microsoft Documents"
-    },
-    "apache_incubator-ratis": {
-        "projectKey": "apache_incubator-ratis",
-        "name": "Apache Ratis",
-        "eligibilityStatus": "COMPLETED",
-        "eligible": false,
-        "repo_url": "https://github.com/apache/incubator-ratis"
     },
     "apache_sling-org-apache-sling-testing-clients": {
         "projectKey": "apache_sling-org-apache-sling-testing-clients",
@@ -425,15 +364,7 @@
         "name": "Struts 2",
         "repo_url": "https://github.com/apache/struts"
     },
-    "servicecomb-toolkit": {
-        "projectKey": "servicecomb-toolkit",
-        "name": "Apache ServiceComb Toolkit"
-    },
-    "apache_ofbiz-framework": {
-        "projectKey": "apache_ofbiz-framework",
-        "name": "ofbiz-framework",
-        "repo_url": "https://github.com/apache/ofbiz-framework"
-    },
+
     "apache_sling-org-apache-sling-servlets-get": {
         "projectKey": "apache_sling-org-apache-sling-servlets-get",
         "name": "Apache Sling Default GET Servlets",
@@ -448,10 +379,6 @@
         "projectKey": "apache_incubator-tamaya-sandbox",
         "name": "Apache Tamaya Sandbox",
         "repo_url": "https://github.com/apache/incubator-tamaya-sandbox"
-    },
-    "commons-geometry": {
-        "projectKey": "commons-geometry",
-        "name": "Apache Commons Geometry"
     },
     "apache_sling-whiteboard": {
         "projectKey": "apache_sling-whiteboard",
@@ -513,38 +440,16 @@
         "name": "scriptingbundle-maven-plugin",
         "repo_url": "https://github.com/apache/sling-scriptingbundle-maven-plugin"
     },
-    "roller-master": {
-        "projectKey": "roller-master",
-        "name": "Roller"
-    },
-    "milagro": {
-        "projectKey": "milagro",
-        "name": "Apache Milagro"
-    },
     "apache_sling-org-apache-sling-scripting-jsp-taglib": {
         "projectKey": "apache_sling-org-apache-sling-scripting-jsp-taglib",
         "name": "Apache Sling Scripting JSP Tag Library",
         "repo_url": "https://github.com/apache/sling-org-apache-sling-scripting-jsp-taglib"
     },
-    "apache_incubator-milagro-MPC": {
-        "projectKey": "apache_incubator-milagro-MPC",
-        "name": "apache_incubator-milagro-MPC",
-        "eligibilityStatus": "COMPLETED",
-        "eligible": false,
-        "repo_url": "https://github.com/apache/incubator-milagro-MPC"
-    },
+
     "apache_sling-org-apache-sling-discovery-oak": {
         "projectKey": "apache_sling-org-apache-sling-discovery-oak",
         "name": "Apache Sling Oak-Based Discovery Service",
         "repo_url": "https://github.com/apache/sling-org-apache-sling-discovery-oak"
-    },
-    "knox-gateway": {
-        "projectKey": "knox-gateway",
-        "name": "gateway"
-    },
-    "pdfbox-reactor": {
-        "projectKey": "pdfbox-reactor",
-        "name": "Apache PDFBox"
     },
     "apache_sling-org-apache-sling-discovery-base": {
         "projectKey": "apache_sling-org-apache-sling-discovery-base",
@@ -580,11 +485,6 @@
         "projectKey": "apache_sling-org-apache-sling-feature-analyser",
         "name": "Apache Sling Feature Model Analyser",
         "repo_url": "https://github.com/apache/sling-org-apache-sling-feature-analyser"
-    },
-    "org.apache.nemo:nemo-project": {
-        "projectKey": "org.apache.nemo:nemo-project",
-        "name": "Nemo Project",
-        "repo_url": "https://github.com/apache/incubator-nemo"
     },
     "apache_sling-jspc-maven-plugin": {
         "projectKey": "apache_sling-jspc-maven-plugin",

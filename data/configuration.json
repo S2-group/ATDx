@@ -1,10 +1,9 @@
 {
     "tool": "SonarCloud",
-    "save_intermediate_steps": true,
-    "rules_location": "demo_ar_rules.json",
+    "rules_location": "ar_rules.json",
     "projects_location": "projects.json",
     "measures": "measures.json" ,
-    "ar_issues": "ar_issues.json",
-    "files_suffix": "_",
-    "github_repository_report": "https://github.com/S2-group/ATDx/blob/fix_PR_comment/data/reports/"
+    "counted_issues": "ar_issues.json",
+    "arch_issues": "arch_issues.json",
+    "files_suffix": "_"
 }

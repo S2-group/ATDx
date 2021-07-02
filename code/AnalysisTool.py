@@ -5,8 +5,8 @@ class AnalysisTool(ABC):
     """This super class is the skeleton for the different analysis tools that could be implemented."""
 
     @abstractmethod
-    def __init__(self, save_intermediate_steps):
-        self.save_intermediate_steps = save_intermediate_steps
+    def __init__(self):
+        pass
 
     @abstractmethod
     def get_from_tool(self, url, path, save_to_fs, field_to_check):

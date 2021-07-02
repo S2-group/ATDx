@@ -22,15 +22,12 @@ In the reminder of this report, we give for the analysed project the following:
 2. A table showing the top-5 classes of the project with the highest architectural technical debt.
 If you are curious about more theoretical background on ATDx, you can have a look at [this scientific publication](https://robertoverdecchia.github.io/papers/ENASE_2020.pdf).
 
-## ATDx radar charts of your projects
-### Analysed project apache_sling-org-apache-sling-commons-html
-The ATDx value for this project is: 0.2001
 
-<img src="radarchart/apache_sling-org-apache-sling-commons-html.jpg"/><p style="text-align:left">[Project on Github](https://github.com/apache_sling-org-apache-sling-commons-html) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=apache_sling-org-apache-sling-commons-html) <br></p>
+# ATDx project report summary
 
-# ATDx project report summaries
-## Project apache_sling-org-apache-sling-commons-html_
-<img src="radarchart/apache_sling-org-apache-sling-commons-html.jpg"/><p style="text-align:left">[Project on Github](https://github.com/apache_sling-org-apache-sling-commons-html) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=apache_sling-org-apache-sling-commons-html) <br></p>
+### The ATDx value for this project is: 0.0712
+
+<img src="radarchart/apache_sling-org-apache-sling-commons-html.jpg"/><p style="text-align:left">[Project on Github](https://github.com/apache/sling-org-apache-sling-commons-html) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=apache_sling-org-apache-sling-commons-html) <br></p>
 
 ### Top classes with architectural debt violations
 | Class name                 | Complexity   | Interface   | Exception   | Member   | Inheritance   | Vmsmell   | Threading   | Variables   | Lockin   | Project                                    |

@@ -3,7 +3,6 @@ import multiprocessing as mp
 from flask import Flask, request, session, redirect, url_for, abort, jsonify
 from flask_github import GitHub
 
-
 app = Flask(__name__)
 app.config.from_object(__name__)
 
@@ -14,7 +13,6 @@ app.config['GITHUB_CLIENT_SECRET'] = 'YYY'
 github = GitHub(app)
 
 access_token = None
-
 
 @app.route('/')
 def api_root():
@@ -27,32 +25,17 @@ def index():
     return t
 
 
-def get_body_comment(atdx_value, report_name, report_location):
-    body_to_return = '''### ATDx tool 
-ATDx is a data-driven approach that, by leveraging the analysis of a software portfolio, severity calculation of precomputed architectural violations via clustering, and severity aggregation into different ATD “dimensions” (ATDD), provides an overview of the ATD present in a software-intensive system.
-    
-'''
-    body_to_return = body_to_return + 'The **ATDx** value for this project is: ' + str(round(atdx_value, 4))
-    report = '['+' here'+']('+ report_location + report_name +'.md)'
-    body_to_return = body_to_return + 'The report with the overview of the project can be found' + report
-    return body_to_return
-
-
 def post_comment(github_info):
     controller = Controller()
     name = github_info['pull_request']["head"]["repo"]["name"]
-    # controller.run(github_info['pull_request']["head"]["repo"]["name"])
-    controller.run('apache_sling-org-apache-sling-commons-html')
+    controller.run_sua(name)
 
-    atdx_value = controller.get_atdx_value()
+    controller.publish_report(name, github_info['pull_request']['number'], )
 
-    query = 'git add ../data/reports/'+'apache_sling-org-apache-sling-commons-html'+'.md; git commit -m "Analysis of the ' + name + ' repository for PR number ' + str(github_info['pull_request']['number']) + '"; git pull;git push'
+    body_of_comment = controller.get_body_comment(name)
 
-    os.system(query)
-
-    body_of_comment = get_body_comment(atdx_value, 'apache_sling-org-apache-sling-commons-html', controller.get_report_location())
-
-    data_to_send_back = {'owner': github_info['repository']['owner']['login'], 'repo': name, 'pull_number': github_info['pull_request']['number'], 'body': body_of_comment}
+    data_to_send_back = {'owner': github_info['repository']['owner']['login'], 'repo': github_info['pull_request']["head"]["repo"]["name"],
+                         'pull_number': github_info['pull_request']['number'], 'body': body_of_comment}
 
     url_of_comments = github_info['pull_request']['comments_url']
     value = github.post(resource=url_of_comments, data=data_to_send_back)
@@ -63,9 +46,9 @@ def post_comment(github_info):
 def api_gh_message():
     if request.headers['Content-Type'] == 'application/json':
         github_info = request.json
-        # print('Let\'s start the apply_async operation')
-        # pool.apply_async(post_comment, args=(github_info,))
-        post_comment(github_info)
+        if 'pull_request' in github_info:
+            if github_info['action'] == 'opened' or github_info['action'] == 'reopened':
+                pool.apply_async(post_comment, args=(github_info,))
         return 'success', 200
     else:
         abort(400)
@@ -110,5 +93,5 @@ def user():
 if __name__ == '__main__':
     # process
     pool = mp.Pool(1)
-    app.run(debug=True, host="145.108.225.34")
+    app.run(debug=False, host="145.108.225.34")
     pool.join()
