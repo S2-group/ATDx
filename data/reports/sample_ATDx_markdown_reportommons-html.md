@@ -25,7 +25,7 @@ If you are curious about more theoretical background on ATDx, you can have a loo
 
 # ATDx project report summary
 
-### The ATDx value for this project is: 0.0712
+### The ATDx value for this project is: 0.2001
 
 <img src="radarchart/apache_sling-org-apache-sling-commons-html.jpg"/><p style="text-align:left">[Project on Github](https://github.com/apache/sling-org-apache-sling-commons-html) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=apache_sling-org-apache-sling-commons-html) <br></p>
 
