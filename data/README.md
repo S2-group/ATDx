@@ -20,12 +20,12 @@ Here you can find the raw data used in our example analysis.
 ### The output for Server scenario
 The comment that is only displayed on Github when the Server Scenario happens:
 
-<img src="example/comment.png" width="51%">
+<img src="examples/comment.png" width="51%">
 
 ---
 ### The output for both scenarios
 
 The radarchart image that is part of the [example report](reports/apache_sling-org-apache-sling-commons-html.md):
 
-<img src="reports/radarchart.jpg" width="100%">
+<img src="reports/radarchart/apache_sling-org-apache-sling-commons-html.jpg" width="100%">
 
