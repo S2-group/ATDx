@@ -27,14 +27,18 @@ In the case that you want to run the server, steps from 1 to 4 are the same but 
     1. For running the server:
         - `pip install Flask`
         - `pip install GitHub-Flask`
+    
 5. You need to set the following variables in the Flask_server according to [Github authentication requirements](https://docs.github.com/en/rest/guides/basics-of-authentication):
     1. ```app.config['GITHUB_CLIENT_ID']```
     2. ```app.config['GITHUB_CLIENT_SECRET']```
+    
 6. Once this values have been set up, check that your server has a public ip and add it to the FlaskServer initialization:
     1. ``` app.run(debug=False, host="YOUR_IP_ADDRESS"")```
+    
 7. You can run the server but you need to log in because your account hasn't been validated yet:
     1. In your browser run: ```YOUR_IP_ADDRESS:5000/LOGIN```
     2. It will redirect your to a Github page where you need to enter your credentials
+    
 8. All set in the server side.
 
 Now you need to set your repository to trigger the events and communicate it so to the ATDx tool. A detailed explanation can be found [here](https://docs.github.com/en/enterprise-server@3.0/developers/webhooks-and-events/webhooks/about-webhooks).
