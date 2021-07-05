@@ -23,6 +23,7 @@ Now you can run it locally
 
 ### Server option
 In the case that you want to run the server, steps from 1 to 4 are the same but in addition you have to:
+
 4. Install extra dependencies:
     1. For running the server:
         - `pip install Flask`
