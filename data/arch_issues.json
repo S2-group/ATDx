@@ -1,0 +1,4124 @@
+{
+    "AWpA29alYsUHy63ni7ET": {
+        "key": "AWpA29alYsUHy63ni7ET",
+        "rule": "java:S1104",
+        "severity": "MINOR",
+        "component": "apache_sling-org-apache-sling-commons-html:src/main/java/org/apache/sling/commons/html/impl/parser/Token.java",
+        "project": "apache_sling-org-apache-sling-commons-html",
+        "line": 37,
+        "hash": "c1fa6d78fe598499247b20824b87648f",
+        "textRange": {
+            "startLine": 37,
+            "endLine": 37,
+            "startOffset": 16,
+            "endOffset": 21
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Make image a static final constant or non-public and provide accessors if needed.",
+        "effort": "10min",
+        "debt": "10min",
+        "assignee": "JEBailey@github",
+        "tags": [
+            "cwe"
+        ],
+        "creationDate": "2018-11-29T16:25:28+0100",
+        "updateDate": "2019-04-21T19:04:53+0200",
+        "type": "VULNERABILITY",
+        "organization": "apache"
+    },
+    "AWpA29alYsUHy63ni7ES": {
+        "key": "AWpA29alYsUHy63ni7ES",
+        "rule": "java:S1104",
+        "severity": "MINOR",
+        "component": "apache_sling-org-apache-sling-commons-html:src/main/java/org/apache/sling/commons/html/impl/parser/Token.java",
+        "project": "apache_sling-org-apache-sling-commons-html",
+        "line": 32,
+        "hash": "1c017558dd0b2b4e1abc80243ae49bfd",
+        "textRange": {
+            "startLine": 32,
+            "endLine": 32,
+            "startOffset": 13,
+            "endOffset": 22
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Make endColumn a static final constant or non-public and provide accessors if needed.",
+        "effort": "10min",
+        "debt": "10min",
+        "assignee": "JEBailey@github",
+        "tags": [
+            "cwe"
+        ],
+        "creationDate": "2018-11-29T16:25:28+0100",
+        "updateDate": "2019-04-21T19:04:53+0200",
+        "type": "VULNERABILITY",
+        "organization": "apache"
+    },
+    "AWpA29alYsUHy63ni7ER": {
+        "key": "AWpA29alYsUHy63ni7ER",
+        "rule": "java:S1104",
+        "severity": "MINOR",
+        "component": "apache_sling-org-apache-sling-commons-html:src/main/java/org/apache/sling/commons/html/impl/parser/Token.java",
+        "project": "apache_sling-org-apache-sling-commons-html",
+        "line": 30,
+        "hash": "047e8985a2d5b7eed304a7cee72f5959",
+        "textRange": {
+            "startLine": 30,
+            "endLine": 30,
+            "startOffset": 13,
+            "endOffset": 20
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Make endLine a static final constant or non-public and provide accessors if needed.",
+        "effort": "10min",
+        "debt": "10min",
+        "assignee": "JEBailey@github",
+        "tags": [
+            "cwe"
+        ],
+        "creationDate": "2018-11-29T16:25:28+0100",
+        "updateDate": "2019-04-21T19:04:53+0200",
+        "type": "VULNERABILITY",
+        "organization": "apache"
+    },
+    "AWpA29alYsUHy63ni7EQ": {
+        "key": "AWpA29alYsUHy63ni7EQ",
+        "rule": "java:S1104",
+        "severity": "MINOR",
+        "component": "apache_sling-org-apache-sling-commons-html:src/main/java/org/apache/sling/commons/html/impl/parser/Token.java",
+        "project": "apache_sling-org-apache-sling-commons-html",
+        "line": 28,
+        "hash": "a940fa29eac439ef42729bac61f6634d",
+        "textRange": {
+            "startLine": 28,
+            "endLine": 28,
+            "startOffset": 13,
+            "endOffset": 24
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Make beginColumn a static final constant or non-public and provide accessors if needed.",
+        "effort": "10min",
+        "debt": "10min",
+        "assignee": "JEBailey@github",
+        "tags": [
+            "cwe"
+        ],
+        "creationDate": "2018-11-29T16:25:28+0100",
+        "updateDate": "2019-04-21T19:04:53+0200",
+        "type": "VULNERABILITY",
+        "organization": "apache"
+    },
+    "AWpA29alYsUHy63ni7EP": {
+        "key": "AWpA29alYsUHy63ni7EP",
+        "rule": "java:S1104",
+        "severity": "MINOR",
+        "component": "apache_sling-org-apache-sling-commons-html:src/main/java/org/apache/sling/commons/html/impl/parser/Token.java",
+        "project": "apache_sling-org-apache-sling-commons-html",
+        "line": 26,
+        "hash": "c69ea5f2e25b88ce354198d29f17115c",
+        "textRange": {
+            "startLine": 26,
+            "endLine": 26,
+            "startOffset": 13,
+            "endOffset": 22
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Make beginLine a static final constant or non-public and provide accessors if needed.",
+        "effort": "10min",
+        "debt": "10min",
+        "assignee": "JEBailey@github",
+        "tags": [
+            "cwe"
+        ],
+        "creationDate": "2018-11-29T16:25:28+0100",
+        "updateDate": "2019-04-21T19:04:53+0200",
+        "type": "VULNERABILITY",
+        "organization": "apache"
+    },
+    "AWpA29alYsUHy63ni7EO": {
+        "key": "AWpA29alYsUHy63ni7EO",
+        "rule": "java:S1104",
+        "severity": "MINOR",
+        "component": "apache_sling-org-apache-sling-commons-html:src/main/java/org/apache/sling/commons/html/impl/parser/Token.java",
+        "project": "apache_sling-org-apache-sling-commons-html",
+        "line": 23,
+        "hash": "ece16671a539f0ce22ab5111e48b618b",
+        "textRange": {
+            "startLine": 23,
+            "endLine": 23,
+            "startOffset": 13,
+            "endOffset": 17
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Make kind a static final constant or non-public and provide accessors if needed.",
+        "effort": "10min",
+        "debt": "10min",
+        "assignee": "JEBailey@github",
+        "tags": [
+            "cwe"
+        ],
+        "creationDate": "2018-11-29T16:25:28+0100",
+        "updateDate": "2019-04-21T19:04:53+0200",
+        "type": "VULNERABILITY",
+        "organization": "apache"
+    },
+    "AWo7Gl5nyRjJygCrMGGd": {
+        "key": "AWo7Gl5nyRjJygCrMGGd",
+        "rule": "java:S1118",
+        "severity": "MAJOR",
+        "component": "apache_sling-org-apache-sling-scripting-sightly-compiler-java:src/main/java/org/apache/sling/scripting/sightly/java/compiler/impl/SourceGenConstants.java",
+        "project": "apache_sling-org-apache-sling-scripting-sightly-compiler-java",
+        "line": 22,
+        "hash": "c73aacdebeaac0b75519dc1501dd1573",
+        "textRange": {
+            "startLine": 22,
+            "endLine": 22,
+            "startOffset": 19,
+            "endOffset": 37
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Add a private constructor to hide the implicit public one.",
+        "effort": "5min",
+        "debt": "5min",
+        "tags": [
+            "design"
+        ],
+        "creationDate": "2016-06-16T18:07:57+0200",
+        "updateDate": "2019-04-20T16:15:32+0200",
+        "type": "CODE_SMELL",
+        "organization": "apache"
+    },
+    "AWpA29apYsUHy63ni7EZ": {
+        "key": "AWpA29apYsUHy63ni7EZ",
+        "rule": "java:S112",
+        "severity": "MAJOR",
+        "component": "apache_sling-org-apache-sling-commons-html:src/main/java/org/apache/sling/commons/html/impl/parser/SimpleCharStream.java",
+        "project": "apache_sling-org-apache-sling-commons-html",
+        "line": 79,
+        "hash": "27a43617d24f3d6823e8885f482fe3fd",
+        "textRange": {
+            "startLine": 79,
+            "endLine": 79,
+            "startOffset": 16,
+            "endOffset": 21
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Define and throw a dedicated exception instead of using a generic one.",
+        "effort": "20min",
+        "debt": "20min",
+        "assignee": "JEBailey@github",
+        "tags": [
+            "cert",
+            "cwe",
+            "error-handling"
+        ],
+        "creationDate": "2018-11-29T16:25:28+0100",
+        "updateDate": "2019-04-21T19:04:53+0200",
+        "type": "CODE_SMELL",
+        "organization": "apache"
+    },
+    "AWpA29apYsUHy63ni7EY": {
+        "key": "AWpA29apYsUHy63ni7EY",
+        "rule": "java:S1104",
+        "severity": "MINOR",
+        "component": "apache_sling-org-apache-sling-commons-html:src/main/java/org/apache/sling/commons/html/impl/parser/SimpleCharStream.java",
+        "project": "apache_sling-org-apache-sling-commons-html",
+        "line": 18,
+        "hash": "5ed5b1dee39f5d6baf3994e222fd8d86",
+        "textRange": {
+            "startLine": 18,
+            "endLine": 18,
+            "startOffset": 13,
+            "endOffset": 19
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Make bufpos a static final constant or non-public and provide accessors if needed.",
+        "effort": "10min",
+        "debt": "10min",
+        "assignee": "JEBailey@github",
+        "tags": [
+            "cwe"
+        ],
+        "creationDate": "2018-11-29T16:25:28+0100",
+        "updateDate": "2019-04-21T19:04:53+0200",
+        "type": "VULNERABILITY",
+        "organization": "apache"
+    },
+    "AWpA29alYsUHy63ni7EV": {
+        "key": "AWpA29alYsUHy63ni7EV",
+        "rule": "java:S1104",
+        "severity": "MINOR",
+        "component": "apache_sling-org-apache-sling-commons-html:src/main/java/org/apache/sling/commons/html/impl/parser/Token.java",
+        "project": "apache_sling-org-apache-sling-commons-html",
+        "line": 61,
+        "hash": "949efa3be9d5bb29ae2c5ea21af5af14",
+        "textRange": {
+            "startLine": 61,
+            "endLine": 61,
+            "startOffset": 15,
+            "endOffset": 27
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Make specialToken a static final constant or non-public and provide accessors if needed.",
+        "effort": "10min",
+        "debt": "10min",
+        "assignee": "JEBailey@github",
+        "tags": [
+            "cwe"
+        ],
+        "creationDate": "2018-11-29T16:25:28+0100",
+        "updateDate": "2019-04-21T19:04:53+0200",
+        "type": "VULNERABILITY",
+        "organization": "apache"
+    },
+    "AWpA29alYsUHy63ni7EU": {
+        "key": "AWpA29alYsUHy63ni7EU",
+        "rule": "java:S1104",
+        "severity": "MINOR",
+        "component": "apache_sling-org-apache-sling-commons-html:src/main/java/org/apache/sling/commons/html/impl/parser/Token.java",
+        "project": "apache_sling-org-apache-sling-commons-html",
+        "line": 47,
+        "hash": "8678fec7e7484d148b189041ba90f936",
+        "textRange": {
+            "startLine": 47,
+            "endLine": 47,
+            "startOffset": 15,
+            "endOffset": 19
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Make next a static final constant or non-public and provide accessors if needed.",
+        "effort": "10min",
+        "debt": "10min",
+        "assignee": "JEBailey@github",
+        "tags": [
+            "cwe"
+        ],
+        "creationDate": "2018-11-29T16:25:28+0100",
+        "updateDate": "2019-04-21T19:04:53+0200",
+        "type": "VULNERABILITY",
+        "organization": "apache"
+    },
+    "AWoxE-XyyRjJygCrMpY7": {
+        "key": "AWoxE-XyyRjJygCrMpY7",
+        "rule": "java:S1118",
+        "severity": "MAJOR",
+        "component": "apache_sling-org-apache-sling-commons-scheduler:src/main/java/org/apache/sling/commons/scheduler/impl/MetricsHelper.java",
+        "project": "apache_sling-org-apache-sling-commons-scheduler",
+        "line": 25,
+        "hash": "4fe826eb3326377da7d35d8c4599a7db",
+        "textRange": {
+            "startLine": 25,
+            "endLine": 25,
+            "startOffset": 6,
+            "endOffset": 19
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Add a private constructor to hide the implicit public one.",
+        "effort": "5min",
+        "debt": "5min",
+        "tags": [
+            "design"
+        ],
+        "creationDate": "2017-07-24T11:42:32+0200",
+        "updateDate": "2019-04-18T17:32:03+0200",
+        "type": "CODE_SMELL",
+        "organization": "apache"
+    },
+    "AWo7GjoxyRjJygCrME63": {
+        "key": "AWo7GjoxyRjJygCrME63",
+        "rule": "java:S1118",
+        "severity": "MAJOR",
+        "component": "apache_sling-org-apache-sling-scripting-sightly-compiler:src/main/java/org/apache/sling/scripting/sightly/compiler/commands/Procedure.java",
+        "project": "apache_sling-org-apache-sling-scripting-sightly-compiler",
+        "line": 28,
+        "hash": "4bd4ce7612c26a221160353656deed93",
+        "textRange": {
+            "startLine": 28,
+            "endLine": 28,
+            "startOffset": 13,
+            "endOffset": 22
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Add a private constructor to hide the implicit public one.",
+        "effort": "5min",
+        "debt": "5min",
+        "tags": [
+            "design"
+        ],
+        "creationDate": "2016-06-16T18:07:57+0200",
+        "updateDate": "2019-04-20T16:15:13+0200",
+        "type": "CODE_SMELL",
+        "organization": "apache"
+    },
+    "AWo7GjouyRjJygCrME62": {
+        "key": "AWo7GjouyRjJygCrME62",
+        "rule": "java:S1118",
+        "severity": "MAJOR",
+        "component": "apache_sling-org-apache-sling-scripting-sightly-compiler:src/main/java/org/apache/sling/scripting/sightly/compiler/commands/VariableBinding.java",
+        "project": "apache_sling-org-apache-sling-scripting-sightly-compiler",
+        "line": 26,
+        "hash": "5665275eed2f7a3af47f6519db60f53f",
+        "textRange": {
+            "startLine": 26,
+            "endLine": 26,
+            "startOffset": 19,
+            "endOffset": 34
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Add a private constructor to hide the implicit public one.",
+        "effort": "5min",
+        "debt": "5min",
+        "tags": [
+            "design"
+        ],
+        "creationDate": "2016-06-16T18:07:57+0200",
+        "updateDate": "2019-04-20T16:15:13+0200",
+        "type": "CODE_SMELL",
+        "organization": "apache"
+    },
+    "AWpA29axYsUHy63ni7FD": {
+        "key": "AWpA29axYsUHy63ni7FD",
+        "rule": "java:S1199",
+        "severity": "MINOR",
+        "component": "apache_sling-org-apache-sling-commons-html:src/main/java/org/apache/sling/commons/html/impl/parser/TagParser.java",
+        "project": "apache_sling-org-apache-sling-commons-html",
+        "line": 136,
+        "hash": "339d95b8e3b1785648d743af6eaea815",
+        "textRange": {
+            "startLine": 136,
+            "endLine": 136,
+            "startOffset": 6,
+            "endOffset": 7
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Extract this nested code block into a method.",
+        "effort": "10min",
+        "debt": "10min",
+        "assignee": "JEBailey@github",
+        "tags": [
+            "bad-practice"
+        ],
+        "creationDate": "2018-11-29T16:25:28+0100",
+        "updateDate": "2019-04-21T19:04:53+0200",
+        "type": "CODE_SMELL",
+        "organization": "apache"
+    },
+    "AWpA29axYsUHy63ni7FA": {
+        "key": "AWpA29axYsUHy63ni7FA",
+        "rule": "java:S1199",
+        "severity": "MINOR",
+        "component": "apache_sling-org-apache-sling-commons-html:src/main/java/org/apache/sling/commons/html/impl/parser/TagParser.java",
+        "project": "apache_sling-org-apache-sling-commons-html",
+        "line": 60,
+        "hash": "19181fe13d65000796ba3cd53ed641d6",
+        "textRange": {
+            "startLine": 60,
+            "endLine": 60,
+            "startOffset": 29,
+            "endOffset": 30
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Extract this nested code block into a method.",
+        "effort": "10min",
+        "debt": "10min",
+        "assignee": "JEBailey@github",
+        "tags": [
+            "bad-practice"
+        ],
+        "creationDate": "2018-11-29T16:25:28+0100",
+        "updateDate": "2019-04-21T19:04:53+0200",
+        "type": "CODE_SMELL",
+        "organization": "apache"
+    },
+    "AWox51-7-aLJxVkBYvvJ": {
+        "key": "AWox51-7-aLJxVkBYvvJ",
+        "rule": "java:S1104",
+        "severity": "MINOR",
+        "component": "apache_sling-org-apache-sling-scripting-core:src/main/java/org/apache/sling/scripting/core/impl/ServiceCache.java",
+        "project": "apache_sling-org-apache-sling-scripting-core",
+        "line": 130,
+        "hash": "33fbefa32279f10602340d8ec7f0ab0c",
+        "textRange": {
+            "startLine": 130,
+            "endLine": 130,
+            "startOffset": 32,
+            "endOffset": 39
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Make service a static final constant or non-public and provide accessors if needed.",
+        "effort": "10min",
+        "debt": "10min",
+        "tags": [
+            "cwe"
+        ],
+        "creationDate": "2010-04-09T16:02:31+0200",
+        "updateDate": "2019-04-18T21:23:10+0200",
+        "type": "VULNERABILITY",
+        "organization": "apache"
+    },
+    "AWox51-7-aLJxVkBYvvI": {
+        "key": "AWox51-7-aLJxVkBYvvI",
+        "rule": "java:S1104",
+        "severity": "MINOR",
+        "component": "apache_sling-org-apache-sling-scripting-core:src/main/java/org/apache/sling/scripting/core/impl/ServiceCache.java",
+        "project": "apache_sling-org-apache-sling-scripting-core",
+        "line": 129,
+        "hash": "26035e9f5e9d1abccc09ada2b1356678",
+        "textRange": {
+            "startLine": 129,
+            "endLine": 129,
+            "startOffset": 32,
+            "endOffset": 41
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Make reference a static final constant or non-public and provide accessors if needed.",
+        "effort": "10min",
+        "debt": "10min",
+        "tags": [
+            "cwe"
+        ],
+        "creationDate": "2010-04-09T16:02:31+0200",
+        "updateDate": "2019-04-18T21:23:10+0200",
+        "type": "VULNERABILITY",
+        "organization": "apache"
+    },
+    "AXcNqlnV7TnQ0L4kK6M7": {
+        "key": "AXcNqlnV7TnQ0L4kK6M7",
+        "rule": "java:S1610",
+        "severity": "MINOR",
+        "component": "apache_sling-org-apache-sling-scripting-sightly-compiler:src/main/java/org/apache/sling/scripting/sightly/impl/html/dom/template/TemplateNode.java",
+        "project": "apache_sling-org-apache-sling-scripting-sightly-compiler",
+        "line": 21,
+        "hash": "2801e0e59b56cbe20367e27ae17f2609",
+        "textRange": {
+            "startLine": 21,
+            "endLine": 21,
+            "startOffset": 22,
+            "endOffset": 34
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Convert the abstract class \"TemplateNode\" into an interface.",
+        "effort": "10min",
+        "debt": "10min",
+        "tags": [],
+        "creationDate": "2016-06-16T18:07:57+0200",
+        "updateDate": "2021-01-17T01:06:18+0100",
+        "type": "CODE_SMELL",
+        "organization": "apache"
+    },
+    "AWoxE-YLyRjJygCrMpZz": {
+        "key": "AWoxE-YLyRjJygCrMpZz",
+        "rule": "java:S1133",
+        "severity": "INFO",
+        "component": "apache_sling-org-apache-sling-commons-scheduler:src/main/java/org/apache/sling/commons/scheduler/Scheduler.java",
+        "project": "apache_sling-org-apache-sling-commons-scheduler",
+        "line": 289,
+        "hash": "bb28d684447412053425c480519faaa2",
+        "textRange": {
+            "startLine": 289,
+            "endLine": 289,
+            "startOffset": 9,
+            "endOffset": 16
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Do not forget to remove this deprecated code someday.",
+        "effort": "10min",
+        "debt": "10min",
+        "tags": [
+            "obsolete"
+        ],
+        "creationDate": "2009-06-18T11:21:02+0200",
+        "updateDate": "2019-04-18T17:32:03+0200",
+        "type": "CODE_SMELL",
+        "organization": "apache"
+    },
+    "AWoxE-YLyRjJygCrMpZx": {
+        "key": "AWoxE-YLyRjJygCrMpZx",
+        "rule": "java:S1133",
+        "severity": "INFO",
+        "component": "apache_sling-org-apache-sling-commons-scheduler:src/main/java/org/apache/sling/commons/scheduler/Scheduler.java",
+        "project": "apache_sling-org-apache-sling-commons-scheduler",
+        "line": 255,
+        "hash": "a3c12ab7de1ee98fd79ed36f1d528e31",
+        "textRange": {
+            "startLine": 255,
+            "endLine": 255,
+            "startOffset": 9,
+            "endOffset": 23
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Do not forget to remove this deprecated code someday.",
+        "effort": "10min",
+        "debt": "10min",
+        "tags": [
+            "obsolete"
+        ],
+        "creationDate": "2009-06-18T11:21:02+0200",
+        "updateDate": "2019-04-18T17:32:03+0200",
+        "type": "CODE_SMELL",
+        "organization": "apache"
+    },
+    "AWoxE-YLyRjJygCrMpZw": {
+        "key": "AWoxE-YLyRjJygCrMpZw",
+        "rule": "java:S1133",
+        "severity": "INFO",
+        "component": "apache_sling-org-apache-sling-commons-scheduler:src/main/java/org/apache/sling/commons/scheduler/Scheduler.java",
+        "project": "apache_sling-org-apache-sling-commons-scheduler",
+        "line": 236,
+        "hash": "7205e81372a05f1c1a69f094aed492a9",
+        "textRange": {
+            "startLine": 236,
+            "endLine": 236,
+            "startOffset": 9,
+            "endOffset": 15
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Do not forget to remove this deprecated code someday.",
+        "effort": "10min",
+        "debt": "10min",
+        "tags": [
+            "obsolete"
+        ],
+        "creationDate": "2009-06-18T11:21:02+0200",
+        "updateDate": "2019-04-18T17:32:03+0200",
+        "type": "CODE_SMELL",
+        "organization": "apache"
+    },
+    "AWoxE-YLyRjJygCrMpZp": {
+        "key": "AWoxE-YLyRjJygCrMpZp",
+        "rule": "java:S112",
+        "severity": "MAJOR",
+        "component": "apache_sling-org-apache-sling-commons-scheduler:src/main/java/org/apache/sling/commons/scheduler/Scheduler.java",
+        "project": "apache_sling-org-apache-sling-commons-scheduler",
+        "line": 322,
+        "hash": "ade88b84548ec15c2f8b184babd0c149",
+        "textRange": {
+            "startLine": 322,
+            "endLine": 322,
+            "startOffset": 11,
+            "endOffset": 20
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Define and throw a dedicated exception instead of using a generic one.",
+        "effort": "20min",
+        "debt": "20min",
+        "tags": [
+            "cert",
+            "cwe",
+            "error-handling"
+        ],
+        "creationDate": "2009-06-18T11:21:02+0200",
+        "updateDate": "2019-04-18T17:32:03+0200",
+        "type": "CODE_SMELL",
+        "organization": "apache"
+    },
+    "AWoxE-YLyRjJygCrMpZo": {
+        "key": "AWoxE-YLyRjJygCrMpZo",
+        "rule": "java:S112",
+        "severity": "MAJOR",
+        "component": "apache_sling-org-apache-sling-commons-scheduler:src/main/java/org/apache/sling/commons/scheduler/Scheduler.java",
+        "project": "apache_sling-org-apache-sling-commons-scheduler",
+        "line": 290,
+        "hash": "ade88b84548ec15c2f8b184babd0c149",
+        "textRange": {
+            "startLine": 290,
+            "endLine": 290,
+            "startOffset": 11,
+            "endOffset": 20
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Define and throw a dedicated exception instead of using a generic one.",
+        "effort": "20min",
+        "debt": "20min",
+        "tags": [
+            "cert",
+            "cwe",
+            "error-handling"
+        ],
+        "creationDate": "2009-06-18T11:21:02+0200",
+        "updateDate": "2019-04-18T17:32:03+0200",
+        "type": "CODE_SMELL",
+        "organization": "apache"
+    },
+    "AWoxE-YLyRjJygCrMpZm": {
+        "key": "AWoxE-YLyRjJygCrMpZm",
+        "rule": "java:S112",
+        "severity": "MAJOR",
+        "component": "apache_sling-org-apache-sling-commons-scheduler:src/main/java/org/apache/sling/commons/scheduler/Scheduler.java",
+        "project": "apache_sling-org-apache-sling-commons-scheduler",
+        "line": 256,
+        "hash": "ade88b84548ec15c2f8b184babd0c149",
+        "textRange": {
+            "startLine": 256,
+            "endLine": 256,
+            "startOffset": 11,
+            "endOffset": 20
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Define and throw a dedicated exception instead of using a generic one.",
+        "effort": "20min",
+        "debt": "20min",
+        "tags": [
+            "cert",
+            "cwe",
+            "error-handling"
+        ],
+        "creationDate": "2009-06-18T11:21:02+0200",
+        "updateDate": "2019-04-18T17:32:03+0200",
+        "type": "CODE_SMELL",
+        "organization": "apache"
+    },
+    "AWoxE-YLyRjJygCrMpZl": {
+        "key": "AWoxE-YLyRjJygCrMpZl",
+        "rule": "java:S112",
+        "severity": "MAJOR",
+        "component": "apache_sling-org-apache-sling-commons-scheduler:src/main/java/org/apache/sling/commons/scheduler/Scheduler.java",
+        "project": "apache_sling-org-apache-sling-commons-scheduler",
+        "line": 237,
+        "hash": "ade88b84548ec15c2f8b184babd0c149",
+        "textRange": {
+            "startLine": 237,
+            "endLine": 237,
+            "startOffset": 11,
+            "endOffset": 20
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Define and throw a dedicated exception instead of using a generic one.",
+        "effort": "20min",
+        "debt": "20min",
+        "tags": [
+            "cert",
+            "cwe",
+            "error-handling"
+        ],
+        "creationDate": "2009-06-18T11:21:02+0200",
+        "updateDate": "2019-04-18T17:32:03+0200",
+        "type": "CODE_SMELL",
+        "organization": "apache"
+    },
+    "AWpA29aQYsUHy63ni7Ch": {
+        "key": "AWpA29aQYsUHy63ni7Ch",
+        "rule": "java:S2386",
+        "severity": "MINOR",
+        "component": "apache_sling-org-apache-sling-commons-html:src/main/java/org/apache/sling/commons/html/impl/parser/TagParserConstants.java",
+        "project": "apache_sling-org-apache-sling-commons-html",
+        "line": 82,
+        "hash": "6374630ec06da3c96d6f943ec322f495",
+        "textRange": {
+            "startLine": 82,
+            "endLine": 82,
+            "startOffset": 11,
+            "endOffset": 21
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Move \"tokenImage\" to a class and lower its visibility",
+        "effort": "15min",
+        "debt": "15min",
+        "assignee": "JEBailey@github",
+        "tags": [
+            "cert",
+            "cwe",
+            "unpredictable"
+        ],
+        "creationDate": "2018-11-29T16:25:28+0100",
+        "updateDate": "2019-04-21T19:04:53+0200",
+        "type": "VULNERABILITY",
+        "organization": "apache"
+    },
+    "AWpA29aMYsUHy63ni7Cf": {
+        "key": "AWpA29aMYsUHy63ni7Cf",
+        "rule": "java:S1161",
+        "severity": "MAJOR",
+        "component": "apache_sling-org-apache-sling-commons-html:src/main/java/org/apache/sling/commons/html/impl/parser/TokenMgrError.java",
+        "project": "apache_sling-org-apache-sling-commons-html",
+        "line": 124,
+        "hash": "8828e03595273609ac6ecaeaa8044115",
+        "textRange": {
+            "startLine": 124,
+            "endLine": 124,
+            "startOffset": 16,
+            "endOffset": 26
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Add the \"@Override\" annotation above this method signature",
+        "effort": "5min",
+        "debt": "5min",
+        "assignee": "JEBailey@github",
+        "tags": [
+            "bad-practice"
+        ],
+        "creationDate": "2018-11-29T16:25:28+0100",
+        "updateDate": "2019-04-21T19:04:53+0200",
+        "type": "CODE_SMELL",
+        "organization": "apache"
+    },
+    "AWpA29aMYsUHy63ni7Ce": {
+        "key": "AWpA29aMYsUHy63ni7Ce",
+        "rule": "java:S1185",
+        "severity": "MINOR",
+        "component": "apache_sling-org-apache-sling-commons-html:src/main/java/org/apache/sling/commons/html/impl/parser/TokenMgrError.java",
+        "project": "apache_sling-org-apache-sling-commons-html",
+        "line": 124,
+        "hash": "8828e03595273609ac6ecaeaa8044115",
+        "textRange": {
+            "startLine": 124,
+            "endLine": 124,
+            "startOffset": 16,
+            "endOffset": 26
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Remove this method to simply inherit it.",
+        "effort": "2min",
+        "debt": "2min",
+        "assignee": "JEBailey@github",
+        "tags": [
+            "clumsy",
+            "redundant"
+        ],
+        "creationDate": "2018-11-29T16:25:28+0100",
+        "updateDate": "2019-04-21T19:04:53+0200",
+        "type": "CODE_SMELL",
+        "organization": "apache"
+    },
+    "AWpA29axYsUHy63ni7E-": {
+        "key": "AWpA29axYsUHy63ni7E-",
+        "rule": "java:S1199",
+        "severity": "MINOR",
+        "component": "apache_sling-org-apache-sling-commons-html:src/main/java/org/apache/sling/commons/html/impl/parser/TagParser.java",
+        "project": "apache_sling-org-apache-sling-commons-html",
+        "line": 48,
+        "hash": "e2ad5bff200d9ff3168a049a77fb89bd",
+        "textRange": {
+            "startLine": 48,
+            "endLine": 48,
+            "startOffset": 28,
+            "endOffset": 29
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Extract this nested code block into a method.",
+        "effort": "10min",
+        "debt": "10min",
+        "assignee": "JEBailey@github",
+        "tags": [
+            "bad-practice"
+        ],
+        "creationDate": "2018-11-29T16:25:28+0100",
+        "updateDate": "2019-04-21T19:04:53+0200",
+        "type": "CODE_SMELL",
+        "organization": "apache"
+    },
+    "AWpA29axYsUHy63ni7FT": {
+        "key": "AWpA29axYsUHy63ni7FT",
+        "rule": "java:S1104",
+        "severity": "MINOR",
+        "component": "apache_sling-org-apache-sling-commons-html:src/main/java/org/apache/sling/commons/html/impl/parser/TagParser.java",
+        "project": "apache_sling-org-apache-sling-commons-html",
+        "line": 257,
+        "hash": "442918719ed8d4f7990c358ff3d57aac",
+        "textRange": {
+            "startLine": 257,
+            "endLine": 257,
+            "startOffset": 31,
+            "endOffset": 43
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Make token_source a static final constant or non-public and provide accessors if needed.",
+        "effort": "10min",
+        "debt": "10min",
+        "assignee": "JEBailey@github",
+        "tags": [
+            "cwe"
+        ],
+        "creationDate": "2018-11-29T16:25:28+0100",
+        "updateDate": "2019-04-21T19:04:53+0200",
+        "type": "VULNERABILITY",
+        "organization": "apache"
+    },
+    "AWpA29axYsUHy63ni7E8": {
+        "key": "AWpA29axYsUHy63ni7E8",
+        "rule": "java:S1199",
+        "severity": "MINOR",
+        "component": "apache_sling-org-apache-sling-commons-html:src/main/java/org/apache/sling/commons/html/impl/parser/TagParser.java",
+        "project": "apache_sling-org-apache-sling-commons-html",
+        "line": 40,
+        "hash": "e2ad5bff200d9ff3168a049a77fb89bd",
+        "textRange": {
+            "startLine": 40,
+            "endLine": 40,
+            "startOffset": 36,
+            "endOffset": 37
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Extract this nested code block into a method.",
+        "effort": "10min",
+        "debt": "10min",
+        "assignee": "JEBailey@github",
+        "tags": [
+            "bad-practice"
+        ],
+        "creationDate": "2018-11-29T16:25:28+0100",
+        "updateDate": "2019-04-21T19:04:53+0200",
+        "type": "CODE_SMELL",
+        "organization": "apache"
+    },
+    "AXIIdk2qH0NwxbxUplwk": {
+        "key": "AXIIdk2qH0NwxbxUplwk",
+        "rule": "java:S107",
+        "severity": "MAJOR",
+        "component": "apache_sling-org-apache-sling-scripting-core:src/main/java/org/apache/sling/scripting/core/impl/bundled/Script.java",
+        "project": "apache_sling-org-apache-sling-scripting-core",
+        "line": 52,
+        "hash": "20db3dac98a64705163f825aa0a1aec8",
+        "textRange": {
+            "startLine": 52,
+            "endLine": 52,
+            "startOffset": 4,
+            "endOffset": 10
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Constructor has 8 parameters, which is greater than 7 authorized.",
+        "effort": "20min",
+        "debt": "20min",
+        "tags": [],
+        "creationDate": "2020-05-12T12:33:47+0200",
+        "updateDate": "2021-01-29T14:46:53+0100",
+        "type": "CODE_SMELL",
+        "organization": "apache"
+    },
+    "AXIIdk2VH0NwxbxUplwi": {
+        "key": "AXIIdk2VH0NwxbxUplwi",
+        "rule": "java:S107",
+        "severity": "MAJOR",
+        "component": "apache_sling-org-apache-sling-scripting-core:src/main/java/org/apache/sling/scripting/core/impl/bundled/PrecompiledScript.java",
+        "project": "apache_sling-org-apache-sling-scripting-core",
+        "line": 40,
+        "hash": "1b4a7f8daa9c3460e8f1f6dc9eb6aba0",
+        "textRange": {
+            "startLine": 40,
+            "endLine": 40,
+            "startOffset": 4,
+            "endOffset": 21
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Constructor has 8 parameters, which is greater than 7 authorized.",
+        "effort": "20min",
+        "debt": "20min",
+        "tags": [],
+        "creationDate": "2020-05-12T12:33:47+0200",
+        "updateDate": "2021-01-29T14:46:53+0100",
+        "type": "CODE_SMELL",
+        "organization": "apache"
+    },
+    "AWotoSiu1vprPG4YoJ54": {
+        "key": "AWotoSiu1vprPG4YoJ54",
+        "rule": "java:S1118",
+        "severity": "MAJOR",
+        "component": "apache_sling-org-apache-sling-scripting-sightly:src/main/java/org/apache/sling/scripting/sightly/engine/ResourceResolution.java",
+        "project": "apache_sling-org-apache-sling-scripting-sightly",
+        "line": 32,
+        "hash": "c731a86aac1922da7643bd35da8b4f34",
+        "textRange": {
+            "startLine": 32,
+            "endLine": 32,
+            "startOffset": 19,
+            "endOffset": 37
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Add a private constructor to hide the implicit public one.",
+        "effort": "5min",
+        "debt": "5min",
+        "tags": [],
+        "creationDate": "2015-05-12T17:39:47+0200",
+        "updateDate": "2019-04-18T01:27:48+0200",
+        "type": "CODE_SMELL",
+        "organization": "apache"
+    },
+    "AWotoSiN1vprPG4YoJ5o": {
+        "key": "AWotoSiN1vprPG4YoJ5o",
+        "rule": "java:S1118",
+        "severity": "MAJOR",
+        "component": "apache_sling-org-apache-sling-scripting-sightly:src/main/java/org/apache/sling/scripting/sightly/impl/engine/extension/ExtensionUtils.java",
+        "project": "apache_sling-org-apache-sling-scripting-sightly",
+        "line": 31,
+        "hash": "e76eca89800903c1824b519116f0459e",
+        "textRange": {
+            "startLine": 31,
+            "endLine": 31,
+            "startOffset": 13,
+            "endOffset": 27
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Add a private constructor to hide the implicit public one.",
+        "effort": "5min",
+        "debt": "5min",
+        "tags": [
+            "design"
+        ],
+        "creationDate": "2015-05-12T17:39:47+0200",
+        "updateDate": "2019-04-18T01:27:48+0200",
+        "type": "CODE_SMELL",
+        "organization": "apache"
+    },
+    "AWpA29axYsUHy63ni7FE": {
+        "key": "AWpA29axYsUHy63ni7FE",
+        "rule": "java:S1199",
+        "severity": "MINOR",
+        "component": "apache_sling-org-apache-sling-commons-html:src/main/java/org/apache/sling/commons/html/impl/parser/TagParser.java",
+        "project": "apache_sling-org-apache-sling-commons-html",
+        "line": 140,
+        "hash": "8d0d5ccab9b6ace5de9c93d292ad84c8",
+        "textRange": {
+            "startLine": 140,
+            "endLine": 140,
+            "startOffset": 4,
+            "endOffset": 5
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Extract this nested code block into a method.",
+        "effort": "10min",
+        "debt": "10min",
+        "assignee": "JEBailey@github",
+        "tags": [
+            "bad-practice"
+        ],
+        "creationDate": "2018-11-29T16:25:28+0100",
+        "updateDate": "2019-04-21T19:04:53+0200",
+        "type": "CODE_SMELL",
+        "organization": "apache"
+    },
+    "AWoxE-XPyRjJygCrMpYm": {
+        "key": "AWoxE-XPyRjJygCrMpYm",
+        "rule": "java:S112",
+        "severity": "MAJOR",
+        "component": "apache_sling-org-apache-sling-commons-scheduler:src/main/java/org/apache/sling/commons/scheduler/impl/GaugesSupport.java",
+        "project": "apache_sling-org-apache-sling-commons-scheduler",
+        "line": 174,
+        "hash": "ddc31c32d66b464b1ecb89d5e41a837e",
+        "textRange": {
+            "startLine": 174,
+            "endLine": 174,
+            "startOffset": 22,
+            "endOffset": 38
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Define and throw a dedicated exception instead of using a generic one.",
+        "effort": "20min",
+        "debt": "20min",
+        "tags": [
+            "cert",
+            "cwe",
+            "error-handling"
+        ],
+        "creationDate": "2017-07-24T11:42:32+0200",
+        "updateDate": "2019-04-18T17:32:03+0200",
+        "type": "CODE_SMELL",
+        "organization": "apache"
+    },
+    "AWoxE-XGyRjJygCrMpYT": {
+        "key": "AWoxE-XGyRjJygCrMpYT",
+        "rule": "java:S1104",
+        "severity": "MINOR",
+        "component": "apache_sling-org-apache-sling-commons-scheduler:src/main/java/org/apache/sling/commons/scheduler/impl/QuartzJobExecutor.java",
+        "project": "apache_sling-org-apache-sling-commons-scheduler",
+        "line": 59,
+        "hash": "5b165c01b851a03dbcc012b7da1bc0a5",
+        "textRange": {
+            "startLine": 59,
+            "endLine": 59,
+            "startOffset": 34,
+            "endOffset": 42
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Make SLING_ID a static final constant or non-public and provide accessors if needed.",
+        "effort": "10min",
+        "debt": "10min",
+        "tags": [
+            "cwe"
+        ],
+        "creationDate": "2015-04-20T14:35:04+0200",
+        "updateDate": "2019-04-18T17:32:03+0200",
+        "type": "VULNERABILITY",
+        "organization": "apache"
+    },
+    "AWoxE-X3yRjJygCrMpZE": {
+        "key": "AWoxE-X3yRjJygCrMpZE",
+        "rule": "java:S107",
+        "severity": "MAJOR",
+        "component": "apache_sling-org-apache-sling-commons-scheduler:src/main/java/org/apache/sling/commons/scheduler/impl/QuartzScheduler.java",
+        "project": "apache_sling-org-apache-sling-commons-scheduler",
+        "line": 402,
+        "hash": "5db0384261050f1d089971d0e50d8a02",
+        "textRange": {
+            "startLine": 402,
+            "endLine": 402,
+            "startOffset": 19,
+            "endOffset": 28
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Method has 8 parameters, which is greater than 7 authorized.",
+        "effort": "20min",
+        "debt": "20min",
+        "tags": [
+            "brain-overload"
+        ],
+        "creationDate": "2014-08-12T18:55:36+0200",
+        "updateDate": "2019-04-18T17:32:03+0200",
+        "type": "CODE_SMELL",
+        "organization": "apache"
+    },
+    "AWoxE-X3yRjJygCrMpZD": {
+        "key": "AWoxE-X3yRjJygCrMpZD",
+        "rule": "java:S107",
+        "severity": "MAJOR",
+        "component": "apache_sling-org-apache-sling-commons-scheduler:src/main/java/org/apache/sling/commons/scheduler/impl/QuartzScheduler.java",
+        "project": "apache_sling-org-apache-sling-commons-scheduler",
+        "line": 335,
+        "hash": "98ba92a2cb3871fc9e54a9ca0fdaa380",
+        "textRange": {
+            "startLine": 335,
+            "endLine": 335,
+            "startOffset": 16,
+            "endOffset": 30
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Method has 8 parameters, which is greater than 7 authorized.",
+        "effort": "20min",
+        "debt": "20min",
+        "tags": [
+            "brain-overload"
+        ],
+        "creationDate": "2014-08-12T18:55:36+0200",
+        "updateDate": "2019-04-18T17:32:03+0200",
+        "type": "CODE_SMELL",
+        "organization": "apache"
+    },
+    "AWoxE-XCyRjJygCrMpYO": {
+        "key": "AWoxE-XCyRjJygCrMpYO",
+        "rule": "java:S1104",
+        "severity": "MINOR",
+        "component": "apache_sling-org-apache-sling-commons-scheduler:src/main/java/org/apache/sling/commons/scheduler/impl/InternalScheduleOptions.java",
+        "project": "apache_sling-org-apache-sling-commons-scheduler",
+        "line": 47,
+        "hash": "8785f8e12559fe28a75eacfbb8c2c2de",
+        "textRange": {
+            "startLine": 47,
+            "endLine": 47,
+            "startOffset": 20,
+            "endOffset": 25
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Make runOn a static final constant or non-public and provide accessors if needed.",
+        "effort": "10min",
+        "debt": "10min",
+        "tags": [
+            "cwe"
+        ],
+        "creationDate": "2013-07-31T11:18:26+0200",
+        "updateDate": "2019-04-18T17:32:03+0200",
+        "type": "VULNERABILITY",
+        "organization": "apache"
+    },
+    "AWoxUg4HYsUHy63nTjlR": {
+        "key": "AWoxUg4HYsUHy63nTjlR",
+        "rule": "java:S112",
+        "severity": "MAJOR",
+        "component": "apache_sling-org-apache-sling-scripting-java:src/main/java/org/apache/sling/scripting/java/impl/ServletWrapper.java",
+        "project": "apache_sling-org-apache-sling-scripting-java",
+        "line": 240,
+        "hash": "61bed3e2a9c5b05f65c5bd8cbdb07be1",
+        "textRange": {
+            "startLine": 240,
+            "endLine": 240,
+            "startOffset": 11,
+            "endOffset": 20
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Define and throw a dedicated exception instead of using a generic one.",
+        "effort": "20min",
+        "debt": "20min",
+        "tags": [
+            "cert",
+            "cwe",
+            "error-handling"
+        ],
+        "creationDate": "2011-02-24T10:09:10+0100",
+        "updateDate": "2019-04-18T18:40:10+0200",
+        "type": "CODE_SMELL",
+        "organization": "apache"
+    },
+    "AWpA29axYsUHy63ni7FW": {
+        "key": "AWpA29axYsUHy63ni7FW",
+        "rule": "java:S112",
+        "severity": "MAJOR",
+        "component": "apache_sling-org-apache-sling-commons-html:src/main/java/org/apache/sling/commons/html/impl/parser/TagParser.java",
+        "project": "apache_sling-org-apache-sling-commons-html",
+        "line": 74,
+        "hash": "553a5cc88e14aeb1aaef90d705a79c9b",
+        "textRange": {
+            "startLine": 74,
+            "endLine": 74,
+            "startOffset": 14,
+            "endOffset": 19
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Define and throw a dedicated exception instead of using a generic one.",
+        "effort": "20min",
+        "debt": "20min",
+        "assignee": "JEBailey@github",
+        "tags": [
+            "cert",
+            "cwe",
+            "error-handling"
+        ],
+        "creationDate": "2018-11-29T16:25:28+0100",
+        "updateDate": "2019-04-21T19:04:53+0200",
+        "type": "CODE_SMELL",
+        "organization": "apache"
+    },
+    "AWpA29axYsUHy63ni7FB": {
+        "key": "AWpA29axYsUHy63ni7FB",
+        "rule": "java:S1199",
+        "severity": "MINOR",
+        "component": "apache_sling-org-apache-sling-commons-html:src/main/java/org/apache/sling/commons/html/impl/parser/TagParser.java",
+        "project": "apache_sling-org-apache-sling-commons-html",
+        "line": 64,
+        "hash": "521f024339f5cee80d7917fe7ed88734",
+        "textRange": {
+            "startLine": 64,
+            "endLine": 64,
+            "startOffset": 14,
+            "endOffset": 15
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Extract this nested code block into a method.",
+        "effort": "10min",
+        "debt": "10min",
+        "assignee": "JEBailey@github",
+        "tags": [
+            "bad-practice"
+        ],
+        "creationDate": "2018-11-29T16:25:28+0100",
+        "updateDate": "2019-04-21T19:04:53+0200",
+        "type": "CODE_SMELL",
+        "organization": "apache"
+    },
+    "AXj0jhZKHdM9ii50k34y": {
+        "key": "AXj0jhZKHdM9ii50k34y",
+        "rule": "java:S1161",
+        "severity": "MAJOR",
+        "component": "apache_sling-org-apache-sling-scripting-core:src/main/java/org/apache/sling/scripting/core/impl/helper/ProtectedBindings.java",
+        "project": "apache_sling-org-apache-sling-scripting-core",
+        "line": 122,
+        "hash": "f0e4e594465fa017e8ced8355eed3681",
+        "textRange": {
+            "startLine": 122,
+            "endLine": 122,
+            "startOffset": 15,
+            "endOffset": 19
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Add the \"@Override\" annotation above this method signature",
+        "effort": "5min",
+        "debt": "5min",
+        "tags": [],
+        "creationDate": "2010-01-25T20:31:55+0100",
+        "updateDate": "2021-04-21T15:10:24+0200",
+        "type": "CODE_SMELL",
+        "organization": "apache"
+    },
+    "AXj0jhZKHdM9ii50k34w": {
+        "key": "AXj0jhZKHdM9ii50k34w",
+        "rule": "java:S1161",
+        "severity": "MAJOR",
+        "component": "apache_sling-org-apache-sling-scripting-core:src/main/java/org/apache/sling/scripting/core/impl/helper/ProtectedBindings.java",
+        "project": "apache_sling-org-apache-sling-scripting-core",
+        "line": 104,
+        "hash": "22950d651957593bf39ea61b7dba5a9f",
+        "textRange": {
+            "startLine": 104,
+            "endLine": 104,
+            "startOffset": 19,
+            "endOffset": 26
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Add the \"@Override\" annotation above this method signature",
+        "effort": "5min",
+        "debt": "5min",
+        "tags": [],
+        "creationDate": "2010-01-25T20:31:55+0100",
+        "updateDate": "2021-04-21T15:10:24+0200",
+        "type": "CODE_SMELL",
+        "organization": "apache"
+    },
+    "AXj0jhZKHdM9ii50k34u": {
+        "key": "AXj0jhZKHdM9ii50k34u",
+        "rule": "java:S1161",
+        "severity": "MAJOR",
+        "component": "apache_sling-org-apache-sling-scripting-core:src/main/java/org/apache/sling/scripting/core/impl/helper/ProtectedBindings.java",
+        "project": "apache_sling-org-apache-sling-scripting-core",
+        "line": 86,
+        "hash": "1309cf7af353090497c14c7a32f484ac",
+        "textRange": {
+            "startLine": 86,
+            "endLine": 86,
+            "startOffset": 19,
+            "endOffset": 32
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Add the \"@Override\" annotation above this method signature",
+        "effort": "5min",
+        "debt": "5min",
+        "tags": [],
+        "creationDate": "2010-01-25T20:31:55+0100",
+        "updateDate": "2021-04-21T15:10:24+0200",
+        "type": "CODE_SMELL",
+        "organization": "apache"
+    },
+    "AXj0jhZKHdM9ii50k34t": {
+        "key": "AXj0jhZKHdM9ii50k34t",
+        "rule": "java:S1161",
+        "severity": "MAJOR",
+        "component": "apache_sling-org-apache-sling-scripting-core:src/main/java/org/apache/sling/scripting/core/impl/helper/ProtectedBindings.java",
+        "project": "apache_sling-org-apache-sling-scripting-core",
+        "line": 79,
+        "hash": "0b985b42726a6e711d6165cd8ed56b94",
+        "textRange": {
+            "startLine": 79,
+            "endLine": 79,
+            "startOffset": 16,
+            "endOffset": 21
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Add the \"@Override\" annotation above this method signature",
+        "effort": "5min",
+        "debt": "5min",
+        "tags": [],
+        "creationDate": "2010-01-25T20:31:55+0100",
+        "updateDate": "2021-04-21T15:10:24+0200",
+        "type": "CODE_SMELL",
+        "organization": "apache"
+    },
+    "AXj0jhZKHdM9ii50k34s": {
+        "key": "AXj0jhZKHdM9ii50k34s",
+        "rule": "java:S1161",
+        "severity": "MAJOR",
+        "component": "apache_sling-org-apache-sling-scripting-core:src/main/java/org/apache/sling/scripting/core/impl/helper/ProtectedBindings.java",
+        "project": "apache_sling-org-apache-sling-scripting-core",
+        "line": 69,
+        "hash": "bcc46710b7042704b20fc42c75b46d4a",
+        "textRange": {
+            "startLine": 69,
+            "endLine": 69,
+            "startOffset": 18,
+            "endOffset": 24
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Add the \"@Override\" annotation above this method signature",
+        "effort": "5min",
+        "debt": "5min",
+        "tags": [],
+        "creationDate": "2010-01-25T20:31:55+0100",
+        "updateDate": "2021-04-21T15:10:24+0200",
+        "type": "CODE_SMELL",
+        "organization": "apache"
+    },
+    "AWo7GjmQyRjJygCrME5m": {
+        "key": "AWo7GjmQyRjJygCrME5m",
+        "rule": "java:S1118",
+        "severity": "MAJOR",
+        "component": "apache_sling-org-apache-sling-scripting-sightly-compiler:src/main/java/org/apache/sling/scripting/sightly/impl/compiler/util/stream/Streams.java",
+        "project": "apache_sling-org-apache-sling-scripting-sightly-compiler",
+        "line": 28,
+        "hash": "a3b15deeed7b8c6e6568e6db324c99da",
+        "textRange": {
+            "startLine": 28,
+            "endLine": 28,
+            "startOffset": 13,
+            "endOffset": 20
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Add a private constructor to hide the implicit public one.",
+        "effort": "5min",
+        "debt": "5min",
+        "tags": [
+            "design"
+        ],
+        "creationDate": "2016-06-16T18:07:57+0200",
+        "updateDate": "2019-04-20T16:15:13+0200",
+        "type": "CODE_SMELL",
+        "organization": "apache"
+    },
+    "AWo7GjmNyRjJygCrME5k": {
+        "key": "AWo7GjmNyRjJygCrME5k",
+        "rule": "java:S112",
+        "severity": "MAJOR",
+        "component": "apache_sling-org-apache-sling-scripting-sightly-compiler:src/main/java/org/apache/sling/scripting/sightly/impl/compiler/util/stream/VisitorHandler.java",
+        "project": "apache_sling-org-apache-sling-scripting-sightly-compiler",
+        "line": 43,
+        "hash": "0f75d2f1de6dffb3d0634c3082530cb1",
+        "textRange": {
+            "startLine": 43,
+            "endLine": 43,
+            "startOffset": 18,
+            "endOffset": 34
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Define and throw a dedicated exception instead of using a generic one.",
+        "effort": "20min",
+        "debt": "20min",
+        "tags": [
+            "cert",
+            "cwe",
+            "error-handling"
+        ],
+        "creationDate": "2016-06-16T18:07:57+0200",
+        "updateDate": "2019-04-20T16:15:13+0200",
+        "type": "CODE_SMELL",
+        "organization": "apache"
+    },
+    "AWo7GjmJyRjJygCrME5j": {
+        "key": "AWo7GjmJyRjJygCrME5j",
+        "rule": "java:S1118",
+        "severity": "MAJOR",
+        "component": "apache_sling-org-apache-sling-scripting-sightly-compiler:src/main/java/org/apache/sling/scripting/sightly/impl/compiler/Syntax.java",
+        "project": "apache_sling-org-apache-sling-scripting-sightly-compiler",
+        "line": 28,
+        "hash": "3149b6f3bf8c106397c38dfa5603faeb",
+        "textRange": {
+            "startLine": 28,
+            "endLine": 28,
+            "startOffset": 13,
+            "endOffset": 19
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Add a private constructor to hide the implicit public one.",
+        "effort": "5min",
+        "debt": "5min",
+        "tags": [
+            "design"
+        ],
+        "creationDate": "2016-06-16T18:07:57+0200",
+        "updateDate": "2019-04-20T16:15:13+0200",
+        "type": "CODE_SMELL",
+        "organization": "apache"
+    },
+    "AWo7GjmGyRjJygCrME5i": {
+        "key": "AWo7GjmGyRjJygCrME5i",
+        "rule": "java:S1118",
+        "severity": "MAJOR",
+        "component": "apache_sling-org-apache-sling-scripting-sightly-compiler:src/main/java/org/apache/sling/scripting/sightly/impl/compiler/Patterns.java",
+        "project": "apache_sling-org-apache-sling-scripting-sightly-compiler",
+        "line": 28,
+        "hash": "3d6be79d42ebdb4220b1f0526f5d60be",
+        "textRange": {
+            "startLine": 28,
+            "endLine": 28,
+            "startOffset": 19,
+            "endOffset": 27
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Add a private constructor to hide the implicit public one.",
+        "effort": "5min",
+        "debt": "5min",
+        "tags": [
+            "design"
+        ],
+        "creationDate": "2016-06-16T18:07:57+0200",
+        "updateDate": "2019-04-20T16:15:13+0200",
+        "type": "CODE_SMELL",
+        "organization": "apache"
+    },
+    "AWo7GjlzyRjJygCrME5e": {
+        "key": "AWo7GjlzyRjJygCrME5e",
+        "rule": "java:S1118",
+        "severity": "MAJOR",
+        "component": "apache_sling-org-apache-sling-scripting-sightly-compiler:src/main/java/org/apache/sling/scripting/sightly/impl/compiler/frontend/ParserHelper.java",
+        "project": "apache_sling-org-apache-sling-scripting-sightly-compiler",
+        "line": 27,
+        "hash": "58a9632c655fd04282bd280d40110e1d",
+        "textRange": {
+            "startLine": 27,
+            "endLine": 27,
+            "startOffset": 13,
+            "endOffset": 25
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Add a private constructor to hide the implicit public one.",
+        "effort": "5min",
+        "debt": "5min",
+        "tags": [
+            "design"
+        ],
+        "creationDate": "2016-06-16T18:07:57+0200",
+        "updateDate": "2019-04-20T16:15:13+0200",
+        "type": "CODE_SMELL",
+        "organization": "apache"
+    },
+    "AWpA29ZyYsUHy63ni7CP": {
+        "key": "AWpA29ZyYsUHy63ni7CP",
+        "rule": "java:S1165",
+        "severity": "MINOR",
+        "component": "apache_sling-org-apache-sling-commons-html:src/main/java/org/apache/sling/commons/html/impl/parser/ParseException.java",
+        "project": "apache_sling-org-apache-sling-commons-html",
+        "line": 65,
+        "hash": "26c8fc15d27f54f8ac8875077722a290",
+        "textRange": {
+            "startLine": 65,
+            "endLine": 65,
+            "startOffset": 15,
+            "endOffset": 27
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Make this \"currentToken\" field final.",
+        "effort": "15min",
+        "debt": "15min",
+        "assignee": "JEBailey@github",
+        "tags": [
+            "error-handling"
+        ],
+        "creationDate": "2018-11-29T16:25:28+0100",
+        "updateDate": "2019-04-21T19:04:53+0200",
+        "type": "CODE_SMELL",
+        "organization": "apache"
+    },
+    "AWpA29ZyYsUHy63ni7CO": {
+        "key": "AWpA29ZyYsUHy63ni7CO",
+        "rule": "java:S1104",
+        "severity": "MINOR",
+        "component": "apache_sling-org-apache-sling-commons-html:src/main/java/org/apache/sling/commons/html/impl/parser/ParseException.java",
+        "project": "apache_sling-org-apache-sling-commons-html",
+        "line": 79,
+        "hash": "eea3b24de31854a92125b31498f28888",
+        "textRange": {
+            "startLine": 79,
+            "endLine": 79,
+            "startOffset": 18,
+            "endOffset": 28
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Make tokenImage a static final constant or non-public and provide accessors if needed.",
+        "effort": "10min",
+        "debt": "10min",
+        "assignee": "JEBailey@github",
+        "tags": [
+            "cwe"
+        ],
+        "creationDate": "2018-11-29T16:25:28+0100",
+        "updateDate": "2019-04-21T19:04:53+0200",
+        "type": "VULNERABILITY",
+        "organization": "apache"
+    },
+    "AWpA29ZyYsUHy63ni7CN": {
+        "key": "AWpA29ZyYsUHy63ni7CN",
+        "rule": "java:S1104",
+        "severity": "MINOR",
+        "component": "apache_sling-org-apache-sling-commons-html:src/main/java/org/apache/sling/commons/html/impl/parser/ParseException.java",
+        "project": "apache_sling-org-apache-sling-commons-html",
+        "line": 72,
+        "hash": "394e25dc102792b982b7accf4ca1c958",
+        "textRange": {
+            "startLine": 72,
+            "endLine": 72,
+            "startOffset": 17,
+            "endOffset": 39
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Make expectedTokenSequences a static final constant or non-public and provide accessors if needed.",
+        "effort": "10min",
+        "debt": "10min",
+        "assignee": "JEBailey@github",
+        "tags": [
+            "cwe"
+        ],
+        "creationDate": "2018-11-29T16:25:28+0100",
+        "updateDate": "2019-04-21T19:04:53+0200",
+        "type": "VULNERABILITY",
+        "organization": "apache"
+    },
+    "AWpA29ZyYsUHy63ni7CM": {
+        "key": "AWpA29ZyYsUHy63ni7CM",
+        "rule": "java:S1104",
+        "severity": "MINOR",
+        "component": "apache_sling-org-apache-sling-commons-html:src/main/java/org/apache/sling/commons/html/impl/parser/ParseException.java",
+        "project": "apache_sling-org-apache-sling-commons-html",
+        "line": 65,
+        "hash": "26c8fc15d27f54f8ac8875077722a290",
+        "textRange": {
+            "startLine": 65,
+            "endLine": 65,
+            "startOffset": 15,
+            "endOffset": 27
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Make currentToken a static final constant or non-public and provide accessors if needed.",
+        "effort": "10min",
+        "debt": "10min",
+        "assignee": "JEBailey@github",
+        "tags": [
+            "cwe"
+        ],
+        "creationDate": "2018-11-29T16:25:28+0100",
+        "updateDate": "2019-04-21T19:04:53+0200",
+        "type": "VULNERABILITY",
+        "organization": "apache"
+    },
+    "AWpA29aUYsUHy63ni7DM": {
+        "key": "AWpA29aUYsUHy63ni7DM",
+        "rule": "java:S2386",
+        "severity": "MINOR",
+        "component": "apache_sling-org-apache-sling-commons-html:src/main/java/org/apache/sling/commons/html/impl/parser/TagParserTokenManager.java",
+        "project": "apache_sling-org-apache-sling-commons-html",
+        "line": 875,
+        "hash": "66bfd795f8546b62d639b445475e5925",
+        "textRange": {
+            "startLine": 875,
+            "endLine": 875,
+            "startOffset": 26,
+            "endOffset": 39
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Make this member \"protected\".",
+        "effort": "15min",
+        "debt": "15min",
+        "assignee": "JEBailey@github",
+        "tags": [
+            "cert",
+            "cwe",
+            "unpredictable"
+        ],
+        "creationDate": "2018-11-29T16:25:28+0100",
+        "updateDate": "2019-04-21T19:04:53+0200",
+        "type": "VULNERABILITY",
+        "organization": "apache"
+    },
+    "AWpA29aUYsUHy63ni7DL": {
+        "key": "AWpA29aUYsUHy63ni7DL",
+        "rule": "java:S2386",
+        "severity": "MINOR",
+        "component": "apache_sling-org-apache-sling-commons-html:src/main/java/org/apache/sling/commons/html/impl/parser/TagParserTokenManager.java",
+        "project": "apache_sling-org-apache-sling-commons-html",
+        "line": 864,
+        "hash": "df4f3232c95e28b8c93b74a3ec5f3c1f",
+        "textRange": {
+            "startLine": 864,
+            "endLine": 864,
+            "startOffset": 29,
+            "endOffset": 42
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Make this member \"protected\".",
+        "effort": "15min",
+        "debt": "15min",
+        "assignee": "JEBailey@github",
+        "tags": [
+            "cert",
+            "cwe",
+            "unpredictable"
+        ],
+        "creationDate": "2018-11-29T16:25:28+0100",
+        "updateDate": "2019-04-21T19:04:53+0200",
+        "type": "VULNERABILITY",
+        "organization": "apache"
+    },
+    "AWpA29aUYsUHy63ni7DK": {
+        "key": "AWpA29aUYsUHy63ni7DK",
+        "rule": "java:S2386",
+        "severity": "MINOR",
+        "component": "apache_sling-org-apache-sling-commons-html:src/main/java/org/apache/sling/commons/html/impl/parser/TagParserTokenManager.java",
+        "project": "apache_sling-org-apache-sling-commons-html",
+        "line": 858,
+        "hash": "05b89f05f831dbdd5e1b12811dacfe76",
+        "textRange": {
+            "startLine": 858,
+            "endLine": 858,
+            "startOffset": 29,
+            "endOffset": 47
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Make this member \"protected\".",
+        "effort": "15min",
+        "debt": "15min",
+        "assignee": "JEBailey@github",
+        "tags": [
+            "cert",
+            "cwe",
+            "unpredictable"
+        ],
+        "creationDate": "2018-11-29T16:25:28+0100",
+        "updateDate": "2019-04-21T19:04:53+0200",
+        "type": "VULNERABILITY",
+        "organization": "apache"
+    },
+    "AWpA29aUYsUHy63ni7DE": {
+        "key": "AWpA29aUYsUHy63ni7DE",
+        "rule": "java:S112",
+        "severity": "MAJOR",
+        "component": "apache_sling-org-apache-sling-commons-html:src/main/java/org/apache/sling/commons/html/impl/parser/TagParserTokenManager.java",
+        "project": "apache_sling-org-apache-sling-commons-html",
+        "line": 899,
+        "hash": "cae54daaa981929a19ac1aeae3987dcb",
+        "textRange": {
+            "startLine": 899,
+            "endLine": 899,
+            "startOffset": 16,
+            "endOffset": 21
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Define and throw a dedicated exception instead of using a generic one.",
+        "effort": "20min",
+        "debt": "20min",
+        "assignee": "JEBailey@github",
+        "tags": [
+            "cert",
+            "cwe",
+            "error-handling"
+        ],
+        "creationDate": "2018-11-29T16:25:28+0100",
+        "updateDate": "2019-04-21T19:04:53+0200",
+        "type": "CODE_SMELL",
+        "organization": "apache"
+    },
+    "AWoxE-X9yRjJygCrMpZd": {
+        "key": "AWoxE-X9yRjJygCrMpZd",
+        "rule": "java:S1104",
+        "severity": "MINOR",
+        "component": "apache_sling-org-apache-sling-commons-scheduler:src/main/java/org/apache/sling/commons/scheduler/impl/WebConsolePrinter.java",
+        "project": "apache_sling-org-apache-sling-commons-scheduler",
+        "line": 68,
+        "hash": "03f16daf94c8ff4b8e7ce4c64bcee19f",
+        "textRange": {
+            "startLine": 68,
+            "endLine": 68,
+            "startOffset": 20,
+            "endOffset": 29
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Make serviceId a static final constant or non-public and provide accessors if needed.",
+        "effort": "10min",
+        "debt": "10min",
+        "tags": [
+            "cwe"
+        ],
+        "creationDate": "2017-05-05T10:00:47+0200",
+        "updateDate": "2019-04-18T17:32:03+0200",
+        "type": "VULNERABILITY",
+        "organization": "apache"
+    },
+    "AWoxE-X9yRjJygCrMpZc": {
+        "key": "AWoxE-X9yRjJygCrMpZc",
+        "rule": "java:S1104",
+        "severity": "MINOR",
+        "component": "apache_sling-org-apache-sling-commons-scheduler:src/main/java/org/apache/sling/commons/scheduler/impl/WebConsolePrinter.java",
+        "project": "apache_sling-org-apache-sling-commons-scheduler",
+        "line": 67,
+        "hash": "160ac2f05695f4ed9b6b350aa09bd825",
+        "textRange": {
+            "startLine": 67,
+            "endLine": 67,
+            "startOffset": 20,
+            "endOffset": 28
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Make bundleId a static final constant or non-public and provide accessors if needed.",
+        "effort": "10min",
+        "debt": "10min",
+        "tags": [
+            "cwe"
+        ],
+        "creationDate": "2017-05-05T10:00:47+0200",
+        "updateDate": "2019-04-18T17:32:03+0200",
+        "type": "VULNERABILITY",
+        "organization": "apache"
+    },
+    "AWoxE-X9yRjJygCrMpZb": {
+        "key": "AWoxE-X9yRjJygCrMpZb",
+        "rule": "java:S1104",
+        "severity": "MINOR",
+        "component": "apache_sling-org-apache-sling-commons-scheduler:src/main/java/org/apache/sling/commons/scheduler/impl/WebConsolePrinter.java",
+        "project": "apache_sling-org-apache-sling-commons-scheduler",
+        "line": 66,
+        "hash": "66b98d424bf1e6c2cdb2c88e46414e3a",
+        "textRange": {
+            "startLine": 66,
+            "endLine": 66,
+            "startOffset": 24,
+            "endOffset": 32
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Make triggers a static final constant or non-public and provide accessors if needed.",
+        "effort": "10min",
+        "debt": "10min",
+        "tags": [
+            "cwe"
+        ],
+        "creationDate": "2017-05-05T10:00:47+0200",
+        "updateDate": "2019-04-18T17:32:03+0200",
+        "type": "VULNERABILITY",
+        "organization": "apache"
+    },
+    "AWoxE-X9yRjJygCrMpZa": {
+        "key": "AWoxE-X9yRjJygCrMpZa",
+        "rule": "java:S1104",
+        "severity": "MINOR",
+        "component": "apache_sling-org-apache-sling-commons-scheduler:src/main/java/org/apache/sling/commons/scheduler/impl/WebConsolePrinter.java",
+        "project": "apache_sling-org-apache-sling-commons-scheduler",
+        "line": 65,
+        "hash": "df0c582add99b5873e5b3c9445d9afd9",
+        "textRange": {
+            "startLine": 65,
+            "endLine": 65,
+            "startOffset": 22,
+            "endOffset": 27
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Make runOn a static final constant or non-public and provide accessors if needed.",
+        "effort": "10min",
+        "debt": "10min",
+        "tags": [
+            "cwe"
+        ],
+        "creationDate": "2017-05-05T10:00:47+0200",
+        "updateDate": "2019-04-18T17:32:03+0200",
+        "type": "VULNERABILITY",
+        "organization": "apache"
+    },
+    "AWoxE-X9yRjJygCrMpZZ": {
+        "key": "AWoxE-X9yRjJygCrMpZZ",
+        "rule": "java:S1104",
+        "severity": "MINOR",
+        "component": "apache_sling-org-apache-sling-commons-scheduler:src/main/java/org/apache/sling/commons/scheduler/impl/WebConsolePrinter.java",
+        "project": "apache_sling-org-apache-sling-commons-scheduler",
+        "line": 64,
+        "hash": "1c665ab9cc579564c580a53f14d4537d",
+        "textRange": {
+            "startLine": 64,
+            "endLine": 64,
+            "startOffset": 23,
+            "endOffset": 33
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Make concurrent a static final constant or non-public and provide accessors if needed.",
+        "effort": "10min",
+        "debt": "10min",
+        "tags": [
+            "cwe"
+        ],
+        "creationDate": "2017-05-05T10:00:47+0200",
+        "updateDate": "2019-04-18T17:32:03+0200",
+        "type": "VULNERABILITY",
+        "organization": "apache"
+    },
+    "AWotoSil1vprPG4YoJ50": {
+        "key": "AWotoSil1vprPG4YoJ50",
+        "rule": "java:S1118",
+        "severity": "MAJOR",
+        "component": "apache_sling-org-apache-sling-scripting-sightly:src/main/java/org/apache/sling/scripting/sightly/impl/utils/BindingsUtils.java",
+        "project": "apache_sling-org-apache-sling-scripting-sightly",
+        "line": 32,
+        "hash": "7958df6a211c03331538119f94de4d48",
+        "textRange": {
+            "startLine": 32,
+            "endLine": 32,
+            "startOffset": 13,
+            "endOffset": 26
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Add a private constructor to hide the implicit public one.",
+        "effort": "5min",
+        "debt": "5min",
+        "tags": [
+            "design"
+        ],
+        "creationDate": "2015-11-27T12:30:49+0100",
+        "updateDate": "2019-04-18T01:27:48+0200",
+        "type": "CODE_SMELL",
+        "organization": "apache"
+    },
+    "AWoxUg4VYsUHy63nTjlw": {
+        "key": "AWoxUg4VYsUHy63nTjlw",
+        "rule": "java:S1133",
+        "severity": "INFO",
+        "component": "apache_sling-org-apache-sling-scripting-java:src/main/java/org/apache/sling/scripting/java/impl/JavaServletContext.java",
+        "project": "apache_sling-org-apache-sling-scripting-java",
+        "line": 285,
+        "hash": "ce1486a1e2c6f95dc459c4a1216293f3",
+        "textRange": {
+            "startLine": 285,
+            "endLine": 285,
+            "startOffset": 32,
+            "endOffset": 43
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Do not forget to remove this deprecated code someday.",
+        "effort": "10min",
+        "debt": "10min",
+        "tags": [
+            "obsolete"
+        ],
+        "creationDate": "2016-10-05T15:08:15+0200",
+        "updateDate": "2019-04-18T18:40:10+0200",
+        "type": "CODE_SMELL",
+        "organization": "apache"
+    },
+    "AWoxUg4VYsUHy63nTjlu": {
+        "key": "AWoxUg4VYsUHy63nTjlu",
+        "rule": "java:S1133",
+        "severity": "INFO",
+        "component": "apache_sling-org-apache-sling-scripting-java:src/main/java/org/apache/sling/scripting/java/impl/JavaServletContext.java",
+        "project": "apache_sling-org-apache-sling-scripting-java",
+        "line": 276,
+        "hash": "8008a274806bba4afc51da3b427852f4",
+        "textRange": {
+            "startLine": 276,
+            "endLine": 276,
+            "startOffset": 31,
+            "endOffset": 46
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Do not forget to remove this deprecated code someday.",
+        "effort": "10min",
+        "debt": "10min",
+        "tags": [
+            "obsolete"
+        ],
+        "creationDate": "2016-10-05T15:08:15+0200",
+        "updateDate": "2019-04-18T18:40:10+0200",
+        "type": "CODE_SMELL",
+        "organization": "apache"
+    },
+    "AWo7GjnxyRjJygCrME6Z": {
+        "key": "AWo7GjnxyRjJygCrME6Z",
+        "rule": "java:S1118",
+        "severity": "MAJOR",
+        "component": "apache_sling-org-apache-sling-scripting-sightly-compiler:src/main/java/org/apache/sling/scripting/sightly/impl/html/MarkupUtils.java",
+        "project": "apache_sling-org-apache-sling-scripting-sightly-compiler",
+        "line": 26,
+        "hash": "81882ae8178cf17c831b108d09fb0fd8",
+        "textRange": {
+            "startLine": 26,
+            "endLine": 26,
+            "startOffset": 13,
+            "endOffset": 24
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Add a private constructor to hide the implicit public one.",
+        "effort": "5min",
+        "debt": "5min",
+        "tags": [
+            "design"
+        ],
+        "creationDate": "2016-06-16T18:07:57+0200",
+        "updateDate": "2019-04-20T16:15:13+0200",
+        "type": "CODE_SMELL",
+        "organization": "apache"
+    },
+    "AWoxE-X9yRjJygCrMpZY": {
+        "key": "AWoxE-X9yRjJygCrMpZY",
+        "rule": "java:S1104",
+        "severity": "MINOR",
+        "component": "apache_sling-org-apache-sling-commons-scheduler:src/main/java/org/apache/sling/commons/scheduler/impl/WebConsolePrinter.java",
+        "project": "apache_sling-org-apache-sling-commons-scheduler",
+        "line": 63,
+        "hash": "2e3a925df54272de75922655083a87fe",
+        "textRange": {
+            "startLine": 63,
+            "endLine": 63,
+            "startOffset": 22,
+            "endOffset": 28
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Make reason a static final constant or non-public and provide accessors if needed.",
+        "effort": "10min",
+        "debt": "10min",
+        "tags": [
+            "cwe"
+        ],
+        "creationDate": "2017-05-05T10:00:47+0200",
+        "updateDate": "2019-04-18T17:32:03+0200",
+        "type": "VULNERABILITY",
+        "organization": "apache"
+    },
+    "AWoxE-X9yRjJygCrMpZX": {
+        "key": "AWoxE-X9yRjJygCrMpZX",
+        "rule": "java:S1104",
+        "severity": "MINOR",
+        "component": "apache_sling-org-apache-sling-commons-scheduler:src/main/java/org/apache/sling/commons/scheduler/impl/WebConsolePrinter.java",
+        "project": "apache_sling-org-apache-sling-commons-scheduler",
+        "line": 62,
+        "hash": "ce2ea66b1d2db3520c7c27026c72f1a8",
+        "textRange": {
+            "startLine": 62,
+            "endLine": 62,
+            "startOffset": 22,
+            "endOffset": 33
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Make description a static final constant or non-public and provide accessors if needed.",
+        "effort": "10min",
+        "debt": "10min",
+        "tags": [
+            "cwe"
+        ],
+        "creationDate": "2017-05-05T10:00:47+0200",
+        "updateDate": "2019-04-18T17:32:03+0200",
+        "type": "VULNERABILITY",
+        "organization": "apache"
+    },
+    "AWoxE-X9yRjJygCrMpZW": {
+        "key": "AWoxE-X9yRjJygCrMpZW",
+        "rule": "java:S1104",
+        "severity": "MINOR",
+        "component": "apache_sling-org-apache-sling-commons-scheduler:src/main/java/org/apache/sling/commons/scheduler/impl/WebConsolePrinter.java",
+        "project": "apache_sling-org-apache-sling-commons-scheduler",
+        "line": 61,
+        "hash": "868d31c10a710a0df272dc0ea267b5a9",
+        "textRange": {
+            "startLine": 61,
+            "endLine": 61,
+            "startOffset": 22,
+            "endOffset": 31
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Make className a static final constant or non-public and provide accessors if needed.",
+        "effort": "10min",
+        "debt": "10min",
+        "tags": [
+            "cwe"
+        ],
+        "creationDate": "2017-05-05T10:00:47+0200",
+        "updateDate": "2019-04-18T17:32:03+0200",
+        "type": "VULNERABILITY",
+        "organization": "apache"
+    },
+    "AWoxE-X9yRjJygCrMpZV": {
+        "key": "AWoxE-X9yRjJygCrMpZV",
+        "rule": "java:S1104",
+        "severity": "MINOR",
+        "component": "apache_sling-org-apache-sling-commons-scheduler:src/main/java/org/apache/sling/commons/scheduler/impl/WebConsolePrinter.java",
+        "project": "apache_sling-org-apache-sling-commons-scheduler",
+        "line": 60,
+        "hash": "d29eb809cd7e712070b86a449a5f2e82",
+        "textRange": {
+            "startLine": 60,
+            "endLine": 60,
+            "startOffset": 22,
+            "endOffset": 26
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Make name a static final constant or non-public and provide accessors if needed.",
+        "effort": "10min",
+        "debt": "10min",
+        "tags": [
+            "cwe"
+        ],
+        "creationDate": "2017-05-05T10:00:47+0200",
+        "updateDate": "2019-04-18T17:32:03+0200",
+        "type": "VULNERABILITY",
+        "organization": "apache"
+    },
+    "AWoxE-XCyRjJygCrMpYJ": {
+        "key": "AWoxE-XCyRjJygCrMpYJ",
+        "rule": "java:S1104",
+        "severity": "MINOR",
+        "component": "apache_sling-org-apache-sling-commons-scheduler:src/main/java/org/apache/sling/commons/scheduler/impl/InternalScheduleOptions.java",
+        "project": "apache_sling-org-apache-sling-commons-scheduler",
+        "line": 37,
+        "hash": "3a5af531c1b4f2d471679f5ec8e63f61",
+        "textRange": {
+            "startLine": 37,
+            "endLine": 37,
+            "startOffset": 18,
+            "endOffset": 30
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Make providedName a static final constant or non-public and provide accessors if needed.",
+        "effort": "10min",
+        "debt": "10min",
+        "tags": [
+            "cwe"
+        ],
+        "creationDate": "2017-05-02T11:31:13+0200",
+        "updateDate": "2019-04-18T17:32:03+0200",
+        "type": "VULNERABILITY",
+        "organization": "apache"
+    },
+    "AWpA29apYsUHy63ni7Ep": {
+        "key": "AWpA29apYsUHy63ni7Ep",
+        "rule": "java:S1133",
+        "severity": "INFO",
+        "component": "apache_sling-org-apache-sling-commons-html:src/main/java/org/apache/sling/commons/html/impl/parser/SimpleCharStream.java",
+        "project": "apache_sling-org-apache-sling-commons-html",
+        "line": 220,
+        "hash": "638c82f5f6e1b8e53798d73c00760f12",
+        "textRange": {
+            "startLine": 220,
+            "endLine": 220,
+            "startOffset": 13,
+            "endOffset": 20
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Do not forget to remove this deprecated code someday.",
+        "effort": "10min",
+        "debt": "10min",
+        "assignee": "JEBailey@github",
+        "tags": [
+            "obsolete"
+        ],
+        "creationDate": "2018-11-29T16:25:28+0100",
+        "updateDate": "2019-04-21T19:04:53+0200",
+        "type": "CODE_SMELL",
+        "organization": "apache"
+    },
+    "AWo7GjpryRjJygCrME7Q": {
+        "key": "AWo7GjpryRjJygCrME7Q",
+        "rule": "java:S1133",
+        "severity": "INFO",
+        "component": "apache_sling-org-apache-sling-scripting-sightly-compiler:src/main/java/org/apache/sling/scripting/sightly/compiler/util/ObjectModel.java",
+        "project": "apache_sling-org-apache-sling-scripting-sightly-compiler",
+        "line": 45,
+        "hash": "9adfb9eaa127cc59aa79d437f27000b9",
+        "textRange": {
+            "startLine": 45,
+            "endLine": 45,
+            "startOffset": 19,
+            "endOffset": 30
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Do not forget to remove this deprecated code someday.",
+        "effort": "10min",
+        "debt": "10min",
+        "tags": [
+            "obsolete"
+        ],
+        "creationDate": "2017-08-25T14:50:08+0200",
+        "updateDate": "2019-04-20T16:15:13+0200",
+        "type": "CODE_SMELL",
+        "organization": "apache"
+    },
+    "AXB8jIVIAB8yzY3rQEFO": {
+        "key": "AXB8jIVIAB8yzY3rQEFO",
+        "rule": "java:S1133",
+        "severity": "INFO",
+        "component": "apache_sling-org-apache-sling-scripting-sightly-compiler-java:src/main/java/org/apache/sling/scripting/sightly/java/compiler/JavaEscapeUtils.java",
+        "project": "apache_sling-org-apache-sling-scripting-sightly-compiler-java",
+        "line": 28,
+        "hash": "ceec618768476076e95ccffc87c0790c",
+        "textRange": {
+            "startLine": 28,
+            "endLine": 28,
+            "startOffset": 13,
+            "endOffset": 28
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Do not forget to remove this deprecated code someday.",
+        "effort": "10min",
+        "debt": "10min",
+        "tags": [
+            "obsolete"
+        ],
+        "creationDate": "2020-02-25T14:32:09+0100",
+        "updateDate": "2020-02-25T14:32:09+0100",
+        "type": "CODE_SMELL",
+        "organization": "apache"
+    },
+    "AWo7Gl5yyRjJygCrMGGm": {
+        "key": "AWo7Gl5yyRjJygCrMGGm",
+        "rule": "java:S1118",
+        "severity": "MAJOR",
+        "component": "apache_sling-org-apache-sling-scripting-sightly-compiler-java:src/main/java/org/apache/sling/scripting/sightly/java/compiler/JavaEscapeUtils.java",
+        "project": "apache_sling-org-apache-sling-scripting-sightly-compiler-java",
+        "line": 28,
+        "hash": "ceec618768476076e95ccffc87c0790c",
+        "textRange": {
+            "startLine": 28,
+            "endLine": 28,
+            "startOffset": 13,
+            "endOffset": 28
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Add a private constructor to hide the implicit public one.",
+        "effort": "5min",
+        "debt": "5min",
+        "tags": [
+            "design"
+        ],
+        "creationDate": "2016-10-06T18:44:00+0200",
+        "updateDate": "2019-04-20T16:15:32+0200",
+        "type": "CODE_SMELL",
+        "organization": "apache"
+    },
+    "AWoxE-XCyRjJygCrMpYN": {
+        "key": "AWoxE-XCyRjJygCrMpYN",
+        "rule": "java:S1104",
+        "severity": "MINOR",
+        "component": "apache_sling-org-apache-sling-commons-scheduler:src/main/java/org/apache/sling/commons/scheduler/impl/InternalScheduleOptions.java",
+        "project": "apache_sling-org-apache-sling-commons-scheduler",
+        "line": 45,
+        "hash": "53c207769417d37b27556182da84bc41",
+        "textRange": {
+            "startLine": 45,
+            "endLine": 45,
+            "startOffset": 37,
+            "endOffset": 50
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Make configuration a static final constant or non-public and provide accessors if needed.",
+        "effort": "10min",
+        "debt": "10min",
+        "tags": [
+            "cwe"
+        ],
+        "creationDate": "2013-07-26T09:57:29+0200",
+        "updateDate": "2019-04-18T17:32:03+0200",
+        "type": "VULNERABILITY",
+        "organization": "apache"
+    },
+    "AWpA29axYsUHy63ni7FC": {
+        "key": "AWpA29axYsUHy63ni7FC",
+        "rule": "java:S1199",
+        "severity": "MINOR",
+        "component": "apache_sling-org-apache-sling-commons-html:src/main/java/org/apache/sling/commons/html/impl/parser/TagParser.java",
+        "project": "apache_sling-org-apache-sling-commons-html",
+        "line": 123,
+        "hash": "3881fbec03cee9375adf75cc5e59377e",
+        "textRange": {
+            "startLine": 123,
+            "endLine": 123,
+            "startOffset": 5,
+            "endOffset": 6
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Extract this nested code block into a method.",
+        "effort": "10min",
+        "debt": "10min",
+        "assignee": "JEBailey@github",
+        "tags": [
+            "bad-practice"
+        ],
+        "creationDate": "2018-11-29T16:25:28+0100",
+        "updateDate": "2019-04-21T19:04:53+0200",
+        "type": "CODE_SMELL",
+        "organization": "apache"
+    },
+    "AWpA29axYsUHy63ni7E7": {
+        "key": "AWpA29axYsUHy63ni7E7",
+        "rule": "java:S1199",
+        "severity": "MINOR",
+        "component": "apache_sling-org-apache-sling-commons-html:src/main/java/org/apache/sling/commons/html/impl/parser/TagParser.java",
+        "project": "apache_sling-org-apache-sling-commons-html",
+        "line": 35,
+        "hash": "e2ad5bff200d9ff3168a049a77fb89bd",
+        "textRange": {
+            "startLine": 35,
+            "endLine": 35,
+            "startOffset": 28,
+            "endOffset": 29
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Extract this nested code block into a method.",
+        "effort": "10min",
+        "debt": "10min",
+        "assignee": "JEBailey@github",
+        "tags": [
+            "bad-practice"
+        ],
+        "creationDate": "2018-11-29T16:25:28+0100",
+        "updateDate": "2019-04-21T19:04:53+0200",
+        "type": "CODE_SMELL",
+        "organization": "apache"
+    },
+    "AWpA29axYsUHy63ni7FI": {
+        "key": "AWpA29axYsUHy63ni7FI",
+        "rule": "java:S1199",
+        "severity": "MINOR",
+        "component": "apache_sling-org-apache-sling-commons-html:src/main/java/org/apache/sling/commons/html/impl/parser/TagParser.java",
+        "project": "apache_sling-org-apache-sling-commons-html",
+        "line": 216,
+        "hash": "fef10d3499e0d3ca9d5ed39450dc3ac4",
+        "textRange": {
+            "startLine": 216,
+            "endLine": 216,
+            "startOffset": 6,
+            "endOffset": 7
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Extract this nested code block into a method.",
+        "effort": "10min",
+        "debt": "10min",
+        "assignee": "JEBailey@github",
+        "tags": [
+            "bad-practice"
+        ],
+        "creationDate": "2018-11-29T16:25:28+0100",
+        "updateDate": "2019-04-21T19:04:53+0200",
+        "type": "CODE_SMELL",
+        "organization": "apache"
+    },
+    "AWo7GjpxyRjJygCrME7W": {
+        "key": "AWo7GjpxyRjJygCrME7W",
+        "rule": "java:S1165",
+        "severity": "MINOR",
+        "component": "apache_sling-org-apache-sling-scripting-sightly-compiler:src/main/java/org/apache/sling/scripting/sightly/compiler/SightlyCompilerException.java",
+        "project": "apache_sling-org-apache-sling-scripting-sightly-compiler",
+        "line": 25,
+        "hash": "27426d6e0c0e0d159988bf5d4b334ef5",
+        "textRange": {
+            "startLine": 25,
+            "endLine": 25,
+            "startOffset": 16,
+            "endOffset": 20
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Make this \"line\" field final.",
+        "effort": "15min",
+        "debt": "15min",
+        "tags": [
+            "error-handling"
+        ],
+        "creationDate": "2018-06-12T16:35:38+0200",
+        "updateDate": "2019-04-20T16:15:13+0200",
+        "type": "CODE_SMELL",
+        "organization": "apache"
+    },
+    "AWox51-z-aLJxVkBYvu7": {
+        "key": "AWox51-z-aLJxVkBYvu7",
+        "rule": "java:S1161",
+        "severity": "MAJOR",
+        "component": "apache_sling-org-apache-sling-scripting-core:src/main/java/org/apache/sling/scripting/core/impl/InternalScriptHelper.java",
+        "project": "apache_sling-org-apache-sling-scripting-core",
+        "line": 53,
+        "hash": "630b9069a3ceb916b6fc268b0e758b9b",
+        "textRange": {
+            "startLine": 53,
+            "endLine": 53,
+            "startOffset": 37,
+            "endOffset": 47
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Add the \"@Override\" annotation above this method signature",
+        "effort": "5min",
+        "debt": "5min",
+        "tags": [
+            "bad-practice"
+        ],
+        "creationDate": "2010-04-09T16:02:31+0200",
+        "updateDate": "2019-04-18T21:23:10+0200",
+        "type": "CODE_SMELL",
+        "organization": "apache"
+    },
+    "AWox51_a-aLJxVkBYvvn": {
+        "key": "AWox51_a-aLJxVkBYvvn",
+        "rule": "java:S1133",
+        "severity": "INFO",
+        "component": "apache_sling-org-apache-sling-scripting-core:src/main/java/org/apache/sling/scripting/core/ScriptHelper.java",
+        "project": "apache_sling-org-apache-sling-scripting-core",
+        "line": 194,
+        "hash": "822b519c44c75864a6d63e225a932a17",
+        "textRange": {
+            "startLine": 194,
+            "endLine": 194,
+            "startOffset": 16,
+            "endOffset": 23
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Do not forget to remove this deprecated code someday.",
+        "effort": "10min",
+        "debt": "10min",
+        "tags": [
+            "obsolete"
+        ],
+        "creationDate": "2010-04-09T15:15:50+0200",
+        "updateDate": "2019-04-18T21:23:10+0200",
+        "type": "CODE_SMELL",
+        "organization": "apache"
+    },
+    "AWo7Gl5DyRjJygCrMGGT": {
+        "key": "AWo7Gl5DyRjJygCrMGGT",
+        "rule": "java:S1118",
+        "severity": "MAJOR",
+        "component": "apache_sling-org-apache-sling-scripting-sightly-compiler-java:src/main/java/org/apache/sling/scripting/sightly/java/compiler/impl/operator/OpHelper.java",
+        "project": "apache_sling-org-apache-sling-scripting-sightly-compiler-java",
+        "line": 25,
+        "hash": "c437e87658967375c6e920048594f9a6",
+        "textRange": {
+            "startLine": 25,
+            "endLine": 25,
+            "startOffset": 13,
+            "endOffset": 21
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Add a private constructor to hide the implicit public one.",
+        "effort": "5min",
+        "debt": "5min",
+        "tags": [
+            "design"
+        ],
+        "creationDate": "2016-06-16T18:07:57+0200",
+        "updateDate": "2019-04-20T16:15:32+0200",
+        "type": "CODE_SMELL",
+        "organization": "apache"
+    },
+    "AWo7Gl41yRjJygCrMGGQ": {
+        "key": "AWo7Gl41yRjJygCrMGGQ",
+        "rule": "java:S1118",
+        "severity": "MAJOR",
+        "component": "apache_sling-org-apache-sling-scripting-sightly-compiler-java:src/main/java/org/apache/sling/scripting/sightly/java/compiler/impl/operator/Operators.java",
+        "project": "apache_sling-org-apache-sling-scripting-sightly-compiler-java",
+        "line": 29,
+        "hash": "8db2454578ca1123f7687544a5cb79e5",
+        "textRange": {
+            "startLine": 29,
+            "endLine": 29,
+            "startOffset": 13,
+            "endOffset": 22
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Add a private constructor to hide the implicit public one.",
+        "effort": "5min",
+        "debt": "5min",
+        "tags": [
+            "design"
+        ],
+        "creationDate": "2016-06-16T18:07:57+0200",
+        "updateDate": "2019-04-20T16:15:32+0200",
+        "type": "CODE_SMELL",
+        "organization": "apache"
+    },
+    "AWo7Gl4dyRjJygCrMGGP": {
+        "key": "AWo7Gl4dyRjJygCrMGGP",
+        "rule": "java:S1118",
+        "severity": "MAJOR",
+        "component": "apache_sling-org-apache-sling-scripting-sightly-compiler-java:src/main/java/org/apache/sling/scripting/sightly/java/compiler/impl/GenHelper.java",
+        "project": "apache_sling-org-apache-sling-scripting-sightly-compiler-java",
+        "line": 30,
+        "hash": "70635c750255fe7e61b2ac8672d38e6d",
+        "textRange": {
+            "startLine": 30,
+            "endLine": 30,
+            "startOffset": 13,
+            "endOffset": 22
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Add a private constructor to hide the implicit public one.",
+        "effort": "5min",
+        "debt": "5min",
+        "tags": [
+            "design"
+        ],
+        "creationDate": "2016-06-16T18:07:57+0200",
+        "updateDate": "2019-04-20T16:15:32+0200",
+        "type": "CODE_SMELL",
+        "organization": "apache"
+    },
+    "AWoocNgEMflNeiYSIfXU": {
+        "key": "AWoocNgEMflNeiYSIfXU",
+        "rule": "java:S1104",
+        "severity": "MINOR",
+        "component": "apache_sling-org-apache-sling-scripting-esx:src/main/java/org/apache/sling/scripting/esx/ModuleScript.java",
+        "project": "apache_sling-org-apache-sling-scripting-esx",
+        "line": 41,
+        "hash": "34ee47786614540b756793ff08b3ac1b",
+        "textRange": {
+            "startLine": 41,
+            "endLine": 41,
+            "startOffset": 22,
+            "endOffset": 31
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Make TEXT_FILE a static final constant or non-public and provide accessors if needed.",
+        "effort": "10min",
+        "debt": "10min",
+        "tags": [
+            "cwe"
+        ],
+        "creationDate": "2017-03-24T16:09:46+0100",
+        "updateDate": "2019-04-17T01:17:11+0200",
+        "type": "VULNERABILITY",
+        "organization": "apache"
+    },
+    "AWoocNgEMflNeiYSIfXT": {
+        "key": "AWoocNgEMflNeiYSIfXT",
+        "rule": "java:S1104",
+        "severity": "MINOR",
+        "component": "apache_sling-org-apache-sling-scripting-esx:src/main/java/org/apache/sling/scripting/esx/ModuleScript.java",
+        "project": "apache_sling-org-apache-sling-scripting-esx",
+        "line": 36,
+        "hash": "c7fe6c2319ade53ceabb704851467458",
+        "textRange": {
+            "startLine": 36,
+            "endLine": 36,
+            "startOffset": 22,
+            "endOffset": 35
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Make RESOURCE_FILE a static final constant or non-public and provide accessors if needed.",
+        "effort": "10min",
+        "debt": "10min",
+        "tags": [
+            "cwe"
+        ],
+        "creationDate": "2017-03-24T16:09:46+0100",
+        "updateDate": "2019-04-17T01:17:11+0200",
+        "type": "VULNERABILITY",
+        "organization": "apache"
+    },
+    "AWoocNgEMflNeiYSIfXS": {
+        "key": "AWoocNgEMflNeiYSIfXS",
+        "rule": "java:S1104",
+        "severity": "MINOR",
+        "component": "apache_sling-org-apache-sling-scripting-esx:src/main/java/org/apache/sling/scripting/esx/ModuleScript.java",
+        "project": "apache_sling-org-apache-sling-scripting-esx",
+        "line": 31,
+        "hash": "c41738cd5bf38c3be53a7d0a993edb0d",
+        "textRange": {
+            "startLine": 31,
+            "endLine": 31,
+            "startOffset": 22,
+            "endOffset": 31
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Make JSON_FILE a static final constant or non-public and provide accessors if needed.",
+        "effort": "10min",
+        "debt": "10min",
+        "tags": [
+            "cwe"
+        ],
+        "creationDate": "2017-03-24T16:09:46+0100",
+        "updateDate": "2019-04-17T01:17:11+0200",
+        "type": "VULNERABILITY",
+        "organization": "apache"
+    },
+    "AWoocNgEMflNeiYSIfXR": {
+        "key": "AWoocNgEMflNeiYSIfXR",
+        "rule": "java:S1104",
+        "severity": "MINOR",
+        "component": "apache_sling-org-apache-sling-scripting-esx:src/main/java/org/apache/sling/scripting/esx/ModuleScript.java",
+        "project": "apache_sling-org-apache-sling-scripting-esx",
+        "line": 26,
+        "hash": "969937f499b65e9baadd7ddcd3856a68",
+        "textRange": {
+            "startLine": 26,
+            "endLine": 26,
+            "startOffset": 22,
+            "endOffset": 29
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Make JS_FILE a static final constant or non-public and provide accessors if needed.",
+        "effort": "10min",
+        "debt": "10min",
+        "tags": [
+            "cwe"
+        ],
+        "creationDate": "2017-03-24T16:09:46+0100",
+        "updateDate": "2019-04-17T01:17:11+0200",
+        "type": "VULNERABILITY",
+        "organization": "apache"
+    },
+    "AWpA29axYsUHy63ni7FF": {
+        "key": "AWpA29axYsUHy63ni7FF",
+        "rule": "java:S1199",
+        "severity": "MINOR",
+        "component": "apache_sling-org-apache-sling-commons-html:src/main/java/org/apache/sling/commons/html/impl/parser/TagParser.java",
+        "project": "apache_sling-org-apache-sling-commons-html",
+        "line": 153,
+        "hash": "57cca2668cb823db0d191d3dd14e372d",
+        "textRange": {
+            "startLine": 153,
+            "endLine": 153,
+            "startOffset": 6,
+            "endOffset": 7
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Extract this nested code block into a method.",
+        "effort": "10min",
+        "debt": "10min",
+        "assignee": "JEBailey@github",
+        "tags": [
+            "bad-practice"
+        ],
+        "creationDate": "2018-11-29T16:25:28+0100",
+        "updateDate": "2019-04-21T19:04:53+0200",
+        "type": "CODE_SMELL",
+        "organization": "apache"
+    },
+    "AWo7Gjp8yRjJygCrME7b": {
+        "key": "AWo7Gjp8yRjJygCrME7b",
+        "rule": "java:S1118",
+        "severity": "MAJOR",
+        "component": "apache_sling-org-apache-sling-scripting-sightly-compiler:src/main/java/org/apache/sling/scripting/sightly/compiler/RuntimeFunction.java",
+        "project": "apache_sling-org-apache-sling-scripting-sightly-compiler",
+        "line": 35,
+        "hash": "61428262a757ecad49e6f44e8de8431f",
+        "textRange": {
+            "startLine": 35,
+            "endLine": 35,
+            "startOffset": 19,
+            "endOffset": 34
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Add a private constructor to hide the implicit public one.",
+        "effort": "5min",
+        "debt": "5min",
+        "tags": [
+            "design"
+        ],
+        "creationDate": "2016-06-16T18:07:57+0200",
+        "updateDate": "2019-04-20T16:15:13+0200",
+        "type": "CODE_SMELL",
+        "organization": "apache"
+    },
+    "AWo7Gjp8yRjJygCrME7a": {
+        "key": "AWo7Gjp8yRjJygCrME7a",
+        "rule": "java:S1133",
+        "severity": "INFO",
+        "component": "apache_sling-org-apache-sling-scripting-sightly-compiler:src/main/java/org/apache/sling/scripting/sightly/compiler/RuntimeFunction.java",
+        "project": "apache_sling-org-apache-sling-scripting-sightly-compiler",
+        "line": 35,
+        "hash": "61428262a757ecad49e6f44e8de8431f",
+        "textRange": {
+            "startLine": 35,
+            "endLine": 35,
+            "startOffset": 19,
+            "endOffset": 34
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Do not forget to remove this deprecated code someday.",
+        "effort": "10min",
+        "debt": "10min",
+        "tags": [
+            "obsolete"
+        ],
+        "creationDate": "2016-06-16T18:07:57+0200",
+        "updateDate": "2019-04-20T16:15:13+0200",
+        "type": "CODE_SMELL",
+        "organization": "apache"
+    },
+    "AWo7GjpxyRjJygCrME7X": {
+        "key": "AWo7GjpxyRjJygCrME7X",
+        "rule": "java:S1165",
+        "severity": "MINOR",
+        "component": "apache_sling-org-apache-sling-scripting-sightly-compiler:src/main/java/org/apache/sling/scripting/sightly/compiler/SightlyCompilerException.java",
+        "project": "apache_sling-org-apache-sling-scripting-sightly-compiler",
+        "line": 26,
+        "hash": "a47d5824873140ed1a63473b010c7dda",
+        "textRange": {
+            "startLine": 26,
+            "endLine": 26,
+            "startOffset": 16,
+            "endOffset": 22
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Make this \"column\" field final.",
+        "effort": "15min",
+        "debt": "15min",
+        "tags": [
+            "error-handling"
+        ],
+        "creationDate": "2016-06-16T18:07:57+0200",
+        "updateDate": "2019-04-20T16:15:13+0200",
+        "type": "CODE_SMELL",
+        "organization": "apache"
+    },
+    "AWoxE-XCyRjJygCrMpYL": {
+        "key": "AWoxE-XCyRjJygCrMpYL",
+        "rule": "java:S1104",
+        "severity": "MINOR",
+        "component": "apache_sling-org-apache-sling-commons-scheduler:src/main/java/org/apache/sling/commons/scheduler/impl/InternalScheduleOptions.java",
+        "project": "apache_sling-org-apache-sling-commons-scheduler",
+        "line": 41,
+        "hash": "28c0f372fa1018092df188be40677f9f",
+        "textRange": {
+            "startLine": 41,
+            "endLine": 41,
+            "startOffset": 18,
+            "endOffset": 32
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Make threadPoolName a static final constant or non-public and provide accessors if needed.",
+        "effort": "10min",
+        "debt": "10min",
+        "tags": [
+            "cwe"
+        ],
+        "creationDate": "2016-07-15T10:27:06+0200",
+        "updateDate": "2019-04-18T17:32:03+0200",
+        "type": "VULNERABILITY",
+        "organization": "apache"
+    },
+    "AWorIjGhSX35U3sTfa3Y": {
+        "key": "AWorIjGhSX35U3sTfa3Y",
+        "rule": "java:S1118",
+        "severity": "MAJOR",
+        "component": "apache_sling-org-apache-sling-scripting-sightly-js-provider:src/main/java/org/apache/sling/scripting/sightly/js/impl/Variables.java",
+        "project": "apache_sling-org-apache-sling-scripting-sightly-js-provider",
+        "line": 24,
+        "hash": "011c90d154690ca3649b3eef47d91133",
+        "textRange": {
+            "startLine": 24,
+            "endLine": 24,
+            "startOffset": 19,
+            "endOffset": 28
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Add a private constructor to hide the implicit public one.",
+        "effort": "5min",
+        "debt": "5min",
+        "tags": [
+            "design"
+        ],
+        "creationDate": "2015-05-12T17:39:47+0200",
+        "updateDate": "2019-04-17T13:50:10+0200",
+        "type": "CODE_SMELL",
+        "organization": "apache"
+    },
+    "AWorIjGeSX35U3sTfa3X": {
+        "key": "AWorIjGeSX35U3sTfa3X",
+        "rule": "java:S1118",
+        "severity": "MAJOR",
+        "component": "apache_sling-org-apache-sling-scripting-sightly-js-provider:src/main/java/org/apache/sling/scripting/sightly/js/impl/loop/EventLoopInterop.java",
+        "project": "apache_sling-org-apache-sling-scripting-sightly-js-provider",
+        "line": 26,
+        "hash": "25563317cf139a23788bbd15829535a5",
+        "textRange": {
+            "startLine": 26,
+            "endLine": 26,
+            "startOffset": 13,
+            "endOffset": 29
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Add a private constructor to hide the implicit public one.",
+        "effort": "5min",
+        "debt": "5min",
+        "tags": [
+            "design"
+        ],
+        "creationDate": "2015-05-12T17:39:47+0200",
+        "updateDate": "2019-04-17T13:50:10+0200",
+        "type": "CODE_SMELL",
+        "organization": "apache"
+    },
+    "AWpA29axYsUHy63ni7FZ": {
+        "key": "AWpA29axYsUHy63ni7FZ",
+        "rule": "java:S112",
+        "severity": "MAJOR",
+        "component": "apache_sling-org-apache-sling-commons-html:src/main/java/org/apache/sling/commons/html/impl/parser/TagParser.java",
+        "project": "apache_sling-org-apache-sling-commons-html",
+        "line": 159,
+        "hash": "553a5cc88e14aeb1aaef90d705a79c9b",
+        "textRange": {
+            "startLine": 159,
+            "endLine": 159,
+            "startOffset": 14,
+            "endOffset": 19
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Define and throw a dedicated exception instead of using a generic one.",
+        "effort": "20min",
+        "debt": "20min",
+        "assignee": "JEBailey@github",
+        "tags": [
+            "cert",
+            "cwe",
+            "error-handling"
+        ],
+        "creationDate": "2018-11-29T16:25:28+0100",
+        "updateDate": "2019-04-21T19:04:53+0200",
+        "type": "CODE_SMELL",
+        "organization": "apache"
+    },
+    "AWpA29aMYsUHy63ni7Ca": {
+        "key": "AWpA29aMYsUHy63ni7Ca",
+        "rule": "java:S1165",
+        "severity": "MINOR",
+        "component": "apache_sling-org-apache-sling-commons-html:src/main/java/org/apache/sling/commons/html/impl/parser/TokenMgrError.java",
+        "project": "apache_sling-org-apache-sling-commons-html",
+        "line": 44,
+        "hash": "882aad94cf961762112192dcf3e37119",
+        "textRange": {
+            "startLine": 44,
+            "endLine": 44,
+            "startOffset": 6,
+            "endOffset": 15
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Make this \"errorCode\" field final.",
+        "effort": "15min",
+        "debt": "15min",
+        "assignee": "JEBailey@github",
+        "tags": [
+            "error-handling"
+        ],
+        "creationDate": "2018-11-29T16:25:28+0100",
+        "updateDate": "2019-04-21T19:04:53+0200",
+        "type": "CODE_SMELL",
+        "organization": "apache"
+    },
+    "AWpA29ZyYsUHy63ni7CS": {
+        "key": "AWpA29ZyYsUHy63ni7CS",
+        "rule": "java:S1165",
+        "severity": "MINOR",
+        "component": "apache_sling-org-apache-sling-commons-html:src/main/java/org/apache/sling/commons/html/impl/parser/ParseException.java",
+        "project": "apache_sling-org-apache-sling-commons-html",
+        "line": 134,
+        "hash": "7e3d12c70efe1d5493727bb3c8a412b0",
+        "textRange": {
+            "startLine": 134,
+            "endLine": 134,
+            "startOffset": 19,
+            "endOffset": 22
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Make this \"eol\" field final.",
+        "effort": "15min",
+        "debt": "15min",
+        "assignee": "JEBailey@github",
+        "tags": [
+            "error-handling"
+        ],
+        "creationDate": "2018-11-29T16:25:28+0100",
+        "updateDate": "2019-04-21T19:04:53+0200",
+        "type": "CODE_SMELL",
+        "organization": "apache"
+    },
+    "AWpA29ZyYsUHy63ni7CR": {
+        "key": "AWpA29ZyYsUHy63ni7CR",
+        "rule": "java:S1165",
+        "severity": "MINOR",
+        "component": "apache_sling-org-apache-sling-commons-html:src/main/java/org/apache/sling/commons/html/impl/parser/ParseException.java",
+        "project": "apache_sling-org-apache-sling-commons-html",
+        "line": 79,
+        "hash": "eea3b24de31854a92125b31498f28888",
+        "textRange": {
+            "startLine": 79,
+            "endLine": 79,
+            "startOffset": 18,
+            "endOffset": 28
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Make this \"tokenImage\" field final.",
+        "effort": "15min",
+        "debt": "15min",
+        "assignee": "JEBailey@github",
+        "tags": [
+            "error-handling"
+        ],
+        "creationDate": "2018-11-29T16:25:28+0100",
+        "updateDate": "2019-04-21T19:04:53+0200",
+        "type": "CODE_SMELL",
+        "organization": "apache"
+    },
+    "AWpA29ZyYsUHy63ni7CQ": {
+        "key": "AWpA29ZyYsUHy63ni7CQ",
+        "rule": "java:S1165",
+        "severity": "MINOR",
+        "component": "apache_sling-org-apache-sling-commons-html:src/main/java/org/apache/sling/commons/html/impl/parser/ParseException.java",
+        "project": "apache_sling-org-apache-sling-commons-html",
+        "line": 72,
+        "hash": "394e25dc102792b982b7accf4ca1c958",
+        "textRange": {
+            "startLine": 72,
+            "endLine": 72,
+            "startOffset": 17,
+            "endOffset": 39
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Make this \"expectedTokenSequences\" field final.",
+        "effort": "15min",
+        "debt": "15min",
+        "assignee": "JEBailey@github",
+        "tags": [
+            "error-handling"
+        ],
+        "creationDate": "2018-11-29T16:25:28+0100",
+        "updateDate": "2019-04-21T19:04:53+0200",
+        "type": "CODE_SMELL",
+        "organization": "apache"
+    },
+    "AWo7GjmzyRjJygCrME5v": {
+        "key": "AWo7GjmzyRjJygCrME5v",
+        "rule": "java:S1118",
+        "severity": "MAJOR",
+        "component": "apache_sling-org-apache-sling-scripting-sightly-compiler:src/main/java/org/apache/sling/scripting/sightly/impl/html/dom/DocumentParser.java",
+        "project": "apache_sling-org-apache-sling-scripting-sightly-compiler",
+        "line": 29,
+        "hash": "29eedd98032f98166dfd8d5afb6c85d1",
+        "textRange": {
+            "startLine": 29,
+            "endLine": 29,
+            "startOffset": 13,
+            "endOffset": 27
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Add a private constructor to hide the implicit public one.",
+        "effort": "5min",
+        "debt": "5min",
+        "tags": [
+            "design"
+        ],
+        "creationDate": "2016-06-16T18:07:57+0200",
+        "updateDate": "2019-04-20T16:15:13+0200",
+        "type": "CODE_SMELL",
+        "organization": "apache"
+    },
+    "AWpA29bJYsUHy63ni7Gu": {
+        "key": "AWpA29bJYsUHy63ni7Gu",
+        "rule": "java:S1161",
+        "severity": "MAJOR",
+        "component": "apache_sling-org-apache-sling-commons-html:src/main/java/org/apache/sling/commons/html/impl/tag/StartTag.java",
+        "project": "apache_sling-org-apache-sling-commons-html",
+        "line": 58,
+        "hash": "103592cc1c768776553cc07a3d6a2fac",
+        "textRange": {
+            "startLine": 58,
+            "endLine": 58,
+            "startOffset": 19,
+            "endOffset": 29
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Add the \"@Override\" annotation above this method signature",
+        "effort": "5min",
+        "debt": "5min",
+        "assignee": "JEBailey@github",
+        "tags": [
+            "bad-practice"
+        ],
+        "creationDate": "2018-11-29T16:25:28+0100",
+        "updateDate": "2019-04-21T19:04:53+0200",
+        "type": "CODE_SMELL",
+        "organization": "apache"
+    },
+    "AWpA29axYsUHy63ni7E_": {
+        "key": "AWpA29axYsUHy63ni7E_",
+        "rule": "java:S1199",
+        "severity": "MINOR",
+        "component": "apache_sling-org-apache-sling-commons-html:src/main/java/org/apache/sling/commons/html/impl/parser/TagParser.java",
+        "project": "apache_sling-org-apache-sling-commons-html",
+        "line": 55,
+        "hash": "db2317d2f2216241a5d34c2f59181bf1",
+        "textRange": {
+            "startLine": 55,
+            "endLine": 55,
+            "startOffset": 14,
+            "endOffset": 15
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Extract this nested code block into a method.",
+        "effort": "10min",
+        "debt": "10min",
+        "assignee": "JEBailey@github",
+        "tags": [
+            "bad-practice"
+        ],
+        "creationDate": "2018-11-29T16:25:28+0100",
+        "updateDate": "2019-04-21T19:04:53+0200",
+        "type": "CODE_SMELL",
+        "organization": "apache"
+    },
+    "AWpA29axYsUHy63ni7Fd": {
+        "key": "AWpA29axYsUHy63ni7Fd",
+        "rule": "java:S112",
+        "severity": "MAJOR",
+        "component": "apache_sling-org-apache-sling-commons-html:src/main/java/org/apache/sling/commons/html/impl/parser/TagParser.java",
+        "project": "apache_sling-org-apache-sling-commons-html",
+        "line": 300,
+        "hash": "9757947b4cf4529657a33ed5e2f43001",
+        "textRange": {
+            "startLine": 300,
+            "endLine": 300,
+            "startOffset": 118,
+            "endOffset": 134
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Define and throw a dedicated exception instead of using a generic one.",
+        "effort": "20min",
+        "debt": "20min",
+        "assignee": "JEBailey@github",
+        "tags": [
+            "cert",
+            "cwe",
+            "error-handling"
+        ],
+        "creationDate": "2018-11-29T16:25:28+0100",
+        "updateDate": "2019-04-21T19:04:53+0200",
+        "type": "CODE_SMELL",
+        "organization": "apache"
+    },
+    "AWpA29aUYsUHy63ni7DC": {
+        "key": "AWpA29aUYsUHy63ni7DC",
+        "rule": "java:S1104",
+        "severity": "MINOR",
+        "component": "apache_sling-org-apache-sling-commons-html:src/main/java/org/apache/sling/commons/html/impl/parser/TagParserTokenManager.java",
+        "project": "apache_sling-org-apache-sling-commons-html",
+        "line": 12,
+        "hash": "d9a0588283ee5c8c8047a090eb767a02",
+        "textRange": {
+            "startLine": 12,
+            "endLine": 12,
+            "startOffset": 30,
+            "endOffset": 41
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Make debugStream a static final constant or non-public and provide accessors if needed.",
+        "effort": "10min",
+        "debt": "10min",
+        "assignee": "JEBailey@github",
+        "tags": [
+            "cwe"
+        ],
+        "creationDate": "2018-11-29T16:25:28+0100",
+        "updateDate": "2019-04-21T19:04:53+0200",
+        "type": "VULNERABILITY",
+        "organization": "apache"
+    },
+    "AWpA29apYsUHy63ni7En": {
+        "key": "AWpA29apYsUHy63ni7En",
+        "rule": "java:S1133",
+        "severity": "INFO",
+        "component": "apache_sling-org-apache-sling-commons-html:src/main/java/org/apache/sling/commons/html/impl/parser/SimpleCharStream.java",
+        "project": "apache_sling-org-apache-sling-commons-html",
+        "line": 210,
+        "hash": "a5e8a1a20f7b2172995953c42d4e1e7e",
+        "textRange": {
+            "startLine": 210,
+            "endLine": 210,
+            "startOffset": 13,
+            "endOffset": 22
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Do not forget to remove this deprecated code someday.",
+        "effort": "10min",
+        "debt": "10min",
+        "assignee": "JEBailey@github",
+        "tags": [
+            "obsolete"
+        ],
+        "creationDate": "2018-11-29T16:25:28+0100",
+        "updateDate": "2019-04-21T19:04:53+0200",
+        "type": "CODE_SMELL",
+        "organization": "apache"
+    },
+    "AWpA29axYsUHy63ni7FJ": {
+        "key": "AWpA29axYsUHy63ni7FJ",
+        "rule": "java:S1199",
+        "severity": "MINOR",
+        "component": "apache_sling-org-apache-sling-commons-html:src/main/java/org/apache/sling/commons/html/impl/parser/TagParser.java",
+        "project": "apache_sling-org-apache-sling-commons-html",
+        "line": 220,
+        "hash": "8d0d5ccab9b6ace5de9c93d292ad84c8",
+        "textRange": {
+            "startLine": 220,
+            "endLine": 220,
+            "startOffset": 4,
+            "endOffset": 5
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Extract this nested code block into a method.",
+        "effort": "10min",
+        "debt": "10min",
+        "assignee": "JEBailey@github",
+        "tags": [
+            "bad-practice"
+        ],
+        "creationDate": "2018-11-29T16:25:28+0100",
+        "updateDate": "2019-04-21T19:04:53+0200",
+        "type": "CODE_SMELL",
+        "organization": "apache"
+    },
+    "AWpA29axYsUHy63ni7FH": {
+        "key": "AWpA29axYsUHy63ni7FH",
+        "rule": "java:S1199",
+        "severity": "MINOR",
+        "component": "apache_sling-org-apache-sling-commons-html:src/main/java/org/apache/sling/commons/html/impl/parser/TagParser.java",
+        "project": "apache_sling-org-apache-sling-commons-html",
+        "line": 190,
+        "hash": "c320a0ca7fdfe9f15f48670949313eca",
+        "textRange": {
+            "startLine": 190,
+            "endLine": 190,
+            "startOffset": 4,
+            "endOffset": 5
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Extract this nested code block into a method.",
+        "effort": "10min",
+        "debt": "10min",
+        "assignee": "JEBailey@github",
+        "tags": [
+            "bad-practice"
+        ],
+        "creationDate": "2018-11-29T16:25:28+0100",
+        "updateDate": "2019-04-21T19:04:53+0200",
+        "type": "CODE_SMELL",
+        "organization": "apache"
+    },
+    "AWpA29axYsUHy63ni7E9": {
+        "key": "AWpA29axYsUHy63ni7E9",
+        "rule": "java:S1199",
+        "severity": "MINOR",
+        "component": "apache_sling-org-apache-sling-commons-html:src/main/java/org/apache/sling/commons/html/impl/parser/TagParser.java",
+        "project": "apache_sling-org-apache-sling-commons-html",
+        "line": 44,
+        "hash": "e2ad5bff200d9ff3168a049a77fb89bd",
+        "textRange": {
+            "startLine": 44,
+            "endLine": 44,
+            "startOffset": 36,
+            "endOffset": 37
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Extract this nested code block into a method.",
+        "effort": "10min",
+        "debt": "10min",
+        "assignee": "JEBailey@github",
+        "tags": [
+            "bad-practice"
+        ],
+        "creationDate": "2018-11-29T16:25:28+0100",
+        "updateDate": "2019-04-21T19:04:53+0200",
+        "type": "CODE_SMELL",
+        "organization": "apache"
+    },
+    "AWoxE-XCyRjJygCrMpYM": {
+        "key": "AWoxE-XCyRjJygCrMpYM",
+        "rule": "java:S1104",
+        "severity": "MINOR",
+        "component": "apache_sling-org-apache-sling-commons-scheduler:src/main/java/org/apache/sling/commons/scheduler/impl/InternalScheduleOptions.java",
+        "project": "apache_sling-org-apache-sling-commons-scheduler",
+        "line": 43,
+        "hash": "c5b1cb85effc167ad441b3d88e07705f",
+        "textRange": {
+            "startLine": 43,
+            "endLine": 43,
+            "startOffset": 19,
+            "endOffset": 37
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Make canRunConcurrently a static final constant or non-public and provide accessors if needed.",
+        "effort": "10min",
+        "debt": "10min",
+        "tags": [
+            "cwe"
+        ],
+        "creationDate": "2013-07-26T09:57:29+0200",
+        "updateDate": "2019-04-18T17:32:03+0200",
+        "type": "VULNERABILITY",
+        "organization": "apache"
+    },
+    "AWoxE-XCyRjJygCrMpYK": {
+        "key": "AWoxE-XCyRjJygCrMpYK",
+        "rule": "java:S1104",
+        "severity": "MINOR",
+        "component": "apache_sling-org-apache-sling-commons-scheduler:src/main/java/org/apache/sling/commons/scheduler/impl/InternalScheduleOptions.java",
+        "project": "apache_sling-org-apache-sling-commons-scheduler",
+        "line": 39,
+        "hash": "d29eb809cd7e712070b86a449a5f2e82",
+        "textRange": {
+            "startLine": 39,
+            "endLine": 39,
+            "startOffset": 18,
+            "endOffset": 22
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Make name a static final constant or non-public and provide accessors if needed.",
+        "effort": "10min",
+        "debt": "10min",
+        "tags": [
+            "cwe"
+        ],
+        "creationDate": "2013-07-26T09:57:29+0200",
+        "updateDate": "2019-04-18T17:32:03+0200",
+        "type": "VULNERABILITY",
+        "organization": "apache"
+    },
+    "AWoxE-YLyRjJygCrMpZy": {
+        "key": "AWoxE-YLyRjJygCrMpZy",
+        "rule": "java:S1133",
+        "severity": "INFO",
+        "component": "apache_sling-org-apache-sling-commons-scheduler:src/main/java/org/apache/sling/commons/scheduler/Scheduler.java",
+        "project": "apache_sling-org-apache-sling-commons-scheduler",
+        "line": 275,
+        "hash": "bdf782504628da3349eeca02a8fe4009",
+        "textRange": {
+            "startLine": 275,
+            "endLine": 275,
+            "startOffset": 9,
+            "endOffset": 23
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Do not forget to remove this deprecated code someday.",
+        "effort": "10min",
+        "debt": "10min",
+        "tags": [
+            "obsolete"
+        ],
+        "creationDate": "2012-01-18T18:35:37+0100",
+        "updateDate": "2019-04-18T17:32:03+0200",
+        "type": "CODE_SMELL",
+        "organization": "apache"
+    },
+    "AWoxE-YLyRjJygCrMpZn": {
+        "key": "AWoxE-YLyRjJygCrMpZn",
+        "rule": "java:S112",
+        "severity": "MAJOR",
+        "component": "apache_sling-org-apache-sling-commons-scheduler:src/main/java/org/apache/sling/commons/scheduler/Scheduler.java",
+        "project": "apache_sling-org-apache-sling-commons-scheduler",
+        "line": 277,
+        "hash": "ade88b84548ec15c2f8b184babd0c149",
+        "textRange": {
+            "startLine": 277,
+            "endLine": 277,
+            "startOffset": 11,
+            "endOffset": 20
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Define and throw a dedicated exception instead of using a generic one.",
+        "effort": "20min",
+        "debt": "20min",
+        "tags": [
+            "cert",
+            "cwe",
+            "error-handling"
+        ],
+        "creationDate": "2012-01-18T18:35:37+0100",
+        "updateDate": "2019-04-18T17:32:03+0200",
+        "type": "CODE_SMELL",
+        "organization": "apache"
+    },
+    "AWoxE-YLyRjJygCrMpZ2": {
+        "key": "AWoxE-YLyRjJygCrMpZ2",
+        "rule": "java:S1133",
+        "severity": "INFO",
+        "component": "apache_sling-org-apache-sling-commons-scheduler:src/main/java/org/apache/sling/commons/scheduler/Scheduler.java",
+        "project": "apache_sling-org-apache-sling-commons-scheduler",
+        "line": 341,
+        "hash": "ad09532a5985a70222797ab5da5859d5",
+        "textRange": {
+            "startLine": 341,
+            "endLine": 341,
+            "startOffset": 12,
+            "endOffset": 21
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Do not forget to remove this deprecated code someday.",
+        "effort": "10min",
+        "debt": "10min",
+        "tags": [
+            "obsolete"
+        ],
+        "creationDate": "2009-09-23T11:35:04+0200",
+        "updateDate": "2019-04-18T17:32:03+0200",
+        "type": "CODE_SMELL",
+        "organization": "apache"
+    },
+    "AWoxE-YLyRjJygCrMpZ0": {
+        "key": "AWoxE-YLyRjJygCrMpZ0",
+        "rule": "java:S1133",
+        "severity": "INFO",
+        "component": "apache_sling-org-apache-sling-commons-scheduler:src/main/java/org/apache/sling/commons/scheduler/Scheduler.java",
+        "project": "apache_sling-org-apache-sling-commons-scheduler",
+        "line": 305,
+        "hash": "6d457ac4c22b76a9d408d56652f46334",
+        "textRange": {
+            "startLine": 305,
+            "endLine": 305,
+            "startOffset": 12,
+            "endOffset": 19
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Do not forget to remove this deprecated code someday.",
+        "effort": "10min",
+        "debt": "10min",
+        "tags": [
+            "obsolete"
+        ],
+        "creationDate": "2009-09-23T11:35:04+0200",
+        "updateDate": "2019-04-18T17:32:03+0200",
+        "type": "CODE_SMELL",
+        "organization": "apache"
+    },
+    "AWoxE-YLyRjJygCrMpZ4": {
+        "key": "AWoxE-YLyRjJygCrMpZ4",
+        "rule": "java:S1133",
+        "severity": "INFO",
+        "component": "apache_sling-org-apache-sling-commons-scheduler:src/main/java/org/apache/sling/commons/scheduler/Scheduler.java",
+        "project": "apache_sling-org-apache-sling-commons-scheduler",
+        "line": 351,
+        "hash": "7e71f57146f90957fa6dadc6d311c5bc",
+        "textRange": {
+            "startLine": 351,
+            "endLine": 351,
+            "startOffset": 9,
+            "endOffset": 18
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Do not forget to remove this deprecated code someday.",
+        "effort": "10min",
+        "debt": "10min",
+        "tags": [
+            "obsolete"
+        ],
+        "creationDate": "2009-06-18T11:21:02+0200",
+        "updateDate": "2019-04-18T17:32:03+0200",
+        "type": "CODE_SMELL",
+        "organization": "apache"
+    },
+    "AWoxE-YLyRjJygCrMpZ1": {
+        "key": "AWoxE-YLyRjJygCrMpZ1",
+        "rule": "java:S1133",
+        "severity": "INFO",
+        "component": "apache_sling-org-apache-sling-commons-scheduler:src/main/java/org/apache/sling/commons/scheduler/Scheduler.java",
+        "project": "apache_sling-org-apache-sling-commons-scheduler",
+        "line": 321,
+        "hash": "cf007fea0e0eb4c6c5f4eb470ae8bc35",
+        "textRange": {
+            "startLine": 321,
+            "endLine": 321,
+            "startOffset": 9,
+            "endOffset": 18
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Do not forget to remove this deprecated code someday.",
+        "effort": "10min",
+        "debt": "10min",
+        "tags": [
+            "obsolete"
+        ],
+        "creationDate": "2009-06-18T11:21:02+0200",
+        "updateDate": "2019-04-18T17:32:03+0200",
+        "type": "CODE_SMELL",
+        "organization": "apache"
+    },
+    "AWpA29axYsUHy63ni7FG": {
+        "key": "AWpA29axYsUHy63ni7FG",
+        "rule": "java:S1199",
+        "severity": "MINOR",
+        "component": "apache_sling-org-apache-sling-commons-html:src/main/java/org/apache/sling/commons/html/impl/parser/TagParser.java",
+        "project": "apache_sling-org-apache-sling-commons-html",
+        "line": 157,
+        "hash": "8d0d5ccab9b6ace5de9c93d292ad84c8",
+        "textRange": {
+            "startLine": 157,
+            "endLine": 157,
+            "startOffset": 4,
+            "endOffset": 5
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Extract this nested code block into a method.",
+        "effort": "10min",
+        "debt": "10min",
+        "assignee": "JEBailey@github",
+        "tags": [
+            "bad-practice"
+        ],
+        "creationDate": "2018-11-29T16:25:28+0100",
+        "updateDate": "2019-04-21T19:04:53+0200",
+        "type": "CODE_SMELL",
+        "organization": "apache"
+    },
+    "AWpA29axYsUHy63ni7FX": {
+        "key": "AWpA29axYsUHy63ni7FX",
+        "rule": "java:S112",
+        "severity": "MAJOR",
+        "component": "apache_sling-org-apache-sling-commons-html:src/main/java/org/apache/sling/commons/html/impl/parser/TagParser.java",
+        "project": "apache_sling-org-apache-sling-commons-html",
+        "line": 124,
+        "hash": "553a5cc88e14aeb1aaef90d705a79c9b",
+        "textRange": {
+            "startLine": 124,
+            "endLine": 124,
+            "startOffset": 14,
+            "endOffset": 19
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Define and throw a dedicated exception instead of using a generic one.",
+        "effort": "20min",
+        "debt": "20min",
+        "assignee": "JEBailey@github",
+        "tags": [
+            "cert",
+            "cwe",
+            "error-handling"
+        ],
+        "creationDate": "2018-11-29T16:25:28+0100",
+        "updateDate": "2019-04-21T19:04:53+0200",
+        "type": "CODE_SMELL",
+        "organization": "apache"
+    },
+    "AWpA29axYsUHy63ni7FV": {
+        "key": "AWpA29axYsUHy63ni7FV",
+        "rule": "java:S1104",
+        "severity": "MINOR",
+        "component": "apache_sling-org-apache-sling-commons-html:src/main/java/org/apache/sling/commons/html/impl/parser/TagParser.java",
+        "project": "apache_sling-org-apache-sling-commons-html",
+        "line": 262,
+        "hash": "ed51b648a87dd2dcf8271b3bbc72baea",
+        "textRange": {
+            "startLine": 262,
+            "endLine": 262,
+            "startOffset": 15,
+            "endOffset": 20
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Make jj_nt a static final constant or non-public and provide accessors if needed.",
+        "effort": "10min",
+        "debt": "10min",
+        "assignee": "JEBailey@github",
+        "tags": [
+            "cwe"
+        ],
+        "creationDate": "2018-11-29T16:25:28+0100",
+        "updateDate": "2019-04-21T19:04:53+0200",
+        "type": "VULNERABILITY",
+        "organization": "apache"
+    },
+    "AWox51-f-aLJxVkBYvug": {
+        "key": "AWox51-f-aLJxVkBYvug",
+        "rule": "java:S2386",
+        "severity": "MINOR",
+        "component": "apache_sling-org-apache-sling-scripting-core:src/main/java/org/apache/sling/scripting/core/impl/BindingsValuesProvidersByContextImpl.java",
+        "project": "apache_sling-org-apache-sling-scripting-core",
+        "line": 66,
+        "hash": "60d6520b48c727ded81e2b6d5579d577",
+        "textRange": {
+            "startLine": 66,
+            "endLine": 66,
+            "startOffset": 34,
+            "endOffset": 55
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Make this member \"protected\".",
+        "effort": "15min",
+        "debt": "15min",
+        "tags": [
+            "cert",
+            "cwe",
+            "unpredictable"
+        ],
+        "creationDate": "2013-09-06T14:57:27+0200",
+        "updateDate": "2019-04-18T21:23:10+0200",
+        "type": "VULNERABILITY",
+        "organization": "apache"
+    },
+    "AXj0jhZKHdM9ii50k34x": {
+        "key": "AXj0jhZKHdM9ii50k34x",
+        "rule": "java:S1161",
+        "severity": "MAJOR",
+        "component": "apache_sling-org-apache-sling-scripting-core:src/main/java/org/apache/sling/scripting/core/impl/helper/ProtectedBindings.java",
+        "project": "apache_sling-org-apache-sling-scripting-core",
+        "line": 115,
+        "hash": "8d5549b91cbdb95a291510c4abae88bc",
+        "textRange": {
+            "startLine": 115,
+            "endLine": 115,
+            "startOffset": 23,
+            "endOffset": 29
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Add the \"@Override\" annotation above this method signature",
+        "effort": "5min",
+        "debt": "5min",
+        "tags": [],
+        "creationDate": "2010-01-25T20:32:22+0100",
+        "updateDate": "2021-04-21T15:10:24+0200",
+        "type": "CODE_SMELL",
+        "organization": "apache"
+    },
+    "AXj0jhZKHdM9ii50k34v": {
+        "key": "AXj0jhZKHdM9ii50k34v",
+        "rule": "java:S1161",
+        "severity": "MAJOR",
+        "component": "apache_sling-org-apache-sling-scripting-core:src/main/java/org/apache/sling/scripting/core/impl/helper/ProtectedBindings.java",
+        "project": "apache_sling-org-apache-sling-scripting-core",
+        "line": 97,
+        "hash": "75bf28771416c3abf58bf4027ae55764",
+        "textRange": {
+            "startLine": 97,
+            "endLine": 97,
+            "startOffset": 38,
+            "endOffset": 46
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Add the \"@Override\" annotation above this method signature",
+        "effort": "5min",
+        "debt": "5min",
+        "tags": [],
+        "creationDate": "2010-01-25T20:32:22+0100",
+        "updateDate": "2021-04-21T15:10:24+0200",
+        "type": "CODE_SMELL",
+        "organization": "apache"
+    },
+    "AXj0jhZKHdM9ii50k34r": {
+        "key": "AXj0jhZKHdM9ii50k34r",
+        "rule": "java:S1161",
+        "severity": "MAJOR",
+        "component": "apache_sling-org-apache-sling-scripting-core:src/main/java/org/apache/sling/scripting/core/impl/helper/ProtectedBindings.java",
+        "project": "apache_sling-org-apache-sling-scripting-core",
+        "line": 56,
+        "hash": "0fd09251e53fa1b1a3d7cf37a48b9bb8",
+        "textRange": {
+            "startLine": 56,
+            "endLine": 56,
+            "startOffset": 16,
+            "endOffset": 22
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Add the \"@Override\" annotation above this method signature",
+        "effort": "5min",
+        "debt": "5min",
+        "tags": [],
+        "creationDate": "2010-01-25T20:32:22+0100",
+        "updateDate": "2021-04-21T15:10:24+0200",
+        "type": "CODE_SMELL",
+        "organization": "apache"
+    },
+    "AXj0jhZKHdM9ii50k34q": {
+        "key": "AXj0jhZKHdM9ii50k34q",
+        "rule": "java:S1161",
+        "severity": "MAJOR",
+        "component": "apache_sling-org-apache-sling-scripting-core:src/main/java/org/apache/sling/scripting/core/impl/helper/ProtectedBindings.java",
+        "project": "apache_sling-org-apache-sling-scripting-core",
+        "line": 46,
+        "hash": "128cf2920a0cda9501b478f3b4ca8649",
+        "textRange": {
+            "startLine": 46,
+            "endLine": 46,
+            "startOffset": 18,
+            "endOffset": 21
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Add the \"@Override\" annotation above this method signature",
+        "effort": "5min",
+        "debt": "5min",
+        "tags": [],
+        "creationDate": "2010-01-25T20:32:22+0100",
+        "updateDate": "2021-04-21T15:10:24+0200",
+        "type": "CODE_SMELL",
+        "organization": "apache"
+    },
+    "AXj0jhZKHdM9ii50k341": {
+        "key": "AXj0jhZKHdM9ii50k341",
+        "rule": "java:S1161",
+        "severity": "MAJOR",
+        "component": "apache_sling-org-apache-sling-scripting-core:src/main/java/org/apache/sling/scripting/core/impl/helper/ProtectedBindings.java",
+        "project": "apache_sling-org-apache-sling-scripting-core",
+        "line": 147,
+        "hash": "c7cc7e5c7b85342117c1395df60ba081",
+        "textRange": {
+            "startLine": 147,
+            "endLine": 147,
+            "startOffset": 18,
+            "endOffset": 21
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Add the \"@Override\" annotation above this method signature",
+        "effort": "5min",
+        "debt": "5min",
+        "tags": [],
+        "creationDate": "2010-01-25T20:31:55+0100",
+        "updateDate": "2021-04-21T15:10:24+0200",
+        "type": "CODE_SMELL",
+        "organization": "apache"
+    },
+    "AXj0jhZKHdM9ii50k340": {
+        "key": "AXj0jhZKHdM9ii50k340",
+        "rule": "java:S1161",
+        "severity": "MAJOR",
+        "component": "apache_sling-org-apache-sling-scripting-core:src/main/java/org/apache/sling/scripting/core/impl/helper/ProtectedBindings.java",
+        "project": "apache_sling-org-apache-sling-scripting-core",
+        "line": 140,
+        "hash": "5c756381ea52c9fa5ec65aecdf349881",
+        "textRange": {
+            "startLine": 140,
+            "endLine": 140,
+            "startOffset": 19,
+            "endOffset": 30
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Add the \"@Override\" annotation above this method signature",
+        "effort": "5min",
+        "debt": "5min",
+        "tags": [],
+        "creationDate": "2010-01-25T20:31:55+0100",
+        "updateDate": "2021-04-21T15:10:24+0200",
+        "type": "CODE_SMELL",
+        "organization": "apache"
+    },
+    "AXj0jhZKHdM9ii50k34z": {
+        "key": "AXj0jhZKHdM9ii50k34z",
+        "rule": "java:S1161",
+        "severity": "MAJOR",
+        "component": "apache_sling-org-apache-sling-scripting-core:src/main/java/org/apache/sling/scripting/core/impl/helper/ProtectedBindings.java",
+        "project": "apache_sling-org-apache-sling-scripting-core",
+        "line": 133,
+        "hash": "7e3a9966e8e37ee7c6e4b15d87ac5fc7",
+        "textRange": {
+            "startLine": 133,
+            "endLine": 133,
+            "startOffset": 30,
+            "endOffset": 36
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Add the \"@Override\" annotation above this method signature",
+        "effort": "5min",
+        "debt": "5min",
+        "tags": [],
+        "creationDate": "2010-01-25T20:31:55+0100",
+        "updateDate": "2021-04-21T15:10:24+0200",
+        "type": "CODE_SMELL",
+        "organization": "apache"
+    },
+    "AWpA29axYsUHy63ni7Fa": {
+        "key": "AWpA29axYsUHy63ni7Fa",
+        "rule": "java:S112",
+        "severity": "MAJOR",
+        "component": "apache_sling-org-apache-sling-commons-html:src/main/java/org/apache/sling/commons/html/impl/parser/TagParser.java",
+        "project": "apache_sling-org-apache-sling-commons-html",
+        "line": 191,
+        "hash": "553a5cc88e14aeb1aaef90d705a79c9b",
+        "textRange": {
+            "startLine": 191,
+            "endLine": 191,
+            "startOffset": 14,
+            "endOffset": 19
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Define and throw a dedicated exception instead of using a generic one.",
+        "effort": "20min",
+        "debt": "20min",
+        "assignee": "JEBailey@github",
+        "tags": [
+            "cert",
+            "cwe",
+            "error-handling"
+        ],
+        "creationDate": "2018-11-29T16:25:28+0100",
+        "updateDate": "2019-04-21T19:04:53+0200",
+        "type": "CODE_SMELL",
+        "organization": "apache"
+    },
+    "AWpA29axYsUHy63ni7Fc": {
+        "key": "AWpA29axYsUHy63ni7Fc",
+        "rule": "java:S112",
+        "severity": "MAJOR",
+        "component": "apache_sling-org-apache-sling-commons-html:src/main/java/org/apache/sling/commons/html/impl/parser/TagParser.java",
+        "project": "apache_sling-org-apache-sling-commons-html",
+        "line": 285,
+        "hash": "9fff380b2d86a3aa60dbc39a021aa8f8",
+        "textRange": {
+            "startLine": 285,
+            "endLine": 285,
+            "startOffset": 134,
+            "endOffset": 150
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Define and throw a dedicated exception instead of using a generic one.",
+        "effort": "20min",
+        "debt": "20min",
+        "assignee": "JEBailey@github",
+        "tags": [
+            "cert",
+            "cwe",
+            "error-handling"
+        ],
+        "creationDate": "2018-11-29T16:25:28+0100",
+        "updateDate": "2019-04-21T19:04:53+0200",
+        "type": "CODE_SMELL",
+        "organization": "apache"
+    },
+    "AWpA29axYsUHy63ni7Fb": {
+        "key": "AWpA29axYsUHy63ni7Fb",
+        "rule": "java:S112",
+        "severity": "MAJOR",
+        "component": "apache_sling-org-apache-sling-commons-html:src/main/java/org/apache/sling/commons/html/impl/parser/TagParser.java",
+        "project": "apache_sling-org-apache-sling-commons-html",
+        "line": 222,
+        "hash": "553a5cc88e14aeb1aaef90d705a79c9b",
+        "textRange": {
+            "startLine": 222,
+            "endLine": 222,
+            "startOffset": 14,
+            "endOffset": 19
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Define and throw a dedicated exception instead of using a generic one.",
+        "effort": "20min",
+        "debt": "20min",
+        "assignee": "JEBailey@github",
+        "tags": [
+            "cert",
+            "cwe",
+            "error-handling"
+        ],
+        "creationDate": "2018-11-29T16:25:28+0100",
+        "updateDate": "2019-04-21T19:04:53+0200",
+        "type": "CODE_SMELL",
+        "organization": "apache"
+    },
+    "AWpA29axYsUHy63ni7FY": {
+        "key": "AWpA29axYsUHy63ni7FY",
+        "rule": "java:S112",
+        "severity": "MAJOR",
+        "component": "apache_sling-org-apache-sling-commons-html:src/main/java/org/apache/sling/commons/html/impl/parser/TagParser.java",
+        "project": "apache_sling-org-apache-sling-commons-html",
+        "line": 142,
+        "hash": "553a5cc88e14aeb1aaef90d705a79c9b",
+        "textRange": {
+            "startLine": 142,
+            "endLine": 142,
+            "startOffset": 14,
+            "endOffset": 19
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Define and throw a dedicated exception instead of using a generic one.",
+        "effort": "20min",
+        "debt": "20min",
+        "assignee": "JEBailey@github",
+        "tags": [
+            "cert",
+            "cwe",
+            "error-handling"
+        ],
+        "creationDate": "2018-11-29T16:25:28+0100",
+        "updateDate": "2019-04-21T19:04:53+0200",
+        "type": "CODE_SMELL",
+        "organization": "apache"
+    },
+    "AWpA29axYsUHy63ni7FU": {
+        "key": "AWpA29axYsUHy63ni7FU",
+        "rule": "java:S1104",
+        "severity": "MINOR",
+        "component": "apache_sling-org-apache-sling-commons-html:src/main/java/org/apache/sling/commons/html/impl/parser/TagParser.java",
+        "project": "apache_sling-org-apache-sling-commons-html",
+        "line": 260,
+        "hash": "82f0ffbd742b316efea6ae213659c2af",
+        "textRange": {
+            "startLine": 260,
+            "endLine": 260,
+            "startOffset": 15,
+            "endOffset": 20
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Make token a static final constant or non-public and provide accessors if needed.",
+        "effort": "10min",
+        "debt": "10min",
+        "assignee": "JEBailey@github",
+        "tags": [
+            "cwe"
+        ],
+        "creationDate": "2018-11-29T16:25:28+0100",
+        "updateDate": "2019-04-21T19:04:53+0200",
+        "type": "VULNERABILITY",
+        "organization": "apache"
+    },
+    "AWoocNfkMflNeiYSIfV7": {
+        "key": "AWoocNfkMflNeiYSIfV7",
+        "rule": "java:S2386",
+        "severity": "MINOR",
+        "component": "apache_sling-org-apache-sling-scripting-esx:src/main/java/org/apache/sling/scripting/esx/plugins/SimpleResourceAdapterFactory.java",
+        "project": "apache_sling-org-apache-sling-scripting-esx",
+        "line": 34,
+        "hash": "4d1d37b7669f0371f55cfd6dbab0985f",
+        "textRange": {
+            "startLine": 34,
+            "endLine": 34,
+            "startOffset": 33,
+            "endOffset": 50
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Make this member \"protected\".",
+        "effort": "15min",
+        "debt": "15min",
+        "tags": [
+            "cert",
+            "cwe",
+            "unpredictable"
+        ],
+        "creationDate": "2017-03-24T16:09:46+0100",
+        "updateDate": "2019-04-17T01:17:11+0200",
+        "type": "VULNERABILITY",
+        "organization": "apache"
+    },
+    "AWoocNfkMflNeiYSIfV6": {
+        "key": "AWoocNfkMflNeiYSIfV6",
+        "rule": "java:S2386",
+        "severity": "MINOR",
+        "component": "apache_sling-org-apache-sling-scripting-esx:src/main/java/org/apache/sling/scripting/esx/plugins/SimpleResourceAdapterFactory.java",
+        "project": "apache_sling-org-apache-sling-scripting-esx",
+        "line": 30,
+        "hash": "7f9992c424c69b691370a4af81cff1df",
+        "textRange": {
+            "startLine": 30,
+            "endLine": 30,
+            "startOffset": 33,
+            "endOffset": 48
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Make this member \"protected\".",
+        "effort": "15min",
+        "debt": "15min",
+        "tags": [
+            "cert",
+            "cwe",
+            "unpredictable"
+        ],
+        "creationDate": "2017-03-24T16:09:46+0100",
+        "updateDate": "2019-04-17T01:17:11+0200",
+        "type": "VULNERABILITY",
+        "organization": "apache"
+    },
+    "AWorIjGzSX35U3sTfa3k": {
+        "key": "AWorIjGzSX35U3sTfa3k",
+        "rule": "java:S2386",
+        "severity": "MINOR",
+        "component": "apache_sling-org-apache-sling-scripting-sightly-js-provider:src/main/java/org/apache/sling/scripting/sightly/js/impl/Utils.java",
+        "project": "apache_sling-org-apache-sling-scripting-sightly-js-provider",
+        "line": 34,
+        "hash": "ce08e933453c722b919834e9e0391d2e",
+        "textRange": {
+            "startLine": 34,
+            "endLine": 34,
+            "startOffset": 33,
+            "endOffset": 47
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Make this member \"protected\".",
+        "effort": "15min",
+        "debt": "15min",
+        "tags": [],
+        "creationDate": "2015-05-12T17:39:47+0200",
+        "updateDate": "2019-04-17T13:50:10+0200",
+        "type": "VULNERABILITY",
+        "organization": "apache"
+    },
+    "AWorIjG6SX35U3sTfa3r": {
+        "key": "AWorIjG6SX35U3sTfa3r",
+        "rule": "java:S1118",
+        "severity": "MAJOR",
+        "component": "apache_sling-org-apache-sling-scripting-sightly-js-provider:src/main/java/org/apache/sling/scripting/sightly/js/impl/rhino/JsUtils.java",
+        "project": "apache_sling-org-apache-sling-scripting-sightly-js-provider",
+        "line": 28,
+        "hash": "5e9ac554864b6707e63691a9a954b216",
+        "textRange": {
+            "startLine": 28,
+            "endLine": 28,
+            "startOffset": 13,
+            "endOffset": 20
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Add a private constructor to hide the implicit public one.",
+        "effort": "5min",
+        "debt": "5min",
+        "tags": [
+            "design"
+        ],
+        "creationDate": "2015-05-12T17:39:47+0200",
+        "updateDate": "2019-04-17T13:50:10+0200",
+        "type": "CODE_SMELL",
+        "organization": "apache"
+    },
+    "AXFfxqRV-w3IdlBFuN2v": {
+        "key": "AXFfxqRV-w3IdlBFuN2v",
+        "rule": "java:S107",
+        "severity": "MAJOR",
+        "component": "apache_sling-org-apache-sling-scripting-bundle-tracker:src/main/java/org/apache/sling/scripting/bundle/tracker/internal/BundledRenderUnitCapabilityImpl.java",
+        "project": "apache_sling-org-apache-sling-scripting-bundle-tracker",
+        "line": 49,
+        "hash": "a7aaed6cca279b740478f7a55728cbc8",
+        "textRange": {
+            "startLine": 49,
+            "endLine": 49,
+            "startOffset": 12,
+            "endOffset": 43
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Constructor has 8 parameters, which is greater than 7 authorized.",
+        "effort": "20min",
+        "debt": "20min",
+        "tags": [
+            "brain-overload"
+        ],
+        "creationDate": "2020-04-09T18:07:51+0200",
+        "updateDate": "2020-04-09T18:29:17+0200",
+        "type": "CODE_SMELL",
+        "organization": "apache"
+    },
+    "AWo7GjpxyRjJygCrME7V": {
+        "key": "AWo7GjpxyRjJygCrME7V",
+        "rule": "java:S1165",
+        "severity": "MINOR",
+        "component": "apache_sling-org-apache-sling-scripting-sightly-compiler:src/main/java/org/apache/sling/scripting/sightly/compiler/SightlyCompilerException.java",
+        "project": "apache_sling-org-apache-sling-scripting-sightly-compiler",
+        "line": 24,
+        "hash": "118beeff4a548352e2ff17b6b9f616f2",
+        "textRange": {
+            "startLine": 24,
+            "endLine": 24,
+            "startOffset": 19,
+            "endOffset": 33
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Make this \"offendingInput\" field final.",
+        "effort": "15min",
+        "debt": "15min",
+        "tags": [
+            "error-handling"
+        ],
+        "creationDate": "2016-06-16T18:07:57+0200",
+        "updateDate": "2019-04-20T16:15:13+0200",
+        "type": "CODE_SMELL",
+        "organization": "apache"
+    },
+    "AWo7Gjo8yRjJygCrME7A": {
+        "key": "AWo7Gjo8yRjJygCrME7A",
+        "rule": "java:S1118",
+        "severity": "MAJOR",
+        "component": "apache_sling-org-apache-sling-scripting-sightly-compiler:src/main/java/org/apache/sling/scripting/sightly/compiler/commands/Conditional.java",
+        "project": "apache_sling-org-apache-sling-scripting-sightly-compiler",
+        "line": 24,
+        "hash": "107bbfd9af1a97ace28e4105ed3587c9",
+        "textRange": {
+            "startLine": 24,
+            "endLine": 24,
+            "startOffset": 19,
+            "endOffset": 30
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Add a private constructor to hide the implicit public one.",
+        "effort": "5min",
+        "debt": "5min",
+        "tags": [
+            "design"
+        ],
+        "creationDate": "2016-06-16T18:07:57+0200",
+        "updateDate": "2019-04-20T16:15:13+0200",
+        "type": "CODE_SMELL",
+        "organization": "apache"
+    },
+    "AWo7Gjo5yRjJygCrME6-": {
+        "key": "AWo7Gjo5yRjJygCrME6-",
+        "rule": "java:S1118",
+        "severity": "MAJOR",
+        "component": "apache_sling-org-apache-sling-scripting-sightly-compiler:src/main/java/org/apache/sling/scripting/sightly/compiler/commands/Loop.java",
+        "project": "apache_sling-org-apache-sling-scripting-sightly-compiler",
+        "line": 24,
+        "hash": "47b9b9f9b642b35d6200b011f1ea42ec",
+        "textRange": {
+            "startLine": 24,
+            "endLine": 24,
+            "startOffset": 19,
+            "endOffset": 23
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Add a private constructor to hide the implicit public one.",
+        "effort": "5min",
+        "debt": "5min",
+        "tags": [
+            "design"
+        ],
+        "creationDate": "2016-06-16T18:07:57+0200",
+        "updateDate": "2019-04-20T16:15:13+0200",
+        "type": "CODE_SMELL",
+        "organization": "apache"
+    },
+    "AWorIjGzSX35U3sTfa3j": {
+        "key": "AWorIjGzSX35U3sTfa3j",
+        "rule": "java:S1118",
+        "severity": "MAJOR",
+        "component": "apache_sling-org-apache-sling-scripting-sightly-js-provider:src/main/java/org/apache/sling/scripting/sightly/js/impl/Utils.java",
+        "project": "apache_sling-org-apache-sling-scripting-sightly-js-provider",
+        "line": 31,
+        "hash": "e8aab3d9c621ed292086fa8386e1e213",
+        "textRange": {
+            "startLine": 31,
+            "endLine": 31,
+            "startOffset": 13,
+            "endOffset": 18
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Add a private constructor to hide the implicit public one.",
+        "effort": "5min",
+        "debt": "5min",
+        "tags": [],
+        "creationDate": "2015-05-12T17:39:47+0200",
+        "updateDate": "2019-04-17T13:50:10+0200",
+        "type": "CODE_SMELL",
+        "organization": "apache"
+    },
+    "AWoxE-YCyRjJygCrMpZg": {
+        "key": "AWoxE-YCyRjJygCrMpZg",
+        "rule": "java:S112",
+        "severity": "MAJOR",
+        "component": "apache_sling-org-apache-sling-commons-scheduler:src/main/java/org/apache/sling/commons/scheduler/impl/SettingsSupport.java",
+        "project": "apache_sling-org-apache-sling-commons-scheduler",
+        "line": 93,
+        "hash": "bb147496b78404309bc3b5150c60773e",
+        "textRange": {
+            "startLine": 93,
+            "endLine": 93,
+            "startOffset": 26,
+            "endOffset": 42
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Define and throw a dedicated exception instead of using a generic one.",
+        "effort": "20min",
+        "debt": "20min",
+        "tags": [
+            "cert",
+            "cwe",
+            "error-handling"
+        ],
+        "creationDate": "2015-04-20T14:35:04+0200",
+        "updateDate": "2019-04-18T17:32:03+0200",
+        "type": "CODE_SMELL",
+        "organization": "apache"
+    }
+}

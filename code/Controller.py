@@ -15,7 +15,8 @@ class Controller:
         """
         This function executes calls the different setup for the the analysis tool and report generation
 
-        :param sua_name: the name of the project to execute the analysis for
+        :param main_config_location: string containing the name of the main configuration file
+        :param report_config_location:  string containing the name of the report configuration file
         """
         self.setup_analysis_tool_portfolio(main_config_location)
         self.setup_report_gen(report_config_location)
@@ -51,7 +52,7 @@ class Controller:
     def setup_analysis_tool_portfolio(self, config_location):
         """
         This function reads the config json and sets up the content of the porftolio_info as well as the analysis tool
-        :param sua_name: Name of the project to analysed
+        :param config_location: string containing the name of the configuration filey
         """
         tool_factory = AnalysisToolFactory()
         config = read_json(config_location)
@@ -82,6 +83,7 @@ class Controller:
         self.atdx.execute_ATDx_analysis(self.portfolio_data)
 
         self.report_gen.generate_report(sua_name, self.portfolio_data)
+        self.save_dataset()
 
     def run_portfolio(self, main_config_location, report_config_location):
 
@@ -92,6 +94,8 @@ class Controller:
         for projects in self.portfolio_data.get_projects_info():
             self.report_gen.generate_report(projects, self.portfolio_data)
 
+        self.save_dataset()
+
     def publish_report(self, name, pr_number):
         command = self.report_gen.get_git_command(name, pr_number)
         # Pushing the report and radarchart to the specfied github location in the config file
@@ -100,18 +104,8 @@ class Controller:
     def get_body_comment(self, project_name):
         return self.report_gen.get_body_comment(self.portfolio_data.get_atdx(), project_name)
 
-    def save_dataset(self, main_config):
-        config = read_json(main_config)
-
-        issues = self.portfolio_data.get_ar_issues()
-        measures = self.portfolio_data.get_measures()
-        arch_issues = self.portfolio_data.get_arch_issues()
-
-        save('../data/counted_issues,json', issues)
-        save('../data/measures.json', measures)
-        save('../data/arch_issues.json', arch_issues)
-        save('../data/ATDx_values_output.json', self.portfolio_data.get_atdx())
-        save('../data/dimensions_output.json', self.portfolio_data.get_analysis_projects_info())
+    def save_dataset(self):
+        self.tool.save(self.portfolio_data)
 
 
 if __name__ == "__main__":
@@ -127,11 +121,8 @@ if __name__ == "__main__":
             valid_input = True
 
         if single_or_portfolio == '2':
-            #main_config_location = input("Please input the main configuration file location.\n")
-            #report_config = input("Please input the report configuration file location.\n")
-            main_config_location = '../data/configuration.json'
-            report_config = '../data/report_config.json'
+            main_config_location = input("Please input the main configuration file location.\n")
+            report_config = input("Please input the report configuration file location.\n")
             controller.run_portfolio(main_config_location, report_config)
             valid_input = True
 
-    controller.save_dataset('../data/configuration.json')

@@ -91,9 +91,9 @@ class ReportGenMarkdown(ReportGen, ABC):
     @staticmethod
     def get_git_command(name, number):
         report = '../data/reports/' + name + '.md'
-        radarchart = '../data/reports/radarchart/' + name + '.jpg;'
+        radarchart = '../data/reports/radarchart/' + name + '.jpg'
 
-        command = 'git add ' + report + ' ' + radarchart + ' git commit -m "Analysis of the ' + name + \
+        command = 'git add ' + report + ' ' + radarchart + '; git commit -m "Analysis of the ' + name + \
                   ' repository for PR number ' + str(number) + '"; git pull; git push'
 
         return command

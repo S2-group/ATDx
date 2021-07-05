@@ -1,68 +1,99 @@
-# ATDx Tool
-## Architectural Components
-The tool for  providing a data-driven overview of Architectural Technical Debt of software-intensive systems
-
-A complete demo can be found here.
-
-As visualized below, ATDx  consists of the following components:
-- **Flask_server**: The ATDx tool is hosted on a Flask Web server. While the tool can be run locallywithout the need of a dedicated Web server, the Flask server allows the ATDx tool to interactwith GitHub repositories and make use of the GitHub Webhook functionality  
-- **Controller**: Is in charge of reading the config files, interpret them and setting up the different components
-- **Analysis Tool Factory**: This component acts as abstraction mechanism interfacing the ATDxtool with the analysis tool(s) used to gather the AR violations used by ATDxCore(e.g.,Sonar-Cloud, SonarGraph, etc.). This component implements the ‘factory method’ design pattern,where third-party analysis tools can be integrated as external plug-ins. This technical solution allows users to customize the ATDx tool according to their specific needs, while delegating the  interfacing of their used analysis tool to the other components via theAnalysis Tool Factory.
-- **Report Generator Factory**: The component Report Generator Factory is responsible for generating the report summarizing the ATDx results. Similarly to the \texttt{Analysis Tool Factory}, this component is implemented according to the factory method design pattern. This allows users to implement report generators which produce their preferred format (\eg Markdown, XML, etc.), without having to spend effort/time on how the created instance needs to interact with the other ATDx tool components. 
-- **Portfolio_Data**: Keeps the information that needs to be analysed, and the information required to generate the report
-- **AtdxCore**:  It is the component implementing the main business logic of \name. Specifically, this component is responsible for executing the complete ATDx calculation, from the normalization of software metric measurements, to the severity calculation of AR violations, and calculation of ATDD and ATDx values (for more information on the ATDx approach, refer to the original publication~\cite{verdecchia2020atdx}). The ATDx execution can be invoked either by considering an entire software portfolio, or just a software project under analysis, if a dataset of a portfolio is already available.
+# ATDx: A tool for Providing a Data-driven Overviewof Architectural Technical Debt in Software-intensive Systems
 
 
-<p align="center">
-<img src="./documentation/Architecture.png" alt="Overview of ATDx" width="500"/>
-</p>
+This repository is a companion page for the following publication:
 
-## Setting up environment, installation and dependencies
-Instructions can be found [here](https://github.com/S2-group/atdx/main/SETUP.md).
+> Sebastian Ospina, Roberto Verdecchia, Ivano Malavolta and Patricia Lago. ATDx: A tool for Providing a Data-driven Overviewof Architectural Technical Debt in Software-intensive Systems. In *Proceedings of ECSA’21: 15th European Conference on Software Architecture, Växjö, Sweden, 2 July, 2021 (ECSA’21)*, 5 pages.
 
-
-## Quick start
-To run at the server:
-```bash
-python3 FlaskServer.py
-```
-
-To run at the local machine run:
-```bash
-python3 Controller.py
-```
+It contains all the material required for replicating our analysis and execute new ones, including: the installation steps, the input data, and different ways to run it. 
+Some additional results, not included in the paper for the sake of space, are also provided.
 
 
-### Input and output
-Example of Input and output files can be found in the `data/examples` directory.
+
+Example Results and Data
+---------------
+The result example as well as the data we used for our analysis are available [here](data/README.md).
 
 
-## Structure
-### config.json
-A JSON config that contains the location of the different attributes that are required for the execution of the analysis.
-This file should have this attributes filled in:
+Experiment Replication
+---------------
+In order to replicate the experiment follow these steps:
 
-   ```json
-   {
-       "tool": "SonarCloud",
-       "save_intermediate_steps": true,
-       "rules_location": "demo_ar_rules.json",
-       "projects_location": "projects.json",
-       "measures": "measures.json" ,
-       "ar_issues": "ar_issues.json",
-       "files_suffix": "_"
-   }
-   ```
-### report_config.json
-A JSON config that contains the "settings" for the report that is being generated.
-This file should have this attributes filled in:
-   ```json
-   {
-       "report": "Markdown",
-       "store": 0,
-       "max_number_class": "5",
-       "max_number_projects": "3"
-   }
-   ```
+### Getting started
 
+1. Clone the repository 
+   - `git clone https://github.com/ICSE19-FAST-R/FAST-R`
+ 
+2. If you do not have python3 installed you can get the appropriate version for your OS [here](https://www.python.org/downloads/).
 
+3. Install the additional python packages required:
+   - `pip3 install -r requirements.txt`
+
+### Local run Scenario
+
+1. Set the configuration files. Namely [configuration.json](/data/configuration.json) and [report_configuration](/data/report_config.json)
+
+2. Execute the `Controller.py` script 
+   - `python3 Controller.py`
+   - This will be displayed: `Please input 1 for single project analysis or 2 for portfolio analysis`
+     
+      - We input `1`.
+         - This will be displayed `Please input the name of the Sistem Under Analysis`
+           
+         - Then we should input the name of the project we want to analyse
+      
+- We input `2`.
+  
+     - The analysis will run for all the projects. 
+
+     - Then, `Please input the main configuration file location.` will be displayed. So you must input the location of the configuration file you want.
+        
+     - Finally, `Please input the report configuration file location.` will be displayed. So you must input the location of the report configuration file you want.
+
+3. Some of the steps are displayed in the screen, such as mining Issues and measures. And the results are stored inside folder `/data`
+
+### Server run Scenario
+
+1.Set the configuration files. Namely [configuration](/data/configuration.json) and [report_configuration](/data/report_config.json)
+
+2. Now you need to set your repository to trigger the events and communicate it so to the ATDx tool. A detailed explanation can be found [here](https://docs.github.com/en/enterprise-server@3.0/developers/webhooks-and-events/webhooks/about-webhooks).
+
+3. Execute the `FlaskServer.py` script 
+   - You need to set the following variables in the Flask_server according to [Github authentication requirements](https://docs.github.com/en/rest/guides/basics-of-authentication):
+       1. ```app.config['GITHUB_CLIENT_ID']```
+       2. ```app.config['GITHUB_CLIENT_SECRET']```
+      
+   - Once these values have been set up, check that your server has a public ip and add it to the FlaskServer initialization:
+      1. ``` app.run(debug=False, host="YOUR_IP_ADDRESS"")```
+      
+   - Now we can run`python3 FlaskServer.py`
+
+4. Login to the Server
+   - In your browser run: ```YOUR_IP_ADDRESS:5000/LOGIN```
+     
+      -It will redirect you to a Github page where you need to enter user credentials
+
+5. You can create a new PR in your Github repository. 
+    - The analysis will be run automatically
+
+Directory Structure
+---------------
+This is the root directory of the repository. The directory is structured as follows:
+
+    ATDx
+     .
+     |
+     |--- data/                             Input of the algorithm, i.e. configuration files, issues, measures, rules. And a Comment example
+     |      |
+     |      |--- reports/                   Report generated by the algorithm.
+     |      |         |
+     |      |         |--- radarchart/      Radarchart generated by the algorthm
+     |      |
+     |      |--- issues/                    Dowloaded issues by the algorithm
+     |      |
+     |      |--- examples/                  Input examples for the algorthm to run
+     |      
+     |--- code/                             Implementation of the algorithms and scripts to execute the experiments.
+     |
+     |--- Documentation/                    Files used for the README
+  
