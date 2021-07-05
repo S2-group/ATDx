@@ -34,7 +34,7 @@ python3 Controller.py
 
 
 ### Input and output
-Example of Input and output files can be found in the `data/examples` directory.
+Example of Input files can be found in the `data/examples` directory. And the output example can be found in  `data/reports`.
 
 
 ## Structure
