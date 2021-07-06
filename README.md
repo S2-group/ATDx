@@ -31,7 +31,7 @@ In order to run the ATDx tool follow these steps:
        - If you input `1`.
          - This will be displayed `Please input the name of the Sistem Under Analysis`
            
-         - Then we should input the name of the project we want to analyse
+         - Input the name of the project we want to analyse
         
        - If you input `2`.
             - The analysis will run for all the projects. 
