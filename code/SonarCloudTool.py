@@ -216,16 +216,27 @@ class SonarCloudTool(AnalysisTool, ABC):
 
         self.prepare_ATDx_input(portfolio_info, measures, ar_issues)
 
+    def save(self, portfolio):
+
+        issues = portfolio.get_ar_issues()
+        measures = portfolio.get_measures()
+        arch_issues = portfolio.get_arch_issues()
+
+        save('../data/' + self.suffix + 'counted_issues,json', issues)
+        save('../data/' + self.suffix + 'measures.json', measures)
+        save('../data/' + self.suffix + 'arch_issues.json', arch_issues)
+
     def execute_portfolio_analysis(self, portfolio_info):
         triple = portfolio_info.get_triple()
         ar_issues = portfolio_info.get_ar_issues()
         measures = portfolio_info.get_measures()
+        arch_issues = portfolio_info.get_arch_issues()
 
-        if ar_issues is None:
+        if arch_issues is None:
             self.merge_portfolio_issues(portfolio_info)
             arch_issues = self.filter_arch_rules(portfolio_info, triple)
             ar_issues = self.count_ar_issues(arch_issues, portfolio_info.get_projects_info(), triple,
-                                         '../data/ar_issues')
+                                             '../data/ar_issues')
         if measures is None:
             measures = self.mine_measures(portfolio_info.get_projects_info(), '../data/measures.json')
 

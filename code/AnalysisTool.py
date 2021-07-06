@@ -75,3 +75,17 @@ class AnalysisTool(ABC):
         """
         pass
 
+    @abstractmethod
+    def save(self, portfolio_data):
+        """Function to save the information from the portfolio
+
+        :param portfolio_data: PorfolioData object from which we can get the necessary information
+
+        """
+        pass
+
+    def execute_analysis(self, portfolio_info, sua):
+        pass
+
+    def execute_portfolio_analysis(self, portofolio_info):
+        pass
