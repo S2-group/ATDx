@@ -1,4 +1,4 @@
-# ATDx: A tool for Providing a Data-driven Overviewof Architectural Technical Debt in Software-intensive Systems
+# ATDx: A tool for Providing a Data-driven Overview of Architectural Technical Debt in Software-intensive Systems
 
 
 This repository is a companion page of:
