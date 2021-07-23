@@ -3,7 +3,7 @@
 
 This repository is a companion page of the following publication:
 
-> Sebastian Ospina, Roberto Verdecchia, Ivano Malavolta and Patricia Lago. ATDx: A tool for Providing a Data-driven Overview of Architectural Technical Debt in Software-intensive Systems. 15th European Conference on Software Architecture, Växjö, Sweden, 2 July, 2021 (ECSA’21), 5 pages.
+> Sebastian Ospina, Roberto Verdecchia, Ivano Malavolta and Patricia Lago. ATDx: A tool for Providing a Data-driven Overview of Architectural Technical Debt in Software-intensive Systems. 15th European Conference on Software Architecture (ECSA'21), Växjö, Sweden, 2 July, 2021.
 
 It contains all the material required for running the ATDx tool, including: installation steps, deployment scenarios, and sample input/output data. 
 
