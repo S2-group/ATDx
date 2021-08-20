@@ -1,0 +1,399 @@
+{
+    "total": 9,
+    "p": 1,
+    "ps": 10,
+    "paging": {
+        "pageIndex": 1,
+        "pageSize": 10,
+        "total": 9
+    },
+    "effortTotal": 35,
+    "debtTotal": 35,
+    "issues": [
+        {
+            "key": "AXtevKLUDBJKtqmYIcHB",
+            "rule": "java:S125",
+            "severity": "MAJOR",
+            "component": "app-spring-boot:src/main/java/br/ufpi/listavip/services/ConvidadoService.java",
+            "project": "app-spring-boot",
+            "line": 45,
+            "hash": "aa1114cb074e35e12e25267c98d3983d",
+            "textRange": {
+                "startLine": 45,
+                "endLine": 45,
+                "startOffset": 4,
+                "endOffset": 56
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "This block of commented-out lines of code should be removed.",
+            "effort": "5min",
+            "debt": "5min",
+            "assignee": "armandossrecife@github",
+            "tags": [],
+            "creationDate": "2021-08-19T16:04:58+0200",
+            "updateDate": "2021-08-19T16:06:19+0200",
+            "type": "CODE_SMELL",
+            "organization": "arch-debt"
+        },
+        {
+            "key": "AXtevKJHDBJKtqmYIcHA",
+            "rule": "java:S1192",
+            "severity": "CRITICAL",
+            "component": "app-spring-boot:src/main/java/br/ufpi/listavip/controladores/ConvidadoController.java",
+            "project": "app-spring-boot",
+            "line": 43,
+            "hash": "f3684e91a97e14c95b75b9f66558c77f",
+            "textRange": {
+                "startLine": 43,
+                "endLine": 43,
+                "startOffset": 27,
+                "endOffset": 39
+            },
+            "flows": [
+                {
+                    "locations": [
+                        {
+                            "component": "app-spring-boot:src/main/java/br/ufpi/listavip/controladores/ConvidadoController.java",
+                            "textRange": {
+                                "startLine": 43,
+                                "endLine": 43,
+                                "startOffset": 27,
+                                "endOffset": 39
+                            },
+                            "msg": "Duplication"
+                        }
+                    ]
+                },
+                {
+                    "locations": [
+                        {
+                            "component": "app-spring-boot:src/main/java/br/ufpi/listavip/controladores/ConvidadoController.java",
+                            "textRange": {
+                                "startLine": 65,
+                                "endLine": 65,
+                                "startOffset": 24,
+                                "endOffset": 36
+                            },
+                            "msg": "Duplication"
+                        }
+                    ]
+                },
+                {
+                    "locations": [
+                        {
+                            "component": "app-spring-boot:src/main/java/br/ufpi/listavip/controladores/ConvidadoController.java",
+                            "textRange": {
+                                "startLine": 102,
+                                "endLine": 102,
+                                "startOffset": 24,
+                                "endOffset": 36
+                            },
+                            "msg": "Duplication"
+                        }
+                    ]
+                },
+                {
+                    "locations": [
+                        {
+                            "component": "app-spring-boot:src/main/java/br/ufpi/listavip/controladores/ConvidadoController.java",
+                            "textRange": {
+                                "startLine": 118,
+                                "endLine": 118,
+                                "startOffset": 21,
+                                "endOffset": 33
+                            },
+                            "msg": "Duplication"
+                        }
+                    ]
+                }
+            ],
+            "status": "OPEN",
+            "message": "Define a constant instead of duplicating this literal \"convidados\" 4 times.",
+            "effort": "10min",
+            "debt": "10min",
+            "assignee": "armandossrecife@github",
+            "tags": [],
+            "creationDate": "2018-07-16T04:03:47+0200",
+            "updateDate": "2021-08-19T16:06:19+0200",
+            "type": "CODE_SMELL",
+            "organization": "arch-debt"
+        },
+        {
+            "key": "AXtevKJHDBJKtqmYIcG_",
+            "rule": "java:S4488",
+            "severity": "MINOR",
+            "component": "app-spring-boot:src/main/java/br/ufpi/listavip/controladores/ConvidadoController.java",
+            "project": "app-spring-boot",
+            "line": 113,
+            "hash": "c926a9c09f9b4ce1de6015ca233dc3a5",
+            "textRange": {
+                "startLine": 113,
+                "endLine": 113,
+                "startOffset": 2,
+                "endOffset": 16
+            },
+            "flows": [
+                {
+                    "locations": [
+                        {
+                            "component": "app-spring-boot:src/main/java/br/ufpi/listavip/controladores/ConvidadoController.java",
+                            "textRange": {
+                                "startLine": 113,
+                                "endLine": 113,
+                                "startOffset": 47,
+                                "endOffset": 64
+                            }
+                        }
+                    ]
+                }
+            ],
+            "status": "OPEN",
+            "message": "Replace \"@RequestMapping(method = RequestMethod.GET)\" with \"@GetMapping\"",
+            "effort": "2min",
+            "debt": "2min",
+            "assignee": "armandossrecife@github",
+            "tags": [],
+            "creationDate": "2018-07-16T04:03:47+0200",
+            "updateDate": "2021-08-19T16:06:19+0200",
+            "type": "CODE_SMELL",
+            "organization": "arch-debt"
+        },
+        {
+            "key": "AXtevKJHDBJKtqmYIcG-",
+            "rule": "java:S125",
+            "severity": "MAJOR",
+            "component": "app-spring-boot:src/main/java/br/ufpi/listavip/controladores/ConvidadoController.java",
+            "project": "app-spring-boot",
+            "line": 99,
+            "hash": "b5d3d99b8b4196c9cfef90c9736f7695",
+            "textRange": {
+                "startLine": 99,
+                "endLine": 99,
+                "startOffset": 7,
+                "endOffset": 133
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "This block of commented-out lines of code should be removed.",
+            "effort": "5min",
+            "debt": "5min",
+            "assignee": "armandossrecife@github",
+            "tags": [],
+            "creationDate": "2018-07-16T04:03:47+0200",
+            "updateDate": "2021-08-19T16:06:19+0200",
+            "type": "CODE_SMELL",
+            "organization": "arch-debt"
+        },
+        {
+            "key": "AXtevKJHDBJKtqmYIcG9",
+            "rule": "java:S4488",
+            "severity": "MINOR",
+            "component": "app-spring-boot:src/main/java/br/ufpi/listavip/controladores/ConvidadoController.java",
+            "project": "app-spring-boot",
+            "line": 94,
+            "hash": "d65fc7b30b39328b994a00395ca454b4",
+            "textRange": {
+                "startLine": 94,
+                "endLine": 94,
+                "startOffset": 2,
+                "endOffset": 16
+            },
+            "flows": [
+                {
+                    "locations": [
+                        {
+                            "component": "app-spring-boot:src/main/java/br/ufpi/listavip/controladores/ConvidadoController.java",
+                            "textRange": {
+                                "startLine": 94,
+                                "endLine": 94,
+                                "startOffset": 42,
+                                "endOffset": 60
+                            }
+                        }
+                    ]
+                }
+            ],
+            "status": "OPEN",
+            "message": "Replace \"@RequestMapping(method = RequestMethod.POST)\" with \"@PostMapping\"",
+            "effort": "2min",
+            "debt": "2min",
+            "assignee": "armandossrecife@github",
+            "tags": [],
+            "creationDate": "2018-07-16T04:03:47+0200",
+            "updateDate": "2021-08-19T16:06:19+0200",
+            "type": "CODE_SMELL",
+            "organization": "arch-debt"
+        },
+        {
+            "key": "AXtevKJHDBJKtqmYIcG8",
+            "rule": "java:S4488",
+            "severity": "MINOR",
+            "component": "app-spring-boot:src/main/java/br/ufpi/listavip/controladores/ConvidadoController.java",
+            "project": "app-spring-boot",
+            "line": 76,
+            "hash": "f9b065ce67460aee5597d313f576b932",
+            "textRange": {
+                "startLine": 76,
+                "endLine": 76,
+                "startOffset": 2,
+                "endOffset": 16
+            },
+            "flows": [
+                {
+                    "locations": [
+                        {
+                            "component": "app-spring-boot:src/main/java/br/ufpi/listavip/controladores/ConvidadoController.java",
+                            "textRange": {
+                                "startLine": 76,
+                                "endLine": 76,
+                                "startOffset": 51,
+                                "endOffset": 68
+                            }
+                        }
+                    ]
+                }
+            ],
+            "status": "OPEN",
+            "message": "Replace \"@RequestMapping(method = RequestMethod.GET)\" with \"@GetMapping\"",
+            "effort": "2min",
+            "debt": "2min",
+            "assignee": "armandossrecife@github",
+            "tags": [],
+            "creationDate": "2018-07-16T04:03:47+0200",
+            "updateDate": "2021-08-19T16:06:19+0200",
+            "type": "CODE_SMELL",
+            "organization": "arch-debt"
+        },
+        {
+            "key": "AXtevKLUDBJKtqmYIcHC",
+            "rule": "java:S1488",
+            "severity": "MINOR",
+            "component": "app-spring-boot:src/main/java/br/ufpi/listavip/services/ConvidadoService.java",
+            "project": "app-spring-boot",
+            "line": 27,
+            "hash": "c0fc366ea12dc1a6e0777c8e913a15d3",
+            "textRange": {
+                "startLine": 27,
+                "endLine": 27,
+                "startOffset": 41,
+                "endOffset": 61
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Immediately return this expression instead of assigning it to the temporary variable \"convidados\".",
+            "effort": "2min",
+            "debt": "2min",
+            "assignee": "armandossrecife@github",
+            "tags": [],
+            "creationDate": "2018-07-16T00:02:36+0200",
+            "updateDate": "2021-08-19T16:06:19+0200",
+            "type": "CODE_SMELL",
+            "organization": "arch-debt"
+        },
+        {
+            "key": "AXtevKJHDBJKtqmYIcG7",
+            "rule": "java:S125",
+            "severity": "MAJOR",
+            "component": "app-spring-boot:src/main/java/br/ufpi/listavip/controladores/ConvidadoController.java",
+            "project": "app-spring-boot",
+            "line": 62,
+            "hash": "b5d3d99b8b4196c9cfef90c9736f7695",
+            "textRange": {
+                "startLine": 62,
+                "endLine": 62,
+                "startOffset": 7,
+                "endOffset": 133
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "This block of commented-out lines of code should be removed.",
+            "effort": "5min",
+            "debt": "5min",
+            "assignee": "armandossrecife@github",
+            "tags": [],
+            "creationDate": "2018-07-16T00:02:36+0200",
+            "updateDate": "2021-08-19T16:06:19+0200",
+            "type": "CODE_SMELL",
+            "organization": "arch-debt"
+        },
+        {
+            "key": "AXtevKJHDBJKtqmYIcG6",
+            "rule": "java:S4488",
+            "severity": "MINOR",
+            "component": "app-spring-boot:src/main/java/br/ufpi/listavip/controladores/ConvidadoController.java",
+            "project": "app-spring-boot",
+            "line": 56,
+            "hash": "38c7d98e70f18886a01c37e251a5d474",
+            "textRange": {
+                "startLine": 56,
+                "endLine": 56,
+                "startOffset": 2,
+                "endOffset": 16
+            },
+            "flows": [
+                {
+                    "locations": [
+                        {
+                            "component": "app-spring-boot:src/main/java/br/ufpi/listavip/controladores/ConvidadoController.java",
+                            "textRange": {
+                                "startLine": 56,
+                                "endLine": 56,
+                                "startOffset": 41,
+                                "endOffset": 59
+                            }
+                        }
+                    ]
+                }
+            ],
+            "status": "OPEN",
+            "message": "Replace \"@RequestMapping(method = RequestMethod.POST)\" with \"@PostMapping\"",
+            "effort": "2min",
+            "debt": "2min",
+            "assignee": "armandossrecife@github",
+            "tags": [],
+            "creationDate": "2018-07-16T00:02:36+0200",
+            "updateDate": "2021-08-19T16:06:19+0200",
+            "type": "CODE_SMELL",
+            "organization": "arch-debt"
+        }
+    ],
+    "components": [
+        {
+            "organization": "arch-debt",
+            "key": "app-spring-boot:src/main/java/br/ufpi/listavip/controladores/ConvidadoController.java",
+            "uuid": "AXtevKE2DBJKtqmYIcGu",
+            "enabled": true,
+            "qualifier": "FIL",
+            "name": "ConvidadoController.java",
+            "longName": "src/main/java/br/ufpi/listavip/controladores/ConvidadoController.java",
+            "path": "src/main/java/br/ufpi/listavip/controladores/ConvidadoController.java"
+        },
+        {
+            "organization": "arch-debt",
+            "key": "app-spring-boot",
+            "uuid": "AXterlQfKZbHXGaioXeA",
+            "enabled": true,
+            "qualifier": "TRK",
+            "name": "listavip",
+            "longName": "listavip"
+        },
+        {
+            "organization": "arch-debt",
+            "key": "app-spring-boot:src/main/java/br/ufpi/listavip/services/ConvidadoService.java",
+            "uuid": "AXtevKE2DBJKtqmYIcG0",
+            "enabled": true,
+            "qualifier": "FIL",
+            "name": "ConvidadoService.java",
+            "longName": "src/main/java/br/ufpi/listavip/services/ConvidadoService.java",
+            "path": "src/main/java/br/ufpi/listavip/services/ConvidadoService.java"
+        }
+    ],
+    "organizations": [
+        {
+            "key": "arch-debt",
+            "name": "arch-debt"
+        }
+    ],
+    "facets": []
+}
