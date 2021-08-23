@@ -222,7 +222,7 @@ class SonarCloudTool(AnalysisTool, ABC):
         measures = portfolio.get_measures()
         arch_issues = portfolio.get_arch_issues()
 
-        save('../data/' + self.suffix + 'counted_issues,json', issues)
+        save('../data/' + self.suffix + 'counted_issues.json', issues)
         save('../data/' + self.suffix + 'measures.json', measures)
         save('../data/' + self.suffix + 'arch_issues.json', arch_issues)
 
