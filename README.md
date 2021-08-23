@@ -14,7 +14,7 @@ In order to run the ATDx tool follow these steps:
 ### Getting started
 
 1. Clone the repository 
-   - `git clone https://github.com/ICSE19-FAST-R/FAST-R`
+   - `git clone https://github.com/S2-group/ATDx`
  
 2. If you do not have Python 3.x installed you can get the appropriate version for your OS [here](https://www.python.org/downloads/).
 
