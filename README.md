@@ -24,7 +24,7 @@ In order to run the ATDx tool follow these steps:
 ### Run ATDx Locally
 
 1. Set the configuration files. Namely [configuration.json](/data/configuration.json) and [report_configuration](/data/report_config.json)
-    - In order to mine your own issues and execute the `AnalysisTool`, it is necessary to replace the content of `counted_issues` inside the [configuration.json](/data/configuration.json) with a `"None"` string. This way, the program will know that such information isn't given to it. The same happens with the `measures`.
+    - In order to mine your own issues and execute the `AnalysisTool`, it is necessary to replace the content of `measures` and `counted_issues` paramethers inside the [configuration.json](/data/configuration.json) with the string `"None"`. This way, the program will know that such information isn't given to it.
     - Add an `issues` folder inside the data folder.
    
 2. Execute the `Controller.py` script 
