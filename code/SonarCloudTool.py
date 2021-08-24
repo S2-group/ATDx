@@ -230,9 +230,8 @@ class SonarCloudTool(AnalysisTool, ABC):
         triple = portfolio_info.get_triple()
         ar_issues = portfolio_info.get_ar_issues()
         measures = portfolio_info.get_measures()
-        arch_issues = portfolio_info.get_arch_issues()
 
-        if arch_issues is None:
+        if ar_issues is None:
             self.merge_portfolio_issues(portfolio_info)
             arch_issues = self.filter_arch_rules(portfolio_info, triple)
             ar_issues = self.count_ar_issues(arch_issues, portfolio_info.get_projects_info(), triple,
