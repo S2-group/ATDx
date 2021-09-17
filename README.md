@@ -7,6 +7,8 @@ This repository is a companion page of the following publication:
 
 It contains all the material required for running the ATDx tool, including: installation steps, deployment scenarios, and sample input/output data. 
 
+The ATDx companion tool paper can be found [here](https://github.com/S2-group/ATDx/blob/main/ATDx_tool_ECSA21_paper.pdf).
+
 Quick start
 ---------------
 In order to run the ATDx tool follow these steps:
