@@ -9,8 +9,11 @@ It contains all the material required for running the ATDx tool, including: inst
 
 The ATDx companion tool paper can be found [here](https://github.com/S2-group/ATDx/blob/main/ATDx_tool_ECSA21_paper.pdf).
 
-Quick start
----------------
+# Demo
+[![ATDX demo](https://github.com/S2-group/ATDx/blob/main/demo_image.png)](https://www.youtube.com/watch?v=ULT9fgxuB7E&ab_channel=RobertoVerdecchia "ATDx demo - click to watch")
+
+
+# Quick start
 In order to run the ATDx tool follow these steps:
 
 ### Getting started
@@ -74,7 +77,7 @@ Sample Input and Output Data
 ---------------
 A sample of input and output data is available [here](data/README.md).
 
-## How to cite us
+# How to cite us
 If this study is helping your research, consider to cite it is as follows, thanks!
 
 ```
