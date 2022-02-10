@@ -74,6 +74,25 @@ Sample Input and Output Data
 ---------------
 A sample of input and output data is available [here](data/README.md).
 
+## How to cite us
+If this study is helping your research, consider to cite it is as follows, thanks!
+
+```
+@article{ospina2021atdx,
+  title={ATDx: A tool for Providing a Data-driven Overview of Architectural Technical Debt in Software-intensive Systems},
+  author={Ospina, Sebastian and Verdecchia, Roberto and Malavolta, Ivano and Lago, Patricia},
+  journal={European Conference on Software Architecture},
+  year={2021},
+  publisher={Springer}
+}
+```
+
+# ATDx empirical evaluation
+The ATDx approach was evaluated by considering two OSS organizations ([Apache](https://www.apache.org/) and [ONAP](https://www.onap.org/)) and 250+ software projects.<br>
+
+The scientific publication resulting from the evaluation is available at this link: https://peerj.com/articles/cs-833 <br>
+The replication package of the study is hosted at the following repository: https://github.com/S2-group/ATDx_replication_package
+
 Directory Structure
 ---------------
 This is the root directory of the repository. The directory is structured as follows:
@@ -94,9 +113,4 @@ This is the root directory of the repository. The directory is structured as fol
             |--- issues/                    Sample issues downloaded by the SonarCloud Miner plugin
             |
             |--- examples/                  Sample input of the ATDx tool
-  
-# ATDx empirical evaluation
-The ATDx approach was evaluated by considering two OSS organizations ([Apache](https://www.apache.org/) and [ONAP](https://www.onap.org/)) and 250+ software projects.<br>
-
-The scientific publication resulting from the evaluation is available at this link: https://peerj.com/articles/cs-833 <br>
-The replication package of the study is hosted at the following repository: https://github.com/S2-group/ATDx_replication_package
+ 
