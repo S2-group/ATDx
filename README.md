@@ -95,3 +95,8 @@ This is the root directory of the repository. The directory is structured as fol
             |
             |--- examples/                  Sample input of the ATDx tool
   
+# ATDx empirical evaluation
+The ATDx approach was evaluated by considering two OSS organizations ([Apache](https://www.apache.org/) and [ONAP](https://www.onap.org/)) and 250+ software projects.<br>
+
+The scientific publication resulting from the evaluation is available at this link: https://peerj.com/articles/cs-833 <br>
+The replication package of the study is hosted at the following repository: https://github.com/S2-group/ATDx_replication_package
